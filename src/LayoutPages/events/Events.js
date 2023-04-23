@@ -8,16 +8,16 @@ import Link from "next/link";
 
 const settings = {
   dots: false,
-  infinite: true,
+  infinite: false,
   speed: 1500,
   slidesToShow: 1,
-  slidesToScroll: 1,
+  slidesToScroll: 0,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   speed: 500,
   rows: 3,
   vertical: true,
-  verticalSwiping: true,
+  verticalSwiping: false,
   adaptiveHeight: true,
   variableHeight: false,
   responsive: [

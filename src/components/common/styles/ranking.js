@@ -13,6 +13,14 @@ export const Styles = styled.div`
       }
     }
 
+
+    .event-details h6 {
+      line-height: 0;
+  }
+  .event-details p {
+    margin: 0;
+}
+  
     .slick-slide img {
       display: block;
       width: 100%;
@@ -49,9 +57,13 @@ export const Styles = styled.div`
       flex-basis: 65%;
     }
     .event-box:last-child {
-      margin-bottom: 0;
       border-bottom: 1px solid;
+      padding-bottom: 20px;
     }
+    .dddd .event-box:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0 !important;
+  }
     .introVDO iframe {
       width: 100%;
       height: 300px;

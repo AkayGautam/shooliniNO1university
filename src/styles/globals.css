@@ -208,12 +208,22 @@ a.detailView h3 {
 #mbaPage section.logo-area.main-menu {
   background: #f63030;
 }
-
+.faqs section.breadcrumb-area {
+  background: url(/assets/images/faq.webp) !important;
+  background-size: 100% !important;
+  background-position: 0px -100px !important;
+  background-repeat: no-repeat;
+}
 
 @media (max-width: 767px) {
 
+  .faqs section.breadcrumb-area {
+    background-size: cover !important;
+    background-position: 0 !important;
+}
+
   .scSlider .slider-tablecell {
-    height: 100vh !important;
+    height: auto !important;
 }
   
   .templateOne  .card img {
@@ -1750,5 +1760,5 @@ ul.nav.menu-nav li:nth-last-child(1) .dropdown  .dropdown_Last
 
 table.cj-wysiwyg-table td {
   vertical-align: top;
-  border: 0;
+
 }

@@ -36,17 +36,17 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const Header = () => { 
+const Header = () => {
 
   useEffect(() => {
-    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
+    // download brouchure
+    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
 
-var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s)
-  
-   }, [])
- 
-   
-   
+
+  }, [])
+
+
+
   const [open, setOpen] = React.useState(false);
   const [opens, setOpens] = React.useState(false);
 
@@ -97,8 +97,8 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
   return (
     <Styles>
 
-
-<Dialog
+      {/* for broucher  */}
+      <Dialog
         open={open}
         TransitionComponent={Transition}
         keepMounted
@@ -106,9 +106,9 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogContent>
-         
+
           <DialogContentText id="alert-dialog-slide-description">
-          <div class="npf_wgts" data-height="400px" data-w="b7a96773936817725d0a4442d6310f28"></div>
+            <div class="npf_wgts" data-height="400px" data-w="d095e55a1f298e67da8279133413215f"></div>
           </DialogContentText>
         </DialogContent>
       </Dialog>
@@ -122,44 +122,44 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogContent>
-         
+
           <DialogContentText id="alert-dialog-slide-description">
-          <div class="npf_wgts" data-height="400px" data-w="d095e55a1f298e67da8279133413215f"></div>
+            <div class="npf_wgts" data-height="400px" data-w="b7a96773936817725d0a4442d6310f28"></div>
           </DialogContentText>
         </DialogContent>
       </Dialog>
 
 
 
-<div className={isActive ? 'bg-salmon2 sticky-icon showcase' : 'bg-salmon2 sticky-icon'} >
+      <div className={isActive ? 'bg-salmon2 sticky-icon showcase' : 'bg-salmon2 sticky-icon'} >
 
-{/* <button className={isActive ? 'bg-salmon showcase' : 'showcase'} onClick={handleClick}> 
+        {/* <button className={isActive ? 'bg-salmon showcase' : 'showcase'} onClick={handleClick}> 
    <span className="iconsFile"> <FaChevronLeft /> </span>
 </button>    */}
 
 
-   <a target="_blank" href="https://shooliniuniversity.com/pdf/ShooliniInformationBrochure.pdf" className="Instagram pointer-none"> 
-   <span className="iconsFile"> <FaFileAlt /> </span>
+        <a onClick={handleClickOpen} href="/" className="Instagram pointer-none">
+          <span className="iconsFile"> <FaFileAlt /> </span>
 
-   <span className="icnName"> Brochure </span></a>
+          <span className="icnName"> Brochure </span></a>
 
-    <a target="_blank" href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events" className="Instagram">
-    <span className="iconsFile"> <FaRegCalendarAlt /> </span>
-   <span className="icnName">Events</span> </a>
+        <a target="_blank" href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events" className="Instagram">
+          <span className="iconsFile"> <FaRegCalendarAlt /> </span>
+          <span className="icnName">Events</span> </a>
 
-    <a target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=admissions&utm_campaign=admissions" className="Instagram"> 
-    <span className="iconsFile"> <FaClipboardList /> </span>
-   <span className="icnName">Admissions</span> </a>
+        <a onClick={handleClickOpen_one} href="/" className="Instagram">
+          <span className="iconsFile"> <FaClipboardList /> </span>
+          <span className="icnName">Admissions</span> </a>
 
-   <a target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=admissions&utm_campaign=admissions" class="Instagram pointer-none"> 
-   <span className="iconsFile"> <FaPen /> </span>
-   <span className="icnName">Apply Now</span> </a>
+        <a target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=admissions&utm_campaign=admissions" class="Instagram pointer-none">
+          <span className="iconsFile"> <FaPen /> </span>
+          <span className="icnName">Apply Now</span> </a>
 
-    <a target="_blank" href="tel:+919625233301" className="Instagram"> 
-    <span className="iconsFile"> <FaPhoneAlt /> </span>
-   <span className="icnName">Call Now</span> </a>
-     
-</div>
+        <a target="_blank" href="tel:+919625233301" className="Instagram">
+          <span className="iconsFile"> <FaPhoneAlt /> </span>
+          <span className="icnName">Call Now</span> </a>
+
+      </div>
 
 
 
@@ -172,7 +172,7 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
               href="https://admissions.shooliniuniversity.com/"
               rel="noreferrer"
             >
-           Second Round of Applications is Now Open
+              Second Round of Applications is Now Open
             </a>
           </div>
 
@@ -204,7 +204,7 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
               Join Shoolini Online courses & Pay After Placement. Apply Now!
             </a>
           </div> */}
-{/* 
+          {/* 
           <div>
             <a
               target="_blank"
@@ -393,7 +393,7 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
       <section className={`logo-area main-menu`}>
         <div className="container-fluid">
           <Row>
-            <Col md="2"> 
+            <Col md="2">
               <div className="logo">
                 <Link href="/">
                   <Image
@@ -402,7 +402,7 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
                     className="brandLogo"
                     width={140}
                     height={75}
-                   
+
                   />
                 </Link>
               </div>
@@ -433,32 +433,32 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
                               </Link>
                             )}
                             {row.text === "research" ? (
-                             <li> <Link
+                              <li> <Link
                                 href="https://research.shooliniuniversity.com/"
                                 className="nav-link dropdown-toggle newSearch"
                                 target={"_blank"}
                               >
                                 {row.text}
                               </Link>
-                              <ul className="dropdown list-unstyled"> 
-                                <li className="nav-item navItem_unpos">
-                                <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/Benchmarks">   Benchmarks     </Link>
-                                    </li>
-                                    <li className="nav-item navItem_unpos">
-                                <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/support-researchers">   Support for Researchers     </Link>
-                                    </li>
-                                    <li className="nav-item navItem_unpos">
-                                <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/scholarship">     Scholarships      </Link>
-                                    </li>
-                                    <li className="nav-item navItem_unpos">
-                                <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/phd-programmes">      PhD Programs        </Link>
-                                    </li>
-                                    <li className="nav-item navItem_unpos">
-                                <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/National-Calls">      Research Grants    </Link>
-                                    </li>
-                              </ul>
+                                <ul className="dropdown list-unstyled">
+                                  <li className="nav-item navItem_unpos">
+                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/Benchmarks">   Benchmarks     </Link>
+                                  </li>
+                                  <li className="nav-item navItem_unpos">
+                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/support-researchers">   Support for Researchers     </Link>
+                                  </li>
+                                  <li className="nav-item navItem_unpos">
+                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/scholarship">     Scholarships      </Link>
+                                  </li>
+                                  <li className="nav-item navItem_unpos">
+                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/phd-programmes">      PhD Programs        </Link>
+                                  </li>
+                                  <li className="nav-item navItem_unpos">
+                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/National-Calls">      Research Grants    </Link>
+                                  </li>
+                                </ul>
                               </li>
-                               
+
                             ) : (
                               <span> </span>
                             )}
@@ -481,7 +481,7 @@ var s=document.createElement("script"); s.type="text/javascript"; s.async=true; 
                                     key={i}
                                   >
                                     {sub.text ===
-                                    "All Shoolini Faculty List" ? (
+                                      "All Shoolini Faculty List" ? (
                                       <Link
                                         href={`${sub.link}`}
                                         className="nav-link"

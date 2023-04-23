@@ -48,8 +48,8 @@ const Ranking = () => {
                   src={`/assets/images/eng-girl.jpg`}
                   alt="ranking_logo"
                   className="img-fluid"
-                  width={700}
-                  height={700}
+                  width={680}
+                  height={580}
                 />
               </div>
             </Col>
@@ -115,7 +115,7 @@ const Ranking = () => {
                   </Col>
                 </Row>
 
-                <div className="event-area dddd pt-md-3 mt-0">
+                <div className="event-area dddd mt-0">
                   <Row>
                     <Col md="12">
                       {Datas.eventDataListNew.map((eventData, i) => (
@@ -140,11 +140,11 @@ const Ranking = () => {
                             <div className="event-details">
                               <h6>
                                 <Link href="/news/qs-rankings-shoolini-ranks-3rd-top-private-university">
-                                  {eventData.eventTitle}
+                                  {eventData.eventdesc}
                                 </Link>
                               </h6>
 
-                              <p>{eventData.eventdesc}</p>
+                              <p>{eventData.eventTitle}</p>
                             </div>
                             <div className="seeMoreBtn">
                               <Link href="/news/qs-rankings-shoolini-ranks-3rd-top-private-university">
@@ -197,9 +197,9 @@ const Ranking = () => {
                 </div> */}
 
                 <Row>
-                  <Col md="12">
+                  <Col  md="12">
                     {Datas.eventDataList2.map((eventData, i) => (
-                      <div className="event-box d-flex" key={i}>
+                      <div className="event-box py-2 d-flex" key={i}>
                         <div className="alignLefts_o">
                           <div className="rankingYear">
                             <p>{eventData.eventDate}</p>
@@ -241,10 +241,10 @@ const Ranking = () => {
                   </Col>
                 </Row>
 
-                <Row className="event-area mt-3">
+                <Row className="event-area fff mt-3">
                   <Col md="12">
                     {Datas.faqDataList.map((eventData, i) => (
-                      <div className="event-box d-flex" key={i}>
+                      <div className="event-box align-items-top d-flex" key={i}>
                         <div className="alignLefts_o">
                           <div className="rankingYear">
                             <p>{eventData.eventDate}</p>
@@ -264,12 +264,18 @@ const Ranking = () => {
                         <div className="alignLefts">
                           <div className="event-details">
                             <h6>
-                              <Link href="/news/shoolini-retains-top-100-slot-in-nirf-rankings">
-                                {eventData.eventTitle}
+                              <Link  href="/news/shoolini-retains-top-100-slot-in-nirf-rankings">
+                              {eventData.eventTitless}
                               </Link>
                             </h6>
-
-                            <p>{eventData.eventdesc}</p>
+                            <h6>  <Link className="p-font" href="/news/shoolini-retains-top-100-slot-in-nirf-rankings">  {eventData.eventTitle}</Link>  </h6>
+                            <p><strong>    {eventData.eventdesc} </strong> </p> 
+                            <p>  {eventData.eventdesc5}</p>
+                            <p> <strong>  {eventData.eventdesc6} </strong></p>
+                           
+                            <p>  {eventData.eventdesc2}</p>
+                            <p>  {eventData.eventdesc3}</p>
+                            <p>  {eventData.eventdesc4}</p>
                           </div>
                           <div className="seeMoreBtn">
                             <Link href="/news/shoolini-retains-top-100-slot-in-nirf-rankings">

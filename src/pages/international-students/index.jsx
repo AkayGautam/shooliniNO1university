@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, Suspense } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import BreadcrumbBox from '../../components/common/Breadcrumb'
@@ -8,6 +8,8 @@ import Modal from 'react-modal'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
+import Head from 'next/head'
+
 
 const customStyles = {
   content: {
@@ -95,6 +97,14 @@ const InternationalStudents = () => {
 
   return (
     <>
+ <Suspense> 
+<Head>
+        <title>International Students Program | Shoolini University</title>
+        <meta name="description" content="Shoolini collaborates with Foreign Universities and Institutions providing assistance in the areas of visa affairs, insurance, housing, and academic affairs." />
+        <meta name="keywords" content="International Students Program" />
+      </Head>
+
+
       <Header />
       <BreadcrumbBox title="International Students" />
       <Styles>
@@ -431,6 +441,9 @@ const InternationalStudents = () => {
         </Modal>
       </Styles>
       <Footer />
+
+      </Suspense>
+
     </>
   )
 }

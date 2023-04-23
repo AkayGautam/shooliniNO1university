@@ -1085,7 +1085,7 @@ a.Instagram {
 }
 span.icnName {
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   padding-left: 0;
 }
 a.Instagram {

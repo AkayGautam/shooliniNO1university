@@ -241,13 +241,13 @@ const MobileMenu = ({ links }) => {
               </button>
               <div className="mb-menu-content show">
                 <ul className="list-unstyled">
-                  <li className="list-inline-item">
+                  <li className="list-item">
                     <Link target="_blank" href="/blog">
                       Blogs
                     </Link>
                   </li>
 
-                  <li className="list-inline-item">
+                  <li className="list-item">
                     <Link href="/Internship">Internship</Link>
                   </li>
 

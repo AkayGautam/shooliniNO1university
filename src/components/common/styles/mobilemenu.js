@@ -5,12 +5,16 @@ export const Styles = styled.div`
   .mb-menu-content.show {
     background: #f1f1f1;
   }
-
+  .mb-logo a span {
+    overflow: visible !important;
+}
   .rankingMobList .dropdown-menu{
     position: relative !important;
     transform: inherit !important;
 }
-
+a.xs-display {
+  text-transform: uppercase;
+}
 
   .mb-menu-item:nth-child(6) button > a:nth-child(1) {
     display: none;

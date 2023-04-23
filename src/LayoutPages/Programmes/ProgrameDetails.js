@@ -303,7 +303,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                               <div>
                                 {posTFaq &&
                                   posTFaq.map((row, idx) => (
-                                    <Accordion
+                                    <Accordion 
                                       key={idx}
                                       expanded={expanded === `panel${idx}`}
                                       onChange={handleChange(`panel${idx}`)}
@@ -360,7 +360,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                             </li>
 
 
-                            {/* <li>
+                            <li>
                               <i className="las la-certificate"></i>
                               Semester Fee
                               
@@ -379,7 +379,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                   </span>{" "}
                                 </h5>
                               </div>
-                            </li> */}
+                            </li>
 
 
 

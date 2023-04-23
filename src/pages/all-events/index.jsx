@@ -98,7 +98,7 @@ const Placements = () => {
                           <div className="event-item ">
                             <div className="event-item-inner">
                               <div className="event-item-thumbnail">
-                                <a href={data?.weburl} title="Mobile Games Battle">
+                                <a href={data?.weburl} title={data?.title}>
                                   <div className="vfvfv placeholder-thumbnail-bg">
                                     <img src={data?.imgurl} />
                                   </div>

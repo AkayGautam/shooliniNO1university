@@ -4,7 +4,7 @@
       "id": "1",
       "ranking_logo": "../../assets/images/the-ranking.png",
       "eventDate": "2023",
-      "eventTitle": "Times Higher Education Rankings 2023",
+      "eventTitle": "THE World Rankings 2023",
       "eventTime": "5:30pm - 7.00pm",
       "eventLocation": "Newyork,NY.",
       "eventdesc1": "No.1 Private University in India ",
@@ -13,7 +13,7 @@
       "eventdesc4": "Engineering",
       "eventdesc5": "No.2 in India; #201-250 globally",
       "eventdesc6": "Physical Sciences",
-      "eventdesc7": "No.1 in India; #201-250 globally",
+      "eventdesc7": "No.1 in India #201-250 globally",
       "eventLink": "/event-details"
     }
   ],
@@ -26,7 +26,7 @@
       "eventTitle": "No. 3 Private University (India)",
       "eventTime": "5:30pm - 7.00pm",
       "eventLocation": "Newyork,NY.",
-      "eventdesc": "QS World University Rankings 2023 ",
+      "eventdesc": "QS World Rankings 2023 ",
       "eventLink": "/event-details"
     }
   ],
@@ -35,10 +35,10 @@
       "id": "1",
       "ranking_logo": "../../assets/images/the.png",
       "eventDate": "2022",
-      "eventTitle": "Times Higher Education Rankings 2022",
+      "eventTitle": "THE Impact Rankings 2022",
       "eventTime": "5:30pm - 7.00pm",
       "eventLocation": "Newyork,NY.",
-      "eventdesc": "Shoolini is Top 200 Global University",
+      "eventdesc": "Top 200 Global University",
       "eventLink": "/event-details",
       "eventdesc1": "No. 2: Affordable & Clean Energy",
       "eventdesc2": "No. 6: Water Usage & Care"
@@ -49,36 +49,17 @@
       "id": "1",
       "ranking_logo": "../../assets/images/nirf.png",
       "eventDate": "2022",
-      "eventTitle": "No.96 in India ",
+      "eventTitlesmall": "No.96 in India ",
       "eventTime": "5:30pm - 7.00pm",
       "eventLocation": "Newyork,NY.",
       "eventdesc": "Among All Universities",
-      "eventLink": "/event-details"
-    },
-    {
-      "id": "2",
-      "eventTitle": "No.36 in India in Pharmacy",
-      "ranking_logo": "../../assets/images/mhrd.png",
-      "eventTime": "5:30pm - 7.00pm",
-      "eventLocation": "Newyork,NY.",
-      "eventdesc": "Among All Universities & Institutes",
-      "eventLink": "/event-details"
-    },
-    {
-      "id": "3",
-      "eventTitle": "No.125 in India in Engineering",
-      "eventTime": "5:30pm - 7.00pm",
-      "eventLocation": "Newyork,NY.",
-      "eventdesc": "Among All Universities & Institutes",
-      "eventLink": "/event-details"
-    },
-    {
-      "id": "4",
-      "eventTitle": "102-125 in India in Management",
-      "eventTime": "5:30pm - 7.00pm",
-      "eventLocation": "Newyork,NY.",
-      "eventdesc": "Among all Universities & Institutes",
-      "eventLink": "/event-details"
+      "eventdesc2": "No.36 in India in Pharmacy",
+      "eventdesc3": "No.125 in India in Engineering",
+      "eventdesc4": "102-125 in India in Management",
+      "eventdesc5": "No.96 in India",
+      "eventdesc6": "Among All Universities & Institutes ",
+      "eventLink": "/event-details",
+      "eventTitless" : "NIRF 2022"
     }
   ]
 }
