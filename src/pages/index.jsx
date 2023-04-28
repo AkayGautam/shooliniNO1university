@@ -63,7 +63,7 @@ export default function homepage({
 
 // // server side rendering
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/home`);
+  const res = await fetch(`https://shooliniuniversity.com/api/home`);
   const data = await res.json();
 
   return {
