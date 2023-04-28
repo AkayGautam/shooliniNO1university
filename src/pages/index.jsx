@@ -22,7 +22,12 @@ const Footer = dynamic(() => import("../components/Footer"));
 
 export const server = process.env.BASE_URL;
 
-export default function homepage({ programs, testimonials,  navigationSchema,  sitlinkSchema, }) {
+export default function homepage({
+  programs,
+  testimonials,
+  navigationSchema,
+  sitlinkSchema,
+}) {
   return (
     <>
       <Schema navigation={navigationSchema} siteLink={sitlinkSchema} />
@@ -41,15 +46,13 @@ export default function homepage({ programs, testimonials,  navigationSchema,  s
 
       <Programmes programs={programs} />
 
-<Testimonials testimonials={testimonials} />
+      <Testimonials testimonials={testimonials} />
 
       <ResearchStories />
 
       <GalleryView />
 
-    
       <ShooliniImpact />
-      
 
       <ScrollButton />
 
@@ -69,6 +72,8 @@ export async function getServerSideProps() {
       sitlinkSchema: data?.siteLink,
       programs: data.programs || [],
       testimonials: data.testimonials,
+      navigationSchema: data?.navigation,
+      sitlinkSchema: data?.siteLink,
     },
   };
 }
