@@ -35,7 +35,7 @@ const settings = {
 
 const Events = () => {
   const [data, setData] = useState([]);
-
+ 
   useEffect(() => {
     fetch("https://shooliniuniversity.com/media/eventAPI", {
       method: "POST",

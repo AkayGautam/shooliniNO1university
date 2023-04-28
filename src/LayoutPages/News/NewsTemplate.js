@@ -11,11 +11,26 @@ import Head from 'next/head'
 const NewsTemplate = ({ result }) => {
   useEffect(() => {
     window.scrollTo(0, 0)
+    
   }, [])
 
   useEffect(() => {
     var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
+  
+  
+    // (function(d, s, id) {
+    //   var js, fjs = d.getElementsByTagName(s)[0];
+    //   if (d.getElementById(id)) return;
+    //   js = d.createElement(s); js.id = id;
+    //   js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    //   fjs.parentNode.insertBefore(js, fjs);
+    //   }(document, 'script', 'facebook-jssdk'));
+  
+  
   })
+
+
+
 
   return (
     <>
@@ -37,6 +52,9 @@ const NewsTemplate = ({ result }) => {
           <BreadcrumbBox title={result?.[0]?.title} />
           <Styless>
             <section className="admidsionProcess my-5 pt-3 ">
+
+         
+
               <div className="about__area about__area_one p-relative pt---100 pb---120 mb-5">
                 <div className="container">
                   <div className="row">
@@ -46,7 +64,10 @@ const NewsTemplate = ({ result }) => {
                        
                         {/* <h3>{re/sult?.[0]?.title}</h3> */}
                         <img  className="img-thumbnail mb-3" src={result?.[0]?.imageurl} />
-
+                        {/* <div class="fb-share-button" 
+data-href="https://www.your-domain.com/your-page.html" 
+data-layout="button_count">
+</div> */}
                         <div className="expertContent"> <p
                           dangerouslySetInnerHTML={{
                             __html: result?.[0]?.excerpt,
@@ -61,6 +82,9 @@ const NewsTemplate = ({ result }) => {
                               }}
                             ></p>
                           </Col>
+
+                          
+
                         </Row>
                       </div>
                     </div>

@@ -755,9 +755,8 @@ export const Styles = styled.div`
 ul.nav.menu-nav li:nth-child(6) a.newSearch {
   display: block;
 }
-
-ul.nav.menu-nav li:nth-child(6) a {
-  display: none;
+.newSearch {
+  display: none !important;
 }
 
 ul.nav.menu-nav li:nth-child(2) ul.dropdown .nav-link {

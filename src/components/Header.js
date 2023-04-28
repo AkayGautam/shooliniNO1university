@@ -5,11 +5,9 @@ import { Styles } from "./common/styles/header";
 import StickyMenu from "./common/StickyMenu";
 import MobileMenu from "./common/MobileMenu";
 import Link from "next/link";
-import EnquireForMob from "./EnquireForMob";
 import ScrollButton from "../components/common/ScrollButton";
 import SocialShare from "./SocialShare";
 import Slider from "react-slick";
-import { FaPhoneSquareAlt } from "react-icons/fa";
 import Image from "next/legacy/image";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
@@ -19,7 +17,6 @@ import { FaFileAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaClipboardList } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
-import { FaEnvelopeOpen } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const settings = {

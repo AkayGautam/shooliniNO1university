@@ -411,10 +411,8 @@ const Mbas = () => {
                                                                                     <div className="card-box">
                                                                                         <h3 className="title-default">Top-Notch MBA Placements {"&"} Internships</h3>
 
-                                                                                        <p className="text-18"> The dedicated team of experts at the Placement Cell at Shoolini
-                                                                                            University including career coaches, employer engagement
-                                                                                            specialists and events and data management experts, is
-                                                                                            committed to help you <strong> maximise your career goals.</strong> </p>
+                                                                                        <p className="text-18">The MBA program at Shoolini University has seen a 100% placement record year-on-year, with top corporate companies hiring Shoolini's capable students. Our Placement <strong> 'Mission 130' </strong> aims at 100% employability with 30% great jobs.  <br />
+The dedicated and proactive Placement Cell, including career coaches, employer engagement specialists and events and data management experts, is committed to help you <strong> maximise your career goals.</strong> </p>
 
                                                                                         <div className="text-center">
 
@@ -910,7 +908,7 @@ const Mbas = () => {
                                                                                 </div>
                                                                                 <div className="col-12">
                                                                                     <div className="sb_text">
-                                                                                        <h4> NBA Accreditation for MBA </h4>
+                                                                                        <h4> NBA Accreditation   </h4>
                                                                                         <p> 1st university in Himachal Pradesh to be granted NBA Accreditation for its MBA Program
                                                                                         </p>
                                                                                     </div>
@@ -1081,21 +1079,8 @@ const Mbas = () => {
                                     </div>
 
                                     <div className="col-md-6">
-                                        <div className="card-box">
-                                            <h3 className="title-default"> Skill Development for Life-Long Learning </h3>
-                                            <p className="text-18">  <strong> SPRINT </strong>   <br /> Skill Progression through Rapid, Intensive & Innovative Training (SPRINT) is a week-long program focusing on industry exposure, and hands-on training through workshops, games and guest lectures. <br />
-                                                <br />
-                                                <strong>  Advanced Training Program (ATP) </strong>   <br />
-                                                The School of Business Management launched the fully residential Advanced Training Program (ATP). This 21-day program equips students with strong problem-solving skills and conceptual knowledge.
-                                                <br /><br />
-                                                <strong>  The Troops</strong><br />
-                                                The Troops Program brings students out of their comfort zones, ensuring they learn and excel outside the classroom with indoor and outdoor sports. These include trekking with a cause, tree plantations, case studies, etc.
-
-
-                                            </p>
-
-
-
+                                    <div className="voices-image position-relative">
+                                            <Image src="/assets/images/girlstudent.jpg" width={558} className="img-responsive" height={500} />
 
                                         </div>
                                     </div>
@@ -1148,7 +1133,7 @@ const Mbas = () => {
                             <div className="container">
                                 <div className="row">
 
-                                    <div className="col-md-6 pr-md-0">
+                                    <div className="col-md-6">
                                         <div className="card-box">
                                             <h3 className="title-default"> <span className="text-red"> Shoolini MBA:</span> Pick a Specialisation</h3>
                                             <p> Our future-ready MBA specialisations are <strong> designed by leading
@@ -1194,11 +1179,26 @@ const Mbas = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-6 pl-md-0">
-                                        <div className="voices-image position-relative">
-                                            <Image src="/assets/images/girlstudent.jpg" width={558} className="img-responsive" height={630} />
+                                    <div className="col-md-6">
+                                    <div className="card-box">
+                                            <h3 className="title-default"> Skill Development for Life-Long Learning </h3>
+                                            <p className="text-18">  <strong> SPRINT </strong>   <br /> Skill Progression through Rapid, Intensive & Innovative Training (SPRINT) is a week-long program focusing on industry exposure, and hands-on training through workshops, games and guest lectures. <br />
+                                                <br />
+                                                <strong>  Advanced Training Program (ATP) </strong>   <br />
+                                                The School of Business Management launched the fully residential Advanced Training Program (ATP). This 21-day program equips students with strong problem-solving skills and conceptual knowledge.
+                                                <br /><br />
+                                                <strong>  The Troops</strong><br />
+                                                The Troops Program brings students out of their comfort zones, ensuring they learn and excel outside the classroom with indoor and outdoor sports. These include trekking with a cause, tree plantations, case studies, etc.
+
+
+                                            </p>
+
+
+
 
                                         </div>
+
+                                        
                                     </div>
 
                                 </div>

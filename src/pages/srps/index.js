@@ -780,7 +780,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
    <div className="column">
      <div className="card card-box">
        <div className="icon-wrapper">
-         <i className="fa fa-flask"></i>
+       <i class="fa fa-users" aria-hidden="true"></i>
        </div>
        <h3> Top 1% Faculty </h3>
       
@@ -812,7 +812,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
 
                         <section id="Stories" className="student-voices">
                             <div className="container">
-                            <div class="pagetitle text-center mb-4"><h2>Success Stories </h2></div>
+                            <div class="pagetitle text-center mb-4"><h2> Our Students Who Have Gone Places Literally </h2></div>
 
                                 <div className="row">
                                 <Slider {...stories}> 
@@ -840,18 +840,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                         </div>
                                     </div>
 
-                                    <div className="col-md-4">
-                                    <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/fdl.jpeg" />
-                                        </div>
-                                        <div className="card-box">
-                                   
-                                            <h3 className="title-default">	Himachal’s First Commercial Food Testing Laboratory </h3>
-
-                                            <p className="text-18"> Shoolini University established Himachal’s first commercial Food Testing Lab: Shoolini Lifesciences with support from the Ministry of Food Processing Industries (MoFPI), Govt. of India. The total outlay of this lab is Rs 2.85 crore. 
-                                            </p>
-                                        </div>
-                                    </div>
+                                 
 
                                     <div className="col-md-4">
                                     <div className="cardImage">
@@ -873,7 +862,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                             </div>
                         </section>
 
-
+ 
                 
 
                         <section id="Abroad" className="student-voices">

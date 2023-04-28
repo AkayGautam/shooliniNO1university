@@ -141,7 +141,7 @@ const Engineering = () => {
                                 <div className="row">
                                     <div className="col-md-8">
                                         <div className="leftCatd">
-                                            <h1 className="mb-0"> <span> Shoolini Engineering </span> Diamond <br /> Rated on World Map </h1>
+                                            <h1 className="mb-0"> <span>  Engineering on World</span>  <br /> Map with Diamond Rating  </h1>
                                             <div className="noretype">
                                                 {/* <p className="border-right-1"> at India's No.1 <br /> Private University </p> */}
                                                 <p className="text-center py-0">
@@ -1105,7 +1105,7 @@ const Engineering = () => {
 
                                     <div className="col-md-6 pl-md-0">
                                         <div className="voices-image position-relative">
-                                            <Image src="/assets/images/eng-girl.jpg" width={558} className="img-responsive" height={600} />
+                                            <Image src="/assets/images/eng-girl.jpg" width={558} className="img-responsive" height={500} />
 
                                         </div>
                                     </div>

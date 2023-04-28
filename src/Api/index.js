@@ -125,3 +125,45 @@ export const GetFaq = async (url) => {
 
   return data;
 };
+
+export const GetNavigationSchema = async (url) => {
+  const res = await fetch(
+    `https://shooliniuniversity.com/media/GetNavigationSchemaAPI`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        auth: "shoolini@999",
+      }),
+    }
+  );
+  const data = await res.json();
+  if (data?.success) {
+    return data.success;
+  }
+
+  return {};
+};
+
+export const GetSiteLinkSchema = async (url) => {
+  const res = await fetch(
+    `https://shooliniuniversity.com/media/GetSiteLinkSchemaAPI`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        auth: "shoolini@999",
+      }),
+    }
+  );
+  const data = await res.json();
+  if (data?.success) {
+    return data.success;
+  }
+
+  return {};
+};

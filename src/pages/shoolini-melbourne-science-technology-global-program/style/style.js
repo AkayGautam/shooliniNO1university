@@ -4,11 +4,25 @@ import { colors } from '../../../components/common/elements/elements'
 const Styless = styled.div`
 
 
+.card-box h5 {
+    font-size: 18px;
+    font-weight: 900;
+}
+.card-box ul li {
+    font-weight: 400 !important;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
 .courselist.ht-custom {
-    max-height: 160px;
+    max-height: 340px;
     overflow: auto;
 }
-
+.border-right-1 {
+    border-right: 1px solid rgb(194, 194, 194);
+}
+.noretype {
+    border: 1px solid rgb(194, 194, 194);
+}
 section {
     font-family: CircularStd;
     background: #f5f5f7;
@@ -679,9 +693,7 @@ button.btnView {
 }
 
 .voices-image {
-    border-radius: 0px 30px 30px 0px;
     position: relative;
-    overflow: hidden;
 }
 
 
