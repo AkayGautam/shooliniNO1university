@@ -1,24 +1,17 @@
-import dynamic from "next/dynamic";
 import Header from "../components/Header";
 import SliderDemo from "../components/SliderDemo";
 import IconBox from "../components/IconBox";
 import Schema from "@/components/Schema";
-
-const Ranking = dynamic(() => import("../components/Ranking"));
-const Companies = dynamic(() => import("../components/Companies"));
-const ShooliniAdvantage = dynamic(() =>
-  import("../components/ShooliniAdvantage")
-);
-const Programmes = dynamic(() =>
-  import("../LayoutPages/School-Programe/Programmes")
-);
-const Testimonials = dynamic(() => import("../components/Testimonials"));
-const ResearchStories = dynamic(() => import("../components/ResearchStories"));
-const Events = dynamic(() => import("../LayoutPages/events/Events"));
-const GalleryView = dynamic(() => import("../components/GalleryView"));
-const ShooliniImpact = dynamic(() => import("../components/ShooliniImpact"));
-const ScrollButton = dynamic(() => import("../components/common/ScrollButton"));
-const Footer = dynamic(() => import("../components/Footer"));
+import Ranking from "../components/Ranking";
+import Companies from "../components/Companies";
+import ShooliniAdvantage from "../components/ShooliniAdvantage";
+import Programmes from "../LayoutPages/School-Programe/Programmes";
+import Testimonials from "../components/Testimonials";
+import ResearchStories from "../components/ResearchStories";
+import GalleryView from "../components/GalleryView";
+import ShooliniImpact from "../components/ShooliniImpact";
+import ScrollButton from "../components/common/ScrollButton";
+import Footer from "../components/Footer";
 
 export const server = process.env.BASE_URL;
 
@@ -61,8 +54,7 @@ export default function homepage({
   );
 }
 
-// // server side rendering
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(`https://shooliniuniversity.com/api/home`);
   const data = await res.json();
 
@@ -72,8 +64,9 @@ export async function getServerSideProps() {
       sitlinkSchema: data?.siteLink,
       programs: data.programs || [],
       testimonials: data.testimonials,
-      navigationSchema: data?.navigation,
-      sitlinkSchema: data?.siteLink,
+      navigationSchema: data?.navigation || [],
+      sitlinkSchema: data?.siteLink || [],
     },
+    revalidate: 300,
   };
 }
