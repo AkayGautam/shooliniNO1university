@@ -1692,7 +1692,7 @@ li.list-inline-item a:hover {
   max-height: inherit !important;
 }
 
-h5.formName {
+h2.formName {
   padding: 15px 10px;
   filter: none;
   background: none left top no-repeat rgb(0, 33, 71);

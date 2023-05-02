@@ -414,7 +414,7 @@ const GalleryView = () => {
                 </div>
               </div>
               <div id="section">
-                <h1>Think Inspiration</h1>
+                <h2>Think Inspiration</h2>
                 <p>from Nobel Laureates, Presidents, leaders and achievers</p>
                 <div className="vewGal"></div>
               </div>

@@ -5,7 +5,7 @@ import { Styles } from "./common/styles/header";
 import StickyMenu from "./common/StickyMenu";
 import MobileMenu from "./common/MobileMenu";
 import Link from "next/link";
-import ScrollButton from "../components/common/ScrollButton";
+import ScrollButton from "./common/ScrollButton";
 import SocialShare from "./SocialShare";
 import Slider from "react-slick";
 import Image from "next/legacy/image";
@@ -33,7 +33,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const Header = () => {
+const HeaderTwo = () => {
 
   useEffect(() => {
     // download brouchure
@@ -457,7 +457,7 @@ const Header = () => {
                               </li>
 
                             ) : (
-                             <span> </span>
+                              <span> </span>
                             )}
                           </li>
                         ) : (
@@ -573,4 +573,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderTwo;

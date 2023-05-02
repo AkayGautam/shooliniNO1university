@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "uniqClass": "box-icon box1",
+        "boxIcon": "flaticon-thumbs-like",
+        "title": 250,
+        "subTitle": "Global tie-ups  "
+    },
+    {
+        "id": "2",
+        "uniqClass": "box-icon box2",
+        "boxIcon": "flaticon-reading",
+        "title": 200,
+        "subTitle": "Shoolini students enrolled in foreign universities  "
+    },
+    {
+        "id": "3",
+        "uniqClass": "box-icon box3",
+        "boxIcon": "flaticon-teacher",
+        "title":150,
+        "subTitle": "International students enrolled at Shoolini  " 
+    }
+    ,
+    {
+        "id": "4",
+        "uniqClass": "box-icon box3",
+        "boxIcon": "flaticon-teacher",
+        "title": 50,
+        "subTitle": "Foreign faculty"
+    },
+    {
+        "id": "5",
+        "uniqClass": "box-icon box3",
+        "boxIcon": "flaticon-teacher",
+        "title": 900,
+        "subTitle": "Global research collaborations"
+    }
+]

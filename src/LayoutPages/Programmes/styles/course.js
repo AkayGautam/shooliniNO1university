@@ -847,12 +847,13 @@ export const Styless = styled.div`
           }
 
           .instructor-tab {
-            h5 {
+            h2, h5 {
               color: ${colors.black2};
               font-weight: 600;
               padding-bottom: 10px;
               margin-bottom: 35px;
               position: relative;
+              font-size:20px !important;
               &:before {
                 position: absolute;
                 content: '';
@@ -1080,10 +1081,12 @@ export const Styless = styled.div`
                 .comment-content {
                   .content-title {
                     .comment-writer {
-                      h6 {
-                        color: ${colors.black2};
+                      h3 {
+                        color: rgb(51, 51, 51) !important;
                         font-weight: 600;
                         margin-bottom: 10px;
+                        font-size: 1rem;
+                        text-transform: capitalize;
 
                         @media (max-width: 575px) {
                           font-size: 14px;
@@ -1179,17 +1182,27 @@ export const Styless = styled.div`
       }
     }
 
+    .course-details-feature .feature-list h3 {
+      font-size: 13px !important;
+      color: #333 !important;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: capitalize !important;
+  }
+
     .single-details-sidbar {
       .course-details-feature {
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         padding: 15px 20px 20px;
-        h5.title {
+        font-size:20px !important;
+        h2.title {
           color: ${colors.black1};
           font-weight: 600;
           padding-bottom: 10px;
           margin-bottom: 20px;
           position: relative;
+          font-size:20px !important;
           &:before {
             position: absolute;
             content: '';
@@ -2014,5 +2027,20 @@ p.secrty {
   font-size: 13px !important;
 }
 
+h3.faqTitle {
+  text-transform: inherit !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  color: #333 !important;
+}
+.course-desc  h3.faqTitle  
+{
+ color: #333 !important;
+}
+.course-desc h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
 
 `

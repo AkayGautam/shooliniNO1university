@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Styles = styled.div` 
 
-.gal_container h1 {
-  font-weight: 900;
+.gal_container h2 {
+  font-weight: 700;
   font-size: 50px;
   text-transform: uppercase;
   color: #f02f2f;

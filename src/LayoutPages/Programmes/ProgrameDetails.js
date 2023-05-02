@@ -213,9 +213,9 @@ function ProgrameDetails({ data, id, ldJson }) {
                           <Tab.Pane
                             eventKey="instructor"
                             className="instructor-tab"
-                          >
-                            <h5>Course Instructors</h5>
-
+                          >   
+                            <h2>Course Instructors</h2>
+   
                             <div className="instructor-item">
                               <Row>
                                 {data[1] &&
@@ -279,7 +279,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                         <div className="comment-content">
                                           <div className="content-title d-flex justify-content-between">
                                             <div className="comment-writer">
-                                              <h6>{row?.name}</h6>
+                                              <h3>{row?.name}</h3>
                                             </div>
                                           </div>
                                           <div className="comment-desc">
@@ -299,7 +299,7 @@ function ProgrameDetails({ data, id, ldJson }) {
 
                           <Tab.Pane eventKey="faq" className="faq-tab">
                             <div className="course-desc">
-                              <h5>Frequently Asked Questions</h5>
+                              <h2>Frequently Asked Questions</h2>
                               <div>
                                 {posTFaq &&
                                   posTFaq.map((row, idx) => (
@@ -312,7 +312,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                         aria-controls="panel1d-content"
                                         id="panel1d-header"
                                       >
-                                        <Typography>{row?.name}</Typography>
+                                        <h3 className="faqTitle">{row?.name}</h3>
                                       </AccordionSummary>
                                       <AccordionDetails>
                                         <Typography>
@@ -342,27 +342,27 @@ function ProgrameDetails({ data, id, ldJson }) {
                     <Row>
                       <Col md="12">
                         <div className="course-details-feature">
-                          <h5 className="title">Course Details</h5>
+                          <h2 className="title">Course Details</h2>
                           <ul className="list-unstyled feature-list">
                             <li>
-                              <i className="las la-calendar"></i> Eligibility:{" "}
-                              <span>{data[0]?.eligibility}</span>
+                              <h3> <i className="las la-calendar"></i> Eligibility:{" "}
+                              <span>{data[0]?.eligibility}</span> </h3>
                             </li>
 
                             <li>
-                              <i className="las la-sort-amount-up"></i>{" "}
+                            <h3>  <i className="las la-sort-amount-up"></i>{" "}
                               Admission Criteria:{" "}
-                              <span>{data[0]?.admission_criteria}</span>
+                              <span>{data[0]?.admission_criteria}</span> </h3>
                             </li>
                             <li>
-                              <i className="las la-clock"></i> Duration:{" "}
-                              <span>{data[0]?.duration}</span>
+                            <h3>   <i className="las la-clock"></i> Duration:{" "}
+                              <span>{data[0]?.duration}</span> </h3>
                             </li>
 
 
                             <li>
-                              <i className="las la-certificate"></i>
-                              Semester Fee
+                            <h3>  <i className="las la-certificate"></i>
+                              Semester Fee </h3>
                               
                               <div className="fessOf">
                                 <h5>
@@ -388,7 +388,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                             * One-time refundable security fee of Rs. 10,000
                           </p>  */}
                           <div className="sideBarNew mt-3">
-                          <h5 className="formName"> {data[0]?.rightsideadmition} </h5>
+                          <h2 className="formName"> {data[0]?.rightsideadmition} </h2>
                           <AdmissionFormSidebar />
                           </div>
                          
@@ -400,7 +400,7 @@ function ProgrameDetails({ data, id, ldJson }) {
 
                           {gallery.length > 0 && (
                             <div>
-                              <h5>Gallery</h5>
+                              <h2 className="title">Gallery</h2> 
                               <Row>
                                 <Slider {...settings}>
                                   {gallery.map((row, idx) => (

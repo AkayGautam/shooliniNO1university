@@ -1,0 +1,12 @@
+[
+   
+    {
+        "id": "2",
+        "backgroundImage": "slider-2.jpg",
+        "uniqClass": "slider-box slider-box2 text-right",
+        "title": "Ground-breaking research driven by world-class academic excellence",
+        "desc": "At India's No.1* Research University",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
+    }
+]

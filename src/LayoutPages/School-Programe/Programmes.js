@@ -50,14 +50,23 @@ const Programmes = ({ programs }) => {
                       return (
                         <Fragment key={index}>
                           <div id={data?.slug} className="col-md-4">
+
                             <div className="programme_card">
+                            <div className="featured_img">
+<img className="img-fluid w-100" src={`${data?.image_url}`} />  </div>
                               <div className="programme_detail">
                                 <h3> {data?.title} </h3>
+                             
+
                                 <ul className="programme_list">
                                   {data.courses &&
                                     data.courses.map((i, idx) => {
                                       return (
                                         <li key={idx}>
+
+
+
+
 
                                           {data.title == "Computer Science Engineering" ? (
                                             <Link state={{ school: true }}

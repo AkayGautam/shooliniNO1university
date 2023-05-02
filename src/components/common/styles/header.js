@@ -756,7 +756,8 @@ ul.nav.menu-nav li:nth-child(6) a.newSearch {
   display: block;
 }
 .newSearch {
-  display: none !important;
+  position: absolute;
+  top: 0;
 }
 
 ul.nav.menu-nav li:nth-child(2) ul.dropdown .nav-link {

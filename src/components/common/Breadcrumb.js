@@ -20,7 +20,7 @@ export class BreadcrumbBox extends Component {
             <Row>
               <Col md="12" className="text-center">
                 <div className="breadcrumb-box mt-5">
-                  <h2 className="breadcrumb-title">{this.props.title}</h2>
+                  <h1 className="breadcrumb-title">{this.props.title}</h1>
                 </div>
               </Col>
             </Row>

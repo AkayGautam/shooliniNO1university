@@ -71,4 +71,11 @@ export const Styles = styled.div`
       padding: 30px 0;
     }
   }
+
+  h1.breadcrumb-title {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+  }
 `
