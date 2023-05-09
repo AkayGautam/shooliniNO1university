@@ -5,6 +5,11 @@ export const Styles = styled.div`
   .event-page {
     background: #fff;
 
+    h4.event-title a {
+      color: #999;
+  }
+  
+
     .dflex-card {
       width: 100%;
     }
@@ -453,7 +458,9 @@ overflow: hidden;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
-
+h4.event-title a {
+  color: #999;
+}
 
 
 

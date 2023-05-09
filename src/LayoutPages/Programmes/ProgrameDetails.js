@@ -30,6 +30,8 @@ import Head from "next/head";
 import Link from "next/link";
 import SuspenseBoundary from "../../helper/SuspenseBoundary";
 import Slider from "react-slick";
+import Template from "@/components/Template";
+import Datas from "../../data/school/school.json";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -68,6 +70,13 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 function ProgrameDetails({ data, id, ldJson }) {
+
+  const bgImg = data[0].slides
+  ? JSON.parse(data[0].slides)[0]
+  : `/assets/images/${Datas[0].backgroundImage}`;
+
+
+
   const [isActive, setActive] = useState(false);
   const [jsonLd, setJsonLd] = useState({});
   const toggleClass = () => {
@@ -137,6 +146,8 @@ function ProgrameDetails({ data, id, ldJson }) {
         {/* Header 2 */}
         <Header />
 
+        {/* <Template title={data[0]?.title} img={bgImg?.image_url} /> */}
+
         {/* Breadcroumb */}
         <BreadcrumbBox title={data[0].title} />
 
@@ -167,11 +178,11 @@ function ProgrameDetails({ data, id, ldJson }) {
                             </Nav.Link>
                           </Nav.Item>
 
-                          <Nav.Item>
+                          {/* <Nav.Item>
                             <Nav.Link eventKey="curriculum">
                               Curriculum
                             </Nav.Link>
-                          </Nav.Item>
+                          </Nav.Item> */}
 
                           <Nav.Item>
                             <Nav.Link eventKey="faq">FAQs</Nav.Link>
@@ -189,7 +200,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                 }}
                               ></p>
 
-                              <h5> Career Opportunities </h5>
+                              <h2> Career Opportunities in {data[0].title}  </h2>
                               <p
                                 dangerouslySetInnerHTML={{
                                   __html: data[0]?.career_opportunities,
@@ -213,8 +224,8 @@ function ProgrameDetails({ data, id, ldJson }) {
                           <Tab.Pane
                             eventKey="instructor"
                             className="instructor-tab"
-                          >   
-                            <h2>Course Instructors</h2>
+                          >    
+                            <h3>Course Instructors  </h3>
    
                             <div className="instructor-item">
                               <Row>

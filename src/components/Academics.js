@@ -50,9 +50,6 @@ const Academics = ({ id, data, ldJson }) => {
   }, [ldJson]);
 
 
- 
-
-
   const bgImg = data[0].slides
     ? JSON.parse(data[0].slides)[0]
     : `/assets/images/${Datas[0].backgroundImage}`;

@@ -2,6 +2,10 @@ import styled from 'styled-components'
 import { colors } from '../../../components/common/elements/elements'
 
 const Styles = styled.div`
+
+
+
+
   .admission-img {
     position: relative;
     padding-top: 70px;
@@ -310,13 +314,16 @@ const Styles = styled.div`
 
     .sec-title h2 {
       font-weight: 700;
-      font-size: 58px;
-      text-transform: uppercase;
+      font-size: 48px;
       color: #f02f2f;
       line-height: 1;
       border: 0;
       padding: 0;
       margin: 0;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: unset !important;
+
     }
     .sec-title h4 {
       text-transform: uppercase;
@@ -701,12 +708,11 @@ const Styles = styled.div`
 
 
 .sec-title h2 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 48px;
   text-transform: uppercase;
   color: #f02f2f;
   line-height: 1;
-  margin: 50px 0;
 }
   .campus-tour {
       background: ${colors.bg2};
@@ -767,14 +773,180 @@ const Styles = styled.div`
   .item {
     margin: 0 15px;
 }
+
+
 .dlab-box.courses-bx {
-  background: rgb(255, 255, 255);
+  background: rgb(255,255,255);
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
-  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0px;
 }
 h6.dlab-title {
   font-weight: 600;
 }
+
+.step-img4 {
+  margin-right: -350px;
+  margin-left: -35px;
+}
+.step-img3 {
+  margin-left: -350px;
+  margin-right: -15px;
+}
+.pr-5 {
+  padding-right: 5rem;
+}
+section.steps-area2 {
+  background-color: #e41a1a;
+  overflow: hidden;
+}
+.animations-08 {
+  position: absolute;
+  right: 50px;
+  top: 250px;
+  animation: alltuchtopdown 5s infinite;
+  -webkit-animation: alltuchtopdown 5s infinite;
+  animation-delay: 0s;
+  -webkit-animation-delay: 3s;
+}
+h6.dlab-title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+.dlab-info {
+  padding: 5px 23px 30px 25px;
+}
+.max-70 {
+  max-width: 980px;
+  margin: auto;
+  text-align: center;
+}
+
+.steps-area2
+{
+  position:relative;
+  ovreflow:hidden;
+}
+ul.why-choose__list-item li {
+  flex-basis: 23.33%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+ul.why-choose__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+ul.why-choose__list-item li {
+  background: #f9f1d8;
+  padding: 24px;
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+}
+.why-choose__list-item li:nth-child(odd){
+  background-color: #ffe6e6;
+}
+
+.why-choose__list-item li:nth-child(even) {
+  background-color: #efebf4;
+}
+span.icon i {
+  font-size: 30px;
+  color: #1467d8;
+}
+span.icon {
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 12px;
+}
+section.newslater-area {
+  background-color: #125875;
+}
+.newslater-title {
+  display: flex;
+}
+.newslater-title .icon {
+  margin-right: 30px;
+  line-height: 74px;
+}
+.newslater-title .text h2 {
+  font-size: 40px;
+}
+
+.newslater-area h2 {
+  color: #fff;
+  font-size: 45px;
+}
+.newslater-area p {
+  color: #fff;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+button#send2 {
+    font-size: 16px;
+    color: #ffffff;
+    background: #e41a1a;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    position: relative;
+    line-height: 40px;
+    padding: 8px 50px;
+}
+
+.contentslider .Heroslider {
+  position: relative;
+}
+.HerosliderText {
+  position: absolute;
+  top: 30%;
+  z-index: 99;
+  left: 10%;
+}
+.contentslider {
+  position: relative;
+  overflow: hidden;
+}
+.HerosliderText h1 {
+  font-weight: 900;
+  font-size: 70px;
+  max-width: 60%;
+  color: #e41a1a;
+  text-shadow: 3px 5px #fff;
+}
+
+.introText {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  max-width: 980px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
+  margin: 50px auto;
+}
+
+
 
 `
 

@@ -63,12 +63,16 @@ const nextConfig = {
         destination: "/apply-addmission/index.html",
       },
       {
-        source: "/srp-test", 
+        source: "/demo-page", 
         destination: "/srp-lp/index.html",
       },
       {
         source: "/admissions-test", 
         destination: "/admissions/index.html",
+      },
+      {
+        source: "/bihar-exam-page", 
+        destination: "/bihar-exam-page/index.html",
       }
     ];
   },

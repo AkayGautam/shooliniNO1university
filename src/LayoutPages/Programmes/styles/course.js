@@ -2043,4 +2043,11 @@ h3.faqTitle {
   font-weight: 600;
 }
 
+
+.sliderForBio {
+  background: url(../assets/images/heroImgforCourse.jpg);
+  background-size: 100%;
+  background-position: bottom;
+}
+
 `

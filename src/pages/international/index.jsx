@@ -1,5 +1,5 @@
 import React, { useEffect, Suspense } from "react";
-import Header from "../../components/Header";
+import HeaderTwo from "@/components/HeaderTwo";
 import Footer from "../../components/Footer";
 import BreadcrumbBox from "../../components/common/Breadcrumb";
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
@@ -109,7 +109,7 @@ const International = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -151,26 +151,43 @@ const International = () => {
           <meta name="keywords" content="International Students Program" />
         </Head>
 
-        <Header />
+        <HeaderTwo />
 
+        <Styles>
+          
         <div className="contentslider">
           <Slider {...settingslider}>
             <div>
-              <img
-                className="w-100"
-                src="https://www.sparkadmissions.com/wp-content/uploads/2021/05/College-Admissions-Trends-2020-2021-scaled.jpg"
-              />
+              <div className="Heroslider">
+                <div className="Herosliderimage"> 
+                  <img
+                    className="w-100"
+                    src="assets/video/heroInternational.jpg"
+                  />
+                  </div> 
+                  <div className="HerosliderText"> 
+                      <h1> Go Global with Shoolini University </h1>
+                  </div> 
+              </div>
+              
             </div>
             <div>
-              <img
-                className="w-100"
-                src="https://www.sparkadmissions.com/wp-content/uploads/2021/05/College-Admissions-Trends-2020-2021-scaled.jpg"
-              />
+            <div className="Heroslider">
+                <div className="Herosliderimage"> 
+                  <img
+                    className="w-100"
+                    src="assets/video/heroInternational.jpg"
+                  />
+                  </div> 
+                  <div className="HerosliderText"> 
+                      <h1> Go Global with Shoolini University </h1>
+                  </div> 
+              </div>
             </div>
           </Slider>
         </div>
 
-        <Styles>
+     
           <section className="icon-box-area pt-md-4 mt-2">
             <Container>
               <Row>
@@ -196,43 +213,11 @@ const International = () => {
               </Row>
             </Container>
           </section>
-
-          <section className="rankinglist-area">
-            <Container>
-              <Row>
-                <Col md="12">
-                  <div className="sec-title text-center">
-                    <h2 className="border-0">
-                      <span> Welcome to </span> Shoolini International{" "}
-                    </h2>
-                  </div>
-                </Col>
-                <Col md="12">
-                  <div className="shad-card">
-                    <p>
-                      {" "}
-                      The education landscape is evolving, and Shoolini is fast
-                      emerging as a global destination of learning. This new
-                      paradigm calls for us to break away from differences in
-                      language, culture, and nationality to participate in
-                      globalisation.
-                      <br />
-                      <br />
-                      Shoolini University develops global leaders who can
-                      skillfully communicate innovative ideas across borders and
-                      create a global community.
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-
           <section className="ResearchAtGlance-area">
             <Container>
               <Row>
-                <Col md="12" className="mb-5 pb-md-4">
-                  <div data-aos="fade-right" className="sec-title text-left">
+                <Col md="12" className="mb-3 pb-md-4">
+                  <div className="sec-title max-70 text-left">
                     <h2>Why Choose Shoolini? </h2>
                     <p>
                       {" "}
@@ -250,11 +235,11 @@ const International = () => {
 
               <Row>
                 <Slider {...settingslide}>
-                <div className="slikdeItem">
+                  <div className="slikdeItem">
                     <div className="item">
                       <div className="dlab-box courses-bx">
                         <div className="dlab-media">
-                          <img src="assets/img/our-services/pic2.jpg" alt="" />
+                          <img src="http://htmldemo.zcubethemes.com/qeducato/img/blog/inner_b2.jpg" alt="" />
                         </div>
                         <div className="dlab-info">
                           <h6 className="dlab-title">
@@ -262,7 +247,12 @@ const International = () => {
                             Clean ‘n’ Green Campus{" "}
                           </h6>
                           <p>
-                          Our award-winning clean and green campus is at par with international standards and in sync with nature. The watchword on the campus, Go Green, makes sure that all students, faculty, management, and staff are working tirelessly towards environment sustainability.  {" "}
+                            Our award-winning clean and green campus is at par
+                            with international standards and in sync with
+                            nature. The watchword on the campus, Go Green, makes
+                            sure that all students, faculty, management, and
+                            staff are working tirelessly towards environment
+                            sustainability.{" "}
                           </p>
                         </div>
                       </div>
@@ -272,15 +262,15 @@ const International = () => {
                     <div className="item">
                       <div className="dlab-box courses-bx">
                         <div className="dlab-media">
-                          <img src="assets/img/our-services/pic2.jpg" alt="" />
+                          <img src="http://htmldemo.zcubethemes.com/qeducato/img/blog/inner_b2.jpg" alt="" />
                         </div>
                         <div className="dlab-info">
-                          <h6 className="dlab-title">
-                            {" "}
-                            Weather{" "}
-                          </h6>
+                          <h6 className="dlab-title"> Weather </h6>
                           <p>
-                          The cool summers and pleasant sunny winters on the campus make Shoolini an ideal place to learn and grow. The daytime temperature varies between 5 - 28 degrees Celsius{" "}
+                            The cool summers and pleasant sunny winters on the
+                            campus make Shoolini an ideal place to learn and
+                            grow. The daytime temperature varies between 5 - 28
+                            degrees Celsius{" "}
                           </p>
                         </div>
                       </div>
@@ -291,7 +281,7 @@ const International = () => {
                     <div className="item">
                       <div className="dlab-box courses-bx">
                         <div className="dlab-media">
-                          <img src="assets/img/our-services/pic2.jpg" alt="" />
+                          <img src="http://htmldemo.zcubethemes.com/qeducato/img/blog/inner_b2.jpg" alt="" />
                         </div>
                         <div className="dlab-info">
                           <h6 className="dlab-title">
@@ -299,7 +289,11 @@ const International = () => {
                             Safe ‘n’ Secure Dormitory{" "}
                           </h6>
                           <p>
-                          The hostel life on the campus is unique, where students are exposed to the diverse Indian culture. The American MNC, Good Host Spaces manages the hostels, providing the best facilities and amenities.{" "}
+                            The hostel life on the campus is unique, where
+                            students are exposed to the diverse Indian culture.
+                            The American MNC, Good Host Spaces manages the
+                            hostels, providing the best facilities and
+                            amenities.{" "}
                           </p>
                         </div>
                       </div>
@@ -310,15 +304,20 @@ const International = () => {
                     <div className="item">
                       <div className="dlab-box courses-bx">
                         <div className="dlab-media">
-                          <img src="assets/img/our-services/pic2.jpg" alt="" />
+                          <img src="http://htmldemo.zcubethemes.com/qeducato/img/blog/inner_b2.jpg" alt="" />
                         </div>
                         <div className="dlab-info">
                           <h6 className="dlab-title">
                             {" "}
-                            Himalayan Sustainability  {" "}
+                            Himalayan Sustainability{" "}
                           </h6>
                           <p>
-                          Nestled in the Himalayas, Shoolini has developed intrinsic strengths for joint research on sustainability in the Himalayan region with international counterparts. We have also partnered with another 150+ global universities in research areas.   {" "}
+                            Nestled in the Himalayas, Shoolini has developed
+                            intrinsic strengths for joint research on
+                            sustainability in the Himalayan region with
+                            international counterparts. We have also partnered
+                            with another 150+ global universities in research
+                            areas.{" "}
                           </p>
                         </div>
                       </div>
@@ -329,31 +328,170 @@ const International = () => {
                     <div className="item">
                       <div className="dlab-box courses-bx">
                         <div className="dlab-media">
-                          <img src="assets/img/our-services/pic2.jpg" alt="" />
+                          <img src="http://htmldemo.zcubethemes.com/qeducato/img/blog/inner_b2.jpg" alt="" />
                         </div>
                         <div className="dlab-info">
-                          <h6 className="dlab-title">
-                            {" "}
-                            Scholarships {" "}
-                          </h6>
+                          <h6 className="dlab-title"> Scholarships </h6>
                           <p>
-                          The Office of International Affairs team at Shoolini is instrumental in finding the best scholarship for inbound and outbound students.   {" "}
+                            The Office of International Affairs team at Shoolini
+                            is instrumental in finding the best scholarship for
+                            inbound and outbound students.{" "}
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-
                 </Slider>
               </Row>
             </Container>
           </section>
 
-          <section className="content2 bg-white pt-5">
+          <section className="steps-area2 p-relative fix">
             <div className="container">
-              <div class="section-title">
-                <h3> LIST OF COUNTRIES </h3>
+              <div className="row align-items-center">
+                <div className="col-lg-6 col-md-12">
+                  <div className="step-img3">
+                    <img src="assets/images/steps-img-3.png" alt="className image" />
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12">
+                  <div className="step-box step-box3">
+                   
+                    <div className="text">
+                      <div className="sec-title">
+                        <h2 className="border-0 text-white">
+                          <span className="text-white"> Welcome to </span> Shoolini International{" "}
+                        </h2>
+                      </div>
+                      <p className="text-white">
+                      {" "}
+                      The education landscape is evolving, and Shoolini is fast
+                      emerging as a global destination of learning. This new
+                      paradigm calls for us to break away from differences in
+                      language, culture, and nationality to participate in
+                      globalisation.
+                      <br />
+                      <br />
+                      Shoolini University develops global leaders who can
+                      skillfully communicate innovative ideas across borders and
+                      create a global community.
+                    </p>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </section>
+
+ <section className="steps-area2 p-relative fix">
+            <div className="container">
+              <div className="row align-items-center">
+                
+                <div className="col-lg-6 col-md-12">
+                  <div className="step-box step-box3">
+                   
+                    <div className="text pr-5">
+                      <div className="sec-title">
+                        <h2 className="border-0 text-white">
+                        Office of International Affairs
+                        </h2>
+                      </div>
+                      <p className="text-white">
+                      {" "}
+                      The Office of International Affairs (OIA) handles collaborations between Shoolini University and foreign universities & institutes. This includes creating partnerships, facilitating student & faculty exchanges, as well as organising joint research collaboration. The OIA team also offers administrative support to international students & visiting foreign faculty members so they can smoothly adapt to life in India.  
+ As a one-stop service centre, the OIA provides assistance in the areas of visa affairs, insurance, housing, and academic affairs. Members of the OIA are committed and dedicated to delivering top-quality services to teachers and students.  
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12">
+                  <div className="step-img4">
+                    <img src="assets/images/steps-img-3.png" alt="className image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+         
+
+          <div id="features" class="why-choose section-padding-01">
+            <div class="container">
+            <div className="sec-title max-70 text-left border-0">
+                    <h2 className="border-0">Main Activities </h2>
+               
+                  </div>
+          <div className="why-choose__wrapper">
+                    
+
+                    <div className="why-choose__banner aos-init aos-animate">
+                    <ul className="why-choose__list-item">
+                                    <li>
+                                        <span className="icon"><i className="fab fa-font-awesome"></i></span>
+                                        <span className="text">Facilitate Semester Abroad with international universities.   </span>
+                                    </li>
+                                    <li>
+                                        <span className="icon"><i className="fas fa-headset"></i></span>
+                                        <span className="text">Support for exchange of faculty members. </span>
+                                    </li>
+                                    <li>
+                                        <span className="icon"><i className="fas fa-bezier-curve"></i></span>
+                                        <span className="text">Support for international activities.  </span>
+                                    </li>
+                                    <li>
+                                        <span className="icon"><i className="fas fa-check-double"></i></span>
+                                        <span className="text">Facilitating Certification Yoga programs  </span>
+                                    </li>
+
+                                    <li>
+                                        <span className="icon"><i className="fas fa-icons"></i></span>
+                                        <span className="text">Support information for worldwide scholarships.  </span>
+                                    </li>
+                                    <li>
+                                        <span className="icon"><i className="fas fa-code"></i></span>
+                                        <span className="text">Support for international students and foreign visiting faculty.   </span>
+                                    </li>
+                                    <li>
+                                        <span className="icon"><i className="fas fa-icons"></i></span>
+                                        <span className="text">Faculty development programs with international support.   </span>
+                                    </li>
+                                  
+
+                                   
+                                </ul>
+                        <div className="why-choose__banner-bg"></div>
+                    </div>
+                </div>
+                </div>
+                </div>
+              
+
+                <section className="newslater-area pt-60 pb-60">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-xl-7 col-lg-7">
+                            <div className="section-title newslater-title">
+                                <div className="icon">
+                                    <img src="http://htmldemo.zcubethemes.com/qeducato/img/icon/send-mail.png" alt="img" />
+                                </div>
+                                <div className="text">
+                                    <h2>All You Need to Know</h2>
+                                    <p>Manage Your Business With Our Software</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div className="col-xl-5 col-lg-5 text-center">
+                              <button type="submit" className="btn btn-custom" id="send2">Download Guidebook</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+          
+          <section className="content2 bg-white">
+            <div className="container">
+             
               <div className="row">
                 <Slider {...settingsLogo}>
                   <div className="col-4 col-sm-4 col-md-2	col-lg-2 col-xl-2">

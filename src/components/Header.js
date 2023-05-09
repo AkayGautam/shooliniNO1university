@@ -121,6 +121,7 @@ const Header = () => {
         <DialogContent>
 
           <DialogContentText id="alert-dialog-slide-description">
+            <h4 className="text-center"> Enquire Now! </h4>
             <div class="npf_wgts" data-height="400px" data-w="b7a96773936817725d0a4442d6310f28"></div>
           </DialogContentText>
         </DialogContent>

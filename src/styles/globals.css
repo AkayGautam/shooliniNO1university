@@ -58,13 +58,12 @@ a {
 }
 section.course-details-area h3,
 section.course-details-area h4 {
-  font-weight: 700;
-  line-height: 34px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
+  font-weight: 600;
+  line-height: 24px;
   color: #f02f2f !important;
   font-style: normal;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 .App-header {
   background-color: #282c34;
@@ -76,6 +75,11 @@ section.course-details-area h4 {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.overview-tab h2 span {
+  font-family: 'Poppins' !important;
+  font-weight: 600;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -806,6 +810,9 @@ img.flagTirnga {
 }
 .admidsionProcess ul li ul {
   margin: 0 !important;
+}
+.admidsionProcess ul {
+  margin: 10px 0px !important;
 }
 .admidsionProcess ul li ul li:after {
   background-color: transparent !important;

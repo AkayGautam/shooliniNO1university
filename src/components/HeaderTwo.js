@@ -34,15 +34,14 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 const HeaderTwo = () => {
-
   useEffect(() => {
     // download brouchure
-    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
-
-
-  }, [])
-
-
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://widgets.nopaperforms.com/emwgts.js";
+    document.body.appendChild(s);
+  }, []);
 
   const [open, setOpen] = React.useState(false);
   const [opens, setOpens] = React.useState(false);
@@ -54,10 +53,9 @@ const HeaderTwo = () => {
     setOpen(true);
   };
 
-  const handleClick = event => {
-    setIsActive(current => !current);
+  const handleClick = (event) => {
+    setIsActive((current) => !current);
   };
-
 
   const handleClickOpen_one = (e) => {
     e.preventDefault();
@@ -70,8 +68,6 @@ const HeaderTwo = () => {
   const handleClose_one = () => {
     setOpens(false);
   };
-
-
 
   const [links, setLinks] = useState([]);
 
@@ -93,7 +89,6 @@ const HeaderTwo = () => {
 
   return (
     <Styles>
-
       {/* for broucher  */}
       <Dialog
         open={open}
@@ -103,13 +98,15 @@ const HeaderTwo = () => {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogContent>
-
           <DialogContentText id="alert-dialog-slide-description">
-            <div class="npf_wgts" data-height="400px" data-w="d095e55a1f298e67da8279133413215f"></div>
+            <div
+              class="npf_wgts"
+              data-height="400px"
+              data-w="d095e55a1f298e67da8279133413215f"
+            ></div>
           </DialogContentText>
         </DialogContent>
       </Dialog>
-
 
       <Dialog
         open={opens}
@@ -119,47 +116,80 @@ const HeaderTwo = () => {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogContent>
-
           <DialogContentText id="alert-dialog-slide-description">
-            <div class="npf_wgts" data-height="400px" data-w="b7a96773936817725d0a4442d6310f28"></div>
+            <div
+              class="npf_wgts"
+              data-height="400px"
+              data-w="b7a96773936817725d0a4442d6310f28"
+            ></div>
           </DialogContentText>
         </DialogContent>
       </Dialog>
 
-
-
-      <div className={isActive ? 'bg-salmon2 sticky-icon showcase' : 'bg-salmon2 sticky-icon'} >
-
+      <div
+        className={
+          isActive
+            ? "bg-salmon2 sticky-icon showcase"
+            : "bg-salmon2 sticky-icon"
+        }
+      >
         {/* <button className={isActive ? 'bg-salmon showcase' : 'showcase'} onClick={handleClick}> 
    <span className="iconsFile"> <FaChevronLeft /> </span>
 </button>    */}
 
+        <a
+          onClick={handleClickOpen}
+          href="/"
+          className="Instagram pointer-none"
+        >
+          <span className="iconsFile">
+            {" "}
+            <FaFileAlt />{" "}
+          </span>
 
-        <a onClick={handleClickOpen} href="/" className="Instagram pointer-none">
-          <span className="iconsFile"> <FaFileAlt /> </span>
+          <span className="icnName"> Brochure </span>
+        </a>
 
-          <span className="icnName"> Brochure </span></a>
-
-        <a target="_blank" href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events" className="Instagram">
-          <span className="iconsFile"> <FaRegCalendarAlt /> </span>
-          <span className="icnName">Events</span> </a>
+        <a
+          target="_blank"
+          href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events"
+          className="Instagram"
+        >
+          <span className="iconsFile">
+            {" "}
+            <FaRegCalendarAlt />{" "}
+          </span>
+          <span className="icnName">Events</span>{" "}
+        </a>
 
         <a onClick={handleClickOpen_one} href="/" className="Instagram">
-          <span className="iconsFile"> <FaClipboardList /> </span>
-          <span className="icnName">Admissions</span> </a>
+          <span className="iconsFile">
+            {" "}
+            <FaClipboardList />{" "}
+          </span>
+          <span className="icnName">Admissions</span>{" "}
+        </a>
 
-        <a target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=admissions&utm_campaign=admissions" class="Instagram pointer-none">
-          <span className="iconsFile"> <FaPen /> </span>
-          <span className="icnName">Apply Now</span> </a>
+        <a
+          target="_blank"
+          href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=admissions&utm_campaign=admissions"
+          class="Instagram pointer-none"
+        >
+          <span className="iconsFile">
+            {" "}
+            <FaPen />{" "}
+          </span>
+          <span className="icnName">Apply Now</span>{" "}
+        </a>
 
         <a target="_blank" href="tel:+919625233301" className="Instagram">
-          <span className="iconsFile"> <FaPhoneAlt /> </span>
-          <span className="icnName">Call Now</span> </a>
-
+          <span className="iconsFile">
+            {" "}
+            <FaPhoneAlt />{" "}
+          </span>
+          <span className="icnName">Call Now</span>{" "}
+        </a>
       </div>
-
-
-
 
       <div className="notification-top-bar">
         <Slider {...settings}>
@@ -399,7 +429,6 @@ const HeaderTwo = () => {
                     className="brandLogo"
                     width={140}
                     height={75}
-
                   />
                 </Link>
               </div>
@@ -409,135 +438,65 @@ const HeaderTwo = () => {
               <div className="main-menu-box">
                 <div className="menu-box d-flex justify-content-end">
                   <ul className="nav menu-nav">
-                    {links &&
-                      links.map((row, index) => {
-                        return row?.sub_menu.length === 0 ? (
-                          <li className="nav-item dropdown active" key={index}>
-                            {row.text === "HOME" ? (
-                              <Link
-                                href="/"
-                                className="nav-link dropdown-toggle"
-                              >
-                                {row.text}
-                              </Link>
-                            ) : (
-                              <Link
-                                href={`/${row.link}`}
-                                className="nav-link dropdown-toggle"
-                                data-toggle="dropdown"
-                              >
-                                {row.text}
-                              </Link>
-                            )}
-                            {row.text === "research" ? (
-                              <li> <Link
-                                href="https://research.shooliniuniversity.com/"
-                                className="nav-link dropdown-toggle newSearch"
-                                target={"_blank"}
-                              >
-                                {row.text}
-                              </Link>
-                                <ul className="dropdown list-unstyled">
-                                  <li className="nav-item navItem_unpos">
-                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/Benchmarks">   Benchmarks     </Link>
-                                  </li>
-                                  <li className="nav-item navItem_unpos">
-                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/support-researchers">   Support for Researchers     </Link>
-                                  </li>
-                                  <li className="nav-item navItem_unpos">
-                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/scholarship">     Scholarships      </Link>
-                                  </li>
-                                  <li className="nav-item navItem_unpos">
-                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/phd-programmes">      PhD Programs        </Link>
-                                  </li>
-                                  <li className="nav-item navItem_unpos">
-                                    <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/National-Calls">      Research Grants    </Link>
-                                  </li>
-                                </ul>
-                              </li>
 
-                            ) : (
-                              <span> </span>
-                            )}
-                          </li>
-                        ) : (
-                          <li className="nav-item dropdown" key={index}>
-                            <Link
-                              href={row.link === "#" ? "#" : `/${row.link}`}
-                              className="nav-link dropdown-toggle"
-                              data-toggle="dropdown"
-                            >
-                              {row.text} <i className="las la-angle-down"></i>
-                            </Link>
+                  <li className="nav-item actiev">
+                      <Link
+                        href="/"
+                        className="nav-link"
+                      >
+                        Home
+                      </Link>
+                    </li>
 
-                            <ul className="dropdown list-unstyled">
-                              {row?.sub_menu.map((sub, i) => {
-                                return (
-                                  <li
-                                    className="nav-item navItem_unpos"
-                                    key={i}
-                                  >
-                                    {sub.text ===
-                                      "All Shoolini Faculty List" ? (
-                                      <Link
-                                        href={`${sub.link}`}
-                                        className="nav-link"
-                                      >
-                                        {sub.text}
-                                        {sub?.sub_menu?.length > 0 && (
-                                          <i className="las la-angle-down"></i>
-                                        )}
-                                      </Link>
-                                    ) : (
-                                      <Link
-                                        href={`/${sub.link}`}
-                                        className="nav-link"
-                                      >
-                                        {sub.text}
-                                        {sub?.sub_menu?.length > 0 && (
-                                          <i className="las la-angle-down"></i>
-                                        )}
-                                      </Link>
-                                    )}
+                    <li className="nav-item">
+                      <Link
+                        href="/"
+                        className="nav-link"
+                      >
+                        Global Footprint
+                      </Link>
+                    </li>
 
-                                    {sub?.sub_menu?.length > 0 && (
-                                      <ul className="dropdown_Last list-unstyled">
-                                        {sub.sub_menu.map((submenu, idx) => {
-                                          return (
-                                            <li className="nav-item" key={idx}>
-                                              {submenu.text === "Test Page" ? (
-                                                <Link
-                                                  href={`${submenu.link.replace(
-                                                    "/",
-                                                    ""
-                                                  )}`}
-                                                  className="nav-link"
-                                                >
-                                                  {submenu.text}
-                                                </Link>
-                                              ) : (
-                                                <Link
-                                                  href={`/${submenu.link.replace(
-                                                    "/",
-                                                    ""
-                                                  )}`}
-                                                  className="nav-link"
-                                                >
-                                                  {submenu.text}
-                                                </Link>
-                                              )}
-                                            </li>
-                                          );
-                                        })}
-                                      </ul>
-                                    )}
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </li>
-                        );
-                      })}
+                    <li className="nav-item actiev">
+                      <Link
+                        href="/"
+                        className="nav-link"
+                      >
+                        collaborations
+                      </Link>
+                    </li>
+
+
+                    <li className="nav-item">
+                      <Link
+                        href="/"
+                        className="nav-link"
+                        target={"_blank"}
+                      >
+                        Our Pathway Programs
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        href="/"
+                        className="nav-link"
+                        target={"_blank"}
+                      >
+                        Our Globetrotters 
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        href="/"
+                        className="nav-link"
+                        target={"_blank"}
+                      >
+                        Articles
+                      </Link>
+                    </li>
+
                   </ul>
                   <ul className="nav search-cart-bar">
                     <li className="nav-item search-box">
