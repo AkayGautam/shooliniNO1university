@@ -321,7 +321,7 @@ export const Styles = styled.div`
       }
 
       .apply-btn {
-        margin-left: 40px;
+        margin-left: 20px;
 
         a {
           font-size: 13px;

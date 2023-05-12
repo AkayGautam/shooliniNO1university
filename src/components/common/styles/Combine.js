@@ -8,6 +8,10 @@ export const Styles = styled.div`
   }
 
  
+  .bannerVideo span {
+    width: 100% !important;
+}
+
 .slider-tablecell {
   z-index: 99;
   position: relative;

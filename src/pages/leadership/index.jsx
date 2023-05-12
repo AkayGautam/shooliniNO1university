@@ -82,6 +82,7 @@ const Leadership = ({ leaderdata, gallery }) => {
                                     <Card.Img
                                       variant="top"
                                       src={gallery?.image_url}
+                                      alt={gallery?.title}
                                     />
                                     <Card.Body className="pb-0">
                                       <Card.Title>{gallery?.title}</Card.Title>

@@ -243,7 +243,7 @@ const AcademicsSub = ({ id, data, ldJson }) => {
                                       width={111}
                                       height={111}
                                       src={item?.imageurl}
-                                      alt=""
+                                      alt={item.name}
                                       className="img-fluid"
                                     />
                                   </p>

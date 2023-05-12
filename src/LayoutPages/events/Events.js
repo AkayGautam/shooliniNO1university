@@ -34,6 +34,8 @@ const settings = {
 };
 
 const Events = () => {
+
+  
   const [data, setData] = useState([]);
  
   useEffect(() => {

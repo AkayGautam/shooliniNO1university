@@ -93,7 +93,7 @@ const NewsListTemplate = ({ data }) => {
                                         <Card>
                                           <div className="newsImg">
                                             <Card.Img
-                                              variant="top"
+                                              variant="top" alt={item.title}
                                               src={`https://shooliniuniversity.com/media/${item.avatar}`}
                                             />
                                           </div>

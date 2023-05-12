@@ -84,6 +84,7 @@ const GlobalAdvisoryBoard = ({ advisoryData, gallery }) => {
                                    <div className="gradImage">  <Card.Img
                                       variant="top"
                                       src={gallery?.image_url}
+                                      alt={gallery?.title}
                                     />
                                     </div>
                                     <Card.Body>

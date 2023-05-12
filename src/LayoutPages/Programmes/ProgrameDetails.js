@@ -178,11 +178,11 @@ function ProgrameDetails({ data, id, ldJson }) {
                             </Nav.Link>
                           </Nav.Item>
 
-                          {/* <Nav.Item>
+                          <Nav.Item>
                             <Nav.Link eventKey="curriculum">
                               Curriculum
                             </Nav.Link>
-                          </Nav.Item> */}
+                          </Nav.Item>
 
                           <Nav.Item>
                             <Nav.Link eventKey="faq">FAQs</Nav.Link>
@@ -251,7 +251,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                                       : process.env.PUBLIC_URL +
                                                         `/assets/images/instructor-2.jpg`
                                                   }
-                                                  alt=""
+                                                  alt={res.name}
                                                   className="img-fluid"
                                                 />
                                               </Avatar>

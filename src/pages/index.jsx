@@ -44,7 +44,7 @@ export default function homepage({
       <ResearchStories />
 
       <GalleryView />
-
+  
       <ShooliniImpact />
 
       <ScrollButton />

@@ -132,13 +132,13 @@ margin-bottom: 10px;
 margin-right: 12px;
 }
 .post-list-item .event-excerpt {
-overflow: hidden;
-text-overflow: ellipsis;
-display: -webkit-box;
--webkit-line-clamp: 2;
--webkit-box-orient: vertical;
 margin-bottom: 5px;
 }
+
+h4.event-title a {
+  color: #000 !important;
+}
+
 .social-share-hover {
 white-space: nowrap;
 margin-left: -100%;

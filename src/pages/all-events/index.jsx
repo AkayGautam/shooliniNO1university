@@ -100,7 +100,7 @@ const Placements = () => {
                               <div className="event-item-thumbnail">
                                 <a href={data?.weburl} title={data?.title}>
                                   <div className="vfvfv placeholder-thumbnail-bg">
-                                    <img src={data?.imgurl} />
+                                    <img src={data?.imgurl} alt={data?.title} />
                                   </div>
                                 </a>
                               </div>

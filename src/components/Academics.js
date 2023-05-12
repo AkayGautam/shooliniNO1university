@@ -221,7 +221,7 @@ const Academics = ({ id, data, ldJson }) => {
                                       variant="top"
                                       src={i.imageurl}
                                       className="img-responsive"
-                                      alt=""
+                                      alt={i.title}
                                     />
                                     <Card.Body className="text-center">
                                       <h5 className="proTitle"> {i.title} </h5>

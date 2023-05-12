@@ -541,6 +541,20 @@ const Header = () => {
                       })}
                   </ul>
                   <ul className="nav search-cart-bar">
+                      <li className="nav-item side-box">
+                        <div className="apply-btn btnApply">
+                          <a
+                          style={{background : "#fff", color:"#e33535" }} 
+                            href="https://admissions.shooliniuniversity.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Apply Now
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  <ul className="nav search-cart-bar">
                     <li className="nav-item search-box">
                       <Search />
                     </li>
@@ -550,7 +564,7 @@ const Header = () => {
             </Col>
           </Row>
         </div>
-      </section>
+      </section> 
 
       {/* NavBar */}
       <section className="main-menu">

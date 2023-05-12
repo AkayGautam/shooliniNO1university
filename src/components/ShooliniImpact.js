@@ -55,7 +55,7 @@ const ShooliniImpact = (props) => {
                                   width={800}
                                   height={500}
                                   src={data?.imageurl?.split(" ").join(" ")}
-                                  alt=""
+                                  alt={data.title}
                                 />
                               </Link>
                             </div>
