@@ -19,6 +19,16 @@ export const Styles = styled.div`
       font-size: 15px;
     }
 
+    .coursetitles a {
+      color: #f63030;
+      font-size: 18px;
+      padding: 5px 0 0 0;
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+  }
+
+
     table.cj-wysiwyg-table td {
       vertical-align: top;
       font-size: 14px;

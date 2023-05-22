@@ -7,7 +7,7 @@ import Image from "next/legacy/image";
 import Search from "./Search";
 import SearchResearcher from "../SearchResearcher";
 
-const MobileMenu = ({ links }) => {
+const MobileMenuTwo = ({ links }) => {
   const [visible, setVisible] = useState(false);
   const [opened, setOpened] = useState(false);
   const [Data, setData] = useState([]);
@@ -174,59 +174,71 @@ const MobileMenu = ({ links }) => {
                     </button>
                     {item.sub_menu.length > 0 ? (
                       <div className="mb-menu-content">
-                        <ul className="list-unstyled">
-                          {item.sub_menu.map((row, sub_index) => {
-                            return (
-                              <li className="nav-item" key={sub_index}>
+                         <ul className="nav menu-nav">
+
+<li className="nav-item actiev">
+    <Link
+      href="/"
+      className="nav-link"
+    >
+      Home
+    </Link>
+  </li>
+
+  <li className="nav-item">
+    <Link
+      href="/international/globalfootprint"
+      className="nav-link"
+    >
+      Global Footprint
+    </Link>
+  </li>
+
+  <li className="nav-item actiev">
+    <Link
+      href="/"
+      className="nav-link"
+    >
+      collaborations
+    </Link>
+  </li>
 
 
-                                <Link className="bottmDropdown" href={`/${row.link.replace("/", "")}`}>
-                                 <span className="rowText"> {row.text}  </span>
+  <li className="nav-item">
+    <Link
+      href="/pathwayprograms"
+      className="nav-link"
+    >
+      Our Pathway Programs
+    </Link>
+  </li>
 
-                                  {row?.sub_menu?.length > 0 && (
-                                    <i className="fa fa-caret-down" aria-hidden="true"
-                                      style={{ paddingLeft: "50px" }}
-                                      onClick={() =>
-                                        setOpenSubMenu(!openSubMenu)
-                                      }
-                                    ></i>
-                                  )}
-                                </Link>
-                                <ul
-                                  className={`mb-menu-content list-unstyled ${openSubMenu && "show"
-                                    }`}
-                                >
-                                  {row?.sub_menu &&
-                                    row?.sub_menu.map(
-                                      (sub_row, sub_sub_index) => {
-                                        return (
-                                          <li
-                                            className="nav-item"
-                                            key={sub_sub_index}
-                                          >
-                                            <Link
-                                              href={`/${sub_row.link.replace(
-                                                "/",
-                                                ""
-                                              )}`}
-                                            >
-                                              <span
-                                                style={{
-                                                  paddingLeft: "20px",
-                                                }}
-                                              >
-                                                {sub_row.text}
-                                              </span>
-                                            </Link>
-                                          </li>
-                                        );
-                                      }
-                                    )}
-                                </ul>
-                              </li>
-                            );
-                          })}
-                        </ul>
+  <li className="nav-item">
+    <Link
+      href="/"
+      className="nav-link"
+      target={"_blank"}
+    >
+      Our Globetrotters 
+    </Link>
+  </li>
+
+  <li className="nav-item">
+    <Link
+      href="/"
+      className="nav-link"
+      target={"_blank"}
+    >
+      Articles
+    </Link>
+  </li>
+
+</ul>
+<ul className="nav search-cart-bar">
+  <li className="nav-item search-box">
+    <Search />
+  </li>
+</ul>
                       </div>
                     ) : (
                       ""
@@ -368,4 +380,4 @@ const MobileMenu = ({ links }) => {
   );
 };
 
-export default MobileMenu;
+export default MobileMenuTwo;

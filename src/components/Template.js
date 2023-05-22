@@ -56,28 +56,6 @@ const Template = ({ title, img }) => {
                         </div>
                       </Col>
 
-                      {/* <Col className="atBottom" md="6">
-                        <Row>
-                          <Col md="8">
-                            <div className="slider-btn mt-md-5">
-                              <ApplyNow />
-                              <a
-                                target="_blank"
-                                href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=website&utm_campaign=applynow"
-                                className="appBtn ml-2 slider-btn2"
-                                to=""
-                              >
-                                Apply Now
-                              </a>
-                            </div>
-                          </Col>
-                          <Col md="4">
-                            <div className="videoMosdal vdoUnpos hero__quote-animation">
-                              <DialogVideo />
-                            </div>
-                          </Col>
-                        </Row>
-                      </Col> */}
                     </Row>
                   </Container>
                 </div>

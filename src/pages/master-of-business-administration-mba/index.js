@@ -6,8 +6,10 @@ import { Modal, Button, Form } from "react-bootstrap";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 import Image from "next/legacy/image";
 import Head from 'next/head'
+import Schema from '@/components/Schema';
+import { GetNavigationSchema } from '@/Api';
 
-const Mbas = () => {
+const Mbas = (props) => {
 
     useEffect(() => {
 
@@ -104,6 +106,7 @@ const Mbas = () => {
 
 
                 </Head>
+                <Schema navigation={props.schema} />
 
                 <div id="mbaPage">
                     <Header />
@@ -412,7 +415,7 @@ const Mbas = () => {
                                                                                         <h3 className="title-default">Top-Notch MBA Placements {"&"} Internships</h3>
 
                                                                                         <p className="text-18">The MBA program at Shoolini University has seen a 100% placement record year-on-year, with top corporate companies hiring Shoolini's capable students. Our Placement <strong> 'Mission 130' </strong> aims at 100% employability with 30% great jobs.  <br />
-The dedicated and proactive Placement Cell, including career coaches, employer engagement specialists and events and data management experts, is committed to help you <strong> maximise your career goals.</strong> </p>
+                                                                                            The dedicated and proactive Placement Cell, including career coaches, employer engagement specialists and events and data management experts, is committed to help you <strong> maximise your career goals.</strong> </p>
 
                                                                                         <div className="text-center">
 
@@ -473,7 +476,7 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
 
                                                                         </div>
 
-                                                                      
+
 
 
 
@@ -573,261 +576,261 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
 
 
                                                                     <div id="placements" className="mba-placements mt-5">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-md-12">
+                                                                        <div className="container">
+                                                                            <div className="row">
+                                                                                <div className="col-md-12">
 
-                                        <div className="card-box">
-                                            <h3 className="title-default">250+ Top MBA <span> Hiring Partners </span></h3>
-                                            <p> <strong> Unlock Career Opportunities at India’s Top Companies. </strong> <br />
-                                                Join the Elite Ranks of our MBA Alumni Network </p>
-
-
-                                            <div className="row">
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/citrix.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/CodeBrew.jpeg" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/Cogni.jpeg" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/Damco.jpeg" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/Genpact.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/huges.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
+                                                                                    <div className="card-box">
+                                                                                        <h3 className="title-default">250+ Top MBA <span> Hiring Partners </span></h3>
+                                                                                        <p> <strong> Unlock Career Opportunities at India’s Top Companies. </strong> <br />
+                                                                                            Join the Elite Ranks of our MBA Alumni Network </p>
 
 
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/IBM.jpeg" width={200} className="img-responsive" height={100} />
+                                                                                        <div className="row">
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/citrix.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
-                                                    </div>
-                                                </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/CodeBrew.jpeg" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/Cogni.jpeg" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/KhannaPaper.jpeg" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/Damco.jpeg" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/Genpact.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/Lg.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/Netsolutions.jpeg" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/NPF.jpeg" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/orange.png" width={200} className="img-responsive" height={70} />
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className={isActive ? 'allLogoss row position-relative ' : null} style={{ display: "none" }}>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/huges.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
 
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/IBM.jpeg" width={200} className="img-responsive" height={100} />
+
+                                                                                                </div>
+                                                                                            </div>
 
 
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/Peoplestrong.jpeg" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/KhannaPaper.jpeg" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
 
-                                                <div className="col-md-2 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/polariss.jpeg" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/Lg.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
 
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/TataHitachi.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/Netsolutions.jpeg" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
 
 
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/engg/havells.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/NPF.jpeg" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/orange.png" width={200} className="img-responsive" height={70} />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
 
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/engg/Onida.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/engg/SBIcard.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/engg/Shubham.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/engg/microtek.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/citrix.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/engg/logo55.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/engg/Windowit.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/engg/xcelris.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/logos/zydu.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/logos/l1.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/logos/bio.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/logos/hind.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/management/airtel.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/management/Byjus.png" width={200} className="img-responsive" height={60} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/management/Lg.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/management/ICICIBAnk.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/management/jio.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/management/hindustantimes.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/management/accenture.png" width={200} className="img-responsive" height={60} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/management/airtel.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-12">
-                                                <div className="moreView">
-
-                                                    <button className={isActive ? 'btnView ' : "nullRotate"} onClick={toggleClass} >  <Image src="/assets/images/seemore.png" width={70} className="img-responsive rotatebtn" height={65} /></button>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                                                                        <div className={isActive ? 'allLogoss row position-relative ' : null} style={{ display: "none" }}>
 
 
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/Peoplestrong.jpeg" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+
+                                                                                            <div className="col-md-2 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/polariss.jpeg" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/TataHitachi.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/engg/havells.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/engg/Onida.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/engg/SBIcard.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/engg/Shubham.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/engg/microtek.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/CSE/citrix.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/engg/logo55.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/engg/Windowit.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/engg/xcelris.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/logos/zydu.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/logos/l1.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/logos/bio.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/logos/hind.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/management/airtel.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/management/Byjus.png" width={200} className="img-responsive" height={60} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/management/Lg.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/management/ICICIBAnk.png" width={200} className="img-responsive" height={100} />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/management/jio.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/management/hindustantimes.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/management/accenture.png" width={200} className="img-responsive" height={60} />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div className="col-md-3 col-3">
+                                                                                                <div className="logo-file">
+                                                                                                    <Image src="/assets/images/management/airtel.png" width={200} className="img-responsive" height={80} />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div className="col-md-12">
+                                                                                            <div className="moreView">
+
+                                                                                                <button className={isActive ? 'btnView ' : "nullRotate"} onClick={toggleClass} >  <Image src="/assets/images/seemore.png" width={70} className="img-responsive rotatebtn" height={65} /></button>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
+
+
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
 
                                                                     <div className="col-md-6 mt-5 order-xs-3">
@@ -872,93 +875,93 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
                                                                             <h3 className=" text-dark text-center"> Accreditations {'&'} Rankings </h3>
 
 
-                                                                        <div className="row">   
-                                                                            <div className="col-md-3"> 
-                                                                            <div className="row my-4">
-                                                                                <div className="col-12">
-                                                                                    <div className="sb_logo">
-                                                                                        <Image
-                                                                                            src="/assets/images/logo3.jpg"
-                                                                                            width={80}
-                                                                                            className="img-responsive"
-                                                                                            height={81}
-                                                                                        />
+                                                                            <div className="row">
+                                                                                <div className="col-md-3">
+                                                                                    <div className="row my-4">
+                                                                                        <div className="col-12">
+                                                                                            <div className="sb_logo">
+                                                                                                <Image
+                                                                                                    src="/assets/images/logo3.jpg"
+                                                                                                    width={80}
+                                                                                                    className="img-responsive"
+                                                                                                    height={81}
+                                                                                                />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div className="col-12">
+                                                                                            <div className="sb_text">
+                                                                                                <h4> Approved by UGC </h4>
+                                                                                                <p> University Grants Commission
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div className="col-12">
-                                                                                    <div className="sb_text">
-                                                                                        <h4> Approved by UGC </h4>
-                                                                                        <p> University Grants Commission
-                                                                                        </p>
+                                                                                <div className="col-md-3">
+                                                                                    <div className="row my-4">
+                                                                                        <div className="col-12">
+                                                                                            <div className="sb_logo">
+                                                                                                <Image
+                                                                                                    src="/assets/images/logo4.jpg"
+                                                                                                    width={80}
+                                                                                                    className="img-responsive"
+                                                                                                    height={81}
+                                                                                                />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div className="col-12">
+                                                                                            <div className="sb_text">
+                                                                                                <h4> NBA Accreditation   </h4>
+                                                                                                <p> 1st university in Himachal Pradesh to be granted NBA Accreditation for its MBA Program
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            </div>
-                                                                            <div className="col-md-3"> 
-                                                                            <div className="row my-4">
-                                                                                <div className="col-12">
-                                                                                    <div className="sb_logo">
-                                                                                        <Image
-                                                                                            src="/assets/images/logo4.jpg"
-                                                                                            width={80}
-                                                                                            className="img-responsive"
-                                                                                            height={81}
-                                                                                        />
+                                                                                <div className="col-md-3">
+                                                                                    <div className="row my-4">
+                                                                                        <div className="col-12">
+                                                                                            <div className="sb_logo">
+                                                                                                <Image
+                                                                                                    src="/assets/images/logo1.jpg"
+                                                                                                    width={80}
+                                                                                                    height={54}
+                                                                                                    className="img-responsive"
+                                                                                                />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div className="col-12">
+                                                                                            <div className="sb_text">
+                                                                                                <h4> #102-125 in Management </h4>
+                                                                                                <p> NIRF India Rankings 2022 <br /> Ministry of Education, Government of India
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div className="col-12">
-                                                                                    <div className="sb_text">
-                                                                                        <h4> NBA Accreditation   </h4>
-                                                                                        <p> 1st university in Himachal Pradesh to be granted NBA Accreditation for its MBA Program
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            </div>
-                                                                            <div className="col-md-3"> 
-                                                                            <div className="row my-4">
-                                                                                <div className="col-12">
-                                                                                    <div className="sb_logo">
-                                                                                        <Image
-                                                                                            src="/assets/images/logo1.jpg"
-                                                                                            width={80}
-                                                                                            height={54}
-                                                                                            className="img-responsive"
-                                                                                        />
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className="col-12">
-                                                                                    <div className="sb_text">
-                                                                                        <h4> #102-125 in Management </h4>
-                                                                                        <p> NIRF India Rankings 2022 <br /> Ministry of Education, Government of India
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            </div>
-                                                                            <div className="col-md-3"> 
-                                                                            <div className="row my-4">
-                                                                                <div className="col-12">
-                                                                                    <div className="sb_logo">
-                                                                                        <Image
-                                                                                            src="/assets/images/logo2.jpg"
-                                                                                            width={80}
-                                                                                            className="img-responsive"
-                                                                                            height={81}
-                                                                                        />
+                                                                                <div className="col-md-3">
+                                                                                    <div className="row my-4">
+                                                                                        <div className="col-12">
+                                                                                            <div className="sb_logo">
+                                                                                                <Image
+                                                                                                    src="/assets/images/logo2.jpg"
+                                                                                                    width={80}
+                                                                                                    className="img-responsive"
+                                                                                                    height={81}
+                                                                                                />
 
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className="col-12">
-                                                                                    <div className="sb_text">
-                                                                                        <h4> Approved by HP PERC </h4>
-                                                                                        <p>HP Private Educational Institutions Regulatory Commission, Govt of HP
-                                                                                        </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div className="col-12">
+                                                                                            <div className="sb_text">
+                                                                                                <h4> Approved by HP PERC </h4>
+                                                                                                <p>HP Private Educational Institutions Regulatory Commission, Govt of HP
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            </div>
-                                                                            </div> 
 
 
 
@@ -1021,7 +1024,7 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
                             </div>
                         </section>
 
-                   
+
 
 
 
@@ -1079,7 +1082,7 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
                                     </div>
 
                                     <div className="col-md-6">
-                                    <div className="voices-image position-relative">
+                                        <div className="voices-image position-relative">
                                             <Image src="/assets/images/girlstudent.jpg" width={558} className="img-responsive" height={500} />
 
                                         </div>
@@ -1127,7 +1130,7 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
                         </section>
 
 
-                      
+
 
                         <section id="special" className="spiecalisation">
                             <div className="container">
@@ -1180,7 +1183,7 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
                                     </div>
 
                                     <div className="col-md-6">
-                                    <div className="card-box">
+                                        <div className="card-box">
                                             <h3 className="title-default"> Skill Development for Life-Long Learning </h3>
                                             <p className="text-18">  <strong> SPRINT </strong>   <br /> Skill Progression through Rapid, Intensive & Innovative Training (SPRINT) is a week-long program focusing on industry exposure, and hands-on training through workshops, games and guest lectures. <br />
                                                 <br />
@@ -1198,7 +1201,7 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
 
                                         </div>
 
-                                        
+
                                     </div>
 
                                 </div>
@@ -1217,5 +1220,15 @@ The dedicated and proactive Placement Cell, including career coaches, employer e
         </>
     )
 }
+
+export const getServerSideProps = async () => {
+    const schema = await GetNavigationSchema();
+
+    return {
+        props: {
+            schema,
+        },
+    };
+};
 
 export default Mbas

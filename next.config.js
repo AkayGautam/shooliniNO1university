@@ -71,6 +71,10 @@ const nextConfig = {
         destination: "/admissions/index.html",
       },
       {
+        source: "/bihar-student-testimonial", 
+        destination: "/bihar-student-testimonial/index.html",
+      },
+      {
         source: "/bihar-exam-page", 
         destination: "/bihar-exam-page/index.html",
       }

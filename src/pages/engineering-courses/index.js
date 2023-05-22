@@ -7,9 +7,10 @@ import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-
 import Image from "next/legacy/image";
 import Head from 'next/head'
 import Link from "next/link";
+import { GetNavigationSchema } from '@/Api';
+import Schema from '@/components/Schema';
 
-
-const Engineering = () => {
+const Engineering = (props) => {
 
     useEffect(() => {
 
@@ -103,6 +104,7 @@ const Engineering = () => {
 
 
                 </Head>
+                <Schema navigation={props.schema} />
 
                 <div id="mbaPage">
                     <Header />
@@ -255,15 +257,15 @@ const Engineering = () => {
                                                                     <div className="mt-3">
                                                                         <p>
                                                                             Based on the latest industry-relevant pedagogies, we <strong> offer specially designed cutting-edge engineering programs </strong>  with a strong emphasis on research.
-                                                                           
+
                                                                         </p>
-                                                                        
+
                                                                         <div className={isActive ? 'allLogos ' : null} style={{ display: "none" }} >
-                                                                        <p>
-                                                                        Our <strong> ‘Mission 130’ aims at 100% employability with 30% in top companies</strong> . Renowned academicians, scientists and business managers collaborate with us to make this mission a reality. The dedicated and student-driven <strong> proactive Placement Cell</strong>  looks after all activities related to career development, training and placement of students.
-                                                                        <br />  <br />
-                                                                            Our One-Student, One-Patent Objective for Engineering and Science students is the first initiative in Asia. <br /> <br />
-                                                                            <strong> Join us to innovate, challenge thoughts, and stretch possibilities. </strong>
+                                                                            <p>
+                                                                                Our <strong> ‘Mission 130’ aims at 100% employability with 30% in top companies</strong> . Renowned academicians, scientists and business managers collaborate with us to make this mission a reality. The dedicated and student-driven <strong> proactive Placement Cell</strong>  looks after all activities related to career development, training and placement of students.
+                                                                                <br />  <br />
+                                                                                Our One-Student, One-Patent Objective for Engineering and Science students is the first initiative in Asia. <br /> <br />
+                                                                                <strong> Join us to innovate, challenge thoughts, and stretch possibilities. </strong>
                                                                             </p>
                                                                         </div>
 
@@ -281,15 +283,15 @@ const Engineering = () => {
                                                                 <div className="dataBrdcrmb text-center">
                                                                     <ul className="p-0 m-0">
                                                                         <li><span> <img src="assets/images/icon1.png" /> </span>
-                                                                        No.3 In India in Mech. Engg.  <strong> SCImago Institutions Rankings 2023 </strong></li>
+                                                                            No.3 In India in Mech. Engg.  <strong> SCImago Institutions Rankings 2023 </strong></li>
                                                                         <li> <img src="assets/images/icon2.png" /> India’s No.2 Engineering University  <strong>
-                                                                        Times Higher Education Rankings</strong></li>
+                                                                            Times Higher Education Rankings</strong></li>
                                                                         <li> <img src="assets/images/icon3.png" /> No. 125 in India in Engineering  <strong>NIRF Rankings</strong></li>
 
                                                                         {/* <li><span> <img src="assets/images/icon1.png" /> </span>
                                                                        <p> No.3 In India in Mechanical Engineering <strong> SCIMAGO Rankings  </strong> </p> </li> */}
 
-                                                                        
+
                                                                     </ul>
                                                                 </div>
 
@@ -724,7 +726,7 @@ const Engineering = () => {
                                     <div className="col-md-6">
                                         <div className="card-box">
                                             <h3 className="title-default"> Centres of Excellence  </h3>
-                                            
+
                                             <p>Advanced research centres with well-equipped laboratories </p>
                                             <ul className="m-0 p-0 list-block">
                                                 <li>	Centre for Automobile Education and Research </li>
@@ -734,7 +736,7 @@ const Engineering = () => {
                                                 <li>	Centre for Artificial Intelligence</li>
                                                 <li>	Research Centre in Data Analytics </li>
                                                 <li>	Centre of Excellence in Energy Science and Technology </li>
-                                                
+
 
                                             </ul>
 
@@ -1056,43 +1058,43 @@ const Engineering = () => {
 
                                             <div className="courselist ht-custom">
                                                 <ul className="p-0">
-                                                   
-                                                    <li> <Link  href="/ba-bsc-hons-mathematics"> BA/BSc (Hons) Mathematics (3/4 years) </Link>  </li>
-                                                    <li> <Link  href="/bca-artificial-intelligence-machine-learning"> BCA Artificial Intelligence and Machine Learning </Link>  </li>
-                                                    <li> <Link  href="/bca-full-stack-developer"> BCA Full-stack Developer </Link>  </li>
-                                                    <li> <Link  href="/bca-gaming-graphic"> BCA Gaming and Graphics </Link>  </li>
-                                                    <li> <Link  href="/bca-ui-ux"> BCA UI/UX </Link>  </li>
-                                                    <li> <Link  href="/b-tech-cse-artificial-intelligence-and-machine-learning"> BTech CSE Artificial Intelligence </Link>  </li>
-                                                    <li> <Link  href="/b-tech-artificial-intelligence-summit-research-program"> BTech Artificial Intelligence (With/Without Research) </Link>  </li>
-                                                    <li> <Link  href="/btech-cse-blockchain-iot"> BTech CSE Blockchain & IoT </Link>  </li>
-                                                    <li> <Link  href="/b-tech-civil-engineering"> BTech Civil Engineering </Link>  </li>
-                                                    <li> <Link  href="/b-tech-civil-engineering-leet"> BTech Civil Engineering (LEET) </Link>  </li>
-                                                    <li> <Link  href="/b-tech-cse-leet"> BTech (LEET) CSE </Link>  </li>
-                                                    <li> <Link  href="/b-tech-cse-cloud-computing"> BTech CSE Cloud Computing </Link>  </li>
-                                                    <li> <Link  href="/b-tech-cse-cyber-security"> BTech CSE Cyber Security </Link>  </li>
-                                                    <li> <Link  href="/b-tech-cse-data-science"> BTech CSE Data Science </Link>  </li>
-                                                    <li> <Link  href="/btech-cse-devops"> BTech CSE DevOps </Link>  </li>
-                                                    <li> <Link  href="/btech-cse-game-design-arvr"> BTech CSE Game Design {"&"} AR/ VR </Link>  </li>
-                                                    <li> <Link  href="/btech-mechanical-robotics-ai"> BTech Mechanical (Robotics {"&"} AI) </Link>  </li>
-                                                    <li> <Link  href="/b-tech-renewable-energy"> BTech Renewable Energy {"&"} Sustainability </Link>  </li>
-                                                    <li> <Link  href="/btech-ece"> BTech ECE </Link>  </li>
-                                                    <li> <Link  href="/MA-MSc-Data-Science-&-Analytics"> MA/MSc Data Analytics </Link>  </li>
-                                                    <li> <Link  href="/mca"> MCA </Link>  </li>
-                                                    <li> <Link  href="/ma-msc-mathematics"> MSc / MA Mathematics </Link>  </li>
-                                                    <li> <Link  href="/mtech-civil-engineering"> MTech Civil Engineering </Link>  </li>
-                                                    <li> <Link  href="/phd-ai"> PhD AI </Link>  </li>
-                                                    <li> <Link  href="/phd-big-data"> PhD Big Data </Link>  </li>
-                                                    <li> <Link  href="/phd-cloud-computing"> PhD Cloud Computing Tech </Link>  </li>
-                                                    <li> <Link  href="/phd-civil-engineering"> PhD Civil </Link>  </li>
-                                                    <li> <Link  href="/phd-computer-science-and-engineering"> PhD CSE </Link>  </li>
-                                                    <li> <Link  href="/phd-cyber-security"> PhD Cyber Security </Link>  </li>
-                                                    <li> <Link  href="/phd-data-analytics"> PhD Data Analytics </Link>  </li>
-                                                    <li> <Link  href="/phd-data-science">  </Link> PhD Data Sciences </li>
-                                                    <li> <Link  href="/phd-disaster-management"> PhD Disaster Management </Link>  </li>
-                                                    <li> <Link  href="/phd-electronics-communication-engineering"> PhD ECE </Link>  </li>
-                                                    <li> <Link  href="/phd-energy"> PhD Energy </Link>  </li>
-                                                    <li> <Link  href="/phd-mathematics"> PhD Mathematics </Link>  </li>
-                                                    <li> <Link  href="/phd-mechanical-engineering"> PhD Mechanical </Link>  </li>
+
+                                                    <li> <Link href="/ba-bsc-hons-mathematics"> BA/BSc (Hons) Mathematics (3/4 years) </Link>  </li>
+                                                    <li> <Link href="/bca-artificial-intelligence-machine-learning"> BCA Artificial Intelligence and Machine Learning </Link>  </li>
+                                                    <li> <Link href="/bca-full-stack-developer"> BCA Full-stack Developer </Link>  </li>
+                                                    <li> <Link href="/bca-gaming-graphic"> BCA Gaming and Graphics </Link>  </li>
+                                                    <li> <Link href="/bca-ui-ux"> BCA UI/UX </Link>  </li>
+                                                    <li> <Link href="/b-tech-cse-artificial-intelligence-and-machine-learning"> BTech CSE Artificial Intelligence </Link>  </li>
+                                                    <li> <Link href="/b-tech-artificial-intelligence-summit-research-program"> BTech Artificial Intelligence (With/Without Research) </Link>  </li>
+                                                    <li> <Link href="/btech-cse-blockchain-iot"> BTech CSE Blockchain & IoT </Link>  </li>
+                                                    <li> <Link href="/b-tech-civil-engineering"> BTech Civil Engineering </Link>  </li>
+                                                    <li> <Link href="/b-tech-civil-engineering-leet"> BTech Civil Engineering (LEET) </Link>  </li>
+                                                    <li> <Link href="/b-tech-cse-leet"> BTech (LEET) CSE </Link>  </li>
+                                                    <li> <Link href="/b-tech-cse-cloud-computing"> BTech CSE Cloud Computing </Link>  </li>
+                                                    <li> <Link href="/b-tech-cse-cyber-security"> BTech CSE Cyber Security </Link>  </li>
+                                                    <li> <Link href="/b-tech-cse-data-science"> BTech CSE Data Science </Link>  </li>
+                                                    <li> <Link href="/btech-cse-devops"> BTech CSE DevOps </Link>  </li>
+                                                    <li> <Link href="/btech-cse-game-design-arvr"> BTech CSE Game Design {"&"} AR/ VR </Link>  </li>
+                                                    <li> <Link href="/btech-mechanical-robotics-ai"> BTech Mechanical (Robotics {"&"} AI) </Link>  </li>
+                                                    <li> <Link href="/b-tech-renewable-energy"> BTech Renewable Energy {"&"} Sustainability </Link>  </li>
+                                                    <li> <Link href="/btech-ece"> BTech ECE </Link>  </li>
+                                                    <li> <Link href="/MA-MSc-Data-Science-&-Analytics"> MA/MSc Data Analytics </Link>  </li>
+                                                    <li> <Link href="/mca"> MCA </Link>  </li>
+                                                    <li> <Link href="/ma-msc-mathematics"> MSc / MA Mathematics </Link>  </li>
+                                                    <li> <Link href="/mtech-civil-engineering"> MTech Civil Engineering </Link>  </li>
+                                                    <li> <Link href="/phd-ai"> PhD AI </Link>  </li>
+                                                    <li> <Link href="/phd-big-data"> PhD Big Data </Link>  </li>
+                                                    <li> <Link href="/phd-cloud-computing"> PhD Cloud Computing Tech </Link>  </li>
+                                                    <li> <Link href="/phd-civil-engineering"> PhD Civil </Link>  </li>
+                                                    <li> <Link href="/phd-computer-science-and-engineering"> PhD CSE </Link>  </li>
+                                                    <li> <Link href="/phd-cyber-security"> PhD Cyber Security </Link>  </li>
+                                                    <li> <Link href="/phd-data-analytics"> PhD Data Analytics </Link>  </li>
+                                                    <li> <Link href="/phd-data-science">  </Link> PhD Data Sciences </li>
+                                                    <li> <Link href="/phd-disaster-management"> PhD Disaster Management </Link>  </li>
+                                                    <li> <Link href="/phd-electronics-communication-engineering"> PhD ECE </Link>  </li>
+                                                    <li> <Link href="/phd-energy"> PhD Energy </Link>  </li>
+                                                    <li> <Link href="/phd-mathematics"> PhD Mathematics </Link>  </li>
+                                                    <li> <Link href="/phd-mechanical-engineering"> PhD Mechanical </Link>  </li>
 
 
                                                 </ul>
@@ -1126,5 +1128,15 @@ const Engineering = () => {
         </>
     )
 }
+
+export const getServerSideProps = async () => {
+    const schema = await GetNavigationSchema();
+
+    return {
+        props: {
+            schema,
+        },
+    };
+};
 
 export default Engineering

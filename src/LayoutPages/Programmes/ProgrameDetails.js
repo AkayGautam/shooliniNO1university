@@ -32,6 +32,7 @@ import SuspenseBoundary from "../../helper/SuspenseBoundary";
 import Slider from "react-slick";
 import Template from "@/components/Template";
 import Datas from "../../data/school/school.json";
+import { useRouter } from "next/router";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -70,11 +71,17 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 function ProgrameDetails({ data, id, ldJson }) {
-
+  const router = useRouter();
   const bgImg = data[0].slides
-  ? JSON.parse(data[0].slides)[0]
-  : `/assets/images/${Datas[0].backgroundImage}`;
+    ? JSON.parse(data[0].slides)[0]
+    : `/assets/images/${Datas[0].backgroundImage}`;
 
+  const [isDoctoral, setIsDoctoral] = useState(false);
+
+  useEffect(() => {
+    const component = Object.keys(router.components).includes('/doctoral-programs')
+    setIsDoctoral(component)
+  }, [router]);
 
 
   const [isActive, setActive] = useState(false);
@@ -178,9 +185,11 @@ function ProgrameDetails({ data, id, ldJson }) {
                             </Nav.Link>
                           </Nav.Item>
 
-                          <Nav.Item>
+                          <Nav.Item> 
                             <Nav.Link eventKey="curriculum">
-                              Curriculum
+                              {
+                                isDoctoral ? 'ACADEMIC CALENDAR' : 'CURRICULUM'
+                              }
                             </Nav.Link>
                           </Nav.Item>
 
@@ -224,9 +233,9 @@ function ProgrameDetails({ data, id, ldJson }) {
                           <Tab.Pane
                             eventKey="instructor"
                             className="instructor-tab"
-                          >    
+                          >
                             <h3>Course Instructors  </h3>
-   
+
                             <div className="instructor-item">
                               <Row>
                                 {data[1] &&
@@ -249,7 +258,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                                     res.imageurl
                                                       ? res.imageurl
                                                       : process.env.PUBLIC_URL +
-                                                        `/assets/images/instructor-2.jpg`
+                                                      `/assets/images/instructor-2.jpg`
                                                   }
                                                   alt={res.name}
                                                   className="img-fluid"
@@ -314,7 +323,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                               <div>
                                 {posTFaq &&
                                   posTFaq.map((row, idx) => (
-                                    <Accordion 
+                                    <Accordion
                                       key={idx}
                                       expanded={expanded === `panel${idx}`}
                                       onChange={handleChange(`panel${idx}`)}
@@ -357,24 +366,24 @@ function ProgrameDetails({ data, id, ldJson }) {
                           <ul className="list-unstyled feature-list">
                             <li>
                               <h3> <i className="las la-calendar"></i> Eligibility:{" "}
-                              <span>{data[0]?.eligibility}</span> </h3>
+                                <span>{data[0]?.eligibility}</span> </h3>
                             </li>
 
                             <li>
-                            <h3>  <i className="las la-sort-amount-up"></i>{" "}
-                              Admission Criteria:{" "}
-                              <span>{data[0]?.admission_criteria}</span> </h3>
+                              <h3>  <i className="las la-sort-amount-up"></i>{" "}
+                                Admission Criteria:{" "}
+                                <span>{data[0]?.admission_criteria}</span> </h3>
                             </li>
                             <li>
-                            <h3>   <i className="las la-clock"></i> Duration:{" "}
-                              <span>{data[0]?.duration}</span> </h3>
+                              <h3>   <i className="las la-clock"></i> Duration:{" "}
+                                <span>{data[0]?.duration}</span> </h3>
                             </li>
 
 
                             <li>
-                            <h3>  <i className="las la-certificate"></i>
-                              Semester Fee </h3>
-                              
+                              <h3>  <i className="las la-certificate"></i>
+                                Semester Fee </h3>
+
                               <div className="fessOf">
                                 <h5>
                                   {" "}
@@ -399,10 +408,10 @@ function ProgrameDetails({ data, id, ldJson }) {
                             * One-time refundable security fee of Rs. 10,000
                           </p>  */}
                           <div className="sideBarNew mt-3">
-                          <h2 className="formName"> {data[0]?.rightsideadmition} </h2>
-                          <AdmissionFormSidebar />
+                            <h2 className="formName"> {data[0]?.rightsideadmition} </h2>
+                            <AdmissionFormSidebar />
                           </div>
-                         
+
 
                           {/* <div className="lbDesign">
                                   <img className="w-100" src="assets/images/bdesign.webp" />           
@@ -411,7 +420,7 @@ function ProgrameDetails({ data, id, ldJson }) {
 
                           {gallery.length > 0 && (
                             <div>
-                              <h2 className="title">Gallery</h2> 
+                              <h2 className="title">Gallery</h2>
                               <Row>
                                 <Slider {...settings}>
                                   {gallery.map((row, idx) => (
@@ -420,7 +429,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                       md={12}
                                       sm={12}
                                       key={idx}
-                                    > 
+                                    >
                                       <figure class="snip1527">
                                         <div class="image">
                                           <img

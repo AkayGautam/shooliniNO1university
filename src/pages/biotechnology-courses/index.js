@@ -7,8 +7,10 @@ import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-
 import Image from "next/legacy/image";
 import Head from 'next/head'
 import Link from "next/link";
+import { GetNavigationSchema } from '@/Api';
+import Schema from '@/components/Schema';
 
-const Mbas = () => {
+const Mbas = (props) => {
 
     useEffect(() => {
 
@@ -100,6 +102,7 @@ const Mbas = () => {
 
 
                 </Head>
+                <Schema navigation={props.schema} />
 
                 <div id="mbaPage">
                     <Header />
@@ -1048,5 +1051,16 @@ const Mbas = () => {
         </>
     )
 }
+
+export const getServerSideProps = async () => {
+    const schema = await GetNavigationSchema();
+
+    return {
+        props: {
+            schema,
+        },
+    };
+};
+
 
 export default Mbas

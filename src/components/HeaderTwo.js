@@ -3,7 +3,7 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import Search from "./common/Search";
 import { Styles } from "./common/styles/header";
 import StickyMenu from "./common/StickyMenu";
-import MobileMenu from "./common/MobileMenu";
+import MobileMenu from "./common/MobileMenuTwo";
 import Link from "next/link";
 import ScrollButton from "./common/ScrollButton";
 import SocialShare from "./SocialShare";
@@ -18,7 +18,9 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaClipboardList } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import StickyMenuTwo from "./common/StickyMenuTwo";
 
+import MobileMenuTwo from "./common/MobileMenuTwo";
 const settings = {
   dots: false,
   infinite: true,
@@ -450,7 +452,7 @@ const HeaderTwo = () => {
 
                     <li className="nav-item">
                       <Link
-                        href="/"
+                        href="/international/globalfootprint"
                         className="nav-link"
                       >
                         Global Footprint
@@ -469,9 +471,8 @@ const HeaderTwo = () => {
 
                     <li className="nav-item">
                       <Link
-                        href="/"
+                        href="/international/pathwayprograms"
                         className="nav-link"
-                        target={"_blank"}
                       >
                         Our Pathway Programs
                       </Link>
@@ -521,13 +522,13 @@ const HeaderTwo = () => {
 
       <SocialShare />
 
-      <StickyMenu links={links} />
+      <StickyMenuTwo links={links} />
       <ScrollButton />
 
       {/* <div className="enqDesktop">
         <EnquireForMob />
       </div> */}
-      <MobileMenu links={links} />
+      <MobileMenuTwo links={links} />
     </Styles>
   );
 };
