@@ -19,6 +19,11 @@ export const Styles = styled.div`
       font-size: 15px;
     }
 
+    .modal.show .modal-dialog {
+      top: 20%;
+  }
+
+
     .coursetitles a {
       color: #f63030;
       font-size: 18px;
@@ -131,9 +136,9 @@ export const Styles = styled.div`
       }
       .featured_img {
         position: relative;
-        a {
+        a, .knoBtn  {
           background: rgb(246, 48, 48);
-    padding: 6px 8px;
+    padding:10px 8px;
     color: rgb(255, 255, 255);
     font-size: 13px;
     font-weight: 500;
@@ -142,6 +147,8 @@ export const Styles = styled.div`
     margin-bottom: 20px;
     right: 20px;
     bottom: 0px;
+    width:100%;
+    border:0px;
         }
       }
     }

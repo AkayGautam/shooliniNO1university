@@ -2556,4 +2556,15 @@ export const Styles = styled.div`
     left: 11px;
     top: 4px;
   }
+
+  p.font-300 {
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+
 `

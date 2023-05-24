@@ -1769,3 +1769,11 @@ table.cj-wysiwyg-table td {
   vertical-align: top;
 
 }
+
+.whyEnroll.mb-4 ul li {
+  display: block !important;
+}
+
+.sec-para {
+  margin-bottom: 30px !important;
+}

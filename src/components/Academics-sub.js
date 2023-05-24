@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import ResearchStories from "./ResearchStories";
-import { red } from "@mui/material/colors";
-import CardHeader from "@mui/material/CardHeader";
-import Avatar from "@mui/material/Avatar";
 import Datas from "../data/school/school.json";
 import Image from "next/legacy/image";
 
@@ -18,7 +15,6 @@ import {
 } from "react-bootstrap";
 import { Styles } from "./common/styles/FacultyOfAgriculture";
 import Link from "next/link";
-import SearchProgram from "./SearchProgram";
 import Companies from "./Companies";
 import Template from "./Template";
 import Slider from "react-slick";
@@ -219,7 +215,7 @@ const AcademicsSub = ({ id, data, ldJson }) => {
           <section>
             <ResearchStories />
           </section>
-          <SearchProgram />
+       
           <Companies />
 
           {data[0]?.testimonial?.length > 0 && (

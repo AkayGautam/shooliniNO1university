@@ -3,7 +3,7 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import Search from "./common/Search";
 import { Styles } from "./common/styles/header";
 import StickyMenu from "./common/StickyMenu";
-import MobileMenu from "./common/MobileMenuTwo";
+import MobileMenu from "./common/MobileMenu";
 import Link from "next/link";
 import ScrollButton from "../components/common/ScrollButton";
 import SocialShare from "./SocialShare";
@@ -229,6 +229,15 @@ const Header = () => {
                         rel="noreferrer"
                       >
                         Shoolini Online
+                      </a>
+                    </li>
+                    <li className="list-inline-item">
+                      <a
+                        target="_blank"
+                        href="https://shoolini.online/distance/"
+                        rel="noreferrer"
+                      >
+                        Shoolini Distance Education
                       </a>
                     </li>
 

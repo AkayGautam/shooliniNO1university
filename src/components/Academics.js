@@ -226,7 +226,7 @@ const Academics = ({ id, data, ldJson }) => {
                                     <Card.Body className="text-center">
                                       <h5 className="proTitle"> {i.title} </h5>
                                       <p className="font-300">
-                                        {i.designation}
+                                        {i.description}
                                       </p>
                                     </Card.Body>
                                   </Link>

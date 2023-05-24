@@ -4,6 +4,10 @@ import { Styles } from "./style/programmes";
 import Slider from "react-slick";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import Slide from "@mui/material/Slide";
 
 const settings = {
   dots: false,
@@ -11,6 +15,9 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 767,
@@ -20,15 +27,62 @@ const settings = {
       settings: "unslick",
     },
   ],
-}; 
+};
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const Programmes = ({ programs }) => {
+
+
+  useEffect(() => {
+
+    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
+
+
+    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
+  
+  
+   }, [])
+ 
+   
+
   const router = useRouter();
+
+
+  const [open, setOpen] = React.useState(false);
+  const [opens, setOpens] = React.useState(false);
+
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClickOpen = (e) => {
+    e.preventDefault();
+    setOpen(true);
+  };
+
+  const handleClick = event => {
+    setIsActive(current => !current);
+  };
+
+
+  const handleClickOpen_one = (e) => {
+    e.preventDefault();
+    setOpens(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleClose_one = () => {
+    setOpens(false);
+  };
+
 
   console.log("hii", programs);
 
   return (
     <>
+    
       <Styles>
         <section className="programme-area">
           <Container>
@@ -54,16 +108,16 @@ const Programmes = ({ programs }) => {
                                 />{" "}
                               </div>
                               <div className="programme_detail">
-                               
+
                                 <div className="coursetitles">
                                   {data.title ==
-                                  "Computer Science Engineering" ? (
+                                    "Computer Science Engineering" ? (
                                     <Link
                                       state={{ school: true }}
                                       href="/engineering-courses"
                                       className="nav-link"
                                     >
-                                     {data?.title}
+                                      {data?.title}
                                     </Link>
                                   ) : (
                                     <>
@@ -73,7 +127,7 @@ const Programmes = ({ programs }) => {
                                           href="/engineering-courses"
                                           className="coreEngg nav-link"
                                         >
-                                        {data?.title}
+                                          {data?.title}
                                         </Link>
                                       ) : (
                                         <>
@@ -83,7 +137,7 @@ const Programmes = ({ programs }) => {
                                               href="/biotechnology-courses"
                                               className="nav-link"
                                             >
-                                             {data?.title}
+                                              {data?.title}
                                             </Link>
                                           ) : (
                                             <Link
@@ -92,7 +146,7 @@ const Programmes = ({ programs }) => {
                                               className="nav-link"
                                               data-toggle="dropdown"
                                             >
-                                            {data?.title}
+                                              {data?.title}
                                             </Link>
                                           )}
                                         </>
@@ -107,10 +161,10 @@ const Programmes = ({ programs }) => {
                                   {data.courses &&
                                     data.courses.map((i, idx) => {
                                       return (
-                                        
+
                                         <li key={idx}>
                                           {data.title ==
-                                          "Computer Science Engineering" ? (
+                                            "Computer Science Engineering" ? (
                                             <Link
                                               state={{ school: true }}
                                               href="/engineering-courses"
@@ -121,7 +175,7 @@ const Programmes = ({ programs }) => {
                                           ) : (
                                             <>
                                               {data.title ==
-                                              "Core Engineering" ? (
+                                                "Core Engineering" ? (
                                                 <Link
                                                   state={{ school: true }}
                                                   href="/engineering-courses"
@@ -132,7 +186,7 @@ const Programmes = ({ programs }) => {
                                               ) : (
                                                 <>
                                                   {data.title ==
-                                                  "Biotechnology" ? (
+                                                    "Biotechnology" ? (
                                                     <Link
                                                       state={{ school: true }}
                                                       href="/biotechnology-courses"
@@ -158,7 +212,7 @@ const Programmes = ({ programs }) => {
                                       );
                                     })}
                                 </ul>
-                                <div className="featured_img">
+                                {/* <div className="featured_img">
                                   {data.title ==
                                   "Computer Science Engineering" ? (
                                     <Link
@@ -202,15 +256,13 @@ const Programmes = ({ programs }) => {
                                       )}
                                     </>
                                   )}
-                                </div>
-
-                                {/* <div className="featured_img">
-                                  <Link href={`/courses/${data?.link_url}`}>
-                                    See All Programs
-                                  </Link>
-
-
                                 </div> */}
+
+                                <div className="featured_img">
+                              
+                                  <a onClick={handleClickOpen} href="">  Know More </a>
+
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -221,10 +273,26 @@ const Programmes = ({ programs }) => {
                 </Row>
               </Col>
 
-           
+
             </Row>
           </Container>
         </section>
+
+        <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogContent>
+
+          <DialogContentText id="alert-dialog-slide-description">
+          <div class="npf_wgts" data-height="400px" data-w="b7a96773936817725d0a4442d6310f28"></div>
+          </DialogContentText>
+        </DialogContent>
+      </Dialog>
+
       </Styles>
     </>
   );
