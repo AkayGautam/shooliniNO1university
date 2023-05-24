@@ -6,9 +6,11 @@ import Link from "next/link";
 import Image from "next/legacy/image";
 import Search from "./Search";
 import SearchResearcher from "../SearchResearcher";
+import { useRouter } from "next/router";
 
 const MobileMenu = ({ links }) => {
   const [visible, setVisible] = useState(false);
+  const router = useRouter();
   const [opened, setOpened] = useState(false);
   const [Data, setData] = useState([]);
   const [openSubMenu, setOpenSubMenu] = useState(false);
@@ -146,10 +148,16 @@ const MobileMenu = ({ links }) => {
                   <div className="mb-menu-item" key={index}>
                     <button className="mb-menu-button active">
                       {item.sub_menu.length > 0 ? (
-                        <p>
-                          {item.text}
+                        <p
+
+                        >
+                          <span
+                            onClick={() => router.push(`/${item.link}`)}
+                          >
+                            {item.text}
+                          </span>
                           <i className="fa fa-caret-down" aria-hidden="true"></i>
-                         
+
 
                         </p>
                       ) : (
@@ -159,16 +167,13 @@ const MobileMenu = ({ links }) => {
                           ) : (
                             <Link href={`/${item.link}`}>{item.text}</Link>
                           )}
-
                           {item.text === "research" ? (
-                            
-                            <Link  className="xs-display"   href="https://research.shooliniuniversity.com/"
-                            target="_blank" >{item.text}
+                            <Link className="xs-display" href="https://research.shooliniuniversity.com/"
+                              target="_blank" >{item.text}
                             </Link>
                           ) : (
-                          <span> </span>
+                            <span> </span>
                           )}
-                          
 
                         </>
                       )}
@@ -182,7 +187,7 @@ const MobileMenu = ({ links }) => {
 
 
                                 <Link className="bottmDropdown" href={`/${row.link.replace("/", "")}`}>
-                                 <span className="rowText"> {row.text}  </span>
+                                  <span className="rowText"> {row.text}  </span>
 
                                   {row?.sub_menu?.length > 0 && (
                                     <i className="fa fa-caret-down" aria-hidden="true"
@@ -242,24 +247,24 @@ const MobileMenu = ({ links }) => {
               </button>
               <div className="mb-menu-content show">
                 <ul className="list-unstyled">
-                <li className="list-item">
-                      <a
-                        target="_blank"
-                        href="https://shoolini.online/"
-                        rel="noreferrer"
-                      >
-                        Shoolini Online
-                      </a>
-                    </li>
-                    <li className="list-item">
-                      <a
-                        target="_blank"
-                        href="https://shoolini.online/distance/"
-                        rel="noreferrer"
-                      >
-                        Shoolini Distance Education
-                      </a>
-                    </li>
+                  <li className="list-item">
+                    <a
+                      target="_blank"
+                      href="https://shoolini.online/"
+                      rel="noreferrer"
+                    >
+                      Shoolini Online
+                    </a>
+                  </li>
+                  <li className="list-item">
+                    <a
+                      target="_blank"
+                      href="https://shoolini.online/distance/"
+                      rel="noreferrer"
+                    >
+                      Shoolini Distance Education
+                    </a>
+                  </li>
 
                   <li className="list-item">
                     <Link target="_blank" href="/blog">
@@ -382,7 +387,7 @@ const MobileMenu = ({ links }) => {
           onClick={toggleMenu}
         ></div>
 
-        
+
       </Styles>
     </>
   );
