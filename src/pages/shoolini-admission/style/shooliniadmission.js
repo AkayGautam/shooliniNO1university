@@ -291,6 +291,15 @@ img {
 {
     display:none;
 }
+
+@media screen and (max-width:767px)
+{
+    .addmisionPage .breadcrumb-area {
+        padding: 100px 0 !important;
+    }
+}
+
+
 `
 
 export default Styles

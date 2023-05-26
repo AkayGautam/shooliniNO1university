@@ -234,7 +234,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                             eventKey="instructor"
                             className="instructor-tab"
                           >
-                            <h3>Course Instructors  </h3>
+                            {/* <h3>Course Instructors  </h3> */}
 
                             <div className="instructor-item">
                               <Row>
@@ -392,7 +392,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                 </h5>
                                 <h5>
                                   {" "}
-                                  Non-Himachal Pradesh Domicile :{" "}
+                                 Others :{" "}
                                   <span>
                                     {" "}
                                     ₹{data[0]?.otherfees_semester}{" "}

@@ -57,7 +57,7 @@ const Academics = ({ id, data, ldJson }) => {
   const gallery = data[0].gallery ? JSON.parse(data[0].gallery) : [];
 
   const Numbers = data[0].numbers ? JSON.parse(data[0]?.numbers) : [];
-
+ 
   return (
     <SuspenseBoundary>
       <Head>

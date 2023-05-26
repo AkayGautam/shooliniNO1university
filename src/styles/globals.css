@@ -1752,7 +1752,16 @@ ul.nav.menu-nav li:nth-last-child(1) .dropdown  .dropdown_Last
 
 }
 
-
+.titleAdjust blockquote p a {
+  background: #e41a1a;
+  margin-right: 16px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
 
 
 
