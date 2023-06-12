@@ -18,7 +18,7 @@ import MuiAccordionSummary, {
 } from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import { GetNavigationSchema } from "@/Api";
+import { GetFaq, GetNavigationSchema, GetSiteLinkSchema } from "@/Api";
 import Schema from "@/components/Schema";
 
 const Accordion = styled((props) => (
@@ -95,7 +95,7 @@ const Faqs = (props) => {
           content="FAQs, Frequently asked questions, Shoolini University, Shoolini FAQs, Application process, placements, scholarships, admissions 2023, Shoolini admissions, Student exchange programs, Shoolini courses, Shoolini rankings, no.1 provate university"
         />
       </Head>
-      <Schema navigation={props.schema} />
+      <Schema navigation={props.schema} faq={props.faq} />
       <Styles>
         {/* Main Wrapper */}
         <div className="main-wrapper visionmission-page">
@@ -1006,10 +1006,12 @@ const Faqs = (props) => {
 
 export const getServerSideProps = async () => {
   const schema = await GetNavigationSchema();
+  const faq = await GetFaq("frequently-asked-questions");
 
   return {
     props: {
       schema,
+      faq,
     },
   };
 };
