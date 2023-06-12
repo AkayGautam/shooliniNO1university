@@ -77,6 +77,10 @@ const nextConfig = {
       {
         source: "/bihar-exam-page", 
         destination: "/bihar-exam-page/index.html",
+      },
+      {
+        source: "/apply-new", 
+        destination: "/applynew/index.html",
       }
     ];
   },

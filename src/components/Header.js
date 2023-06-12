@@ -153,9 +153,9 @@ const Header = () => {
           <span className="iconsFile"> <FaPen /> </span>
           <span className="icnName">Apply Now</span> </a>
 
-        <a target="_blank" href="tel:+919625233301" className="Instagram">
+        {/* <a target="_blank" href="tel:+919625233301" className="Instagram">
           <span className="iconsFile"> <FaPhoneAlt /> </span>
-          <span className="icnName">Call Now</span> </a>
+          <span className="icnName">Call Now</span> </a> */}
 
       </div>
 
@@ -165,19 +165,16 @@ const Header = () => {
       <div className="notification-top-bar">
         <Slider {...settings}>
           <div>
-            {/* <a
+            <a className="font-16"
               target="_blank"
-              href="tel:+917018007000"
+              href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=tickerweb&utm_campaign=tickerweb"
               rel="noreferrer"
             >
-            2nd Round of Applications Closed! For Details Contact : +91 701 800 7000
-            </a> */}
+            Seats Filling Up Fast. Apply Now!
+            </a>
 
 
-            <p className="text-white"
-            >
-            2nd Round of Applications Closed! For Details Contact : +91 701 800 7000
-            </p>
+        
 
           </div>
  </Slider>
