@@ -6,8 +6,6 @@ import BreadcrumbBox from '../../components/common/Breadcrumb'
 import { Styles } from '../../components/common/styles/header'
 import Styless from './style/about'
 import Footer from '../../components/Footer'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
 import Companies from '../../components/Companies'
 import Head from 'next/head'
 
@@ -32,11 +30,6 @@ export const getServerSideProps = async () => {
 
 const About = (props) => {
 
-
-
-  useEffect(() => {
-    Aos.init({ duration: 2000 })
-  }, [])
 
   useEffect(() => {
     document.body.setAttribute('pageId', 74)
@@ -79,15 +72,14 @@ const About = (props) => {
                   <Row>
                     <Col md="12">
                       <div className="cuCourse">
-                        <div data-aos="fade-right" className="section-title">
+                        <div className="section-title">
                           <h4> {result_about?.title} </h4>
                           <h3>A Top-Ranked University</h3>
                         </div>
 
                         <Row>
                           <Col md="6">
-                            <div
-                              data-aos="fade-right"
+                            <div 
                               className="about-image position-relative"
                             >
                               <img

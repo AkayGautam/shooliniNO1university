@@ -1867,8 +1867,20 @@ export const Styless = styled.div`
 
     .nav .nav-item a.nav-link {
       padding: 8px 10px 7px !important;
-      font-size: 11px !important;
+      font-size: 14px !important;
+      display: block;
+      margin: 7px 3px;
+      background: #cecece;
     }
+
+    .course-tab-list .nav {
+      background: transparent !important;
+  }
+
+  .course-feature table {
+    overflow: auto;
+}
+
   }
 
   .snip1527 {

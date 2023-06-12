@@ -459,15 +459,6 @@ const HeaderTwo = () => {
                       </Link>
                     </li>
 
-                    <li className="nav-item actiev">
-                      <Link
-                        href="/"
-                        className="nav-link"
-                      >
-                        collaborations
-                      </Link>
-                    </li>
-
 
                     <li className="nav-item">
                       <Link

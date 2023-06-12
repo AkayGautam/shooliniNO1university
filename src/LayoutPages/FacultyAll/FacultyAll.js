@@ -75,7 +75,8 @@ const FacultyAll = ({ id, data, ldJson }) => {
                         <div className="row">
                           {data?.facultyall?.map((item, index) => {
                             return (
-                              <div className="col-md-12" key={index}>
+                              <div id={item.stream_name.split(" ")
+                              .join("-")}  className="col-md-12" key={index}>
                                 <div className="facPage">
                                   <h3>{item?.stream_name}</h3>
                                 </div>

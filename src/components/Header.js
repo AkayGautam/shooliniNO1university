@@ -165,54 +165,22 @@ const Header = () => {
       <div className="notification-top-bar">
         <Slider {...settings}>
           <div>
-            <a
+            {/* <a
               target="_blank"
-              href="https://admissions.shooliniuniversity.com/"
+              href="tel:+917018007000"
               rel="noreferrer"
             >
-              Second Round of Applications is Now Open
-            </a>
+            2nd Round of Applications Closed! For Details Contact : +91 701 800 7000
+            </a> */}
+
+
+            <p className="text-white"
+            >
+            2nd Round of Applications Closed! For Details Contact : +91 701 800 7000
+            </p>
+
           </div>
-
-          {/* <div>
-            <a
-              target="_blank"
-              href="https://shooliniuniversity.com/news/shoolini-is-no1-private-university-in-india"
-              rel="noreferrer"
-            >
-              {" "}
-              #1 Private University in India (THE Rankings) 351-400 Band: No.39
-              in Citations (World)
-            </a>
-          </div> */}
-
-          {/* <div>
-            <a target="_blank" href="tel:+917018007000" rel="noreferrer">
-              <FaPhoneSquareAlt /> Unlock your Career Goals. Free Counselling:
-              7018007000{" "}
-            </a>
-          </div> */}
-
-          {/* <div>
-            <a
-              target="_blank"
-              href="https://shoolini.online/?utm_source=Applynow&utm_medium=Shooliniwebsitetraffic&utm_campaign=Shooliniwebsitetraffic"
-              rel="noreferrer"
-            >
-              Join Shoolini Online courses & Pay After Placement. Apply Now!
-            </a>
-          </div> */}
-          {/* 
-          <div>
-            <a
-              target="_blank"
-              href="https://shooliniuniversity.com/media/pdf/REGISTRATION-FOR-RE-APPEAR-EXAMINATION-February-2023.pdf"
-              rel="noreferrer"
-            >
-              Re-appear Exam (Feb 2023) Registration
-            </a>
-          </div> */}
-        </Slider>
+ </Slider>
       </div>
 
       <section className="position-relative">

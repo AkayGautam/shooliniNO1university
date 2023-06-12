@@ -34,32 +34,30 @@
     {
       "id": "1",
       "ranking_logo": "../../assets/images/the.png",
-      "eventDate": "2022",
-      "eventTitle": "THE Impact Rankings 2022",
+      "eventDate": "2023",
+      "eventTitle": "THE Impact Rankings 2023",
       "eventTime": "5:30pm - 7.00pm",
       "eventLocation": "Newyork,NY.",
       "eventdesc": "Top 200 Global University",
-      "eventLink": "/event-details",
-      "eventdesc1": "No. 2: Affordable & Clean Energy",
-      "eventdesc2": "No. 6: Water Usage & Care"
+      "eventLink": "/event-details"
     }
   ],
   "faqDataList": [
     {
       "id": "1",
       "ranking_logo": "../../assets/images/nirf.png",
-      "eventDate": "2022",
-      "eventTitlesmall": "No.96 in India ",
+      "eventDate": "2023", 
+      "eventTitlesmall": "No.73 in India ",
       "eventTime": "5:30pm - 7.00pm",
       "eventLocation": "Newyork,NY.",
       "eventdesc": "Among All Universities",
-      "eventdesc2": "No.36 in India in Pharmacy",
-      "eventdesc3": "No.125 in India in Engineering",
-      "eventdesc4": "102-125 in India in Management",
-      "eventdesc5": "No.96 in India",
+      "eventdesc2": "No.41 in India in Pharmacy",
+      "eventdesc3": "101-150 in India in Engineering",
+      "eventdesc4": "101-125 in India in Management",
+      "eventdesc5": "No.73 in India",
       "eventdesc6": "Among All Universities & Institutes ",
       "eventLink": "/event-details",
-      "eventTitless" : "NIRF 2022"
+      "eventTitless" : "NIRF 2023"
     }
   ]
 }

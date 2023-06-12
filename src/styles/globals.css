@@ -590,7 +590,6 @@ a.detailView h3 {
     display: block;
     align-items: center;
     justify-content: space-between;
-    height: 90%;
   }
   .cuCourse h3 {
     font-size: 18px !important;
@@ -1711,6 +1710,13 @@ h2.formName {
 
 @media (max-width: 980px) {
 
+  .slider-content.slider-image {
+    background-size: cover !important;
+}
+.resrchTxt.Slide {
+  position: inherit !important;
+  background: transparent !important;
+}
   .searchMobile h5 {
     display: none;
 }
@@ -1785,4 +1791,15 @@ table.cj-wysiwyg-table td {
 
 .sec-para {
   margin-bottom: 30px !important;
+}
+
+.section-title.titleAdjust table td img {
+  max-height: 150px;
+  max-width: 120px;
+}
+.sideBarNewside .enqForm  iframe 
+{
+  position:inherit !important;
+  height:330px;
+  top:0;
 }

@@ -275,10 +275,6 @@ const MobileMenu = ({ links }) => {
                   </li>
 
                   <li className="list-item">
-                    <Link href="/Internship">Internship</Link>
-                  </li>
-
-                  <li className="list-item">
                     <a
                       target="_blank"
                       href="https://my.shooliniuniversity.com/"

@@ -4,21 +4,21 @@
         "uniqClass": "box-icon box1",
         "boxIcon": "flaticon-thumbs-like",
         "title": 250,
-        "subTitle": "Global tie-ups  "
+        "subTitle": "Tie-ups with global universities "
     },
     {
         "id": "2",
         "uniqClass": "box-icon box2",
         "boxIcon": "flaticon-reading",
         "title": 200,
-        "subTitle": "Shoolini students enrolled in foreign universities  "
+        "subTitle": "Students enrolled in foreign universities  "
     },
     {
         "id": "3",
         "uniqClass": "box-icon box3",
         "boxIcon": "flaticon-teacher",
         "title":150,
-        "subTitle": "International students enrolled at Shoolini  " 
+        "subTitle": "Global students enrolled at Shoolini " 
     }
     ,
     {
@@ -26,7 +26,7 @@
         "uniqClass": "box-icon box3",
         "boxIcon": "flaticon-teacher",
         "title": 50,
-        "subTitle": "Foreign faculty"
+        "subTitle": "Foreign faculty members at Shoolini"
     },
     {
         "id": "5",

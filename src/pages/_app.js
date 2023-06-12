@@ -24,7 +24,6 @@ import "../styles/css/font-awesome.min.css";
 export default function App({ Component, pageProps, metric }) {
 
 
-
   const router = useRouter();
   const canonicalUrl = (
     `https://shooliniuniversity.com` +

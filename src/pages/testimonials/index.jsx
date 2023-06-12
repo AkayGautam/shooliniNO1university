@@ -75,8 +75,8 @@ const Testimonials = () => {
               <div className="yit-content">
                 <p className="yit-p"> {i.content} </p>
                 <h4 className="yit-heading-h4"> {i.name} </h4> 
-                <h6 className="yit-heading-h6">Program - <a className="yit-a" href="Javascript:void(0);" title="Company Name"> {i.coursename}</a></h6>
-                
+                {/* <h6 className="yit-heading-h6">Program - <a className="yit-a" href="Javascript:void(0);" title="Company Name"> {i.coursename}</a></h6>
+                 */}
               </div>
             </div>
           </div>

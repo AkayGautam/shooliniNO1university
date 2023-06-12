@@ -6,12 +6,26 @@ export const Styles = styled.div`
     z-index: 99;
     position: relative;
   }
-
+.slider-content
+{
+  background-size:100% !important;
+}
  
   .bannerVideo span {
     width: 100% !important;
 }
-
+a.viewTest {
+  background: #1467d8;
+  color: #fff;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  padding: 13px 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 30px 1px rgb(255 38 38 / 40%);
+}
 .slider-tablecell {
   z-index: 99;
   position: relative;

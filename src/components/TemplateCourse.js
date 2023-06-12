@@ -3,19 +3,15 @@ import { Container, Row, Col, Dropdown } from 'react-bootstrap'
 import 'react-animated-slider/build/horizontal.css'
 import { Styles } from './common/styles/Combine'
 import { useState } from 'react'
-import Link from 'next/link'
 import Datas from '../data/school/school.json'
+import Link from 'next/link'
+import AdmissionFormSidebar from './AdmissionFormSidebar'
 
+const Templatecourse = ({ title, img }) => {
 
-const Template = ({ title, img }) => {
-
-  useEffect(() => {
-    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
-  })
-
- 
   const [bgimg, setBgimg] = useState('')
   useEffect(() => {
+    // Aos.init({ duration: 2000 })
     setBgimg(img)
   }, [img])
 
@@ -36,16 +32,19 @@ const Template = ({ title, img }) => {
                   <Container>
                     <Row>
                       <Col md="12"></Col>
-                      <Col md="6">
+                      <Col md="8">
                         <div className="resrchTxt Slide">
                           <h1> {title} </h1>
                         </div>
                       </Col>
 
-                      <Col md="6">
-                        <div className="resForm box">
-                          <h4> Enquire Now</h4>
-                        <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
+                      <Col md="4">
+                      <div className="sideBarNewside mt-3">
+                            <AdmissionFormSidebar />
+                          </div>
+
+                        <div className="testimonial Link">
+                          <Link className="viewTest" href="/testimonials"> View Testimonials </Link>
                         </div>
                       </Col>
 
@@ -61,4 +60,4 @@ const Template = ({ title, img }) => {
   )
 }
 
-export default Template
+export default Templatecourse

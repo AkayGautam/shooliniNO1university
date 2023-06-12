@@ -256,10 +256,6 @@ export const Styles = styled.div`
     }
   }
 
-  @media (max-width: 767px) {
-  .event-page {
-    padding-top: 0 !important;
-}
 
 
 }

@@ -33,7 +33,7 @@ import Slider from "react-slick";
 import Template from "@/components/Template";
 import Datas from "../../data/school/school.json";
 import { useRouter } from "next/router";
-
+import Templatecourse from "@/components/TemplateCourse";
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -153,10 +153,10 @@ function ProgrameDetails({ data, id, ldJson }) {
         {/* Header 2 */}
         <Header />
 
-        {/* <Template title={data[0]?.title} img={bgImg?.image_url} /> */}
+        <Templatecourse title={data[0]?.title} img={bgImg?.image_url} />
 
         {/* Breadcroumb */}
-        <BreadcrumbBox title={data[0].title} />
+        {/* <BreadcrumbBox title={data[0].title} /> */}
 
         <Styless>
           {/* Course Details */}
@@ -407,11 +407,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                           {/* <p className="secrty">
                             * One-time refundable security fee of Rs. 10,000
                           </p>  */}
-                          <div className="sideBarNew mt-3">
-                            <h2 className="formName"> {data[0]?.rightsideadmition} </h2>
-                            <AdmissionFormSidebar />
-                          </div>
-
+                         
 
                           {/* <div className="lbDesign">
                                   <img className="w-100" src="assets/images/bdesign.webp" />           

@@ -217,7 +217,7 @@ const Ranking = () => {
                         <div className="alignLefts">
                           <div className="event-details">
                             <h6>
-                              <Link href="/news/shoolini-among-top-200-global-universities-in-the-world">
+                              <Link href="/news/shoolini-university-among-global-top-200-again">
                                 {eventData.eventTitle}
                               </Link>
                             </h6>
@@ -231,7 +231,7 @@ const Ranking = () => {
                             <p>{eventData.eventdesc2}</p>
                           </div>
                           <div className="seeMoreBtn">
-                            <Link href="/news/shoolini-among-top-200-global-universities-in-the-world">
+                            <Link href="/news/shoolini-university-among-global-top-200-again">
                               See More
                             </Link>
                           </div>

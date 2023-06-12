@@ -956,7 +956,6 @@ section.newslater-area {
 }
 .newslater-title .icon {
   margin-right: 30px;
-  line-height: 74px;
 }
 .newslater-title .text h2 {
   font-size: 40px;

@@ -413,4 +413,20 @@ export const Styless = styled.div`
     font-style: normal;
     font-size: 28px;
   }
+  div#Global-Advisory-Board, div#Visiting-Faculty, div#Leadership {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 `
