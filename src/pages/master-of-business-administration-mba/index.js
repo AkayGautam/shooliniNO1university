@@ -1727,7 +1727,53 @@ const Mbas = (props) => {
 
 export const getServerSideProps = async () => {
   const schema = await GetNavigationSchema();
-  const faq = await GetFaq("master-of-business-administration-mba");
+  // const faq = await GetFaq("master-of-business-administration-mba");
+  const faq = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Who teaches MBA at Shoolini University?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "<p>The faculty at Shoolini University's business school comprises experts in all areas of management studies. Most members have either completed their Doctoral studies at leading universities or have worked in corporate companies at leadership positions. The experienced team hails from the University of Berkeley, IIT, IIM, ISB and other reputed universities in India and abroad. Apart from regular full-time faculty, our visiting faculty comprises corporate leaders who augment the learning with their practical experience. Passionate about what they do, the teachers of all MBA modules are deeply involved in teaching, research, and consultancy, and they are teachers by choice.</p>",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tell me about the curriculum for MBA at Shoolini University?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "<p>Shoolini MBA curriculum is based on inputs from industry, alumni and academia. The first four quadmesters cater to the understanding of the fundamental concepts in business management, communications, research, analytics and legal aspects of the business. Students undergo a compulsory two-month summer internship after completion of the first year. In their second year -- quadmester 5 onwards -- students select their major and a minor specialisation. The specialisation choices available to the students are marketing, finance, human resource management, digital, biotechnology, pharmaceutical and healthcare management, rural management, international business and analytics. The course curriculum is dynamic in nature and continuously updated to incorporate the latest developments in the field. Overall, the Shoolini MBA curriculum focuses on knowledge of concepts in business management, development of practical skills for success in the real world and development of responsible business leaders.</p>",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the future opportunities after completing MBA from Shoolini University?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "<p>Shoolini MBA graduates have a world of opportunities available to them. Our meticulously designed placement process ensures each student gets a great career opportunity in leading Indian and global corporates. Where few students get a pre-placement offer in their summer internship, others participate in Placement Week. During the Placement season, students have the option to choose jobs that offer packages of more than Rs 8 lakh per annum. Shoolini MBA graduates have been continuously getting absorbed into the public sector. Our alumni have established start-ups in India, Australia, the Middle East, New Zealand and the US. Students have also been extremely successful in corporate leadership positions and others have joined professional NGOs to contribute to society. Our students have also joined reputed institutions of higher learning for their Doctoral studies, while some have opted out of campus placements and joined their family establishments to give them a more professional outlook.</p>",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do you expose MBA students to industry experience?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "<p>Students of Shoolini University regularly interact with experts from industry through guest lectures, workshops and seminars to get updated on contemporary concepts in business management. Our skill enhancement program SPRINT offers an excellent platform for hands-on workshops with corporates. Each course understanding is augmented with a masterclass by subject matter experts from the industry for deeper and comprehensive understanding. The students also undergo compulsory two months summer internship where they are mentored by leaders in the corporate sector. Students collaborate to solve live problems of the business world by undertaking research projects and participate in consultancy projects led by the faculty.</p>",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the job prospects after completing MBA International Relations?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "<p>After completing this program, students have a wide range of job opportunities in the commercial sectors, multinational companies and organisations at the global level.</p>",
+        },
+      },
+    ],
+  };
 
   return {
     props: {
