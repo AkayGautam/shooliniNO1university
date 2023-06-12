@@ -1772,7 +1772,7 @@ export const getServerSideProps = async () => {
           text: "<p>After completing this program, students have a wide range of job opportunities in the commercial sectors, multinational companies and organisations at the global level.</p>",
         },
       },
-    ],
+    ]
   };
 
   return {
