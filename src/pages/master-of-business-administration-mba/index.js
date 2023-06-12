@@ -1731,7 +1731,7 @@ export const getServerSideProps = async () => {
   const faq = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
+    "mainEntity": [
       {
         "@type": "Question",
         name: "Who teaches MBA at Shoolini University?",
@@ -1771,7 +1771,7 @@ export const getServerSideProps = async () => {
           "@type": "Answer",
           text: "<p>After completing this program, students have a wide range of job opportunities in the commercial sectors, multinational companies and organisations at the global level.</p>",
         },
-      },
+      }
     ]
   };
 
