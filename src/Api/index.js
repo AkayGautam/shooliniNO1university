@@ -123,7 +123,10 @@ export const GetFaq = async (url) => {
   });
   const data = await res.json();
 
-  return data;
+  if (data?.success) {
+    return data.success;
+  }
+  return {};
 };
 
 export const GetNavigationSchema = async (url) => {
