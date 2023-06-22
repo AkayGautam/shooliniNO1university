@@ -1128,7 +1128,7 @@ transform: translateY(-15px);
   }
 
 .sec-title h2 {
-font-weight: 900;
+font-weight: 700;
 font-size: 58px;
 text-transform: uppercase;
 color: #fff;
@@ -1314,7 +1314,7 @@ transform: translateY(-15px);
   }
 
 .sec-title h2 {
-font-weight: 900;
+font-weight: 700;
 font-size: 58px;
 text-transform: uppercase;
 color: #fff;
@@ -1409,6 +1409,127 @@ background-size: 50%;
 background-position: right;
 }
 
+
+#Abroad .card-box {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 15px;
+  height: auto;
+}
+
+#Abroad {
+  background: rgb(245, 245, 247);
+  padding: 40px 0px;
+}
+.slides img {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(246, 246, 246);
+}
+#Abroad .slides {
+  width: 33.33%;
+}
+.logosMax .slides {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 7px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.slide-track {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logosMax {
+  width: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.twoPtwo {
+  border-top: 10px solid rgb(228, 26, 26);
+  border-bottom: 4px solid rgb(228, 26, 26);
+}
+.card-box h3 {
+  margin: 0px 0px 10px;
+  font-family: CircularStd;
+  font-weight: 700;
+  font-size: 23px;
+  color: rgb(0, 0, 0);
+}
+.pagetitle h2 {
+  font-weight: 700;
+  font-size: 40px;
+  position: relative;
+}
+
+.hgContents p{
+margin:0px !important;
+}
+
+.stories-area.areaforInter:after {
+  background: linear-gradient( 90deg ,#f6f6f6 50%,transparent 50%) !important;
+}
+
+
+.card-box {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 15px;
+  height: 100%;
+}
+.cardImage {
+  position: relative;
+  max-height: 230px;
+  overflow: hidden;
+}
+.slick-slide img {
+  display: block;
+}
+#Stories .card-box {
+  height: auto;
+}
+#Stories .card-box h3 {
+  font-size: 18px;
+}
+#Stories .card-box p {
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+section#Stories {
+  background: rgb(245, 245, 247);
+  padding: 70px 0px;
+}
+.card-box {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 15px;
+  height: 100%;
+}
+h3.title-default a {
+  color: #000;
+}
+.max-800 {
+  max-width: 980px;
+  margin: auto;
+  text-align: center;
+}
+.max-800 h2 {
+  border: 0 !important;
+}
+.areaforInter {
+  background: url(../../assets/images/bg-testimonial2.jpg) !important;
+}
+.differetImage
+{
+  background: url(../../assets/images/bg-testimonial3.jpg) !important;
+}
 
 `
 

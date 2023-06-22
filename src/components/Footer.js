@@ -50,6 +50,8 @@ const Footer = () => {
           <div className="container-fluid ">
             <div className="row">
               <div className="col-md-3 bg-reds">
+
+
                 <div className="footerAbout text-center">
                   <Link href="/">
                     <Image
@@ -117,6 +119,20 @@ const Footer = () => {
                       </a>
                     </li>
                   </ul>
+
+                      
+
+                  
+              <div className="gptw">
+                        <Image
+                      src="/assets/images/gptw.png"
+                      alt="Shoolini University"
+                      className="logo-footer"
+                      width={70}
+                      height={105}
+                    />
+                        </div>
+                          
                 </div>
               </div>
 
@@ -266,6 +282,7 @@ const Footer = () => {
                             <br />
                           </p>
                         </div>
+
                       </a>
                     </div>
                   </div>

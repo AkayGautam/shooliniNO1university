@@ -29,6 +29,31 @@ const AcademicsSub = ({ id, data, ldJson }) => {
     return () => {};
   }, []);
 
+
+  const setting = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    rows: 1,
+    autoplaySpeed: 1500,
+  
+    responsive: [
+      {
+        breakpoint: 600,
+        setting: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+    ],
+  };
+
+
   var settings = {
     dots: false,
     infinite: false,
@@ -215,9 +240,7 @@ const AcademicsSub = ({ id, data, ldJson }) => {
           <section>
             <ResearchStories />
           </section>
-       
-          <Companies />
-
+    
           {data[0]?.testimonial?.length > 0 && (
             <section className="templateOne templateHeading bg-white py-5">
               <Container>
@@ -258,6 +281,44 @@ const AcademicsSub = ({ id, data, ldJson }) => {
               </Container>
             </section>
           )}
+
+
+
+
+{data[0]?.companies?.length > 0 && (
+            <section className="templateOne templateHeading bg-white py-5">
+              <Container>
+                <div className=" text-left sec-title color-red mb-5">
+                  <h2 className=" py-3"> THINK PLACEMENTS   </h2>
+                  <h4 className="text-dark"> Highest Package: ₹18 lakh | Average Package: ₹8 lakh </h4>
+                </div>
+
+                <Row>
+                  <Col md="12">
+                    {data[0]?.companies &&
+                      data[0]?.companies.length > 0 && (
+                        <Slider {...setting}>
+                {data[0]?.companies?.map((data, idx) => (
+                  <div className="team-item" key={idx}>
+                    <div className="dflex-card">
+                      <Image
+                        alt={data.title}
+                        width={174}
+                        height={87}
+                        src={data.imageurl}
+                        title={data.title}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+                      )}
+                  </Col>
+                </Row>
+              </Container>
+            </section>
+          )}
+
         </>
 
         <Footer />

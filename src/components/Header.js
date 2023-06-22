@@ -527,6 +527,7 @@ const Header = () => {
                           </a>
                         </div>
                       </li>
+                 
                     </ul>
                   <ul className="nav search-cart-bar">
                     <li className="nav-item search-box">

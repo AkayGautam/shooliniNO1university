@@ -950,7 +950,7 @@ const Masterbusiness = () => {
                                                             <AccordionHeader>
                                                                 <span className={`accordion-title ${open ? 'accordion-active' : ''}`}>{item.title}</span>
                                                             </AccordionHeader>
-
+ 
                                                             <AccordionBody>
                                                                 <div className="accordion-body">
                                                                     {item.content}

@@ -39,65 +39,44 @@ const StickyMenuTwo = ({ links }) => {
               <Col md="10">
                 <div className="main-menu-box">
                   <div className="menu-box d-flex justify-content-between">
-                  <ul className="nav menu-nav">
+                    <ul className="nav menu-nav">
+                    <li className="nav-item actiev">
+                      <Link
+                        href="/"
+                        className="nav-link"
+                      >
+                        Home
+                      </Link>
+                    </li>
 
-<li className="nav-item actiev">
-    <Link
-      href="/"
-      className="nav-link"
-    >
-      Home
-    </Link>
-  </li>
-
-  <li className="nav-item">
-    <Link
-      href="/international/globalfootprint"
-      className="nav-link"
-    >
-      Global Footprint
-    </Link>
-  </li>
-
-  <li className="nav-item actiev">
-    <Link
-      href="/"
-      className="nav-link"
-    >
-      collaborations
-    </Link>
-  </li>
+                    <li className="nav-item">
+                      <Link
+                        href="/international/globalfootprint"
+                        className="nav-link"
+                      >
+                        Global Footprint
+                      </Link>
+                    </li>
 
 
-  <li className="nav-item">
-    <Link
-      href="/international/pathwayprograms"
-      className="nav-link"
-    >
-      Our Pathway Programs
-    </Link>
-  </li>
+                    <li className="nav-item">
+                      <Link
+                        href="/international/pathwayprograms"
+                        className="nav-link"
+                      >
+                       Signature Programs
+                      </Link>
+                    </li>
 
-  <li className="nav-item">
-    <Link
-      href="/"
-      className="nav-link"
-      target={"_blank"}
-    >
-      Our Globetrotters 
-    </Link>
-  </li>
-
-  <li className="nav-item">
-    <Link
-      href="/"
-      className="nav-link"
-      target={"_blank"}
-    >
-      Articles
-    </Link>
-  </li>
-
+                    <li className="nav-item">
+                      <Link
+                        href="/"
+                        className="nav-link"
+                        target={"_blank"}
+                      >
+                        Articles
+                      </Link>
+                    </li>
                     </ul>
                     <ul className="nav search-cart-bar">
                       <li className="nav-item side-box">

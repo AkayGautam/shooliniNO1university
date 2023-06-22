@@ -465,17 +465,7 @@ const HeaderTwo = () => {
                         href="/international/pathwayprograms"
                         className="nav-link"
                       >
-                        Our Pathway Programs
-                      </Link>
-                    </li>
-
-                    <li className="nav-item">
-                      <Link
-                        href="/"
-                        className="nav-link"
-                        target={"_blank"}
-                      >
-                        Our Globetrotters 
+                       Signature Programs
                       </Link>
                     </li>
 

@@ -776,7 +776,7 @@ ul.nav.menu-nav li:nth-child(2) ul.dropdown .nav-link {
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 14px;
-  z-index: 99;
+  z-index: 999;
   padding: 2px 0;
 }
 .notification-top-bar p {
@@ -1103,8 +1103,6 @@ span.iconsFile {
 {
   font-size:16px;
 }
-
-
 
 
 

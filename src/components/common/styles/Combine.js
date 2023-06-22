@@ -1388,6 +1388,10 @@ a.viewTest {
 @media screen and (max-width:767px)
 {
 
+  .scSlider  .slider-content {
+    text-align: center;
+    background-size: cover !important;
+}
   .bannerVideo {
     height:460px;
   }

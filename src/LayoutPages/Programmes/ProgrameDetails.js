@@ -209,7 +209,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                 }}
                               ></p>
 
-                              <h2> Career Opportunities in {data[0].title}  </h2>
+                              <h2> {data[0].title} Career Opportunities   </h2>
                               <p
                                 dangerouslySetInnerHTML={{
                                   __html: data[0]?.career_opportunities,

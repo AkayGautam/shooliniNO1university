@@ -1853,6 +1853,8 @@ export const Styless = styled.div`
   }
 
   @media screen and (max-width: 767px) {
+
+
     td {
       width: 50%;
    

@@ -367,6 +367,9 @@ const Mbas = (props) => {
                               <a href="#fees">Fees </a>
                             </li>
                             <li>
+                              <a href="#scholarships">Scholarships </a>
+                            </li>
+                            <li>
                               <a href="#faqs"> FAQs</a>
                             </li>
                             <li>
@@ -1143,6 +1146,74 @@ const Mbas = (props) => {
                                     </div>
                                   </div>
 
+                                  <div id="scholarships" className="col-md-12 mt-5">
+                                    <div className="card-box">
+                                      <h3 className="title-default">
+                                        {" "}
+                                        MBA Merit Scholarships
+                                      </h3>{" "}
+                                      <p> A total of 20 scholarships will be awarded to selected students. The application is open to candidates who have achieved a 90 percentile on the NMAT, 80 percentile on the CAT, a GMAT score of 600, or who are ranked in the top 10 on the Shoolini Management Aptitude Reasoning Test (SMART). After acceptance, qualified MBA candidates must participate in a scholarship interview to demonstrate their abilities and potential. </p>
+
+                                  <div className="table-responsive">                
+                                  <table className="table table-striped">
+                                    <thead>
+                                      <tr className="bg-reds">
+                                        <th scope="col">Merit Type</th>
+                                        <th className="text-center" scope="col">Tution Fee</th>
+                                        <th className="text-center"  scope="col">Hostal Fee</th>
+                                        <th className="text-center"  scope="col">School %</th>
+                                        <th className="text-center"  scope="col">Annual School Amt</th>
+                                        <th className="text-center"  scope="col">Number of Scholarships</th>
+                                        <th className="text-center"  scope="col">Scholarship Budget</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody className="text-center">
+                                      <tr>
+                                        <th  className="text-left" scope="row">Chancellors' MBA Merit Scholarship (100% T+R)</th>
+                                        <td>297500</td>
+                                        <td>297500</td>
+                                        <td>100%</td>
+                                        <td>2,97,500</td>
+                                        <td>3</td>
+                                        <td>8,92,500</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th  className="text-left" scope="row">Dean's MBA Merit Scholarship(50%T)</th>
+                                        <td>297500</td>
+                                        <td>297500</td>
+                                        <td>50%</td>
+                                        <td>1,48,750</td>
+                                        <td>5</td>
+                                        <td>7,43,750</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th  className="text-left" scope="row">Chancellors' MBA Merit Scholarship (100% T+R)</th>
+                                        <td>297500</td>
+                                        <td>297500</td>
+                                        <td>20%</td>
+                                        <td>59,500</td>
+                                        <td>10</td>
+                                        <td>5,95,000</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th  className="text-left" scope="row"> </th>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td><strong>  Total</strong> </td>
+                                        <td><strong> 31,41,050 </strong></td>
+                                      </tr>
+                                   
+                                    </tbody>
+                                  </table>
+                                      </div>
+                                       </div>
+                                       </div>
+
                                   <div className="col-md-6 mt-5 order-xs-3">
                                     <div className="card-box">
                                       <h3 className="title-default">
@@ -1199,24 +1270,198 @@ const Mbas = (props) => {
                                   <div className="col-md-6 pl-md-0 mt-5 order-xs-4">
                                     <div className="voices-image position-relative">
                                       <Image
-                                        src="/assets/images/ashish.jpg"
+                                        src="/assets/images/munish.jpg"
                                         width={548}
                                         className="img-responsive"
                                         height={607}
                                       />
                                       <div className="namedes">
-                                        <h4> Prof Atul Khosla</h4>
+                                        <h4> Munish Sahrawat</h4>
                                         <h5>
                                           {" "}
-                                          VC {"&"} Dean, School of Business
-                                          Management{" "}
+                                          President {'&'} Dean, Faculty of Management Sciences{" "}
                                         </h5>
-                                        <p> Ex-McKinsey {"&"} Company </p>
-                                        <p> Former India Head-Oliver Wyman</p>
-                                        <p> Alum IIT-Kanpur, JBIMS</p>
+                                        <p> 25-year experience in Financial Services </p>
+                                        <p> Higher Education {'&'} Startups in India</p>
+                                        <p> Middle East, Hong Kong</p>
                                       </div>
                                     </div>
                                   </div>
+
+
+                                    <section id="special" className="spiecalisation pb-0">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="card-box">
+                      <h3 className="title-default">
+                        {" "}
+                        <span className="text-red"> Shoolini MBA:</span> Pick a
+                        Specialisation
+                      </h3>
+                      <p>
+                        {" "}
+                        Our future-ready MBA specialisations are{" "}
+                        <strong>
+                          {" "}
+                          designed by leading industry experts from the world’s
+                          top 1% companies{" "}
+                        </strong>{" "}
+                        to help you succeed in a dynamic, fast-changing business
+                        landscape.{" "}
+                      </p>
+
+                      <div className="courselist">
+                        <ul className="p-0">
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href="https://shooliniuniversity.com/mba-marketing"
+                            >
+                              {" "}
+                              Marketing
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a target="_blank" href="#">
+                              {" "}
+                              Business Analytics{" "}
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href="https://shooliniuniversity.com/mba-digital"
+                            >
+                              {" "}
+                              Digital Marketing{" "}
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href="https://shooliniuniversity.com/mba-logistics-and-supply-chain-management"
+                            >
+                              Logistics and Supply Chain Management{" "}
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href="https://shooliniuniversity.com/mba-human-resource"
+                            >
+                              {" "}
+                              Human Resources{" "}
+                            </a>{" "}
+                          </li>
+                        
+                          <li>
+                            {" "}
+                            <a target="_blank" className="nopointer" href="#">
+                              {" "}
+                              Agri Business{" "}
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href="https://shooliniuniversity.com/mba-finance"
+                            >
+                              {" "}
+                              Finance{" "}
+                            </a>
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href="https://shooliniuniversity.com/mba-pharma"
+                            >
+                              {" "}
+                              Pharma and Healthcare{" "}
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a target="_blank" href="#">
+                              {" "}
+                              Financial Markets{" "}
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href="https://shooliniuniversity.com/mba-biotechnology"
+                            >
+                              Biotechnology{" "}
+                            </a>{" "}
+                          </li>
+                      
+
+                          <li>
+                            {" "}
+                            <a target="_blank" className="nopointer" href="#">
+                              {" "}
+                              Communications{" "}
+                            </a>{" "}
+                          </li>
+                          
+                        </ul>
+                      </div>
+
+                      <div className="px-0 btn btn-grad-red">
+                        {" "}
+                        <button onClick={handleShow}>
+                          {" "}
+                          Need Help? Consult MBA Mentor
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-md-6">
+                    <div className="card-box">
+                      <h3 className="title-default">
+                        {" "}
+                        Skill Development for Life-Long Learning{" "}
+                      </h3>
+                      <p className="text-18">
+                        {" "}
+                        <strong> SPRINT </strong> <br /> Skill Progression
+                        through Rapid, Intensive & Innovative Training (SPRINT)
+                        is a week-long program focusing on industry exposure,
+                        and hands-on training through workshops, games and guest
+                        lectures. <br />
+                        <br />
+                        <strong> Advanced Training Program (ATP) </strong>{" "}
+                        <br />
+                        The School of Business Management launched the fully
+                        residential Advanced Training Program (ATP). This 21-day
+                        program equips students with strong problem-solving
+                        skills and conceptual knowledge.
+                        <br />
+                        <br />
+                        <strong> The Troops</strong>
+                        <br />
+                        The Troops Program brings students out of their comfort
+                        zones, ensuring they learn and excel outside the
+                        classroom with indoor and outdoor sports. These include
+                        trekking with a cause, tree plantations, case studies,
+                        etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>               
+                                   
 
                                   <div className="col-md-12 mt-5">
                                     <div className="card-box">
@@ -1439,8 +1684,7 @@ const Mbas = (props) => {
                           <tr>
                             <td>
                               {" "}
-                              A bachelor’s degree (any discipline) with minimum
-                              50% marks
+                              A bachelor’s degree (any discipline) with minimum 50% marks
                             </td>
                             <td> </td>
                           </tr>
@@ -1453,8 +1697,7 @@ const Mbas = (props) => {
                           </tr>
                           <tr>
                             <td>
-                              GMAT/CAT/MAT or state entrance, and letter of
-                              intent and faculty interaction
+                            GMAT (score 550)/ CAT (min 55 percentile)/ NMAT (min 60 percentile)/ MAT (min 70 percentile)/ any other state entrance or Shoolini's MBA entrance test (SMART), letter of intent and faculty interaction.
                             </td>
                             <td> </td>
                           </tr>
@@ -1469,7 +1712,7 @@ const Mbas = (props) => {
                         src="/assets/images/girlstudent.jpg"
                         width={558}
                         className="img-responsive"
-                        height={500}
+                        height={550}
                       />
                     </div>
                   </div>
@@ -1492,9 +1735,8 @@ const Mbas = (props) => {
                               <>
                                 <AccordionHeader>
                                   <span
-                                    className={`accordion-title ${
-                                      open ? "accordion-active" : ""
-                                    }`}
+                                    className={`accordion-title ${open ? "accordion-active" : ""
+                                      }`}
                                   >
                                     {item.title}
                                   </span>
@@ -1516,205 +1758,7 @@ const Mbas = (props) => {
               </div>
             </section>
 
-            <section id="special" className="spiecalisation">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="card-box">
-                      <h3 className="title-default">
-                        {" "}
-                        <span className="text-red"> Shoolini MBA:</span> Pick a
-                        Specialisation
-                      </h3>
-                      <p>
-                        {" "}
-                        Our future-ready MBA specialisations are{" "}
-                        <strong>
-                          {" "}
-                          designed by leading industry experts from the world’s
-                          top 1% companies{" "}
-                        </strong>{" "}
-                        to help you succeed in a dynamic, fast-changing business
-                        landscape.{" "}
-                      </p>
-
-                      <div className="courselist">
-                        <ul className="p-0">
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-marketing"
-                            >
-                              {" "}
-                              Marketing
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a target="_blank" href="#">
-                              {" "}
-                              Business Analytics{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-digital"
-                            >
-                              {" "}
-                              Digital Marketing{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-logistics-and-supply-chain-management"
-                            >
-                              Logistic and Supply Chain Management{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-human-resource"
-                            >
-                              {" "}
-                              Human Resources{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-tourism"
-                            >
-                              {" "}
-                              Tourism{" "}
-                            </a>
-                          </li>
-
-                          <li>
-                            {" "}
-                            <a target="_blank" className="nopointer" href="#">
-                              {" "}
-                              Agri Business{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-finance"
-                            >
-                              {" "}
-                              Finance{" "}
-                            </a>
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-pharma"
-                            >
-                              {" "}
-                              Pharma and Healthcare{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a target="_blank" href="#">
-                              {" "}
-                              Financial Markets{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-biotechnology"
-                            >
-                              Biotechnology{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-banking-and-insurance"
-                            >
-                              Banking and Insurance{" "}
-                            </a>{" "}
-                          </li>
-
-                          <li>
-                            {" "}
-                            <a target="_blank" className="nopointer" href="#">
-                              {" "}
-                              Communications{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-retail"
-                            >
-                              {" "}
-                              Retail{" "}
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div className="px-0 btn btn-grad-red">
-                        {" "}
-                        <button onClick={handleShow}>
-                          {" "}
-                          Need Help? Consult MBA Mentor
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-6">
-                    <div className="card-box">
-                      <h3 className="title-default">
-                        {" "}
-                        Skill Development for Life-Long Learning{" "}
-                      </h3>
-                      <p className="text-18">
-                        {" "}
-                        <strong> SPRINT </strong> <br /> Skill Progression
-                        through Rapid, Intensive & Innovative Training (SPRINT)
-                        is a week-long program focusing on industry exposure,
-                        and hands-on training through workshops, games and guest
-                        lectures. <br />
-                        <br />
-                        <strong> Advanced Training Program (ATP) </strong>{" "}
-                        <br />
-                        The School of Business Management launched the fully
-                        residential Advanced Training Program (ATP). This 21-day
-                        program equips students with strong problem-solving
-                        skills and conceptual knowledge.
-                        <br />
-                        <br />
-                        <strong> The Troops</strong>
-                        <br />
-                        The Troops Program brings students out of their comfort
-                        zones, ensuring they learn and excel outside the
-                        classroom with indoor and outdoor sports. These include
-                        trekking with a cause, tree plantations, case studies,
-                        etc.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+           
           </main>
         </Styless>
         <div id="mba_footer">

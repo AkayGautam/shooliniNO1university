@@ -66,6 +66,7 @@ const Globalfootprint = () => {
         </section>
 
 
+
         <section className="templateHeading highLights">
           <div className="container-fluid p-0">
             <div className="row m-0">
@@ -103,6 +104,82 @@ const Globalfootprint = () => {
             </div>
           </div>
         </section>
+
+        <section id="Abroad" className="student-voices">
+                            <div className="container">
+                            <div class="pagetitle text-center mb-4"><h2>International Collaborations  </h2>
+                          
+                            </div>
+                                <div className="row">
+
+                                <div className="col-md-6">
+                                        <div className="card-box">
+                                        <p className="mb-0"> Shoolini University has strong academic bonds with 250+ higher educational institutions in 28+ countries. Through meaningful collaborations, our faculty and students avail exchange opportunities in leading foreign universities under various scholarship programs.     </p>                     
+                                          
+                                            <div class="slide-track logosMax">
+                                                <div class="slides">
+                                                    <span>  <img src="/srp-lp/img/TMU_CoM_Logo.png" alt="" /></span>
+                                                </div>
+                                                <div class="slides">
+                                                    <span> 	<img src="/srp-lp/img/Uni_Napoli_512px.png" alt="" /></span>
+                                                </div>
+
+
+                                                <div class="slides">
+                                                    <span> 	<img src="/srp-lp/img/usa.png" alt="" /></span>
+                                                </div>
+
+                                                <div class="slides">
+                                                    <span> 	<img src="/srp-lp/img/nih.jpg" alt="" /></span>
+                                                </div>
+                                                <div class="slides">
+                                                    <span> <img src="/srp-lp/img/Gachonlogo.jpg" alt="" /></span>
+                                                </div>
+                                                <div class="slides">
+                                                    <span> 	<img src="/srp-lp/img/lu.jpg" alt="" /></span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                        <div className="card-box twoPtwo">
+                                            <h3 className="title-default"> 2+2 Study Abroad Programs </h3>
+                                            <p> Study first 2 years at Shoolini University and final 2 years at a leading university abroad.   </p>
+                                                <div class="slide-track ">
+                                                <div class="slides">
+                                                    <img src="/srp-lp/img/mlogo.png" alt="" />
+                                                </div>
+                                                <div class="slides">
+                                                    <img src="/srp-lp/img/sheffield-hallam-university.png" alt="" />
+                                                </div>
+                                                <div class="slides">
+                                                    <img src="/srp-lp/img/TMU_CoM_Logo.png" alt="" />
+                                                </div>
+                                                <div class="slides">
+                                                    <img src="/srp-lp/img/University-of-Reading-Logo.png" alt="" />
+                                                </div>
+                                                <div class="slides">
+                                                    <img src="/srp-lp/img/WSU_logo.jpg" alt="" />
+                                                </div>
+                                                <div class="slides">
+                                                    <img src="/srp-lp/img/download.png" alt="" />
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    
+                          </div>
+                            </div>
+                        </section>
+                        
        
             </Styles>
 

@@ -302,7 +302,7 @@ const Mbas = () => {
                                                 </div>
                                                 <div className="col-3">
                                                     <div className="placeVal">
-                                                        <h3><strong>  100 {'+'}  </strong> <br /> H-Index  </h3>
+                                                        <h3><strong>  {'>'}107 {'+'}  </strong> <br /> H-Index  </h3>
                                                     </div>
                                                 </div>
                                                 <div className="col-5">
@@ -812,7 +812,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
 
                         <section id="Stories" className="student-voices">
                             <div className="container">
-                            <div class="pagetitle text-center mb-4"><h2> Our Students Who Have Gone Places Literally </h2></div>
+                            <div class="pagetitle text-center mb-4"><h2> Our Students Who Have Gone Places...Literally </h2></div>
 
                                 <div className="row">
                                 <Slider {...stories}> 

@@ -55,7 +55,7 @@ export default function homepage({
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`https://shooliniuniversity.com/api/home`);
+  const res = await fetch(`http://shooliniuniversity.com/api/home`);
   const data = await res.json();
 
   return {

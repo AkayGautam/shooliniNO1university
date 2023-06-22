@@ -3,7 +3,17 @@ import { colors } from '../../../components/common/elements/elements'
 
 const Styless = styled.div`
 
+.table th, .table td {
+    border-right: 1px solid #ffffff73;
+}
 
+th.text-left {
+    text-align: left;
+}
+.bg-reds{
+    background: #e41a1a;
+    color: #fff;
+}
 section {
     font-family: CircularStd;
     background: #f5f5f7;
