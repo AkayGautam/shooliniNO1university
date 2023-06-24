@@ -5,6 +5,7 @@ import "react-animated-slider/build/horizontal.css";
 import { Styles } from "./common/styles/Combine";
 import Datas from "../data/hero/hero-slider.json";
 import Image from "next/legacy/image";
+import Slider from "react-slick";
 
 const SliderDemo = () => {
   // play video on hover
@@ -12,11 +13,24 @@ const SliderDemo = () => {
     e.target.play();
   };
 
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    arrows: true,
+    autoplay: true,
+    speed: 2500,
+    autoplaySpeed: 2500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+
   return (
     <Styles>
-      <section className="hero-slider-area mainHome">
+      {/* <section className="hero-slider-area mainHome">
         <div className="Apps">
-          <div className="bannerVideo">
+          {/* <div className="bannerVideo">
             {/* <iframe
               id="ytplayer"
               webkitallowfullscreen="true"
@@ -41,11 +55,11 @@ const SliderDemo = () => {
               alt="banner"
               style={{ width: "100%" }}
             /> */}
-            <Image  width={1519}  height={820}  src="/assets/video/heroimage.jpg" alt="Main Banner" />
+            {/* <Image  width={1519}  height={820}  src="/assets/images/slidersA.jpg" alt="Main Banner" />
             
-          </div>
+          </div> */}
 
-          <div className="mainInput inMobile">
+          {/* <div className="mainInput inMobile">
             {Datas.map((data, i) => ( 
               <div key={i} className="slider-content slider-image">
                 <div className="slider-table">
@@ -89,8 +103,42 @@ const SliderDemo = () => {
               </div>
             ))}
           </div>
+ */}
+
+{/* 
+
+        </div>
+      </section> */}
+
+
+      <section className="heroSLider">
+        <div className="slideBox">
+        <Slider {...settings}>
+                    
+
+        <div>
+                        <img className="w-100" src="/assets/images/biotech.jpg" />
+                            </div>
+                            
+        <div>
+                        <img className="w-100" src="/assets/images/bteck.jpg" />
+                            </div>
+                                                    
+        <div>
+                        <img className="w-100" src="/assets/images/BBA.jpg" />
+                            </div>
+                                                    
+        <div>
+                        <img className="w-100" src="/assets/images/BCA.jpg" />
+                            </div>
+
+                    </Slider>
         </div>
       </section>
+
+
+
+
     </Styles>
   );
 };

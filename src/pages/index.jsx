@@ -15,6 +15,7 @@ import Footer from "../components/Footer";
 
 export const server = process.env.BASE_URL;
 
+
 export default function homepage({
   programs,
   testimonials,
@@ -28,6 +29,7 @@ export default function homepage({
       <Header />
 
       <SliderDemo />
+
 
       <IconBox />
 

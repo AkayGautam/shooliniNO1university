@@ -103,6 +103,17 @@ const Ranking = () => {
                             <p style={{ margin: "0" }}>
                               {eventData.eventdesc7}
                             </p>
+
+                            <h6 className="mt-3">
+                              <a>  {eventData.eventdesc8} </a>
+                            </h6>
+                            <p style={{ margin: "0" }}>
+                              {eventData.eventdesc9}
+                            </p>
+                            <p style={{ margin: "0" }}>
+                              {eventData.eventdesc1a}
+                            </p>
+
                           </div>
                           <div className="seeMoreBtn">
                             <a href="https://shooliniuniversity.com/news/shoolini-is-no1-private-university-in-india">
