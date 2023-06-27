@@ -1103,8 +1103,15 @@ span.iconsFile {
 {
   font-size:16px;
 }
-
-
-
+a.Instagram.whatsApp:hover {
+  background: #25D366 !important;
+}
+a.Instagram.whatsApp {
+  background: #25D366;
+}
+.bg-red
+{
+  background:#ee1e3d !important;
+}
 
 `

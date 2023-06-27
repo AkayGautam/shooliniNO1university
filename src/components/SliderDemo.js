@@ -1,11 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "react-animated-slider/build/horizontal.css";
 import { Styles } from "./common/styles/Combine";
 import Datas from "../data/hero/hero-slider.json";
 import Image from "next/legacy/image";
 import Slider from "react-slick";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import Link from "next/link";
+import Slide from "@mui/material/Slide";
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const SliderDemo = () => {
   // play video on hover
@@ -13,21 +22,58 @@ const SliderDemo = () => {
     e.target.play();
   };
 
+  useEffect(() => {
+    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
+
+  }, [])
 
   const settings = {
-    dots: false,
+    dots: true,
+    fade: true,
     infinite: true,
-    arrows: true,
+    arrows: false,
     autoplay: true,
     speed: 2500,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    cssEase: 'linear',
   };
+
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = (e) => {
+    e.preventDefault();
+    setOpen(true);
+  };
+
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+ 
 
 
   return (
     <Styles>
+
+      <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogContent>
+
+          <DialogContentText id="alert-dialog-slide-description">
+            <div class="npf_wgts" data-height="400px" data-w="d095e55a1f298e67da8279133413215f"></div>
+          </DialogContentText>
+        </DialogContent>
+      </Dialog>
+
+
       {/* <section className="hero-slider-area mainHome">
         <div className="Apps">
           {/* <div className="bannerVideo">
@@ -40,7 +86,7 @@ const SliderDemo = () => {
               frameBorder="0"
             ></iframe> */}
 
-            {/* <video
+      {/* <video
               autoPlay
               controls={false}
               loop
@@ -50,16 +96,16 @@ const SliderDemo = () => {
               <source src="/assets/video/banner.mp4" type="video/mp4" />
             </video> */}
 
-            {/* <img
+      {/* <img
               src="/assets/video/banner3.webp" 
               alt="banner"
               style={{ width: "100%" }}
             /> */}
-            {/* <Image  width={1519}  height={820}  src="/assets/images/slidersA.jpg" alt="Main Banner" />
+      {/* <Image  width={1519}  height={820}  src="/assets/images/slidersA.jpg" alt="Main Banner" />
             
           </div> */}
 
-          {/* <div className="mainInput inMobile">
+      {/* <div className="mainInput inMobile">
             {Datas.map((data, i) => ( 
               <div key={i} className="slider-content slider-image">
                 <div className="slider-table">
@@ -105,34 +151,46 @@ const SliderDemo = () => {
           </div>
  */}
 
-{/* 
+      {/* 
 
         </div>
       </section> */}
 
 
-      <section className="heroSLider">
+      <section className="heroSLider position-relative">
+
         <div className="slideBox">
-        <Slider {...settings}>
-                    
+          <Slider {...settings}>
+            <div>
+              <Image width={1600} height={650} src="/assets/slider/slide8.jpg" alt="" />
+            </div>
 
-        <div>
-                        <img className="w-100" src="/assets/images/biotech.jpg" />
-                            </div>
-                            
-        <div>
-                        <img className="w-100" src="/assets/images/bteck.jpg" />
-                            </div>
-                                                    
-        <div>
-                        <img className="w-100" src="/assets/images/BBA.jpg" />
-                            </div>
-                                                    
-        <div>
-                        <img className="w-100" src="/assets/images/BCA.jpg" />
-                            </div>
+            <div>
+              <Image width={1600} height={650} src="/assets/slider/slide5.jpg" />
+            </div>
 
-                    </Slider>
+            <div>
+              <Image width={1600} height={650} src="/assets/slider/slide7.jpg" />
+            </div>
+
+            <div>
+              <Image width={1600} height={650} src="/assets/slider/slide6.jpg" />
+            </div>
+
+            <div>
+              <Image width={1600} height={650} src="/assets/slider/slide1.jpg" />
+            </div>
+            <div>
+              <Image width={1600} height={650} src="/assets/slider/slide10.jpg" />
+            </div>
+
+
+
+          </Slider>
+        </div>
+        <div className="slideButtons">
+          <Link onClick={handleClickOpen} href="/" className="broucher btn"> Download Brochure</Link>
+          <Link target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=Slider2023&utm_campaign=Slider2023" className="broucher btn"> Fill Admission Form</Link>
         </div>
       </section>
 

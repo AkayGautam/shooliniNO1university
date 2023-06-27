@@ -6,7 +6,7 @@ import StickyMenu from "./common/StickyMenu";
 import MobileMenu from "./common/MobileMenu";
 import Link from "next/link";
 import ScrollButton from "../components/common/ScrollButton";
-import SocialShare from "./SocialShare";
+// import SocialShare from "./SocialShare";
 import Slider from "react-slick";
 import Image from "next/legacy/image";
 import Dialog from "@mui/material/Dialog";
@@ -15,9 +15,11 @@ import DialogContentText from "@mui/material/DialogContentText";
 import Slide from "@mui/material/Slide";
 import { FaFileAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import { FaClipboardList } from "react-icons/fa";
+import { FaLandmark } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+
+
 
 const settings = {
   dots: false,
@@ -38,7 +40,6 @@ const Header = () => {
   useEffect(() => {
     // download brouchure
     var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
-
 
   }, [])
 
@@ -136,26 +137,26 @@ const Header = () => {
 </button>    */}
 
 
-        <a onClick={handleClickOpen} href="/" className="Instagram pointer-none">
+        <a onClick={handleClickOpen} href="/" className="Instagram pointer-none  bg-red">
           <span className="iconsFile"> <FaFileAlt /> </span>
 
           <span className="icnName"> Brochure </span></a>
 
-        <a target="_blank" href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events" className="Instagram">
+        <a target="_blank" href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events" className="Instagram bg-secondary">
           <span className="iconsFile"> <FaRegCalendarAlt /> </span>
           <span className="icnName">Events</span> </a>
-
-        <a onClick={handleClickOpen_one} href="/" className="Instagram">
-          <span className="iconsFile"> <FaClipboardList /> </span>
-          <span className="icnName">Admissions</span> </a>
+{/* 
+        <a onClick={handleClickOpen_one} href="/" className="Instagram bg-info">
+          <span className="iconsFile"> <FaLandmark /> </span>
+          <span className="icnName">Admissions</span> </a> */}
 
         <a target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=admissions&utm_campaign=admissions" class="Instagram pointer-none">
           <span className="iconsFile"> <FaPen /> </span>
           <span className="icnName">Apply Now</span> </a>
 
-        {/* <a target="_blank" href="tel:+919625233301" className="Instagram">
-          <span className="iconsFile"> <FaPhoneAlt /> </span>
-          <span className="icnName">Call Now</span> </a> */}
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=917807899735&text=Hi%20Shoolini%20University" className="Instagram whatsApp">
+          <span className="iconsFile"> <FaWhatsapp /> </span>
+          <span className="icnName">whatsapp</span> </a>
 
       </div>
 
@@ -202,7 +203,7 @@ const Header = () => {
                         href="https://shoolini.online/distance/"
                         rel="noreferrer"
                       >
-                        Shoolini Distance Education
+                         Distance Education
                       </a>
                     </li>
 
@@ -302,16 +303,16 @@ const Header = () => {
                     </li>
                   </ul>
                   <ul className="list-unstyled list-inline bar-social mb-0">
-                    <li className="list-inline-item">
+                    {/* <li className="list-inline-item">
                       <a
                         target="_blank"
                         className="su_whats"
-                        href="https://api.whatsapp.com/send?phone=917018994794&text=Hi%20Shoolini%20University"
+                        href="https://api.whatsapp.com/send?phone=917807899735&text=Hi%20Shoolini%20University"
                         rel="noreferrer"
                       >
                         <i className="fab fa-whatsapp"></i>
                       </a>
-                    </li>
+                    </li> */}
 
                     <li className="list-inline-item">
                       <a
@@ -550,7 +551,7 @@ const Header = () => {
         </Container>
       </section>
 
-      <SocialShare />
+      {/* <SocialShare /> */}
 
       <StickyMenu links={links} />
       <ScrollButton />

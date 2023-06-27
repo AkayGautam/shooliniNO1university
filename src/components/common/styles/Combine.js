@@ -1387,6 +1387,23 @@ a.viewTest {
 
 @media screen and (max-width:767px)
 {
+  a.broucher.btn {
+    font-size: 13px !important;
+    background: #ec1e3f !important;
+    color: #fff !important;
+    padding: 10px !important;
+    width: 50%;
+}
+.slideButtons {
+  position: inherit !important;
+  display: flex;
+  flex-wrap: nowrap;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+.a.broucher.btn:before, a.broucher.btn:after{
+  content:unset !important;
+}
 
   .scSlider  .slider-content {
     text-align: center;
@@ -1456,6 +1473,35 @@ a.viewTest {
   display: block;
   margin-top: 24px;
 }
-
+.slideButtons {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+}
+a.broucher.btn {
+  background: #fff;
+  font-weight: 700;
+  margin: 0 10px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  color: #ec1e3f;
+  position:relative;
+}
+a.broucher.btn:after {
+  content: "";
+  position: absolute;
+  background: #ee1e3d;
+  left: -2px;
+  width: 5px;
+  height: 30px;
+}
+a.broucher.btn:before {
+  content: "";
+  position: absolute;
+  background: #ee1e3d;
+  right: -1px;
+  width: 5px;
+  height: 30px;
+}
 
 `

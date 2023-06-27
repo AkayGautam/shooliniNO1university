@@ -1686,12 +1686,6 @@ textarea.form-element-field:not(:placeholder-shown)~.form-element-label {
 #mbaPage .top-bar .bar-right ul.bar-login li a, #mbaPage .top-bar .bar-right ul.bar-lang li .dropdown a.dropdown-toggle {
   color: #223645 !important;
 }
-li.list-inline-item a {
-  filter: grayscale(1);
-}
-li.list-inline-item a:hover {
-  filter: grayscale(0);
-}
 
 .testimonialsSection .slick-slide img
 {
