@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "react-animated-slider/build/horizontal.css";
 import { Styles } from "./common/styles/Combine";
-import Datas from "../data/hero/hero-slider.json";
+import Datas from "../data/hero/homepageslides.json";
+// import Datas from "../data/hero/hero-slider.json";
 import Image from "next/legacy/image";
 import Slider from "react-slick";
 import Dialog from "@mui/material/Dialog";
@@ -158,44 +159,22 @@ const SliderDemo = () => {
 
 
       <section className="heroSLider position-relative">
-
-        <div className="slideBox">
+   <div className="slideBox">
           <Slider {...settings}>
-            <div>
-              <Image width={1600} height={650} src="/assets/slider/slide8.jpg" alt="" />
-            </div>
+              {Datas.map((data, i) => (
+                 <div key={i}>
+                 <Image width={1600} height={650} src={data.backgroundImage} alt="" />
+               </div>
 
-            <div>
-              <Image width={1600} height={650} src="/assets/slider/slide5.jpg" />
-            </div>
-
-            <div>
-              <Image width={1600} height={650} src="/assets/slider/slide7.jpg" />
-            </div>
-
-            <div>
-              <Image width={1600} height={650} src="/assets/slider/slide6.jpg" />
-            </div>
-
-            <div>
-              <Image width={1600} height={650} src="/assets/slider/slide1.jpg" />
-            </div>
-            <div>
-              <Image width={1600} height={650} src="/assets/slider/slide10.jpg" />
-            </div>
-
-
-
+              ))}
           </Slider>
+
         </div>
         <div className="slideButtons">
           <Link onClick={handleClickOpen} href="/" className="broucher btn"> Download Brochure</Link>
           <Link target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=Slider2023&utm_campaign=Slider2023" className="broucher btn"> Fill Admission Form</Link>
         </div>
       </section>
-
-
-
 
     </Styles>
   );
