@@ -36,12 +36,12 @@ export const Styles = styled.div`
             height:100%;
         }
         .bgImgSU {
-            background: url(assets/images/baby.jpg);
+            background-image: url(assets/images/baby.jpg);
             background-size: cover;
         }
         .bgImgSU2 
         {
-            background: url(assets/images/baby2.jpg);
+            background-image: url(assets/images/baby2.jpg);
             background-size: cover;
         }
         .pl-4s {

@@ -102,7 +102,7 @@ const Programmes = ({ programs }) => {
                           <div id={data?.slug} className="col-md-4">
                             <div className="programme_card">
                               <div className="featured_img">
-                                <img
+                                <img loading="lazy"
                                   className="img-fluid w-100"
                                   src={`${data?.image_url}`}
                                 />{" "}

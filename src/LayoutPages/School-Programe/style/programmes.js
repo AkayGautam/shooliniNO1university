@@ -4,7 +4,7 @@ import { colors } from '../../../components/common/elements/elements'
 export const Styles = styled.div`
   .programme-area {
     padding: 65px 0;
-    background: url(assets/images/bg-girl.jpg);
+    background-image: url(assets/images/bg-girl.jpg);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 36%;

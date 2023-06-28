@@ -1808,3 +1808,39 @@ table.cj-wysiwyg-table td {
 .titleAdjust table {
   table-layout: auto !important;
 }
+
+.heroSLider ul.slick-dots {
+  bottom: 17px !important;
+}
+.heroSLider .slick-dots li button:before
+{
+  font-size: 15px;
+  color: #fff;
+}
+section.noticed {
+  background: #ee1e3d;
+  padding: 10px;
+  position: relative;
+  top: -5px;
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+}
+.noticed h5 {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media screen and (max-width:767px)
+{
+  .slideButtons {
+    display: none !important;
+}
+.noticed h5 strong {
+  font-size: 20px;
+}
+  .noticed h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+}

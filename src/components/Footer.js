@@ -112,7 +112,7 @@ const Footer = () => {
                     <li className="list-inline-item">
                       <a
                         target="_blank"
-                        href="https://api.whatsapp.com/send?phone=917807899735&text=Hi%20Shoolini%20University"
+                        href="https://api.whatsapp.com/send?phone=917807999810&text=Hi%20Shoolini%20University"
                         rel="noreferrer"
                       >
                         <i className="fab fa-whatsapp"></i>

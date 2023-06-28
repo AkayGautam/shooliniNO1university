@@ -154,7 +154,7 @@ const Header = () => {
           <span className="iconsFile"> <FaPen /> </span>
           <span className="icnName">Apply Now</span> </a>
 
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=917807899735&text=Hi%20Shoolini%20University" className="Instagram whatsApp">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=917807999810&text=Hi%20Shoolini%20University" className="Instagram whatsApp">
           <span className="iconsFile"> <FaWhatsapp /> </span>
           <span className="icnName">whatsapp</span> </a>
 
@@ -173,10 +173,6 @@ const Header = () => {
             >
             Seats Filling Up Fast. Apply Now!
             </a>
-
-
-        
-
           </div>
  </Slider>
       </div>

@@ -39,6 +39,7 @@ const SliderDemo = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: 'linear',
+    
   };
 
 
@@ -167,14 +168,24 @@ const SliderDemo = () => {
                </div>
 
               ))}
-          </Slider>
+          </Slider> 
 
         </div>
-        <div className="slideButtons">
+        <div className="slideButtons"> 
           <Link onClick={handleClickOpen} href="/" className="broucher btn"> Download Brochure</Link>
           <Link target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=Slider2023&utm_campaign=Slider2023" className="broucher btn"> Fill Admission Form</Link>
         </div>
       </section>
+<section className="noticed">
+  <Container>
+    <div className="noticed">
+   <h5><strong>  ADMISSION NOTICE </strong>  <br />
+Seats full: B Pharmacy, B Tech AI, B Tech ECE <br />
+Few seats left: B Tech CSE, BBA, Psychology, BA.LLB, B. Com </h5> 
+    </div>
+  </Container>
+</section>
+
 
     </Styles>
   );
