@@ -105,7 +105,7 @@ const Ranking = () => {
                             </p>
 
                             <h6 className="mt-3">
-                              <a>  {eventData.eventdesc8} </a>
+                              <a href="https://shooliniuniversity.com/news/shoolini-is-top-100-in-asia">  {eventData.eventdesc8} </a>
                             </h6>
                             <p style={{ margin: "0" }}>
                               {eventData.eventdesc9}
@@ -150,7 +150,7 @@ const Ranking = () => {
                           <div className="alignLefts">
                             <div className="event-details">
                               <h6>
-                                <Link href="/news/qs-rankings-shoolini-ranks-3rd-top-private-university">
+                                <Link href="/news/shoolini-soars-to-new-heights-with-no1-qs-rankings">
                                   {eventData.eventdesc}
                                 </Link>
                               </h6>
@@ -158,7 +158,7 @@ const Ranking = () => {
                               <p>{eventData.eventTitle}</p>
                             </div>
                             <div className="seeMoreBtn">
-                              <Link href="/news/qs-rankings-shoolini-ranks-3rd-top-private-university">
+                              <Link href="/news/shoolini-soars-to-new-heights-with-no1-qs-rankings">
                                 See More
                               </Link>
                             </div>

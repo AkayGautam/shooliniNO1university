@@ -1164,7 +1164,7 @@ const Mbas = (props) => {
                                         <th className="text-center"  scope="col">School %</th>
                                         <th className="text-center"  scope="col">Annual School Amt</th>
                                         <th className="text-center"  scope="col">Number of Scholarships</th>
-                                        <th className="text-center"  scope="col">Scholarship Budget</th>
+                                     
                                       </tr>
                                     </thead>
                                     <tbody className="text-center">
@@ -1175,7 +1175,7 @@ const Mbas = (props) => {
                                         <td>100%</td>
                                         <td>2,97,500</td>
                                         <td>3</td>
-                                        <td>8,92,500</td>
+                                       
                                       </tr>
 
                                       <tr>
@@ -1185,7 +1185,7 @@ const Mbas = (props) => {
                                         <td>50%</td>
                                         <td>1,48,750</td>
                                         <td>5</td>
-                                        <td>7,43,750</td>
+                                       
                                       </tr>
 
                                       <tr>
@@ -1195,7 +1195,7 @@ const Mbas = (props) => {
                                         <td>20%</td>
                                         <td>59,500</td>
                                         <td>10</td>
-                                        <td>5,95,000</td>
+                                      
                                       </tr>
 
                                       <tr>
@@ -1204,8 +1204,8 @@ const Mbas = (props) => {
                                         <td> </td>
                                         <td> </td>
                                         <td> </td>
-                                        <td><strong>  Total</strong> </td>
-                                        <td><strong> 31,41,050 </strong></td>
+                                        <td></td>
+                                     
                                       </tr>
                                    
                                     </tbody>

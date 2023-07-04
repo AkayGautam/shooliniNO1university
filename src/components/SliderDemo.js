@@ -180,8 +180,8 @@ const SliderDemo = () => {
   <Container>
     <div className="noticed">
    <h5><strong>  ADMISSION NOTICE </strong>  <br />
-Seats full: B Pharmacy, B Tech AI, B Tech ECE <br />
-Few seats left: B Tech CSE, BBA, Psychology, BA.LLB, B. Com </h5> 
+Seats full: B Pharmacy, B Tech AI, B Tech ECE,M Pharma <br />
+Few seats left: B Tech CSE, BBA, Psychology, BA.LLB, B. Com, LLM, MCA </h5> 
     </div>
   </Container>
 </section>
