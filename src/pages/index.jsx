@@ -15,7 +15,6 @@ import Footer from "../components/Footer";
 
 export const server = process.env.BASE_URL;
 
-
 export default function homepage({
   programs,
   testimonials,
@@ -29,7 +28,6 @@ export default function homepage({
       <Header />
 
       <SliderDemo />
-
 
       <IconBox />
 
@@ -46,7 +44,7 @@ export default function homepage({
       <ResearchStories />
 
       <GalleryView />
-  
+
       <ShooliniImpact />
 
       <ScrollButton />
@@ -66,8 +64,6 @@ export async function getStaticProps() {
       sitlinkSchema: data?.siteLink,
       programs: data.programs || [],
       testimonials: data.testimonials,
-      navigationSchema: data?.navigation || [],
-      sitlinkSchema: data?.siteLink || [],
     },
     revalidate: 300,
   };

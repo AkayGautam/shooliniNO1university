@@ -33,22 +33,21 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 const Programmes = ({ programs }) => {
-
-
   useEffect(() => {
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://widgets.nopaperforms.com/emwgts.js";
+    document.body.appendChild(s);
 
-    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
-
-
-    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
-  
-  
-   }, [])
- 
-   
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://widgets.nopaperforms.com/emwgts.js";
+    document.body.appendChild(s);
+  }, []);
 
   const router = useRouter();
-
 
   const [open, setOpen] = React.useState(false);
   const [opens, setOpens] = React.useState(false);
@@ -60,10 +59,9 @@ const Programmes = ({ programs }) => {
     setOpen(true);
   };
 
-  const handleClick = event => {
-    setIsActive(current => !current);
+  const handleClick = (event) => {
+    setIsActive((current) => !current);
   };
-
 
   const handleClickOpen_one = (e) => {
     e.preventDefault();
@@ -77,12 +75,8 @@ const Programmes = ({ programs }) => {
     setOpens(false);
   };
 
-
-  console.log("hii", programs);
-
   return (
     <>
-    
       <Styles>
         <section className="programme-area">
           <Container>
@@ -102,16 +96,16 @@ const Programmes = ({ programs }) => {
                           <div id={data?.slug} className="col-md-4">
                             <div className="programme_card">
                               <div className="featured_img">
-                                <img loading="lazy"
+                                <img
+                                  loading="lazy"
                                   className="img-fluid w-100"
                                   src={`${data?.image_url}`}
                                 />{" "}
                               </div>
                               <div className="programme_detail">
-
                                 <div className="coursetitles">
                                   {data.title ==
-                                    "Computer Science Engineering" ? (
+                                  "Computer Science Engineering" ? (
                                     <Link
                                       state={{ school: true }}
                                       href="/engineering-courses"
@@ -155,16 +149,13 @@ const Programmes = ({ programs }) => {
                                   )}
                                 </div>
 
-
-
                                 <ul className="programme_list">
                                   {data.courses &&
                                     data.courses.map((i, idx) => {
                                       return (
-
                                         <li key={idx}>
                                           {data.title ==
-                                            "Computer Science Engineering" ? (
+                                          "Computer Science Engineering" ? (
                                             <Link
                                               state={{ school: true }}
                                               href="/engineering-courses"
@@ -175,7 +166,7 @@ const Programmes = ({ programs }) => {
                                           ) : (
                                             <>
                                               {data.title ==
-                                                "Core Engineering" ? (
+                                              "Core Engineering" ? (
                                                 <Link
                                                   state={{ school: true }}
                                                   href="/engineering-courses"
@@ -186,7 +177,7 @@ const Programmes = ({ programs }) => {
                                               ) : (
                                                 <>
                                                   {data.title ==
-                                                    "Biotechnology" ? (
+                                                  "Biotechnology" ? (
                                                     <Link
                                                       state={{ school: true }}
                                                       href="/biotechnology-courses"
@@ -259,9 +250,10 @@ const Programmes = ({ programs }) => {
                                 </div> */}
 
                                 <div className="featured_img">
-                              
-                                  <a onClick={handleClickOpen} href="">  Know More </a>
-
+                                  <a onClick={handleClickOpen} href="">
+                                    {" "}
+                                    Know More{" "}
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -272,27 +264,27 @@ const Programmes = ({ programs }) => {
                   </Slider>
                 </Row>
               </Col>
-
-
             </Row>
           </Container>
         </section>
 
         <Dialog
-        open={open}
-        TransitionComponent={Transition}
-        keepMounted
-        onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description"
-      >
-        <DialogContent>
-
-          <DialogContentText id="alert-dialog-slide-description">
-          <div class="npf_wgts" data-height="400px" data-w="b7a96773936817725d0a4442d6310f28"></div>
-          </DialogContentText>
-        </DialogContent>
-      </Dialog>
-
+          open={open}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={handleClose}
+          aria-describedby="alert-dialog-slide-description"
+        >
+          <DialogContent>
+            <DialogContentText id="alert-dialog-slide-description">
+              <div
+                class="npf_wgts"
+                data-height="400px"
+                data-w="b7a96773936817725d0a4442d6310f28"
+              ></div>
+            </DialogContentText>
+          </DialogContent>
+        </Dialog>
       </Styles>
     </>
   );
