@@ -10,7 +10,11 @@ export const Styles = styled.div`
 {
   background-size:100% !important;
 }
- 
+.noticed h5 a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
   .bannerVideo span {
     width: 100% !important;
 }
@@ -1503,5 +1507,12 @@ a.broucher.btn:before {
   width: 5px;
   height: 30px;
 }
+
+.slick-slide span {
+  width: 100% !important;
+}
+
+
+
 
 `

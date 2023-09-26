@@ -44,13 +44,6 @@ const SearchResult = ({ result, query }) => {
   //   setSearchPageResults([data.success, searchPages])
   // }
 
-  var s = document.createElement('script')
-  s.type = 'text/javascript'
-  s.async = true
-  s.src = 'https://widgets.nopaperforms.com/emwgts.js'
-  document.body.appendChild(s)
-
-
   
   return (
     <>

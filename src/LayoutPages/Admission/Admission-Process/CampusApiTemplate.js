@@ -103,7 +103,7 @@ const ShooliniAdmission = ({ id, ldJson }) => {
           <BreadcrumbBox title={Data?.title} />
           <Styless>
             <section className="admidsionProcess my-5 pt-3 ">
-              <div className="about__area about__area_one p-relative pt---100 pb---120 mb-5">
+              <div className="about__area about__area_one p-relative pt---100 pb---120 mb-5 ">
                 <div className="container">
                   <div className="row">
                     <div className="col-md-12">

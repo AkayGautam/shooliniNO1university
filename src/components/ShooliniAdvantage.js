@@ -140,7 +140,7 @@ const ShooliniAdvantage = () => {
               </div> */}
              
                  
-                  <p className="text-white text-lg">
+                  <p className="text-white">
                     Over the past decade, Shoolini has built a worldwide network
                     of partner universities to foster exchange opportunities,
                     collaborative academic programs, faculty engagement and

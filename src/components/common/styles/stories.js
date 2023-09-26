@@ -198,7 +198,46 @@ ul.whyUs {
 .stories-area a.iconArrL {
     padding-left: 0;
 }
+. imgSlider img{
+    width:100%;
+}
 
 
+@media(max-width: 767px) {
+
+    .sec-title h2 {
+        margin-top: 0 !important;
+    }
+    
+    .mainPosTop h2 {
+        margin-top: 0 !important;
+    }
+.mob-researchNone
+{
+    display:block !important;
+}
+.stories-area .z-index-9 {
+    z-index: 9;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.mainPosTop  h2.text-white {
+    color: #f02f2f !important;
+    text-align: center;
+}
+.StoriesData-ab {
+    max-width: 270px;
+    top: 15% !important;
+}
+.StoriesData-ab p {
+    font-size: 13px !important;
+    line-height: 22px !important;
+}
+ul.slick-dots {
+    bottom: 14px;
+}
+
+}
 
 `

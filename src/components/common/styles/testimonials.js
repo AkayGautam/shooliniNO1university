@@ -103,4 +103,16 @@ export const Styles = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 767px) {
+
+  .testimonials-area .img-content {
+    -webkit-line-clamp: unset !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    display: block !important;
+}
+
+}
+
 `

@@ -139,42 +139,8 @@ const MobileMenuTwo = ({ links }) => {
             </div>
             <div></div>
           </div>
-          <div className="mb-sidebar-menu">
-            {links &&
-              links.map((item, index) => {
-                return (
-                  <div className="mb-menu-item" key={index}>
-                    <button className="mb-menu-button active">
-                      {item.sub_menu.length > 0 ? (
-                        <p>
-                          {item.text}
-                          <i className="fa fa-caret-down" aria-hidden="true"></i>
-                         
-
-                        </p>
-                      ) : (
-                        <>
-                          {item.text === "HOME" ? (
-                            <Link href="/">{item.text}</Link>
-                          ) : (
-                            <Link href={`/${item.link}`}>{item.text}</Link>
-                          )}
-
-                          {item.text === "research" ? (
-                            
-                            <Link  className="xs-display"   href="https://research.shooliniuniversity.com/"
-                            target="_blank" >{item.text}
-                            </Link>
-                          ) : (
-                            <span> </span>
-                          )}
-
-                        </>
-                      )}
-                    </button>
-                    {item.sub_menu.length > 0 ? (
-                      <div className="mb-menu-content">
-                         <ul className="nav menu-nav">
+          <div className="mb-sidebar-menu mobilemenu2">
+          <ul className="nav menu-nav">
 
 <li className="nav-item actiev">
     <Link
@@ -184,207 +150,44 @@ const MobileMenuTwo = ({ links }) => {
       Home
     </Link>
   </li>
-
-  <li className="nav-item">
-    <Link
-      href="/international/globalfootprint"
-      className="nav-link"
-    >
-      Global Footprint
-    </Link>
-  </li>
-
   <li className="nav-item actiev">
-    <Link
-      href="/"
-      className="nav-link"
-    >
-      collaborations
-    </Link>
-  </li>
-
-
-  <li className="nav-item">
-    <Link
-      href="/pathwayprograms"
-      className="nav-link"
-    >
-      Our Pathway Programs
-    </Link>
-  </li>
-
-  <li className="nav-item">
-    <Link
-      href="/"
-      className="nav-link"
-      target={"_blank"}
-    >
-      Our Globetrotters 
-    </Link>
-  </li>
-
-  <li className="nav-item">
-    <Link
-      href="/"
-      className="nav-link"
-      target={"_blank"}
-    >
-      Articles
-    </Link>
-  </li>
-
-</ul>
-<ul className="nav search-cart-bar">
-  <li className="nav-item search-box">
-    <Search />
-  </li>
-</ul>
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                );
-              })}
-
-            <div className="mb-menu-item">
-              <button className="mb-menu-button active">
-                <p>SU Students </p>
-              </button>
-              <div className="mb-menu-content show">
-                <ul className="list-unstyled">
-                <li className="list-item">
-                      <a
-                        target="_blank"
-                        href="https://shoolini.online/"
-                        rel="noreferrer"
+                      <Link
+                        href="/international"
+                        className="nav-link"
                       >
-                        Shoolini Online
-                      </a>
-                    </li>
-                    <li className="list-item">
-                      <a
-                        target="_blank"
-                        href="https://shoolini.online/distance/"
-                        rel="noreferrer"
-                      >
-                        Shoolini Distance Education
-                      </a>
+                        International
+                      </Link>
                     </li>
 
-                  <li className="list-item">
-                    <Link target="_blank" href="/blog">
-                      Blogs
-                    </Link>
-                  </li>
+  <li className="nav-item">
+    <Link
+      href="/international/2+2-study-abroad-program"
+      className="nav-link"
+    >
+     2+2 Study Abroad Program
+    </Link>
+  </li>
 
-                  <li className="list-item">
-                    <Link href="/Internship">Internship</Link>
-                  </li>
+  <li className="nav-item">
+    <Link
+      href="/international/study-india"
+      className="nav-link"
 
-                  <li className="list-item">
-                    <a
-                      target="_blank"
-                      href="https://my.shooliniuniversity.com/"
-                      rel="noreferrer"
-                    >
-                      SU Students
-                    </a>
-                  </li>
-                  <li className="list-item">
-                    <a
-                      target="_blank"
-                      href="https://alumni.shooliniuniversity.com/"
-                      rel="noreferrer"
-                    >
-                      Alumni
-                    </a>
-                  </li>
-                  <li className="list-item">
-                    <a target="_blank" href="/national-academic-depository">
-                      UGC-NAD
-                    </a>
-                  </li>
-                  <li className="list-item">
-                    <Dropdown>
-                      <Dropdown.Toggle id="456" as="a">
-                        Online Payment
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu as="ul">
-                        <Dropdown.Item as="li">
-                          <a
-                            target="_blank"
-                            href="https://shooliniuniversity.com/media/pay"
-                            rel="noreferrer"
-                          >
-                            {" "}
-                            Pay Tuition Fee{" "}
-                          </a>{" "}
-                        </Dropdown.Item>
-                        <Dropdown.Item as="li">
-                          <a
-                            target="_blank"
-                            href="https://easypay.axisbank.co.in/easyPay/makePayment?mid=NDcwNjg%3D"
-                            rel="noreferrer"
-                          >
-                            {" "}
-                            Pay Hostel Fee{" "}
-                          </a>{" "}
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </li>
-                  <li className="list-item rankingMobList">
-                    <Dropdown>
-                      <Dropdown.Toggle id="458" as="a">
-                        Ranking
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu as="ul">
-                        <Dropdown.Item as="li">
-                          <a
-                            target="_blank"
-                            href="https://shooliniuniversity.com/nba"
-                            rel="noreferrer"
-                          >
-                            {" "}
-                            NBA{" "}
-                          </a>{" "}
-                        </Dropdown.Item>
-                        <Dropdown.Item as="li">
-                          <a
-                            target="_blank"
-                            href="https://shooliniuniversity.com/naac-self-study-report"
-                            rel="noreferrer"
-                          >
-                            NAAC
-                          </a>
-                        </Dropdown.Item>
-                        <Dropdown.Item as="li">
-                          <a
-                            target="_blank"
-                            href="https://shooliniuniversity.com/nirf"
-                            rel="noreferrer"
-                          >
-                            {" "}
-                            NIRF{" "}
-                          </a>{" "}
-                        </Dropdown.Item>
-                        <Dropdown.Item as="li">
-                          <a
-                            target="_blank"
-                            href="https://shooliniuniversity.com/iqac"
-                            rel="noreferrer"
-                          >
-                            {" "}
-                            IQAC{" "}
-                          </a>{" "}
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </li>
-                </ul>
-              </div>
-            </div>
+    >
+       Study in India Program
+    </Link>
+  </li>
+
+  <li className="nav-item">
+                      <Link
+                        href="/international/dual-degree"
+                        className="nav-link"
+                    
+                      >
+                       Dual Degree Program
+                      </Link>
+                    </li>
+</ul>
           </div>
         </section>
         <div

@@ -31,7 +31,12 @@ export default function homepage({
 
       <IconBox />
 
-      <Ranking />
+
+      <ResearchStories />
+
+      {/* <GalleryView /> */}
+
+      {/* <Ranking /> */}
 
       <Companies />
 
@@ -41,9 +46,6 @@ export default function homepage({
 
       <Testimonials testimonials={testimonials} />
 
-      <ResearchStories />
-
-      <GalleryView />
 
       <ShooliniImpact />
 

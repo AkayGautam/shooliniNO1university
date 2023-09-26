@@ -2,6 +2,20 @@ import styled from 'styled-components'
 import { colors } from '../elements/elements'
 
 export const Styles = styled.div`
+
+
+.mobilemenu2 ul li {
+  background: transparent;
+  display: block;
+  width: 100%;
+  padding:5px 0px;
+  text-align: left;
+  border: 1px solid rgb(238, 238, 238);
+}
+.mobilemenu2 ul li a {
+  color: #333!important;
+}
+
   .mb-menu-content.show {
     background: #f1f1f1;
   }
@@ -312,14 +326,14 @@ a.bottmDropdown {
   @media (max-width: 767px) {
 
     .mobile-menu-area {
-      min-height: 80px;
+      min-height: 60px;
   }
 
     .mb-logo-box {
       align-items: center;
   }
   .mobile-menu-area .mb-logo-area {
-    padding: 12px 0;
+    padding: 0px 0;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -249,24 +249,25 @@ const MobileMenu = ({ links }) => {
               </button>
               <div className="mb-menu-content show">
                 <ul className="list-unstyled">
-                  <li className="list-item">
-                    <a
-                      target="_blank"
-                      href="https://shoolini.online/"
-                      rel="noreferrer"
-                    >
-                      Shoolini Online
-                    </a>
-                  </li>
-                  <li className="list-item">
-                    <a
-                      target="_blank"
-                      href="https://shoolini.online/distance/"
-                      rel="noreferrer"
-                    >
-                      Shoolini Distance Education
-                    </a>
-                  </li>
+                <li className="list-item">
+                      <a
+                        target="_blank"
+                        href="https://online.shooliniuniversity.com/"
+                        rel="noreferrer"
+                      >
+                        Shoolini Online
+                      </a>
+                    </li>
+                    <li className="list-item">
+                      <a
+                        target="_blank"
+                        href="https://online.shooliniuniversity.com/distance/"
+                        rel="noreferrer"
+                      >
+                         Distance Education
+                      </a>
+                    </li>
+
 
                   <li className="list-item">
                     <Link target="_blank" href="/blog">

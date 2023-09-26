@@ -6,16 +6,17 @@ import Image from "next/legacy/image";
 import axios from "axios";
 
 const BASE_URI = "https://shooliniuniversity.com";
+
 const settings = {
   dots: false,
   infinite: true,
-  speed: 1000,
+  speed: 3000,
   slidesToShow: 6,
-  slidesToScroll: 1,
+  slidesToScroll: 6,
   autoplay: true,
   arrows: true,
   rows: 2,
-  autoplaySpeed: 1500,
+  autoplaySpeed: 3000,
 
   responsive: [
     {

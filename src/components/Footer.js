@@ -2,9 +2,13 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa";
+import { FaBell } from "react-icons/fa";
 import EnquireForMob from "./EnquireForMob";
 import { Styles } from "../components/common/styles/footer";
 import Image from "next/legacy/image";
+import { Diversity2 } from "@mui/icons-material";
+import { Row, Col } from "react-bootstrap";
+
 
 const Footer = () => {
   const [pgdata, setPgata] = useState([]);
@@ -12,6 +16,16 @@ const Footer = () => {
   const [isActive, setActive] = useState(false);
   const [isActive2, setActive2] = useState(false);
   const [isActive3, setActive3] = useState(false);
+
+  const [notification, setNotification] = useState(false);
+
+
+  const handleClick = event => {
+    console.log("ffff")
+    // 👇️ toggle isActive state on click
+    setNotification(!notification);
+  };
+
 
   const toggleClass = () => {
     setActive(!isActive);
@@ -47,12 +61,39 @@ const Footer = () => {
     <>
       <Styles>
         <footer className="footer1">
+          <div  className="notifications position-relative">
+        
+
+            {/* <a onClick={handleClick} class="parent"> */}
+            {/* <a className="text-white" target="_blank" href="https://shooliniuniversity.com/convocation"> */}
+            <div className="parent" onClick={handleClick}> 
+           
+  <span> <FaBell /> </span>
+  </div>
+
+
+
+            <div className= {notification ? "note_hide3 not_card" : "footer_show not_card"}>
+              <div className="shadowNotification">
+                <a href="https://shooliniuniversity.com/convocation" target="_blank">
+                  <h6 className="text-white">7th Convocation 2023</h6>
+                  <p>Oct 16: Countdown Begins to Convocation 2023!</p>
+                  <p>Get ready to don your cap and gown. </p>
+                  {/* <span class="btn btn-md text-link">Apply Here</span> */}
+                </a>
+              </div>
+
+            </div>
+          </div>
           <div className="container-fluid ">
             <div className="row">
               <div className="col-md-3 bg-reds">
 
 
                 <div className="footerAbout text-center">
+                  <div className="logosFooter">
+              <Row>
+                <div className="col-6"> 
                   <Link href="/">
                     <Image
                       src="/assets/images/footer-logo.png"
@@ -62,6 +103,21 @@ const Footer = () => {
                       height={130}
                     />
                   </Link>
+                  </div>
+                  <div className="col-6"> 
+                  <div className="gptw for_mobile">
+                    <Image
+                      src="/assets/images/gptw.png"
+                      alt="Shoolini University"
+                      className="logo-footer"
+                      width={64}
+                      height={96}
+                    />
+                  </div>
+                  </div>
+                  </Row>       
+                  </div>
+
                   <h5 className="text-white">Think Learning. Think Success.</h5>
                   <ul className="social list-unstyled list-inline">
                     <li className="list-inline-item">
@@ -112,7 +168,7 @@ const Footer = () => {
                     <li className="list-inline-item">
                       <a
                         target="_blank"
-                        href="https://api.whatsapp.com/send?phone=917807999810&text=Hi%20Shoolini%20University"
+                        href="https://api.whatsapp.com/send?phone=917807899735&text=Hi%20Shoolini%20University"
                         rel="noreferrer"
                       >
                         <i className="fab fa-whatsapp"></i>
@@ -120,19 +176,19 @@ const Footer = () => {
                     </li>
                   </ul>
 
-                      
 
                   
-              <div className="gptw">
-                        <Image
+
+                  <div className="gptw for_desktop">
+                    <Image
                       src="/assets/images/gptw.png"
                       alt="Shoolini University"
                       className="logo-footer"
                       width={70}
                       height={105}
                     />
-                        </div>
-                          
+                  </div>
+
                 </div>
               </div>
 
@@ -208,15 +264,15 @@ const Footer = () => {
                             )}
 
                             {data.text == "What is the Academic Bank of Credits (ABC)?" ? (
-                               <a target="_blank"
-                               href="https://www.youtube.com/watch?v=9AQYf9wSHXg&feature=youtu.be"
-                               className="detailView onShow"
-                             >
-                               <div key={index} value={data?.id}>
-                                 <span> {data?.text} </span>
+                              <a target="_blank"
+                                href="https://www.youtube.com/watch?v=9AQYf9wSHXg&feature=youtu.be"
+                                className="detailView onShow"
+                              >
+                                <div key={index} value={data?.id}>
+                                  <span> {data?.text} </span>
 
-                               </div>
-                             </a>
+                                </div>
+                              </a>
                             ) : null}
 
                           </li>
@@ -284,6 +340,12 @@ const Footer = () => {
                         </div>
 
                       </a>
+                    </div>
+
+                    <div className="col-md-12">
+                            <p className="copyrt">
+                            Copyright ©2022 Shoolini Foundation of Life Sciences and Business Management
+                            </p>
                     </div>
                   </div>
                 </div>

@@ -33,7 +33,7 @@ const Ranking = () => {
 
   return (
     <Styles>
-      <section className="event-faq-area pt-0">
+      <section className="event-faq-area mt-md-3 pt-5">
         <Container>
           <Row>
             <Col md="12" lg="5">
@@ -275,11 +275,11 @@ const Ranking = () => {
                         <div className="alignLefts">
                           <div className="event-details">
                             <h6>
-                              <Link  href="/news/shoolini-retains-top-100-slot-in-nirf-rankings">
+                              <Link  href="/news/shoolini-scores-hat-trick-retains-position-among-top-100-universities-in-india">
                               {eventData.eventTitless}
                               </Link>
                             </h6>
-                            <h6>  <Link className="p-font" href="/news/shoolini-retains-top-100-slot-in-nirf-rankings">  {eventData.eventTitle}</Link>  </h6>
+                            <h6>  <Link className="p-font" href="/news/shoolini-scores-hat-trick-retains-position-among-top-100-universities-in-india">  {eventData.eventTitle}</Link>  </h6>
                             <p><strong>    {eventData.eventdesc} </strong> </p> 
                             <p>  {eventData.eventdesc5}</p>
                             <p> <strong>  {eventData.eventdesc6} </strong></p>
@@ -289,7 +289,7 @@ const Ranking = () => {
                             <p>  {eventData.eventdesc4}</p>
                           </div>
                           <div className="seeMoreBtn">
-                            <Link href="/news/shoolini-retains-top-100-slot-in-nirf-rankings">
+                            <Link href="/news/shoolini-scores-hat-trick-retains-position-among-top-100-universities-in-india">
                               See More
                             </Link>
                           </div>

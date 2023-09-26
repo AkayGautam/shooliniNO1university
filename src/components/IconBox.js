@@ -5,12 +5,13 @@ import { Styles } from './common/styles/iconBox'
 import CountUp from 'react-countup'
 
 const IconBox = () => {
+  
 
   return (
     <>
       <Styles>
         {/* Icon Box */}
-        <section className="icon-box-area pt-md-4 mt-2">
+        <section className="icon-box-area pb-md-4 pt-md-4 mt-2">
           <Container>
             <Row>
               {Datas.map((data, i) => (

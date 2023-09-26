@@ -1236,7 +1236,7 @@ const Mbas = (props) => {
                                         the Shoolini MBA gets you industry ready
                                         from the get go. <br />
                                         <br />
-                                        As a full-time MBA student, you will{" "}
+                                        As a full-time MBA student, you will develop{" "}
                                         <strong>
                                           {" "}
                                           strong general management and
@@ -1325,7 +1325,7 @@ const Mbas = (props) => {
                           </li>
                           <li>
                             {" "}
-                            <a target="_blank" href="#">
+                            <a target="_blank" href="https://shooliniuniversity.com/mba-business-analytics">
                               {" "}
                               Business Analytics{" "}
                             </a>{" "}
@@ -1362,7 +1362,7 @@ const Mbas = (props) => {
                         
                           <li>
                             {" "}
-                            <a target="_blank" className="nopointer" href="#">
+                            <a target="_blank" className="nopointer" href="https://shooliniuniversity.com/mba-agri-business">
                               {" "}
                               Agri Business{" "}
                             </a>{" "}
@@ -1389,7 +1389,7 @@ const Mbas = (props) => {
                           </li>
                           <li>
                             {" "}
-                            <a target="_blank" href="#">
+                            <a target="_blank" href="https://shooliniuniversity.com/mba-financial-markets">
                               {" "}
                               Financial Markets{" "}
                             </a>{" "}
@@ -1407,7 +1407,7 @@ const Mbas = (props) => {
 
                           <li>
                             {" "}
-                            <a target="_blank" className="nopointer" href="#">
+                            <a target="_blank" className="nopointer" href="https://shooliniuniversity.com/mba-communications">
                               {" "}
                               Communications{" "}
                             </a>{" "}

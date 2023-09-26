@@ -34,8 +34,8 @@ const SliderDemo = () => {
     infinite: true,
     arrows: false,
     autoplay: true,
-    speed: 2500,
-    autoplaySpeed: 4000,
+    speed: 500,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: 'linear',
@@ -88,15 +88,26 @@ const SliderDemo = () => {
               frameBorder="0"
             ></iframe> */}
 
-      {/* <video
+      <video className="w-100 for_desktop"
               autoPlay
               controls={false}
               loop
               muted
               poster="/assets/video/banner.webp"
             >
-              <source src="/assets/video/banner.mp4" type="video/mp4" />
-            </video> */}
+              <source src="/assets/video/su-videos.mp4" type="video/mp4" />
+            </video>
+
+            <video className="w-100 for_mobile"
+              autoPlay
+              controls={false}
+              loop
+              muted
+              poster="/assets/video/bannerMob.webp"
+            >
+              <source src="/assets/video/su-mobile.mp4" type="video/mp4" />
+            </video>
+
 
       {/* <img
               src="/assets/video/banner3.webp" 
@@ -159,7 +170,7 @@ const SliderDemo = () => {
       </section> */}
 
 
-      <section className="heroSLider position-relative">
+      {/* <section className="heroSLider position-relative">
    <div className="slideBox">
           <Slider {...settings}>
               {Datas.map((data, i) => (
@@ -175,16 +186,9 @@ const SliderDemo = () => {
           <Link onClick={handleClickOpen} href="/" className="broucher btn"> Download Brochure</Link>
           <Link target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=Slider2023&utm_campaign=Slider2023" className="broucher btn"> Fill Admission Form</Link>
         </div>
-      </section>
-<section className="noticed">
-  <Container>
-    <div className="noticed">
-   <h5><strong>  ADMISSION NOTICE </strong>  <br />
-Seats full: B Pharmacy, B Tech AI, B Tech ECE,M Pharma <br />
-Few seats left: B Tech CSE, BBA, Psychology, BA.LLB, B. Com, LLM, MCA </h5> 
-    </div>
-  </Container>
-</section>
+      </section> */}
+
+
 
 
     </Styles>

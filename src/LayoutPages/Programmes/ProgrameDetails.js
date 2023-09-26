@@ -34,6 +34,24 @@ import Template from "@/components/Template";
 import Datas from "../../data/school/school.json";
 import { useRouter } from "next/router";
 import Templatecourse from "@/components/TemplateCourse";
+import { Troubleshoot } from "@mui/icons-material";
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+
+
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -70,13 +88,41 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-function ProgrameDetails({ data, id, ldJson }) {
+function ProgrameDetails({ props, img, data, id, ldJson }) {
+
+  var result_blog = [];
+
+  const [blogdata, setBlogdata] = useState([]);
+
+  useEffect(() => {
+    fetch("https://shooliniuniversity.com/media/GetTop5Blog?auth=shoolini@999&toprecord=10", {
+      method: "post",
+      headers: new Headers({
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      }),
+    })
+      .then((response) => response.json())
+      .then((res) => {
+        setBlogdata(res);
+        console.log(res.success);
+        setMetaTags(res.success);
+      });
+  }, [])
+
+  //result_blog = blogdata?.success;
+
+  const blogs = blogdata?.success;
+
+  console.log(blogs, "blog")
+
+
   const router = useRouter();
   const bgImg = data[0].slides
     ? JSON.parse(data[0].slides)[0]
     : `/assets/images/${Datas[0].backgroundImage}`;
 
-  const [isDoctoral, setIsDoctoral] = useState(false);
+  const [isDoctoral, setIsDoctoral] = useState(true);
 
   useEffect(() => {
     const component = Object.keys(router.components).includes('/doctoral-programs')
@@ -112,16 +158,122 @@ function ProgrameDetails({ data, id, ldJson }) {
     });
   });
 
+  // var settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   arrows: true,
+  //   autoplay: true,
+  //   speed: 500,
+  //   autoplaySpeed: 2100,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
+
+
+
   var settings = {
     dots: false,
     infinite: true,
     arrows: true,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 2100,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
+    rows: 2,
+    mobileFirst:true,
+    responsive: [
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
+
+  var allBlogs = {
+    dots: false,
+    infinite: true,
+    arrows: true,
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    mobileFirst:true,
+    responsive: [
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          mobileFirst:true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          mobileFirst:true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          mobileFirst:true,
+        },
+      },
+    ],
+  };
+
+  const setting = {
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+
+    autoplaySpeed: 3000,
+  
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+
 
   useEffect(() => {
     document.body.setAttribute("id", `pageid-${id}`);
@@ -134,6 +286,29 @@ function ProgrameDetails({ data, id, ldJson }) {
   const gallery = data[0].gallery ? JSON.parse(data[0].gallery) : [];
   const posTFaq = data[1].faqdata ? data[1].faqdata : [];
   const postReview = data[1].testimonial ? data[1].testimonial : [];
+
+  const course_discription = data[0].course_right_part ? JSON.parse(data[0].course_right_part) : [];
+
+  const [bgimg, setBgimg] = useState('')
+  useEffect(() => {
+    // Aos.init({ duration: 2000 })
+    setBgimg(img)
+  }, [img])
+
+  console.log(bgimg?.image_url, "image")
+
+
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+
+
+  const [opend, setOpend] = React.useState(false);
+  const handleOpend = () => setOpend(true);
+  const handleClosed = () => setOpend(false);
+
 
   return (
     <SuspenseBoundary>
@@ -153,14 +328,436 @@ function ProgrameDetails({ data, id, ldJson }) {
         {/* Header 2 */}
         <Header />
 
-        <Templatecourse title={data[0]?.title} img={bgImg?.image_url} />
-
-        {/* Breadcroumb */}
-        {/* <BreadcrumbBox title={data[0].title} /> */}
-
+        {/* <Templatecourse title={data[0]?.title} img={bgImg?.image_url} /> */}
         <Styless>
-          {/* Course Details */}
-          <section className="course-details-area">
+
+          <section style={{ background: `url(${bgImg?.image_url})` }} className="for-desktop new-header aiml-new__header js-section-track" id="bg-image" data-init="true">
+
+            <div
+
+              className="slider-content slider-image"
+              style={{
+                background: `url('${bgImg?.image_url}') no-repeat center center`,
+              }}
+            >
+
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="play-btn-area">
+                      <div className="video-play-button" data-gl-target="experienceModal" data-videoid="oxqhi57t0w">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="header-content text-left">
+                      <h1 className="banner-heading-aiml">School of Pharmaceutical Sciences </h1>
+                      <h3 className="banner-subheading-aiml">{data[0]?.title}</h3>
+                      <p className="mb-0 small-font"><strong> Eligibility :</strong> {data[0]?.eligibility}</p>
+                      <ul>
+                        <li className="pl-0"><strong> Duration :</strong> {data[0]?.duration}</li>
+                        <li><strong>Admission Criteria :</strong> {data[0]?.admission_criteria} </li>
+                      </ul>
+                      <div className="button-section non-js-btns " id="top-banner-button-section">
+                        <div className="lc-btn-section">
+                          <a href="javascript:void(0)" className="grey-transparent-button btn-style fixed-size-btn track-click-mp">
+                            Apply Now
+                          </a>
+                        </div>
+                        <div className="application-btn-section">
+                          <a href="/pg-program-artificial-intelligence-course/registration" className="btn primary-button  btn-style fixed-size-btn track-click-mp" data-title="Top Banner"> Download Brochure </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="for-mobile new-header aiml-new__header js-section-track" id="bg-image">
+            <div className="slider-content slider-image" >
+              <img className="w-100 " src= {bgImg?.image_url} />
+
+              <div className="play-btn-area formobile">
+                      <div className="video-play-button" data-gl-target="experienceModal" data-videoid="oxqhi57t0w">
+                        <span></span>
+                      </div>
+                    </div>
+
+              </div>
+
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="play-btn-area">
+                      <div className="video-play-button" data-gl-target="experienceModal" data-videoid="oxqhi57t0w">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="header-content text-left">
+                      <h1 className="banner-heading-aiml">School of Pharmaceutical Sciences </h1>
+                      <h3 className="banner-subheading-aiml">{data[0]?.title}</h3>
+                      <p className="mb-0 small-font"><strong> Eligibility :</strong> {data[0]?.eligibility}</p>
+                      <ul>
+                        <li className="pl-0"><strong> Duration :</strong> {data[0]?.duration}</li>
+                        <li><strong>Admission Criteria :</strong> {data[0]?.admission_criteria} </li>
+                      </ul>
+                      <div className="button-section non-js-btns " id="top-banner-button-section">
+                        <div className="lc-btn-section">
+                          <a href="javascript:void(0)" className="grey-transparent-button btn-style fixed-size-btn track-click-mp">
+                            Apply Now
+                          </a>
+                        </div>
+                        <div className="application-btn-section">
+                          <a href="/pg-program-artificial-intelligence-course/registration" className="btn primary-button  btn-style fixed-size-btn track-click-mp" data-title="Top Banner"> Download Brochure </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+    
+          </section>
+
+
+          <div className="featureDiv">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-5">
+
+                
+                  <img src={ data[0]?.course_left_image} className="img-fluid" alt="Culinary Arts Chitkara University" />
+                </div>
+                <div className="col-md-7">
+
+{course_discription.length > 0 && (
+  <div>
+          {course_discription.map((row, idx) => (
+                  <div className="fDiv">
+                    <div className="couIcon"><img src={ row.image_url} className="webIcon" /></div>
+                    <div className="couCont">
+                      <p>
+                        <b><img className="mobIconLP" src="https://www.chitkara.edu.in/images/2021/icons/icn1a.png" />{ row.heading}</b>
+                      </p>
+                     <p>{ row.content}  </p> 
+                    </div>
+                  </div>
+ ))}
+ </div>
+  )}
+
+                  {/* <div className="fDiv">
+                    <div className="couIcon"><img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/schools/icons/handicon.png" className="webIcon" /></div>
+                    <div className="couCont">
+                      <p>
+                        <b><img className="mobIconLP" src="https://www.chitkara.edu.in/images/2021/icons/icn2a.png" />Internship Opportunity</b>
+                      </p>
+                      <p>Internship Opportunity</p>
+                    </div>
+                  </div> *
+                   <div className="fDiv">
+                    <div className="couIcon"><img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/schools/icons/campus-recruitment.png" className="webIcon" /></div>
+                    <div className="couCont">
+                      <p>
+                        <b><img className="mobIconLP" src="https://www.chitkara.edu.in/images/2021/icons/icn3a.png" />Campus Recruitment</b>
+                      </p>
+                      <p>Assured placement in top Hotel brands and best international chains, cruises and QSR (Quick Service Restaurants) &amp; Retail companies.</p>
+                    </div>
+                  </div> */}
+
+             </div>
+              </div>
+            </div>
+          </div>
+
+
+          <section className="fac-mentor">
+            <div className="container">
+              <div className="pagetitle">
+                <h3 class="text-left heading-left mb-0">Top Faculty  </h3>
+                <p> Learn from leading academicians in the field of Artificial Intelligence and Machine Learning and several experienced industry practitioners from top organisations. </p>
+              </div>
+              <div className="mentorss">
+                <Slider {...settings}>
+
+                  {data[1] &&
+                    data[1].facultydetails?.map((res, index) => (
+                      <div className="colrosText">
+                        <Link
+                          href={`/faculty/profile/${res.name
+                            .split(" ")
+                            .join("-")}`}
+                        >
+                          <div className="fac-mem" key={index}>
+                            <div className="fac-img">
+                              <img
+                                src={
+                                  res.imageurl
+                                    ? res.imageurl
+                                    : process.env.PUBLIC_URL +
+                                    `/assets/images/instructor-2.jpg`
+                                }
+                                alt={res.name}
+                                className="img-fluid"
+                              />
+                            </div>
+                            <div className="fac-list">
+                              <h5>{res.name} </h5>
+                              <p> {res.designation} </p>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+
+                    ))}
+
+
+
+                </Slider>
+              </div>
+            </div>
+          </section>
+          <section className="overview">
+            <div className="container">
+
+              {/* <h3 class="text-center heading-left">Designed for working professionals like you</h3> */}
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="circulum">
+                    <div className="curriculum-template__head">
+                      <div className="curriculum-head-container curriculum-left left-fixed">
+                        <h2 className="curriculum-head__title">
+                          Comprehensive Curriculum
+                        </h2>
+                        <p className="curriculum-head__subtitle">The curriculum has been designed by faculty from Great Lakes and UT Austin McCombs School of Business. </p>
+
+                        <div className="curriculum-button-block lc-btn-section">
+                          <a onClick={handleOpen} className="primary-button w-100 feeBtn btn-style text-center track-click-mp" href="javascript:void(0)">
+                            Semester Fee
+                          </a>
+                        </div>
+                        <div className="curriculum-button-block lc-btn-section">
+                          <a onClick={handleOpend} className="primary-button btn-style w-100 text-center track-click-mp" href="javascript:void(0)">
+                            Download Curriculum
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-8">
+                  <div className="overview-dta">
+
+                    <p> {data[0]?.content} </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style}>
+              <Typography id="modal-modal-title" variant="h6" component="h2">
+                Semester Fee
+              </Typography>
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <p>  Himachal Pradesh Domicile : <strong> {data[0]?.fees_semester} </strong>   </p>
+                <p>  Others : <strong> {data[0]?.otherfees_semester}  </strong>   </p>
+              </Typography>
+            </Box>
+          </Modal>
+
+
+          <Modal
+            open={opend}
+            onClose={handleClosed}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style}>
+              <Typography id="modal-modal-title" variant="h6" component="h2">
+                Semester Fee
+              </Typography>
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <div>   {data[0]?.curriculum_awaited}    </div>
+              </Typography>
+            </Box>
+          </Modal>
+
+
+          <section className="  allFaculty mb-5">
+            <div className="container">
+              <div className="pagetitle">
+                <h3 class="text-left heading-left mb-0">Learner Feedback on Mentorship  </h3>
+                <p> Learn from leading academicians in the field of Artificial Intelligence and Machine Learning and several experienced industry practitioners from top organisations. </p>
+              </div>
+              <div className="mentorss">
+                <Slider {...setting}>
+
+                  {postReview &&
+                    postReview?.map((row, idx) => (
+                      <div>
+                        <div className="allFac-Card">
+                          <div className="fac-mem" key={idx}>
+                            <div className="fac-img">
+                              <img
+                                src={row?.imageurl}
+                                alt=""
+                                className="img-fluid"
+                              />
+                            </div>
+                            <div className="fac-list">
+                              <h5>{row.name} </h5>
+                            </div>
+                          </div>
+                          <div className="fac-list p-0">  <p className="m-0"> {row.content} </p> </div>
+                        </div>
+                      </div>
+
+                    ))}
+                </Slider>
+              </div>
+            </div>
+          </section>
+
+
+
+
+          <section className="overview pt-0">
+            <div className="container">
+
+              {/* <h3 class="text-center heading-left">Designed for working professionals like you</h3> */}
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="circulum">
+                    <div className="curriculum-template__head">
+                      <div className="curriculum-head-container curriculum-left text-left left-fixed">
+                        <h4 className="font-18 text-left">
+                          MPharmacy - Pharmaceutical Chemistry Career Opportunities
+                        </h4>
+                        <ul className="opp-list">
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: data[0]?.career_opportunities,
+                            }}
+                          />
+
+                        </ul>
+                        {/* <h4 className="font-18 text-left"> Research Opportunities </h4>
+                        <p className="font-14"> Natural Products/ Synthetic-based Drug Discovery: Phytochemical evaluation and Standardizations of medicinal plants, Ayurvedic or other formulations; Medicinal Chemistry and Drug Discovery Research. </p> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-8">
+                  <div className="overview-dta">
+                    <div className="course-desc">
+                      <div className="pagetitle mt-0">
+                        <h3 class="text-left heading-left mb-0">Frequently Asked Questions </h3>
+                        <p> Learn from leading academicians in the field of Artificial Intelligence and Machine Learning and several experienced industry practitioners from top organisations. </p>
+                      </div>
+                      <div>
+                        {posTFaq &&
+                          posTFaq.map((row, idx) => (
+                            <Accordion
+                              key={idx}
+                              expanded={expanded === `panel${idx}`}
+                              onChange={handleChange(`panel${idx}`)}
+                            >
+                              <AccordionSummary
+                                aria-controls="panel1d-content"
+                                id="panel1d-header"
+                              >
+                                <h3 className="faqTitle">{row?.name}</h3>
+                              </AccordionSummary>
+                              <AccordionDetails>
+                                <Typography>
+                                  <span
+                                    dangerouslySetInnerHTML={{
+                                      __html: row?.content,
+                                    }}
+                                  ></span>
+                                </Typography>
+                              </AccordionDetails>
+                            </Accordion>
+                          ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="blogsCard mb-5">
+
+            <Container>
+
+              <div class="pagetitle"><h3 class="text-left heading-left mb-0"> Latest Blogs  </h3>
+                <p> Learn from leading academicians in the field of Artificial Intelligence and Machine Learning and several experienced industry practitioners from top organisations. </p></div>
+
+              <Row>
+                {
+                  <Slider {...allBlogs}> {
+                    blogs?.map((blog, idx) =>
+
+                      <Col md="3" key={idx}>
+                        <div className="blog-card">
+                          <a className="blog-card__link" href={blog.readmore}>
+                            <div className="cardImage" style={{ background: `url(${blog.featureimage})` }}>
+                              {/* <img src={} className="card-img-top" alt="..." /> */}
+
+                            </div>
+                            <div className="card-body  position-relative">
+                              {/* <span className="dates"> { blog.post_date } </span> */}
+                              {/* <ul className="catgory">
+                              {
+                                blog?.ctegory?.map((cat, id) =>
+                                  <li key={id}>
+                                    {cat}
+                                  </li>
+                                )}
+                            </ul> */}
+                              <h5 className="card-title">  {blog.title} </h5>
+                              {/* <p className="card-text">
+                              {blog.content.replace(/(<([^>]+)>)/ig, '')}
+                            </p> */}
+
+                            </div>
+                          </a>
+                          <a target="_blank" href={blog.readmore} className="btnss">Read More &nbsp; {'>'} </a>
+                        </div>
+
+
+                      </Col>
+                    )}
+                  </Slider>
+                }
+              </Row>
+            </Container>
+
+            <div>
+
+            </div>
+
+          </section>
+
+
+          {/* <section className="course-details-area"> 
             <Container>
               <Row>
                 <Col lg="8" md="8" sm="12" className="order-xs-2">
@@ -185,7 +782,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                             </Nav.Link>
                           </Nav.Item>
 
-                          <Nav.Item> 
+                          <Nav.Item>
                             <Nav.Link eventKey="curriculum">
                               {
                                 isDoctoral ? 'ACADEMIC CALENDAR' : 'CURRICULUM'
@@ -222,7 +819,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                             className="curriculum-tab"
                           >
                             <div className="course-curriculum">
-                              {/* <h5>Course Curriculum</h5> */}
+                               <h5>Course Curriculum</h5> *
                               <p
                                 dangerouslySetInnerHTML={{
                                   __html: data[0]?.curriculum_awaited,
@@ -234,7 +831,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                             eventKey="instructor"
                             className="instructor-tab"
                           >
-                            {/* <h3>Course Instructors  </h3> */}
+                           <h3>Course Instructors  </h3> 
 
                             <div className="instructor-item">
                               <Row>
@@ -392,7 +989,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                 </h5>
                                 <h5>
                                   {" "}
-                                 Others :{" "}
+                                  Others :{" "}
                                   <span>
                                     {" "}
                                     ₹{data[0]?.otherfees_semester}{" "}
@@ -404,14 +1001,14 @@ function ProgrameDetails({ data, id, ldJson }) {
 
 
                           </ul>
-                          {/* <p className="secrty">
+                         <p className="secrty">
                             * One-time refundable security fee of Rs. 10,000
-                          </p>  */}
-                         
+                          </p>  
 
-                          {/* <div className="lbDesign">
+
+                           <div className="lbDesign">
                                   <img className="w-100" src="assets/images/bdesign.webp" />           
-                          </div> */}
+                          </div> 
 
 
                           {gallery.length > 0 && (
@@ -436,7 +1033,7 @@ function ProgrameDetails({ data, id, ldJson }) {
                                         </div>
                                         {/* <figcaption>
                                           <h3> { row?.title} </h3>
-                                        </figcaption> */}
+                                        </figcaption> 
                                       </figure>
                                     </Col>
                                   ))}
@@ -452,6 +1049,7 @@ function ProgrameDetails({ data, id, ldJson }) {
               </Row>
             </Container>
           </section>
+          */}
         </Styless>
 
         {/* Footer 2 */}

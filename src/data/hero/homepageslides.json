@@ -1,27 +1,14 @@
 [
     {
-        "id": "1",
+        "id": "8",
         "backgroundImage": "/assets/slider/slide8.jpg"
     },
     {
-        "id": "1",
+        "id": "2",
         "backgroundImage": "/assets/slider/slide5.jpg"
     },
     {
-        "id": "1",
-        "backgroundImage": "/assets/slider/slide7.jpg"
-    },
-    {
-        "id": "1",
-        "backgroundImage": "/assets/slider/slide6.jpg"
-    },
-    {
-        "id": "1",
+        "id": "3",
         "backgroundImage": "/assets/slider/slide1.jpg"
-    },
-    {
-        "id": "1",
-        "backgroundImage": "/assets/slider/slide10.jpg"
     }
-   
 ]

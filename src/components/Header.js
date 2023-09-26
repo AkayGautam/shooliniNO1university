@@ -154,9 +154,9 @@ const Header = () => {
           <span className="iconsFile"> <FaPen /> </span>
           <span className="icnName">Apply Now</span> </a>
 
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=917807999810&text=Hi%20Shoolini%20University" className="Instagram whatsApp">
+        {/* <a target="_blank" href="https://api.whatsapp.com/send?phone=917807775315&text=Hi%20Shoolini%20University" className="Instagram whatsApp">
           <span className="iconsFile"> <FaWhatsapp /> </span>
-          <span className="icnName">whatsapp</span> </a>
+          <span className="icnName">whatsapp</span> </a> */}
 
       </div>
 
@@ -171,7 +171,7 @@ const Header = () => {
               href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=tickerweb&utm_campaign=tickerweb"
               rel="noreferrer"
             >
-            Seats Filling Up Fast. Apply Now!
+         Admissions Open -- Few Seats Left Across Courses
             </a>
           </div>
  </Slider>
@@ -187,7 +187,7 @@ const Header = () => {
                     <li className="list-inline-item">
                       <a
                         target="_blank"
-                        href="https://shoolini.online/"
+                        href="https://online.shooliniuniversity.com/"
                         rel="noreferrer"
                       >
                         Shoolini Online
@@ -196,7 +196,7 @@ const Header = () => {
                     <li className="list-inline-item">
                       <a
                         target="_blank"
-                        href="https://shoolini.online/distance/"
+                        href="https://online.shooliniuniversity.com/distance/"
                         rel="noreferrer"
                       >
                          Distance Education

@@ -271,6 +271,15 @@ const Styles = styled.div`
       font-weight: 700;
       font-size: 32px;
     }
+    #Abroad .slides {
+      width: 48.33%;
+  }
+  .areaforInter,  .areaforInter:after {
+    background: #fff !important;
+}
+
+
+
   }
 
   .team-member-area .slick-track {
@@ -1469,11 +1478,19 @@ background-position: right;
 margin:0px !important;
 }
 
-.stories-area.areaforInter:after {
-  background: linear-gradient( 90deg ,#f6f6f6 50%,transparent 50%) !important;
+
+section.stories-area.differetImage, section.stories-area.differetImage:after {
+  background:#e33535!important;
+  height: auto !important;
 }
-
-
+.stories-area .StoriesData h4 {
+  font-size: 32px;
+}
+.stories-area .StoriesData {
+  max-width: 100%;
+  padding-left: 0;
+  margin-top: 20px;
+}
 .card-box {
   background: rgb(255, 255, 255);
   padding: 30px;
@@ -1487,6 +1504,9 @@ margin:0px !important;
 }
 .slick-slide img {
   display: block;
+}
+section#Stories {
+  padding: 20px 0px !important;
 }
 #Stories .card-box {
   height: auto;
@@ -1530,6 +1550,72 @@ h3.title-default a {
 {
   background: url(../../assets/images/bg-testimonial3.jpg) !important;
 }
+.card-box {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 15px;
+  height: 100%;
+}
+.StoriesData h4 {
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  margin: 0px 0px 10px;
+}
+
+.logosMax {
+  width: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.slide-track {
+  display: flex;
+  flex-wrap: wrap;
+}
+#Abroad .slides {
+  width: 33.33%;
+}
+
+a#send2 {
+  background: #fff;
+}
+section.newslater-area {
+  background-color: #e41a1a;
+}
+.step-img4 img {
+  width: 100%;
+}
+
+.bg-reds {
+  background: rgb(228, 26, 26);
+  color: rgb(255, 255, 255);
+}
+section.student-voices {
+  background: rgb(245, 245, 247);
+  padding: 40px 0px;
+}
+.card-box h5 {
+  font-weight: 700;
+}
+.dlab-media {
+  max-height: 210px;
+  overflow: hidden;
+}
+
+@media screen and (min-width:768px)
+{
+  section.icon-box-area {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+}
+}
+
+
+
+
+
+
 
 `
 

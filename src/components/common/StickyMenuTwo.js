@@ -49,32 +49,41 @@ const StickyMenuTwo = ({ links }) => {
                       </Link>
                     </li>
 
-                    <li className="nav-item">
+                    <li className="nav-item actiev">
                       <Link
-                        href="/international/globalfootprint"
+                        href="/international"
                         className="nav-link"
                       >
-                        Global Footprint
-                      </Link>
-                    </li>
-
-
-                    <li className="nav-item">
-                      <Link
-                        href="/international/pathwayprograms"
-                        className="nav-link"
-                      >
-                       Signature Programs
+                        International
                       </Link>
                     </li>
 
                     <li className="nav-item">
                       <Link
-                        href="/"
+                        href="/international/2+2-study-abroad-program"
                         className="nav-link"
-                        target={"_blank"}
                       >
-                        Articles
+                       2+2 Study Abroad Program
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        href="/international/study-india"
+                        className="nav-link"
+                      
+                      >
+                         Study in India Program
+                      </Link>
+                    </li>
+                    
+                    <li className="nav-item">
+                      <Link
+                        href="/international/dual-degree"
+                        className="nav-link"
+                       
+                      >
+                       Dual Degree Program
                       </Link>
                     </li>
                     </ul>

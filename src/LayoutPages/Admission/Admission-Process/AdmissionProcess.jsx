@@ -39,6 +39,9 @@ const AdmissionProcess = ({ data, ldJson }) => {
     var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
   })
 
+  const gallery = data[0].gallery ? JSON.parse(data[0].gallery) : [];
+  const Numbers = data[0].numbers ? JSON.parse(data[0]?.numbers) : [];
+
   return (
     <SuspenseBoundary>
       <Head>
@@ -66,7 +69,7 @@ const AdmissionProcess = ({ data, ldJson }) => {
           
           <Styless>
             <section className="admidsionProcess my-5 pt-3 ">
-              <div className="about__area about__area_one p-relative pt---100 pb---120 mb-5">
+              <div className="about__area about__area_one p-relative pt---100 pb---120 mb-5 bgggggggg">
                 <div className="container">
                   <div className="row">
                     <div className="col-md-8">
@@ -189,6 +192,9 @@ const AdmissionProcess = ({ data, ldJson }) => {
                    
                       </div>
                       </div>
+
+
+                      
                     </div>
                   </div>
                 </div>
@@ -202,6 +208,40 @@ const AdmissionProcess = ({ data, ldJson }) => {
                 ></div>
               </Container>
             </section>
+
+            <section className="templateHeading py-5">
+          <Container>
+            {Numbers.length > 0 && (
+              <div className="gallery mb-4">
+                <div className=" text-left sec-title color-red">
+                  <h2 className=" py-3"> Gallery</h2>
+                </div>
+                <Row>
+                  {Numbers.length > 0 &&
+                    Numbers.map((row, idx) => (
+                      <Col md={3} sm={6} key={idx}>
+                        <figure className="snip1527">
+                          <div className="image">
+                            <Image
+                              width={306}
+                              height={204}
+                              className="img-fluid"
+                              src={row?.image_url}
+                              alt={row?.content}
+                            />
+                          </div>
+                          <figcaption>
+                            <h3> {row?.content} </h3>
+                          </figcaption>
+                        </figure>
+                      </Col>
+                    ))}
+                </Row>
+              </div>
+            )}
+          </Container>
+        </section>
+
           </Styless>
 
           <Footer />

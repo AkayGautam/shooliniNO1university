@@ -110,7 +110,7 @@ const CampusTemplate = ({ id, data, ldJson }) => {
                                     return (
                                       <React.Fragment key={index}>
                                         {item.url ? (
-                                          <Col md={6} sm={12}>
+                                          <Col md={4} sm={12}>
                                             <Link
                                               href={
                                                 "/" +
@@ -138,7 +138,7 @@ const CampusTemplate = ({ id, data, ldJson }) => {
                                             </Link>
                                           </Col>
                                         ) : (
-                                          <Col md={6} sm={12}>
+                                          <Col md={4} sm={12}>
                                             <figure class="snip1527">
                                               <div class="image">
                                                 <Image

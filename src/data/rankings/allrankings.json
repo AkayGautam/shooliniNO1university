@@ -1,0 +1,129 @@
+
+ [
+        {
+            "id": "1",
+            "title": 2022,
+            "image": "assets/images/rankings/igauge.png",
+            "body": "The faculty ",
+            "adv": [
+                "Computer science intersects with numerous disciplines, like business, mathematics, engineering, biology, and many more ", 
+                "Technical skills in the digital age increase employability prospects. ", 
+                " Necessary skills to pursue entrepreneurial ventures-from developing a mobile app to creating a website, to exploring data analysis techniques"
+            ],
+        "odd_sem" : [
+            "AI for Everyone",
+            "Web Designing"
+        ]
+        },
+
+        {
+            "id": 2,
+            "title": 2022,
+            "image": "assets/images/rankings/careers.jpg",
+            "body": "Shoolini MBA curriculum ",
+            "adv": [
+                "Understanding of market dynamics ", 
+                "Quantitative and data analysis skills ", 
+                "Insight into policy and decision-making processes ", 
+                "Broader perspective on global issues",
+                "Complementary skills for business and entrepreneurship"
+            ],
+            "odd_sem" : [
+                "Economic Schools of Thought "
+            ]
+        },
+
+        {
+            "id": 3,
+            "title": 2022,
+            "image": "assets/images/rankings/indiatoday.jpg",
+            "body": "Shoolini MBA graduates ",
+            "adv": [
+                "Basic knowledge of healthcare systems and policies ", 
+                "Understanding of healthcare ethics and patient care ", 
+                "Enhanced communication and interpersonal skills in a healthcare context "
+            ],
+            "odd_sem" : [
+                "Herbal Medicine ",
+                "Health organization &management "
+            ]
+        },
+
+        {
+            "id": 4,
+            "title": 2022,
+            "image": "assets/images/rankings/nirf.jpg",
+            "body": "Students of Shoolini University regularly  ",
+            "adv": [
+                "Complements knowledge to wide range of majors, including business, education, healthcare, and social sciences, by providing a deeper understanding of human behavior "
+            ],
+            "odd_sem" : [
+                "Psychology and mental health "
+            ]
+        },
+
+        {
+            "id": 5,
+            "title": 2022,
+            "image": "assets/images/rankings/qs.jpg",
+            "body": "After completing this program ",
+            "adv": [
+                "A comprehensive understanding of principles which can be applied to personal wellness ", 
+                "Opens doors to careers in dietetics, nutrition counseling, food industry, public health, community nutrition, or research. ", 
+                "Complementary knowledge majors in health sciences "
+            ],
+            "odd_sem" : [
+                "Science of Beverages "
+            ]
+        },
+
+        {
+            "id": 6,
+            "title": 2022,
+            "image": "assets/images/rankings/scimago.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Develops your artistic abilities ", 
+                "Confidence in public speaking, stage presence, and performing in front of an audience ", 
+                "Interdisciplinary collaboration and develop creative skills "
+            ],
+            "odd_sem" : [
+                "Hindustani Classical Music Vocal (Beginner) ",
+                "Music Appreciation ",
+                "Site Specific Theatre "
+            ]
+        },
+
+        {
+            "id": 7,
+            "title": 2022,
+            "image": "assets/images/rankings/theimpact.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Improves communication abilities and opens doors to interact with diverse communities. ", 
+                "Gain insights into different cultures, traditions, and perspectives ", 
+                "Cultural competence and a broader global awareness. ", 
+                "Enhanced employability in international business, diplomacy, translation and interpretation, tourism, education, and more "
+            ],
+            "odd_sem" : [
+                "Introductory Russian Language ",
+                "Introductory Korean "
+            ]
+        },
+
+        {
+            "id": 8,
+            "title": 2022,
+            "image": "assets/images/rankings/theranking.jpg",
+            "body": "Experts and academicians  ",
+            "adv": [
+                "Unique career opportunities in fields such as translation, interpretation, international business, diplomacy, tourism, journalism, or working with the Indian diaspora. ", 
+                " Demonstrate cultural competency and language proficiency to potential employers. "
+            ],
+            "odd_sem" : [
+                "Kavita, natak aur sanchar kaushal ",
+                "Hindi sahitya ke adhyayan ka parichay) "
+            ]
+        }
+
+    ]

@@ -19,6 +19,7 @@ import { FaClipboardList } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import StickyMenuTwo from "./common/StickyMenuTwo";
+import { FaWhatsapp } from "react-icons/fa";
 
 import MobileMenuTwo from "./common/MobileMenuTwo";
 const settings = {
@@ -128,122 +129,48 @@ const HeaderTwo = () => {
         </DialogContent>
       </Dialog>
 
-      <div
-        className={
-          isActive
-            ? "bg-salmon2 sticky-icon showcase"
-            : "bg-salmon2 sticky-icon"
-        }
-      >
-        {/* <button className={isActive ? 'bg-salmon showcase' : 'showcase'} onClick={handleClick}> 
-   <span className="iconsFile"> <FaChevronLeft /> </span>
+      <div className={isActive ? 'bg-salmon2 sticky-icon showcase' : 'bg-salmon2 sticky-icon'} >
+
+{/* <button className={isActive ? 'bg-salmon showcase' : 'showcase'} onClick={handleClick}> 
+<span className="iconsFile"> <FaChevronLeft /> </span>
 </button>    */}
 
-        <a
-          onClick={handleClickOpen}
-          href="/"
-          className="Instagram pointer-none"
-        >
-          <span className="iconsFile">
-            {" "}
-            <FaFileAlt />{" "}
-          </span>
 
-          <span className="icnName"> Brochure </span>
-        </a>
+<a onClick={handleClickOpen} href="/" className="Instagram pointer-none  bg-red">
+  <span className="iconsFile"> <FaFileAlt /> </span>
 
-        <a
-          target="_blank"
-          href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events"
-          className="Instagram"
-        >
-          <span className="iconsFile">
-            {" "}
-            <FaRegCalendarAlt />{" "}
-          </span>
-          <span className="icnName">Events</span>{" "}
-        </a>
+  <span className="icnName"> Brochure </span></a>
 
-        <a onClick={handleClickOpen_one} href="/" className="Instagram">
-          <span className="iconsFile">
-            {" "}
-            <FaClipboardList />{" "}
-          </span>
-          <span className="icnName">Admissions</span>{" "}
-        </a>
+<a target="_blank" href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events" className="Instagram bg-secondary">
+  <span className="iconsFile"> <FaRegCalendarAlt /> </span>
+  <span className="icnName">Events</span> </a>
+{/* 
+<a onClick={handleClickOpen_one} href="/" className="Instagram bg-info">
+  <span className="iconsFile"> <FaLandmark /> </span>
+  <span className="icnName">Admissions</span> </a> */}
 
-        <a
-          target="_blank"
-          href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=admissions&utm_campaign=admissions"
-          class="Instagram pointer-none"
-        >
-          <span className="iconsFile">
-            {" "}
-            <FaPen />{" "}
-          </span>
-          <span className="icnName">Apply Now</span>{" "}
-        </a>
+<a target="_blank" href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=admissions&utm_campaign=admissions" class="Instagram pointer-none">
+  <span className="iconsFile"> <FaPen /> </span>
+  <span className="icnName">Apply Now</span> </a>
 
-        <a target="_blank" href="tel:+919625233301" className="Instagram">
-          <span className="iconsFile">
-            {" "}
-            <FaPhoneAlt />{" "}
-          </span>
-          <span className="icnName">Call Now</span>{" "}
-        </a>
-      </div>
+{/* <a target="_blank" href="https://api.whatsapp.com/send?phone=917807775315&text=Hi%20Shoolini%20University" className="Instagram whatsApp">
+  <span className="iconsFile"> <FaWhatsapp /> </span>
+  <span className="icnName">whatsapp</span> </a> */}
+
+</div>
 
       <div className="notification-top-bar">
         <Slider {...settings}>
           <div>
-            <a
+            <a className="font-16"
               target="_blank"
-              href="https://admissions.shooliniuniversity.com/"
+              href="https://admissions.shooliniuniversity.com/?utm_source=organic&utm_medium=tickerweb&utm_campaign=tickerweb"
               rel="noreferrer"
             >
-              Second Round of Applications is Now Open
+          Admissions Open -- Few Seats Left Across Courses
             </a>
           </div>
-
-          {/* <div>
-            <a
-              target="_blank"
-              href="https://shooliniuniversity.com/news/shoolini-is-no1-private-university-in-india"
-              rel="noreferrer"
-            >
-              {" "}
-              #1 Private University in India (THE Rankings) 351-400 Band: No.39
-              in Citations (World)
-            </a>
-          </div> */}
-
-          {/* <div>
-            <a target="_blank" href="tel:+917018007000" rel="noreferrer">
-              <FaPhoneSquareAlt /> Unlock your Career Goals. Free Counselling:
-              7018007000{" "}
-            </a>
-          </div> */}
-
-          {/* <div>
-            <a
-              target="_blank"
-              href="https://shoolini.online/?utm_source=Applynow&utm_medium=Shooliniwebsitetraffic&utm_campaign=Shooliniwebsitetraffic"
-              rel="noreferrer"
-            >
-              Join Shoolini Online courses & Pay After Placement. Apply Now!
-            </a>
-          </div> */}
-          {/* 
-          <div>
-            <a
-              target="_blank"
-              href="https://shooliniuniversity.com/media/pdf/REGISTRATION-FOR-RE-APPEAR-EXAMINATION-February-2023.pdf"
-              rel="noreferrer"
-            >
-              Re-appear Exam (Feb 2023) Registration
-            </a>
-          </div> */}
-        </Slider>
+ </Slider>
       </div>
 
       <section className="position-relative">
@@ -450,32 +377,41 @@ const HeaderTwo = () => {
                       </Link>
                     </li>
 
-                    <li className="nav-item">
+                    <li className="nav-item actiev">
                       <Link
-                        href="/international/globalfootprint"
+                        href="/international"
                         className="nav-link"
                       >
-                        Global Footprint
-                      </Link>
-                    </li>
-
-
-                    <li className="nav-item">
-                      <Link
-                        href="/international/pathwayprograms"
-                        className="nav-link"
-                      >
-                       Signature Programs
+                        International
                       </Link>
                     </li>
 
                     <li className="nav-item">
                       <Link
-                        href="/"
+                        href="/international/2+2-study-abroad-program"
                         className="nav-link"
-                        target={"_blank"}
                       >
-                        Articles
+                      2+2 Study Abroad Program
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        href="/international/study-india"
+                        className="nav-link"
+                      
+                      >
+                        Study in India Program
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        href="/international/dual-degree"
+                        className="nav-link"
+                       
+                      >
+                       Dual Degree Program
                       </Link>
                     </li>
 
@@ -501,7 +437,7 @@ const HeaderTwo = () => {
         </Container>
       </section>
 
-      <SocialShare />
+      {/* <SocialShare /> */}
 
       <StickyMenuTwo links={links} />
       <ScrollButton />

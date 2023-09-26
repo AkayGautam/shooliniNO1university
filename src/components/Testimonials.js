@@ -20,7 +20,16 @@ const settings = {
   slidesToScroll: 1,
 };
 
+
+// const removeHTML = (str) => {
+//   var tmp = document.createElement("p");
+//   tmp.innerHTML = str;
+//   return tmp.textContent || tmp.innerText || "";
+// };
+
+
 const Testimonials = ({ testimonials }) => {
+
   // const [testimonials, setTestimonial] = useState([]);
 
   // useEffect(() => {
@@ -52,25 +61,25 @@ const Testimonials = ({ testimonials }) => {
                 <Row>
                   <Col md="6" sm="5"></Col>
                   <Col md="6" sm="7">
-                    <div className="mb-md-5 py-5 sec-title text-left">
+                    <div className=" py-5 sec-title text-left">
                       <h2> Student Voices </h2>
                     </div>
                     <Slider {...settings}>
                       {testimonials &&
                         testimonials.testimonial?.map((item, i) => (
                           <div className="team-item" key={i}>
-                            <div>
+                            <div className="mt-3">
                               <Image
-                                width={80}
-                                height={80}
+                                width={240}
+                                height={300}
                                 src={item?.imageurl}
                                 alt="testimonials"
                               />
                             </div>
 
                             <div className="img-content">
-                              <h5>{item.name}</h5>
-                              <p>{item.content}</p>
+                              <h5 style={{color:"#e41a1a"}}>{item.name}</h5>
+                              <p dangerouslySetInnerHTML={ {__html: item.content} }></p>
                             </div>
                           </div>
                         ))}

@@ -896,7 +896,7 @@ ul.nav.menu-nav li:nth-child(2) ul.dropdown .nav-link {
 
 
 .sticky-icon  {
-	z-index:99;
+	z-index:9;
 	position:fixed;
 	top:25%;
 	right:0%;

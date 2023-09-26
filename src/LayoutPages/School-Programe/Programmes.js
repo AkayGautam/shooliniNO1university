@@ -95,13 +95,13 @@ const Programmes = ({ programs }) => {
                         <Fragment key={index}>
                           <div id={data?.slug} className="col-md-4">
                             <div className="programme_card">
-                              <div className="featured_img">
+                              {/* <div className="featured_img">
                                 <img
                                   loading="lazy"
                                   className="img-fluid w-100"
                                   src={`${data?.image_url}`}
                                 />{" "}
-                              </div>
+                              </div> */}
                               <div className="programme_detail">
                                 <div className="coursetitles">
                                   {data.title ==

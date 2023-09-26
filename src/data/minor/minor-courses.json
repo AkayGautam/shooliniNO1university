@@ -1,0 +1,484 @@
+
+ [
+        {
+            "id": "1",
+            "title": "Computer Science",
+            "image": "assets/images/books/1.jpg",
+            "body": "The faculty ",
+            "adv": [
+                "Computer science intersects with numerous disciplines, like business, mathematics, engineering, biology, and many more ", 
+                "Technical skills in the digital age increase employability prospects. ", 
+                " Necessary skills to pursue entrepreneurial ventures-from developing a mobile app to creating a website, to exploring data analysis techniques"
+            ],
+        "odd_sem" : [
+            "AI for Everyone",
+            "Web Designing"
+        ],
+        "even_sem": [
+            "Fun with IOT",
+            "SAP for everyone"
+        ]
+        },
+
+        {
+            "id": 2,
+            "title": "Economics",
+            "image": "assets/images/books/2.jpg",
+            "body": "Shoolini MBA curriculum ",
+            "adv": [
+                "Understanding of market dynamics ", 
+                "Quantitative and data analysis skills ", 
+                "Insight into policy and decision-making processes ", 
+                "Broader perspective on global issues",
+                "Complementary skills for business and entrepreneurship"
+            ],
+            "odd_sem" : [
+                "Economic Schools of Thought "
+            ],
+            "even_sem": [
+                "Economics- the power of markets ",
+                "Economic way of thinking "
+            ]
+        },
+
+        {
+            "id": 3,
+            "title": "Healthcare",
+            "image": "assets/images/books/3.jpg",
+            "body": "Shoolini MBA graduates ",
+            "adv": [
+                "Basic knowledge of healthcare systems and policies ", 
+                "Understanding of healthcare ethics and patient care ", 
+                "Enhanced communication and interpersonal skills in a healthcare context "
+            ],
+            "odd_sem" : [
+                "Herbal Medicine ",
+                "Health organization &management "
+            ],
+            "even_sem": [
+                "Drug Abuse ",
+                "Drugs and Diseases "
+            ]
+        },
+
+        {
+            "id": 4,
+            "title": "Psychology",
+            "image": "assets/images/books/4.jpg",
+            "body": "Students of Shoolini University regularly  ",
+            "adv": [
+                "Complements knowledge to wide range of majors, including business, education, healthcare, and social sciences, by providing a deeper understanding of human behavior "
+            ],
+            "odd_sem" : [
+                "Psychology and mental health "
+            ],
+            "even_sem": [
+                "Social Cognition and Adjustments ",
+                "Forensic Psychology "
+            ]
+        },
+
+        {
+            "id": 5,
+            "title": "Food and Nutrition",
+            "image": "assets/images/books/5.jpg",
+            "body": "After completing this program ",
+            "adv": [
+                "A comprehensive understanding of principles which can be applied to personal wellness ", 
+                "Opens doors to careers in dietetics, nutrition counseling, food industry, public health, community nutrition, or research. ", 
+                "Complementary knowledge majors in health sciences "
+            ],
+            "odd_sem" : [
+                "Science of Beverages "
+            ],
+            "even_sem": [
+                "Art of meal Planning " , 
+                "Food Safety and Hygiene"
+            ]
+        },
+
+        {
+            "id": 6,
+            "title": "Performing Arts ",
+            "image": "assets/images/books/6.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Develops your artistic abilities ", 
+                "Confidence in public speaking, stage presence, and performing in front of an audience ", 
+                "Interdisciplinary collaboration and develop creative skills "
+            ],
+            "odd_sem" : [
+                "Hindustani Classical Music Vocal (Beginner) ",
+                "Music Appreciation ",
+                "Site Specific Theatre "
+            ],
+            "even_sem": [
+                "Rasa Abhinaya ",
+                "Art of Scripting ", 
+                "Classical Indian Melodies"
+            ]
+        },
+
+        {
+            "id": 7,
+            "title": "Foreign Languages",
+            "image": "assets/images/books/7.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Improves communication abilities and opens doors to interact with diverse communities. ", 
+                "Gain insights into different cultures, traditions, and perspectives ", 
+                "Cultural competence and a broader global awareness. ", 
+                "Enhanced employability in international business, diplomacy, translation and interpretation, tourism, education, and more "
+            ],
+            "odd_sem" : [
+                "Introductory Russian Language ",
+                "Introductory Korean "
+            ],
+            "even_sem": [
+                "Mandarin ",
+                "Russian Language- II ",
+                "Introductory Japanese", 
+                "Farsi"
+            ]
+        },
+
+        {
+            "id": 8,
+            "title": "Hindi ",
+            "image": "assets/images/books/8.jpg",
+            "body": "Experts and academicians  ",
+            "adv": [
+                "Unique career opportunities in fields such as translation, interpretation, international business, diplomacy, tourism, journalism, or working with the Indian diaspora. ", 
+                " Demonstrate cultural competency and language proficiency to potential employers. "
+            ],
+            "odd_sem" : [
+                "Kavita, natak aur sanchar kaushal ",
+                "Hindi sahitya ke adhyayan ka parichay) "
+            ],
+            "even_sem": [
+                "Hindi Bhasha Shikshan "
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Practical Journalism ",
+            "image": "assets/images/books/9.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Develop excellent writing, interviewing, and reporting skills, ", 
+                "Career in print or digital media, broadcasting, public relations, content creation, or freelance journalism. "
+            ],
+            "odd_sem" : [
+                "TV Journalism ",
+                "Digital Content ",
+                "Graphic Design"
+            ],
+            "even_sem": [
+                "Anchoring ",
+                "Photography "
+            ]
+        },
+        {
+            "id": 10,
+            "title": "NCC ",
+            "image": "assets/images/books/10.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Practical leadership skills, including decision-making, teamwork, discipline, and effective communication ", 
+                "Physical fitness and self-discipline ", 
+                "Citizenship and social responsibility "
+            ],
+            "odd_sem" : [
+                "NCC Contribution to Society. ",
+                "NCC Practical III (Intermediate level) "
+            ],
+            "even_sem": [
+                "NCC role in disaster management ",
+                "NCC Practical IV (Moderate Level) "
+            ]
+        },
+        {
+            "id": 11,
+            "title": "Biotechnology ",
+            "image":"assets/images/books/11.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Knowledge of the latest advancements and techniques in biotechnology ", 
+                "Open doors to a wide range of career opportunities in industries such as pharmaceuticals, healthcare, agriculture, environmental science, research, and development. "
+            ],
+            "odd_sem" : [
+                "Co-existing with microbes ",
+                "Genomics: Decoding the universal language of life "
+            ],
+            "even_sem": [
+                "Biotechnological solutions for environmental challenges "
+            ]
+        },
+        {
+            "id": 12,
+            "title": "Biology",
+            "image": "assets/images/books/12.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Gain a foundational understanding of fundamental biological principles ", 
+                "Complementary knowledge with majors in healthcare, environmental science, education, or research-based fields ", 
+                "Strengthened critical thinking and research skills "
+            ],
+            "odd_sem" : [
+                "History of Biology: Learning from Past "
+            ],
+            "even_sem": [
+                "Climate crisis: issues, impacts & adaptations ",
+                "Know your physiology: from cells to system "
+            ]
+        },
+        {
+            "id": 13,
+            "title": "Business management",
+            "image": "assets/images/books/13.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Understanding of core business principles, ", 
+                "Sharpen business acumen, leadership potential, and ability to understand organizational dynamics. ", 
+                "Open doors to diverse career paths, such as entrepreneurship, consulting, project management, human resources "
+            ],
+            "odd_sem" : [
+                "Sustainable Tourism ",
+                "Economic Policy Making "
+            ],
+            "even_sem": [
+                "Essentials of entrepreneurship: thinking and action "
+            ]
+        },
+        {
+            "id": 14,
+            "title": "Entrepreneurship ",
+            "image":"assets/images/books/14.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Gain knowledge and skills to think innovatively, identify opportunities, take calculated risks ", 
+                "Enhancing creative problem-solving skills ", 
+                "Building a versatile skill set business planning, market analysis, financial management, marketing, and networking "
+            ],
+            "odd_sem" : [
+                "Developing an Entrepreneurial Mindset ",
+                "Inclusive Entrepreneurship "
+            ],
+            "even_sem": [
+                "Roadmap to a unicorn ",
+                "How to finance and grow your startup without venture capital "
+            ]
+        },
+        {
+            "id": 15,
+            "title": "Yoga",
+            "image": "assets/images/books/15.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Personal well-being ", 
+                "Stress reduction and relaxation techniques ", 
+                "Teaching and leadership opportunities in wellness, fitness, or community settings "
+            ],
+            "odd_sem" : [
+                "Mindfulness Techniques of Yoga ",
+                "Introduction to Ayurveda "
+            ],
+            "even_sem": [
+                "Learnings from Bhagwad Geeta ",
+                "Naturopathy for healthy Living "
+            ]
+        },
+        {
+            "id": 16,
+            "title": "Law ",
+            "image": "assets/images/books/16.jpg",
+            "body": "Experts and academicians  " ,
+            "adv": [
+                "Foundational knowledge of legal principles, concepts, and systems ", 
+                "Critical thinking and analytical skills: research, and decision-making. ", 
+                "Complementary skills for a wide range of professions, including business, government, policy, advocacy, and non-profit organizations. "
+            ],
+            "odd_sem" : [
+                "Introduction to Constitutional Law ",
+                "Introduction to IPR "
+            ],
+            "even_sem": [
+                "Human Rights Laws ",
+                "Cyber Laws "
+            ]
+        },
+        {
+            "id": 17,
+            "title": "History ",
+            "image": "assets/images/books/17.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "A deeper understanding of historical events, cultures, and societies. ", 
+                "Critical thinking and research skills ", 
+                "Enhanced writing and communication skills "
+            ],
+            "odd_sem" : [
+                "Development of Educational System in India after Independence "
+            ],
+            "even_sem": [
+                "Japan South Asia Connection ",
+                "History of Japan- An Overview"
+            ]
+        },
+
+        {
+            "id": 18,
+            "title": "Physics ",
+            "image": "assets/images/books/18.jpg",
+            "body": "Experts and academicians  " , 
+            "adv": [
+                "A deep understanding of the fundamental laws and principles that govern the natural world, ", 
+                "Analytical and problem-solving skills ", 
+                "Physics has applications in various fields, such as engineering, computer science, biophysics, and materials science "
+            ],
+            "odd_sem" : [
+                "From Atoms to Stars "
+            ],
+            "even_sem": [
+                "Semiconductor devices and technology "
+            ]
+        },
+
+        {
+            "id": 19,
+            "title": "Design ",
+            "image":"assets/images/books/19.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Creative problem-solving ", 
+                "Visual communication skills ", 
+                "Potential careers in fields such as advertising, marketing, digital media, product design, user experience design "
+            ],
+            "odd_sem" : [
+                "None"
+            ],
+            "even_sem": [
+                "Introduction to visual communication – (animation) "
+            ]
+        },
+
+        {
+            "id": 20,
+            "title": "English ",
+            "image": "assets/images/books/20.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Effective expression of ideas and persuasive ", 
+                "Ability to analyze and think critically and construct well-reasoned arguments. ", 
+                "Potential careers: writing, publishing, editing, marketing, public relations, teaching, law, and more. "
+            ],
+            "odd_sem" : [
+                "Introduction to Gender Studies ",
+                "Tales across Space and Time "
+            ],
+            "even_sem": [
+                "Global Communication "
+            ]
+        },
+
+        {
+            "id": 21,
+            "title": "Chemical Sciences ",
+            "image": "assets/images/books/21.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Knowledge of fundamental chemical principles ", 
+                "Broad applications in various fields, such as pharmaceuticals, materials science, environmental science, energy, and biotechnology "
+            ],
+            "odd_sem" : [
+                "Principles of Chemical Science ",
+                "Introduction to Bioplastics "
+            ],
+            "even_sem": [
+                "Chemistry for environment protection ",
+                "Industrial chemicals and hazards "
+            ]
+        },
+
+        {
+            "id": 22,
+            "title": "Hospitality Management ",
+            "image":"assets/images/books/22.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Various career paths in hotels, resorts, restaurants, event management companies, tourism organizations, and other hospitality-related sectors " 
+            ],
+            "odd_sem" : [
+                "History of Hospitality Management and Tourism Industry ",
+                "Art of Patisserie "
+            ],
+            "even_sem": [
+                "Regional and ethnic cuisines of India ",
+                "Customer Plus "
+            ]
+        },
+
+        {
+            "id": 23,
+            "title": "Mechatronics ",
+            "image":"assets/images/books/23.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "A blend of mechanical engineering, electrical engineering, and computer science ", 
+                "Practical skills in robotics, automation, control systems, electronics, and programming, which are in high demand in industries such as manufacturing, robotics, automation, and automotive. "
+            ],
+            "odd_sem" : [
+                "Tinkering with machines ",
+                "Experimenting with electricity "
+            ],
+            "even_sem": [
+                "Basics of remote sensing ",
+                "Tinkering with Machines ",
+                "Upkeep of domestic appliances ",
+                "Basics of Digital Electronics "
+            ]
+        },
+
+        {
+            "id": 24,
+            "title": "Energy Science ",
+            "image": "assets/images/books/24.jpg",
+            "body": "Experts and academicians  ", 
+            "adv": [
+                "Understanding of energy systems sustainable practices. ", 
+                "Integrates concepts from physics, chemistry, engineering, and environmental science, ", 
+                "Can open doors to careers in renewable energy, energy management, sustainability consulting, policy development, research and development, and environmental conservation "
+            ],
+            "odd_sem" : [
+                "Renewable Energy Technology Options ",
+                "Energy, Environment and Climate Change Concerns "
+            ],
+            "even_sem": [
+                "Greenhouse gas emission reduction & carbon trading ",
+                "Renewable energy technology options ",
+                "Renewable energy technology options"
+            ]
+        },
+
+        {
+            "id": 25,
+            "title": "Agriculture ",
+            "image": "assets/images/books/25.jpg",
+            "body": "Experts and academicians ", 
+            "adv": [
+                "Understanding of agricultural principles ", 
+                "Develop practical skills in areas such as crop cultivation, plant and animal sciences, agricultural technology, ", 
+                "can open doors to various career paths in agriculture, agribusiness, farming, agricultural research, sustainable agriculture, ", 
+                "Provides a foundation for roles in production, management, consulting, education, and research within the agricultural industry. "
+            ],
+            "odd_sem" : [
+                "Crop Production Technology ",
+                "Introduction to Plant Protection "
+            ],
+            "even_sem": [
+                "Ergonomics in. Farming ",
+                "Agricottage Industries "
+            ]
+        }
+
+    ]
