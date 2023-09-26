@@ -169,8 +169,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
   //   slidesToScroll: 1,
   // };
 
-
-
   var settings = {
     dots: false,
     infinite: true,
@@ -206,7 +204,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
       },
     ],
   };
-
 
   var allBlogs = {
     dots: false,
@@ -272,8 +269,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
       },
     ],
   };
-
-
 
   useEffect(() => {
     document.body.setAttribute("id", `pageid-${id}`);
