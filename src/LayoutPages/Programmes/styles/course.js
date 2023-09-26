@@ -2734,6 +2734,18 @@ button.slick-arrow.slick-prev {
 button.slick-arrow.slick-next {
   z-index: 9;
 }
+.max-100
+{
+  max-width:100% !important;
+}
+.placementLogos h3.text-left {
+  text-align: center !important;
+}
+.blogsCard {
+  background: #f6f6f6;
+  padding: 40px 0;
+}
+
 
 @-webkit-keyframes pulse-border{0%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity:1}100%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);opacity:0}}@keyframes pulse-border{0%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity:1}100%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);opacity:0}}
 

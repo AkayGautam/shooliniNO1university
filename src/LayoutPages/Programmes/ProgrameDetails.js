@@ -174,11 +174,11 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
     infinite: true,
     arrows: true,
     autoplay: true,
-    speed: 500,
+    speed: 1500,
     slidesToShow: 4,
     slidesToScroll: 1,
     rows: 2,
-    mobileFirst:true,
+    mobileFirst: true,
     responsive: [
       {
         breakpoint: 0,
@@ -213,14 +213,14 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    mobileFirst:true,
+    mobileFirst: true,
     responsive: [
       {
         breakpoint: 0,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 4,
-          mobileFirst:true,
+          mobileFirst: true,
         }
       },
       {
@@ -228,7 +228,7 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          mobileFirst:true,
+          mobileFirst: true,
         },
       },
       {
@@ -236,7 +236,7 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          mobileFirst:true,
+          mobileFirst: true,
         },
       },
     ],
@@ -245,14 +245,14 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
   const setting = {
     dots: false,
     infinite: true,
-    speed: 3000,
+    speed: 1500,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     arrows: true,
 
-    autoplaySpeed: 3000,
-  
+    autoplaySpeed: 1500,
+
     responsive: [
       {
         breakpoint: 600,
@@ -269,6 +269,34 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
       },
     ],
   };
+
+  
+  const placements_logo = {
+    dots: false,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow:2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
 
   useEffect(() => {
     document.body.setAttribute("id", `pageid-${id}`);
@@ -283,6 +311,11 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
   const postReview = data[1].testimonial ? data[1].testimonial : [];
 
   const course_discription = data[0].course_right_part ? JSON.parse(data[0].course_right_part) : [];
+
+  const placements = data[0].companies ? data[0].companies : [];
+
+  console.log(placements, 'placements')
+
 
   const [bgimg, setBgimg] = useState('')
   useEffect(() => {
@@ -325,17 +358,13 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
 
         {/* <Templatecourse title={data[0]?.title} img={bgImg?.image_url} /> */}
         <Styless>
-
           <section style={{ background: `url(${bgImg?.image_url})` }} className="for-desktop new-header aiml-new__header js-section-track" id="bg-image" data-init="true">
-
             <div
-
               className="slider-content slider-image"
               style={{
                 background: `url('${bgImg?.image_url}') no-repeat center center`,
               }}
             >
-
               <div className="container">
                 <div className="row">
                   <div className="col-md-6">
@@ -366,7 +395,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -374,50 +402,46 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
 
           <section className="for-mobile new-header aiml-new__header js-section-track" id="bg-image">
             <div className="slider-content slider-image" >
-              <img className="w-100 " src= {bgImg?.image_url} />
-
+              <img className="w-100 " src={bgImg?.image_url} />
               <div className="play-btn-area formobile">
-                      <div className="video-play-button" data-gl-target="experienceModal" data-videoid="oxqhi57t0w">
-                        <span></span>
-                      </div>
-                    </div>
-
-              </div>
-
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="play-btn-area">
-                      <div className="video-play-button" data-gl-target="experienceModal" data-videoid="oxqhi57t0w">
-                        <span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="header-content text-left">
-                      <h1 className="banner-heading-aiml">School of Pharmaceutical Sciences </h1>
-                      <h3 className="banner-subheading-aiml">{data[0]?.title}</h3>
-                      <p className="mb-0 small-font"><strong> Eligibility :</strong> {data[0]?.eligibility}</p>
-                      <ul>
-                        <li className="pl-0"><strong> Duration :</strong> {data[0]?.duration}</li>
-                        <li><strong>Admission Criteria :</strong> {data[0]?.admission_criteria} </li>
-                      </ul>
-                      <div className="button-section non-js-btns " id="top-banner-button-section">
-                        <div className="lc-btn-section">
-                          <a href="javascript:void(0)" className="grey-transparent-button btn-style fixed-size-btn track-click-mp">
-                            Apply Now
-                          </a>
-                        </div>
-                        <div className="application-btn-section">
-                          <a href="/pg-program-artificial-intelligence-course/registration" className="btn primary-button  btn-style fixed-size-btn track-click-mp" data-title="Top Banner"> Download Brochure </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+                <div className="video-play-button" data-gl-target="experienceModal" data-videoid="oxqhi57t0w">
+                  <span></span>
                 </div>
               </div>
-    
+            </div>
+
+            <div className="container">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="play-btn-area">
+                    <div className="video-play-button" data-gl-target="experienceModal" data-videoid="oxqhi57t0w">
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="header-content text-left">
+                    <h1 className="banner-heading-aiml">School of Pharmaceutical Sciences </h1>
+                    <h3 className="banner-subheading-aiml">{data[0]?.title}</h3>
+                    <p className="mb-0 small-font"><strong> Eligibility :</strong> {data[0]?.eligibility}</p>
+                    <ul>
+                      <li className="pl-0"><strong> Duration :</strong> {data[0]?.duration}</li>
+                      <li><strong>Admission Criteria :</strong> {data[0]?.admission_criteria} </li>
+                    </ul>
+                    <div className="button-section non-js-btns " id="top-banner-button-section">
+                      <div className="lc-btn-section">
+                        <a href="javascript:void(0)" className="grey-transparent-button btn-style fixed-size-btn track-click-mp">
+                          Apply Now
+                        </a>
+                      </div>
+                      <div className="application-btn-section">
+                        <a href="/pg-program-artificial-intelligence-course/registration" className="btn primary-button  btn-style fixed-size-btn track-click-mp" data-title="Top Banner"> Download Brochure </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
 
@@ -425,48 +449,25 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
             <div className="container">
               <div className="row">
                 <div className="col-md-5">
-
-                
-                  <img src={ data[0]?.course_left_image} className="img-fluid" alt="Culinary Arts Chitkara University" />
+                  <img src={data[0]?.course_left_image} className="img-fluid" alt="Culinary Arts Chitkara University" />
                 </div>
                 <div className="col-md-7">
-
-{course_discription.length > 0 && (
-  <div>
-          {course_discription.map((row, idx) => (
-                  <div className="fDiv">
-                    <div className="couIcon"><img src={ row.image_url} className="webIcon" /></div>
-                    <div className="couCont">
-                      <p>
-                        <b><img className="mobIconLP" src="https://www.chitkara.edu.in/images/2021/icons/icn1a.png" />{ row.heading}</b>
-                      </p>
-                     <p>{ row.content}  </p> 
+                  {course_discription.length > 0 && (
+                    <div>
+                      {course_discription.map((row, idx) => (
+                        <div className="fDiv">
+                          <div className="couIcon"><img src={row.image_url} className="webIcon" /></div>
+                          <div className="couCont">
+                            <p>
+                              <b><img className="mobIconLP" src="https://www.chitkara.edu.in/images/2021/icons/icn1a.png" />{row.heading}</b>
+                            </p>
+                            <p>{row.content}  </p>
+                          </div>
+                        </div>
+                      ))}
                     </div>
-                  </div>
- ))}
- </div>
-  )}
-
-                  {/* <div className="fDiv">
-                    <div className="couIcon"><img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/schools/icons/handicon.png" className="webIcon" /></div>
-                    <div className="couCont">
-                      <p>
-                        <b><img className="mobIconLP" src="https://www.chitkara.edu.in/images/2021/icons/icn2a.png" />Internship Opportunity</b>
-                      </p>
-                      <p>Internship Opportunity</p>
-                    </div>
-                  </div> *
-                   <div className="fDiv">
-                    <div className="couIcon"><img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/schools/icons/campus-recruitment.png" className="webIcon" /></div>
-                    <div className="couCont">
-                      <p>
-                        <b><img className="mobIconLP" src="https://www.chitkara.edu.in/images/2021/icons/icn3a.png" />Campus Recruitment</b>
-                      </p>
-                      <p>Assured placement in top Hotel brands and best international chains, cruises and QSR (Quick Service Restaurants) &amp; Retail companies.</p>
-                    </div>
-                  </div> */}
-
-             </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -480,7 +481,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
               </div>
               <div className="mentorss">
                 <Slider {...settings}>
-
                   {data[1] &&
                     data[1].facultydetails?.map((res, index) => (
                       <div className="colrosText">
@@ -511,16 +511,12 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
                       </div>
 
                     ))}
-
-
-
                 </Slider>
               </div>
             </div>
           </section>
           <section className="overview">
             <div className="container">
-
               {/* <h3 class="text-center heading-left">Designed for working professionals like you</h3> */}
               <div className="row">
                 <div className="col-md-4">
@@ -549,9 +545,7 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
 
                 <div className="col-md-8">
                   <div className="overview-dta">
-
-                    <p> {data[0]?.content} </p>
-
+                    <p> {data[0]?.content.replace(/(<([^>]+)>)/ig, '')} </p>
                   </div>
                 </div>
               </div>
@@ -601,7 +595,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
               </div>
               <div className="mentorss">
                 <Slider {...setting}>
-
                   {postReview &&
                     postReview?.map((row, idx) => (
                       <div>
@@ -621,19 +614,14 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
                           <div className="fac-list p-0">  <p className="m-0"> {row.content} </p> </div>
                         </div>
                       </div>
-
                     ))}
                 </Slider>
               </div>
             </div>
           </section>
 
-
-
-
           <section className="overview pt-0">
             <div className="container">
-
               {/* <h3 class="text-center heading-left">Designed for working professionals like you</h3> */}
               <div className="row">
                 <div className="col-md-4">
@@ -649,7 +637,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
                               __html: data[0]?.career_opportunities,
                             }}
                           />
-
                         </ul>
                         {/* <h4 className="font-18 text-left"> Research Opportunities </h4>
                         <p className="font-14"> Natural Products/ Synthetic-based Drug Discovery: Phytochemical evaluation and Standardizations of medicinal plants, Ayurvedic or other formulations; Medicinal Chemistry and Drug Discovery Research. </p> */}
@@ -657,7 +644,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
                     </div>
                   </div>
                 </div>
-
                 <div className="col-md-8">
                   <div className="overview-dta">
                     <div className="course-desc">
@@ -698,18 +684,43 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
             </div>
           </section>
 
-          <section className="blogsCard mb-5">
+
+
+
+          <section className="placementLogos">
+            <Container>
+            <div class="pagetitle text-center m-auto"><h3 class="text-left heading-left text-center mb-0"> Top Campus Recruiters  </h3>
+                <p> Some of the major companies that visit our campus and hire our graduates are: </p></div>
+              <Row>
+                <Col md="12">
+                  <div className="allLogos">
+                     {
+                    <Slider {...placements_logo}>
+                    {placements.length > 0 && (
+                        placements.map((logo, idx) => (
+                          <div key={idx} className="cLogo">
+                             {/* <img src={logo.imageurl} className="webImg" />  */}
+                             <img src="https://shooliniuniversity.com/media/1610879490-mankind.png" />
+                          </div>
+                        ))
+                    )}
+                    </Slider>
+                      }
+                  </div>   
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
+          <section className="blogsCard mb-0">
 
             <Container>
-
               <div class="pagetitle"><h3 class="text-left heading-left mb-0"> Latest Blogs  </h3>
                 <p> Learn from leading academicians in the field of Artificial Intelligence and Machine Learning and several experienced industry practitioners from top organisations. </p></div>
-
               <Row>
                 {
                   <Slider {...allBlogs}> {
                     blogs?.map((blog, idx) =>
-
                       <Col md="3" key={idx}>
                         <div className="blog-card">
                           <a className="blog-card__link" href={blog.readmore}>
@@ -731,7 +742,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
                               {/* <p className="card-text">
                               {blog.content.replace(/(<([^>]+)>)/ig, '')}
                             </p> */}
-
                             </div>
                           </a>
                           <a target="_blank" href={blog.readmore} className="btnss">Read More &nbsp; {'>'} </a>
@@ -750,6 +760,7 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
             </div>
 
           </section>
+
 
 
           {/* <section className="course-details-area"> 
