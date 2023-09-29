@@ -30,6 +30,7 @@ const About = () => {
   useEffect(() => {
     document.title = `About Us | Shoolini University`;
     document.body.setAttribute("pageId", 74);
+    
     fetch("https://shooliniuniversity.com/media/GetAbouUSAPI", {
       method: "post",
       headers: new Headers({

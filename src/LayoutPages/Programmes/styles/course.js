@@ -2745,6 +2745,36 @@ button.slick-arrow.slick-next {
   background: #f6f6f6;
   padding: 40px 0;
 }
+.cLogo {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+}
+.cLogo img {
+  width: 90%;
+  max-height: 96px;
+}
+a.AppyBtn {
+  font-size: 17px !important;
+  border: 1px solid #3e3e3e;
+  line-height: 17px;
+  background-color: #e41a1a !important;
+  color: #ffffff;
+  border: 1px solid #e41a1a;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 4px 4px 5px rgba(0,0,0,.2);
+  width: 220px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+
+
+
 
 
 @-webkit-keyframes pulse-border{0%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity:1}100%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);opacity:0}}@keyframes pulse-border{0%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity:1}100%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);opacity:0}}

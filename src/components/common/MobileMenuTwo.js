@@ -69,17 +69,7 @@ const MobileMenuTwo = ({ links }) => {
                       <i className="las la-phone"></i>+1 (396) 486 4709
                     </p>
                   </div>
-                  <div className="topbar-item">
-                    <ul className="list-unstyled list-inline">
-                      <li className="list-inline-item">
-                        <Link href={"/login"}>Log In</Link>
-                      </li>
-                      <li className="list-inline-item">/</li>
-                      <li className="list-inline-item">
-                        <Link href={"/registration"}>Register</Link>
-                      </li>
-                    </ul>
-                  </div>
+                  
                 </div>
                 <div className="mb-logo-area d-flex justify-content-between">
                   <div className="mb-logo-box d-flex">

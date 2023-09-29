@@ -100,6 +100,18 @@ const ShooliniAdvantage = () => {
                           </span>
                         </Link>
                       </li>
+
+
+                      <li>
+                        <Link href="/mentorship">
+                          <span>Elevate Your Skills: Mentorship Program</span>
+                          <span>
+                            <IoIosArrowDropright />
+                          </span>
+                        </Link>
+                      </li>
+
+
                       {/* <li>
                         <Link href="/shoolini-implements-nep-driven-curriculum">
                           <span>NEP-Driven Curriculum</span>

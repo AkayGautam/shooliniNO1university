@@ -38,7 +38,6 @@ import { Troubleshoot } from "@mui/icons-material";
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
-
 const style = {
   position: 'absolute',
   top: '50%',
@@ -50,7 +49,6 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -89,11 +87,8 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 function ProgrameDetails({ props, img, data, id, ldJson }) {
-
   var result_blog = [];
-
   const [blogdata, setBlogdata] = useState([]);
-
   useEffect(() => {
     fetch("https://shooliniuniversity.com/media/GetTop5Blog?auth=shoolini@999&toprecord=10", {
       method: "post",
@@ -113,10 +108,7 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
   //result_blog = blogdata?.success;
 
   const blogs = blogdata?.success;
-
   console.log(blogs, "blog")
-
-
   const router = useRouter();
   const bgImg = data[0].slides
     ? JSON.parse(data[0].slides)[0]
@@ -128,7 +120,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
     const component = Object.keys(router.components).includes('/doctoral-programs')
     setIsDoctoral(component)
   }, [router]);
-
 
   const [isActive, setActive] = useState(false);
   const [jsonLd, setJsonLd] = useState({});
@@ -146,7 +137,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
       button.addEventListener("click", () => {
         button.classList.toggle("active");
         const content = button.nextElementSibling;
-
         if (button.classList.contains("active")) {
           content.className = "course-content show";
           content.style.maxHeight = content.scrollHeight + "px";
@@ -157,17 +147,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
       });
     });
   });
-
-  // var settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   arrows: true,
-  //   autoplay: true,
-  //   speed: 500,
-  //   autoplaySpeed: 2100,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  // };
 
   var settings = {
     dots: false,
@@ -270,13 +249,13 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
     ],
   };
 
-  
   const placements_logo = {
     dots: false,
     infinite: true,
     speed: 1500,
-    slidesToShow: 1,
+    slidesToShow: 6,
     slidesToScroll: 1,
+    rows: 1,
     autoplay: true,
     arrows: true,
     autoplaySpeed: 1500,
@@ -290,13 +269,12 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow:2,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
     ],
   };
-
 
   useEffect(() => {
     document.body.setAttribute("id", `pageid-${id}`);
@@ -309,13 +287,10 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
   const gallery = data[0].gallery ? JSON.parse(data[0].gallery) : [];
   const posTFaq = data[1].faqdata ? data[1].faqdata : [];
   const postReview = data[1].testimonial ? data[1].testimonial : [];
-
   const course_discription = data[0].course_right_part ? JSON.parse(data[0].course_right_part) : [];
-
-  const placements = data[0].companies ? data[0].companies : [];
+  const placements = data[1].companies ? data[1].companies : [];
 
   console.log(placements, 'placements')
-
 
   const [bgimg, setBgimg] = useState('')
   useEffect(() => {
@@ -325,14 +300,9 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
 
   console.log(bgimg?.image_url, "image")
 
-
-
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
-
-
   const [opend, setOpend] = React.useState(false);
   const handleOpend = () => setOpend(true);
   const handleClosed = () => setOpend(false);
@@ -376,7 +346,10 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
                   </div>
                   <div className="col-md-6">
                     <div className="header-content text-left">
-                      <h1 className="banner-heading-aiml">School of Pharmaceutical Sciences </h1>
+
+                      <h1 className="banner-heading-aiml"> { data[1]?.streamname } </h1>
+
+
                       <h3 className="banner-subheading-aiml">{data[0]?.title}</h3>
                       <p className="mb-0 small-font"><strong> Eligibility :</strong> {data[0]?.eligibility}</p>
                       <ul>
@@ -638,8 +611,6 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
                             }}
                           />
                         </ul>
-                        {/* <h4 className="font-18 text-left"> Research Opportunities </h4>
-                        <p className="font-14"> Natural Products/ Synthetic-based Drug Discovery: Phytochemical evaluation and Standardizations of medicinal plants, Ayurvedic or other formulations; Medicinal Chemistry and Drug Discovery Research. </p> */}
                       </div>
                     </div>
                   </div>
@@ -686,27 +657,26 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
 
 
 
-
           <section className="placementLogos">
             <Container>
-            <div class="pagetitle text-center m-auto"><h3 class="text-left heading-left text-center mb-0"> Top Campus Recruiters  </h3>
+              <div class="pagetitle text-center m-auto"><h3 class="text-left heading-left text-center mb-0"> Top Campus Recruiters  </h3>
                 <p> Some of the major companies that visit our campus and hire our graduates are: </p></div>
               <Row>
                 <Col md="12">
                   <div className="allLogos">
-                     {
-                    <Slider {...placements_logo}>
-                    {placements.length > 0 && (
-                        placements.map((logo, idx) => (
-                          <div key={idx} className="cLogo">
-                             {/* <img src={logo.imageurl} className="webImg" />  */}
-                             <img src="https://shooliniuniversity.com/media/1610879490-mankind.png" />
-                          </div>
-                        ))
-                    )}
-                    </Slider>
-                      }
-                  </div>   
+                    {
+                      <Slider {...placements_logo}>
+                        {placements.length > 0 && (
+                          placements.map((logo, idx) => (
+                            <div key={idx} className="cLogo">
+                              <img src={logo.imageurl} className="webImg" />
+                              {/* <img src="https://shooliniuniversity.com/media/1610879490-mankind.png" /> */}
+                            </div>
+                          ))
+                        )}
+                      </Slider>
+                    }
+                  </div>
                 </Col>
               </Row>
             </Container>
@@ -760,305 +730,36 @@ function ProgrameDetails({ props, img, data, id, ldJson }) {
             </div>
 
           </section>
-
-
-
-          {/* <section className="course-details-area"> 
+          <section className="applySection py-5">
             <Container>
               <Row>
-                <Col lg="8" md="8" sm="12" className="order-xs-2">
-                  <div className="course-details-top">
-                    <div
-                      className={
-                        isActive ? "course-tab-list" : "course-tab-list viewDiv"
-                      }
-                    >
-                      <Tab.Container defaultActiveKey="overview">
-                        <Nav className="flex-column">
-                          <Nav.Item>
-                            <Nav.Link eventKey="overview">Overview</Nav.Link>
-                          </Nav.Item>
+                <Col md="8">
+                  <div className="application-deadline">
 
-                          <Nav.Item>
-                            <Nav.Link eventKey="instructor">Faculty</Nav.Link>
-                          </Nav.Item>
-                          <Nav.Item>
-                            <Nav.Link eventKey="review">
-                              Student Voices
-                            </Nav.Link>
-                          </Nav.Item>
-
-                          <Nav.Item>
-                            <Nav.Link eventKey="curriculum">
-                              {
-                                isDoctoral ? 'ACADEMIC CALENDAR' : 'CURRICULUM'
-                              }
-                            </Nav.Link>
-                          </Nav.Item>
-
-                          <Nav.Item>
-                            <Nav.Link eventKey="faq">FAQs</Nav.Link>
-                          </Nav.Item>
-                        </Nav>
-                        <Tab.Content>
-                          <Tab.Pane
-                            eventKey="overview"
-                            className="overview-tab"
-                          >
-                            <div className="course-feature">
-                              <p
-                                dangerouslySetInnerHTML={{
-                                  __html: data[0]?.content,
-                                }}
-                              ></p>
-
-                              <h2> {data[0].title} Career Opportunities   </h2>
-                              <p
-                                dangerouslySetInnerHTML={{
-                                  __html: data[0]?.career_opportunities,
-                                }}
-                              />
-                            </div>
-                          </Tab.Pane>
-                          <Tab.Pane
-                            eventKey="curriculum"
-                            className="curriculum-tab"
-                          >
-                            <div className="course-curriculum">
-                               <h5>Course Curriculum</h5> *
-                              <p
-                                dangerouslySetInnerHTML={{
-                                  __html: data[0]?.curriculum_awaited,
-                                }}
-                              />
-                            </div>
-                          </Tab.Pane>
-                          <Tab.Pane
-                            eventKey="instructor"
-                            className="instructor-tab"
-                          >
-                           <h3>Course Instructors  </h3> 
-
-                            <div className="instructor-item">
-                              <Row>
-                                {data[1] &&
-                                  data[1].facultydetails?.map((res, index) => (
-                                    <Col className="mb-3" md="4" key={index}>
-                                      <Link
-                                        href={`/faculty/profile/${res.name
-                                          .split(" ")
-                                          .join("-")}`}
-                                      >
-                                        <Card sx={{ maxWidth: 345 }}>
-                                          <CardHeader
-                                            avatar={
-                                              <Avatar
-                                                sx={{ bgcolor: red[500] }}
-                                                aria-label="recipe"
-                                              >
-                                                <img
-                                                  src={
-                                                    res.imageurl
-                                                      ? res.imageurl
-                                                      : process.env.PUBLIC_URL +
-                                                      `/assets/images/instructor-2.jpg`
-                                                  }
-                                                  alt={res.name}
-                                                  className="img-fluid"
-                                                />
-                                              </Avatar>
-                                            }
-                                            action={
-                                              <IconButton aria-label="settings">
-                                                <MoreVertIcon />
-                                              </IconButton>
-                                            }
-                                            title={res.name}
-                                            subheader={res.designation}
-                                          />
-                                        </Card>
-                                      </Link>
-                                    </Col>
-                                  ))}
-                              </Row>
-                            </div>
-                          </Tab.Pane>
-                          <Tab.Pane eventKey="review" className="review-tab">
-                            <Row>
-                              <Col md="12">
-                                <div className="review-comments">
-                                  {postReview &&
-                                    postReview?.map((row, idx) => (
-                                      <div
-                                        className="comment-box d-flex"
-                                        key={idx}
-                                      >
-                                        <div className="comment-image">
-                                          <img
-                                            src={row?.imageurl}
-                                            alt={row?.name}
-                                          />
-                                        </div>
-                                        <div className="comment-content">
-                                          <div className="content-title d-flex justify-content-between">
-                                            <div className="comment-writer">
-                                              <h3>{row?.name}</h3>
-                                            </div>
-                                          </div>
-                                          <div className="comment-desc">
-                                            <p
-                                              dangerouslySetInnerHTML={{
-                                                __html: row?.content,
-                                              }}
-                                            ></p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    ))}
-                                </div>
-                              </Col>
-                            </Row>
-                          </Tab.Pane>
-
-                          <Tab.Pane eventKey="faq" className="faq-tab">
-                            <div className="course-desc">
-                              <h2>Frequently Asked Questions</h2>
-                              <div>
-                                {posTFaq &&
-                                  posTFaq.map((row, idx) => (
-                                    <Accordion
-                                      key={idx}
-                                      expanded={expanded === `panel${idx}`}
-                                      onChange={handleChange(`panel${idx}`)}
-                                    >
-                                      <AccordionSummary
-                                        aria-controls="panel1d-content"
-                                        id="panel1d-header"
-                                      >
-                                        <h3 className="faqTitle">{row?.name}</h3>
-                                      </AccordionSummary>
-                                      <AccordionDetails>
-                                        <Typography>
-                                          <span
-                                            dangerouslySetInnerHTML={{
-                                              __html: row?.content,
-                                            }}
-                                          ></span>
-                                        </Typography>
-                                      </AccordionDetails>
-                                    </Accordion>
-                                  ))}
-                              </div>
-                            </div>
-                          </Tab.Pane>
-                        </Tab.Content>
-                      </Tab.Container>
+                    <div className="grid">
+                      <div className="text-wrapper">
+                        <h3 className="heading-left mb-0">
+                          Still have queries? Contact Us
+                        </h3>
+                        <p>Please fill in the form and an expert from the admissions office will call you in the next 4 working hours. <br /> You can also reach out to us at</p>
+                      </div>
                     </div>
-
-                    <a className="ViewMorebtn" onClick={toggleClass}>
-                      View More
-                    </a>
                   </div>
                 </Col>
-                <Col lg="4" md="4" sm="12" className="order-xs-1">
-                  <div className="single-details-sidbar">
-                    <Row>
-                      <Col md="12">
-                        <div className="course-details-feature">
-                          <h2 className="title">Course Details</h2>
-                          <ul className="list-unstyled feature-list">
-                            <li>
-                              <h3> <i className="las la-calendar"></i> Eligibility:{" "}
-                                <span>{data[0]?.eligibility}</span> </h3>
-                            </li>
+                <Col md="4">
+                  <div className="application-deadline">
 
-                            <li>
-                              <h3>  <i className="las la-sort-amount-up"></i>{" "}
-                                Admission Criteria:{" "}
-                                <span>{data[0]?.admission_criteria}</span> </h3>
-                            </li>
-                            <li>
-                              <h3>   <i className="las la-clock"></i> Duration:{" "}
-                                <span>{data[0]?.duration}</span> </h3>
-                            </li>
-
-
-                            <li>
-                              <h3>  <i className="las la-certificate"></i>
-                                Semester Fee </h3>
-
-                              <div className="fessOf">
-                                <h5>
-                                  {" "}
-                                  Himachal Pradesh Domicile :{" "}
-                                  <span> ₹{data[0]?.fees_semester} </span>{" "}
-                                </h5>
-                                <h5>
-                                  {" "}
-                                  Others :{" "}
-                                  <span>
-                                    {" "}
-                                    ₹{data[0]?.otherfees_semester}{" "}
-                                  </span>{" "}
-                                </h5>
-                              </div>
-                            </li>
-
-
-
-                          </ul>
-                         <p className="secrty">
-                            * One-time refundable security fee of Rs. 10,000
-                          </p>  
-
-
-                           <div className="lbDesign">
-                                  <img className="w-100" src="assets/images/bdesign.webp" />           
-                          </div> 
-
-
-                          {gallery.length > 0 && (
-                            <div>
-                              <h2 className="title">Gallery</h2>
-                              <Row>
-                                <Slider {...settings}>
-                                  {gallery.map((row, idx) => (
-                                    <Col
-                                      className="p-0"
-                                      md={12}
-                                      sm={12}
-                                      key={idx}
-                                    >
-                                      <figure class="snip1527">
-                                        <div class="image">
-                                          <img
-                                            className="img-fluid"
-                                            src={row?.image_url}
-                                            alt="pr-sample23"
-                                          />
-                                        </div>
-                                        {/* <figcaption>
-                                          <h3> { row?.title} </h3>
-                                        </figcaption> 
-                                      </figure>
-                                    </Col>
-                                  ))}
-                                </Slider>
-                              </Row>
-                            </div>
-                          )}
-                        </div>
-                      </Col>
-                    </Row>
+                    <a className=" AppyBtn" href="#" >Apply Now</a>
                   </div>
                 </Col>
+
+
               </Row>
             </Container>
           </section>
-          */}
+
         </Styless>
 
-        {/* Footer 2 */}
         <Footer />
       </div>
     </SuspenseBoundary>

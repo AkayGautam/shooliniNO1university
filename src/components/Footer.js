@@ -93,7 +93,7 @@ const Footer = () => {
                 <div className="footerAbout text-center">
                   <div className="logosFooter">
               <Row>
-                <div className="col-6"> 
+                <div className="col-md-12 col-6"> 
                   <Link href="/">
                     <Image
                       src="/assets/images/footer-logo.png"
