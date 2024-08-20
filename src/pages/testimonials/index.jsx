@@ -6,8 +6,23 @@ import Styless from './style/testimonial'
 import Footer from '../../components/Footer'
 import 'aos/dist/aos.css'
 import Head from 'next/head'
+import Modal from "react-modal";
 
-
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    transition: '.3s ease-in-out',
+    padding: '0',
+    overflow: 'inherit',
+    maxWidth: '650px',
+    width: '80%'
+  },
+};
 
 const Testimonials = () => {
 
@@ -20,7 +35,7 @@ const Testimonials = () => {
   const [pgdata, setPgata] = useState([]);
 
   var testimonialList = [];
-  
+   
   useEffect(() => {
     fetch("https://shooliniuniversity.com/media/GetAllTestimonial", {
       method: "post",
@@ -33,7 +48,29 @@ const Testimonials = () => {
       .then((res) => setPgata(res));
   }, []);
   
-  testimonialList = pgdata?.success;
+   testimonialList = pgdata?.success?.sort((a, b) => b.id - a.id);
+ // testimonialList = pgdata?.success;
+ 
+  // const postReview = testimonialList[0].testimonial ? testimonialList[0].testimonial.sort((a, b) => b.id - a.id) : [];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalData, setModalData] = useState({});
+
+  useEffect(() => { }, [isOpen]);
+
+  const toggleModal = (key) => {
+    const data = testimonialList.find((row) => row.name === key);
+    setModalData(data);
+    setIsOpen(true)
+  }
+
+
+
+  // const removeHTML = (str) => {
+  //   var tmp = document.createElement('p')
+  //   tmp.innerHTML = str
+  //   return tmp.textContent || tmp.innerText || ''
+  // }
 
   return (
     <Suspense
@@ -62,7 +99,7 @@ const Testimonials = () => {
             <Styles>
               {/* About Us */}
             
-
+   
      <section className="yit-testimonial">
     <div className="container">
       <div className="row">
@@ -70,10 +107,17 @@ const Testimonials = () => {
         {testimonialList?.map((i, index) => {
              return (
           <div className="col-lg-3 col-md-3 col-sm-3">
-            <div className="yit-item">
+            <div onClick={() => {
+                          toggleModal(i.name)
+                        }} className="yit-item">
               <div className="yit-thumbnail"> <img  onError={onImageError} width="100" height="100" src={i.imageurl ? i.imageurl : placeholderImage } alt="Testimonial Image" className="yit-img img-circle" /> </div>
               <div className="yit-content">
-                <p className="yit-p"> {i.content} </p>
+                {/* <p className="yit-p"> {removeHTML(i.content)} </p> */}
+                <p className="yit-p">  <span
+                                    dangerouslySetInnerHTML={{
+                                      __html: i?.content,
+                                    }}
+                                  ></span> </p>
                 <h4 className="yit-heading-h4"> {i.name} </h4> 
                 {/* <h6 className="yit-heading-h6">Program - <a className="yit-a" href="Javascript:void(0);" title="Company Name"> {i.coursename}</a></h6>
                  */}
@@ -89,6 +133,25 @@ const Testimonials = () => {
   
   </section>
 
+  <Modal isOpen={isOpen} appariaHideApp={false} style={customStyles}>
+              <button className="close-modal" onClick={() => setIsOpen(false)}>
+                X
+              </button>
+              <div className="row">
+                <div className="col-md-12 border-0 shadowPage page">
+                  <div className="pageOne">
+                    <h3 className="tet-title">  {modalData?.name} </h3>
+                    <div className="w-100">
+                    <span
+                                    dangerouslySetInnerHTML={{
+                                      __html: modalData?.content,
+                                    }}
+                                  ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
 
 
 

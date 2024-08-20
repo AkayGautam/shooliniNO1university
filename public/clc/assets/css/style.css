@@ -1,0 +1,694 @@
+/**
+* Template Name: Arsha - v4.3.0
+* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #47b2e4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73c5eb;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+#topbar
+--------------------------------------------------------------*/
+
+#topbar {
+  background: #e8223b;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0;
+}
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+.social-links a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0 3px;
+  position: relative;
+}
+img.img-icon {
+  width: 100%;
+  max-width: 17px;
+  margin: 0px 0px 0px 8px;
+}
+.social-links .nav-link1:after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  font-weight: 400;
+}
+i {
+  padding: 2px;
+  transition: all 0.2s;
+  font-size: 22px;
+}
+/*--------------------------------------------------------------
+#footer
+--------------------------------------------------------------*/
+footer p, footer a, footer h6 {
+  color: #fff !important;
+  font-size: 14px;
+}
+footer#footerdown .copyright {
+
+  float: left;
+  color: #fff;
+}
+footer#footerdown .credits {
+  float: right;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+footer#footerdown {
+  padding: 0 0 20px 0;
+  color: #444444;
+  font-size: 14px;
+  background: #282a47;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 70px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding:20px 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #e92e3e;
+}
+
+.navbar .getstarted {
+ padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #e92e3e;
+    font-weight: 600;
+    background: #e92e3e;
+}
+
+.navbar .getstarted:hover {
+  color: #fff;
+  background: #31a9e1;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #0c3c53;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #47b2e4;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(40, 58, 90, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .getstarted {
+  margin: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+/*--------------------------------------------------------------
+#section
+--------------------------------------------------------------*/
+#clctop {
+  width: 100%;
+  height: 80vh;
+  background: url(/clc/assets/img/clcback.png);
+}
+
+  #clctop h1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: black;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#clctop h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    background: #222381;
+    padding: 4px 9px;
+}
+
+
+section#clcabout { 
+  background: #f9fafb;
+}
+h2.Launchheading {
+  color: black;
+  line-height: 45px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.feature.icon {
+  border: 1px solid #333;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  margin: 15px auto;
+  background: #fff;
+}
+#clcabout p {
+  color: #000000;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 14px;
+}
+section.advantages ul li:after {
+  content: "";
+  background: url(/clc/assets/img/warning.png);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+  background-size: 100%;
+}
+section.advantages ul li {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+h4.clcabout.highlight {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Open Sans';
+}
+.clc.threebox  p {
+  font-size: 13px;
+}
+.clcbox  {
+  background:linear-gradient(45deg, #f6f6f6, transparent);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 6px 6px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+h2.Launchheading span {
+  color: red;
+  line-height: 45px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.keyfeature {
+  padding: 10px 0px;
+
+}
+section {
+  padding: 60px 0px;
+}
+.keyfeature h5 {
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+  color: red;
+  font-family: 'Open Sans';
+}
+#clcabout i {
+  background: var(--surface-color);
+  box-shadow: 0px 6px 15px #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  font-size: 24px;
+  margin: 5px 5px;
+  color: black;
+  border-radius: 50px;
+}
+p.points {
+  margin: 0 0 20px;
+  display: inline-block;
+  padding: 20px 20px;
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  font-style: italic;
+  border-left: 3px solid red;
+  background-color: #dee2e64a;
+  border-radius: 0 4px 4px 0;
+}
+.clc.effective.heading h3 {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+}
+section.clc.effective {
+  background: #9b1515;
+  color: #fff;
+}
+.clc-effective ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.clc-effective ul {
+  margin-top: 30px;
+  padding-left: 0;
+}
+.clc.effective.box {
+  padding: 9px 10px;
+  border-right: 3px solid #d3d3d333;
+}
+.clc.effective.points li {
+  padding: 10px 0px;
+  color: black;
+  font-size: 15px;
+}
+.feature.icon {
+  align-items: center; 
+}
+.feature.header h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Open Sans';
+}
+.shade-card {
+  box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+.features.pointss.text-center {
+  background: #ffffff;
+  padding: 10px;
+  margin: 13px 0px;
+  min-height: 255px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.strategies-inner img {
+  width: 100%;
+  max-width: 20%;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  color: white;
+}
+span.higlightkeys
+ {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.advantages img {
+  border-radius: 11px;
+  box-shadow: #dee2e6 0px 5px 15px;
+  border: 1px solid #0a58ca;
+}
+.strategies-inner{
+  display: block; 
+  border-right: 1px #e9e9e9 solid;
+  position: relative;
+}
+.strategies-inner h3 {
+  font-size: 24px;
+  padding: 10px 0px;
+  color: black;
+  font-family: 'Open Sans';
+}
+section.registration-element{
+  width: 100%;
+    background: url(/clc/assets/img/backclc.png);
+}
+.rgist-icon img {
+  width: 100%;
+  max-width: 8%;
+}
+.paid-headline h3 {
+  color: red;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-weight: 600;
+}
+.rgist-content h5 {
+  color: black;
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  margin: 5px 0px;
+}
+.rgist-content p {
+  color: dimgray;
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+.rgist-content span {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.resrve a {
+  background: red;
+  padding: 10px 10px;
+  width: 100%;
+  max-width: 60%;
+  display: block;
+  text-align: center;
+  color: #fff;
+  border-radius: 7px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.resrve h6 { 
+  font-size: 16px;
+  font-family: 'Open Sans';
+  line-height: 25px;
+}
+.resrve h6 span {
+  font-size: 20px; 
+}
+a.getstarted {
+  text-decoration: none;
+  background: #e8223b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+nav.regidter-btn li {
+  display: block;
+}
+@media (max-width: 768px) {
+ 
+  section#topbar {
+    display: none !important;
+} 
+
+ #clctop { 
+      height: 60vh; 
+  
+}
+#clctop h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+#header {
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+header#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+i {
+  padding: 2px;
+  transition: all 0.2s;
+  font-size: 23px;
+}
+#clctop h4 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 5px;
+  background: #222381;
+  padding: 4px 9px;
+}
+footer#footerdown .credits {
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 16px;
+}
+}

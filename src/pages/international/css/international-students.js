@@ -3,6 +3,9 @@ import { colors } from '../../../components/common/elements/elements'
 
 const Styles = styled.div`
 
+ .smallG {
+  width: 70px !important;
+}
 .ListingAR ul li:after {
   content: '';
   position: absolute;
@@ -52,7 +55,8 @@ const Styles = styled.div`
 }
 .globalfootprintImage, .pathwayprogramsImage
 {
-  background:url("https://shooliniuniversity.com/media/1653739181-biotech.jpg") center center no-repeat;
+  background:url("../../assets/images/Dual-Degree.jpg") center center no-repeat !important;
+  background-size:100% !important;
 }
 .resForm {
   max-width: 340px;
@@ -1558,7 +1562,7 @@ h3.title-default a {
 }
 .StoriesData h4 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 23px;
   color: rgb(0, 0, 0);
   margin: 0px 0px 10px;
 }
@@ -1609,6 +1613,138 @@ section.student-voices {
     width: 100%;
     bottom: -20px;
 }
+}
+
+@media screen and (max-width:767px)
+{
+.slider-table { 
+  transform: scale(.9) !important;
+}
+.resForm {
+  max-width: 100% !important;
+}
+}
+
+
+.text-center.nainBtn a {
+  font-size: 13px;
+  color: #ffffff;
+  background: #e41a1a;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.hgContents ul li {
+  font-size: 1rem !important;
+  font-family: 'Poppins';
+}
+
+
+.acordianFaq button {
+  background: rgb(255, 255, 255);
+  border-width: 0px 0px 1px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-left-style: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-left-color: initial;
+  border-image: initial;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(206, 206, 206);
+}
+.accordion-title {
+  font-weight: 700;
+  display: block;
+  font-size: 18px !important;
+  padding: 10px 20px !important;
+}
+.card-box {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 15px;
+  height: 100%;
+}
+.pagetitle h2 {
+  font-weight: 700;
+  font-size: 40px;
+  position: relative;
+}
+.accordion-body {
+  font-size: 14px;
+  padding: 10px 20px;
+  font-family: Poppins;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px !important;
+}
+.accordion-body p {
+  font-size: 14px !important;
+}
+ol, ul {
+  padding-left: 0;
+}
+
+
+.tabsAppen {
+  padding: 30px;
+  margin: 40px 0;
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.2);
+}
+.tabsAppen ul.react-tabs__tab-list li {
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #f6f6f6;
+  padding: 10px 30px;
+}
+.tabsAppen table.table.table-striped thead {
+  background: #cecece;
+}
+ul.react-tabs__tab-list {
+  margin-bottom: 0;
+}
+
+ul.rageCourses li {
+  width: 50%;
+}
+ul.rageCourses {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.redesign2 {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  margin: 15px 0px;
+}
+.redesign2 {
+  display: flex;
+  align-items: flex-start; 
+}
+.redesign2 .cardImage {
+  height: 110px;
+  width: 90px;
+  flex-shrink: 0;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+
+.pl-3{ 
+    padding-left: 15px;
 }
 
 

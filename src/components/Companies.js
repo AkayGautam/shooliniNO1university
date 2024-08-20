@@ -59,11 +59,11 @@ const Companies = () => {
 
   return (
     <Styles>
-      <section className="event-page-area event-page bg-transparent py-5">
+      <section className="event-page-area event-page event-page-color   py-5">
         <div className="container">
           <div className="sec-title mb-5 text-left">
             <h2 className="font-weight-bold">THINK PLACEMENTS</h2>
-            <h4> Highest Package: ₹18 lakh | Average Package: ₹8 lakh </h4>
+            {/* <h4> Highest Package: ₹18 lakh | Average Package: ₹8 lakh </h4> */}
           </div>
           <Row>
             <Col lg="12" md="12">

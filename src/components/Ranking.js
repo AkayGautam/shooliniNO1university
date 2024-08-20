@@ -14,6 +14,11 @@ const Ranking = () => {
   }, []);
 
   useEffect(() => {
+    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
+  }, []);
+
+  
+  useEffect(() => {
     const accordionButton = document.querySelectorAll(".accordion-button");
     accordionButton.forEach((button) => {
       button.addEventListener("click", () => {
@@ -33,26 +38,10 @@ const Ranking = () => {
 
   return (
     <Styles>
-      <section className="event-faq-area mt-md-3 pt-5">
+      <section className="event-faq-area  pt-2">
         <Container>
           <Row>
-            <Col md="12" lg="5">
-              <div className="sec-title">
-                <h2>
-                  Think <br /> Rankings{" "}
-                </h2>
-                <h4> Climbing High </h4>
-              </div>
-              <div className="introVDO">
-                <Image
-                  src={`/assets/images/eng-girl.jpg`}
-                  alt="ranking_logo"
-                  className="img-fluid"
-                  width={680}
-                  height={580}
-                />
-              </div>
-            </Col>
+           
             <Col lg="7" md="12">
               <div className="event-area vfvffv">
                 <Row>
@@ -68,19 +57,19 @@ const Ranking = () => {
                               src={`https://shooliniuniversity.com/assets/images/the-ranking.png`}
                               alt="ranking_logo"
                               className="img-fluid"
-                              width={170}
-                              height={50}
+                              width={129}
+                              height={56}
                             />
                           </div>
                         </div>
                         <div className="alignLefts">
                           <div className="event-details">
                             <h6>
-                              <a href="https://shooliniuniversity.com/news/shoolini-is-no1-private-university-in-india">
+                              <a href="https://shooliniuniversity.com/news/the-rankings-shoolini-tops-private-univs-again">
                                 {eventData.eventTitle}
                               </a>
                             </h6>
-
+                         
                             <p style={{ margin: "0 0 0 0" }}>
                               {eventData.eventdesc}
                             </p>
@@ -91,7 +80,7 @@ const Ranking = () => {
                               {eventData.eventdesc2}
                             </p>
 
-                            <p style={{ margin: "0" }}>
+                            {/* <p style={{ margin: "0" }}>
                               <strong> {eventData.eventdesc4} </strong>
                             </p>
                             <p style={{ margin: "0" }}>
@@ -102,21 +91,21 @@ const Ranking = () => {
                             </p>
                             <p style={{ margin: "0" }}>
                               {eventData.eventdesc7}
-                            </p>
+                            </p> */}
 
-                            <h6 className="mt-3">
-                              <a href="https://shooliniuniversity.com/news/shoolini-is-top-100-in-asia">  {eventData.eventdesc8} </a>
+                            <h6 className="mt-3 for-desktop">
+                              <a href="/news/shoolini-outshines-claims-top-spot-in-the-asia-rankings">  {eventData.eventdesc8} </a>
                             </h6>
-                            <p style={{ margin: "0" }}>
+                            <p className=" for-desktop" style={{ margin: "0" }}>
                               {eventData.eventdesc9}
                             </p>
-                            <p style={{ margin: "0" }}>
+                            <p className=" for-desktop" style={{ margin: "0" }}>
                               {eventData.eventdesc1a}
                             </p>
 
                           </div>
                           <div className="seeMoreBtn">
-                            <a href="https://shooliniuniversity.com/news/shoolini-is-no1-private-university-in-india">
+                            <a href="/news/shoolini-outshines-claims-top-spot-in-the-asia-rankings">
                               See More
                             </a>
                           </div>
@@ -141,8 +130,8 @@ const Ranking = () => {
                                   src={`https://shooliniuniversity.com/assets/images/qs-rankingNew.png`}
                                   alt="ranking_logo"
                                   className="img-fluid"
-                                  width={170}
-                                  height={75}
+                                  width={153}
+                                  height={41}
                                 />
                               </div>
                             )}
@@ -150,7 +139,7 @@ const Ranking = () => {
                           <div className="alignLefts">
                             <div className="event-details">
                               <h6>
-                                <Link href="/news/shoolini-soars-to-new-heights-with-no1-qs-rankings">
+                                <Link href="/news/shoolini-ranks-no1-private-university-in-india-again">
                                   {eventData.eventdesc}
                                 </Link>
                               </h6>
@@ -158,7 +147,7 @@ const Ranking = () => {
                               <p>{eventData.eventTitle}</p>
                             </div>
                             <div className="seeMoreBtn">
-                              <Link href="/news/shoolini-soars-to-new-heights-with-no1-qs-rankings">
+                              <Link href="/news/shoolini-ranks-no1-private-university-in-india-again">
                                 See More
                               </Link>
                             </div>
@@ -220,15 +209,15 @@ const Ranking = () => {
                               src={`https://shooliniuniversity.com/assets/images/the.png`}
                               alt="ranking_logo"
                               className="img-fluid"
-                              width={170}
-                              height={75}
+                              width={136}
+                              height={41}
                             />
                           </div>
                         </div>
                         <div className="alignLefts">
                           <div className="event-details">
                             <h6>
-                              <Link href="/news/shoolini-university-among-global-top-200-again">
+                              <Link href="/news/shoolini-universitys-sustainable-leap-in-the-impact-rankings">
                                 {eventData.eventTitle}
                               </Link>
                             </h6>
@@ -242,7 +231,7 @@ const Ranking = () => {
                             <p>{eventData.eventdesc2}</p>
                           </div>
                           <div className="seeMoreBtn">
-                            <Link href="/news/shoolini-university-among-global-top-200-again">
+                            <Link href="/news/shoolini-universitys-sustainable-leap-in-the-impact-rankings">
                               See More
                             </Link>
                           </div>
@@ -283,7 +272,7 @@ const Ranking = () => {
                             <p><strong>    {eventData.eventdesc} </strong> </p> 
                             <p>  {eventData.eventdesc5}</p>
                             <p> <strong>  {eventData.eventdesc6} </strong></p>
-                           
+                            <p>{eventData.eventdesc7}  </p> 
                             <p>  {eventData.eventdesc2}</p>
                             <p>  {eventData.eventdesc3}</p>
                             <p>  {eventData.eventdesc4}</p>
@@ -300,6 +289,31 @@ const Ranking = () => {
                 </Row>
 
               </div>
+
+            </Col>
+            <Col md="12" lg="5">
+              <div className="sec-title">
+                <h2> 
+                Apply to Shoolini
+                </h2>
+                <h4> India’s <span className=""> No. 1</span>  Private University</h4>
+              </div>
+              <div className="introVDO for-desktop">
+                <Link href="/blog/shoolini-student-lands-42-lakh-job-at-algo8/?utm_source=organic&utm_medium=newsshowcase-highestpackage&utm_campaign=newsshowcase-highestpackage">
+                 <Image
+                  src={`/assets/images/Research-Future3.jpeg`}
+                  alt="ranking_logo"
+                  className="img-fluid"
+                  width={700}
+                  height={620}
+                />
+                 </Link>
+              </div>
+
+<div className="sidebar for-mobile mt-3">
+                      <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
+                      <script type="text/javascript"> var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); </script>
+                    </div>
 
             </Col>
           </Row>

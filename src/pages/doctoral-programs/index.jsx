@@ -82,7 +82,8 @@ const Doctoral = ({ metaData, data: Result }) => {
               <Row>
                 <Col md="8">
                   <Row>
-                    {Result?.map((data, index) => (
+                    {/* {Result?.map((data, index) => (
+                       data?.visibility === ' ' || 'yes' ? (
                       <Col md="6" id={'courseID_'+data?.id}>
                         <div className="cuCourse" >
                           <Link href={`/${data?.slug}`} className="detailView">
@@ -105,7 +106,43 @@ const Doctoral = ({ metaData, data: Result }) => {
                           </Link>
                         </div>
                       </Col>
-                    ))}
+                        ) : (<> </>)
+                    ))} */}
+
+{
+                      Result.map(data=>{
+                        if(data.visibility === "no" || data.visibility === "NO")
+                        {
+                          return null
+                        }
+
+                        return (
+                          <Col md="6" key={data.id} id={'courseID_' + data?.id}>
+                          <div className="cuCourse dddc" >
+                            <Link href={`/${data?.slug}`} className="detailView" >
+                              <div className="detailView">
+                                <div  value={data?.id}>
+                                  {' '}
+                                  <h3> {data?.title} </h3> 
+                                  <p>
+                                    {' '}
+                                    <strong> Eligibility </strong>
+                                    {data?.eligibility}{' '}
+                                  </p>
+                                  <span>
+                                    {' '}
+                                    <strong> Duration </strong>
+                                    {data?.duration}{' '}
+                                  </span>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        </Col>
+                        )
+                      })
+                    }
+                    
                   </Row>
                 </Col>
                 <Col md="4">
@@ -114,7 +151,7 @@ const Doctoral = ({ metaData, data: Result }) => {
 
                     <div className="sideBarNew">
                     <div className="enqForm course-search">
-                          <h5 className="formName"> Admissions Open: 2023 </h5>
+                          <h5 className="formName"> Admissions Open: 2024 </h5>
                           <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
                       </div>
                     </div>

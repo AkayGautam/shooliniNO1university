@@ -60,8 +60,8 @@ const Events = () => {
   console.log(data);
   return (
     <Styles>
-      <section className="event-page-area event-page">
-        <Container>
+      <section className="event-page-area event-page for-desktop">
+        <Container> 
           <Row>
             <Col lg="12" md="12">
               <Slider {...settings}>

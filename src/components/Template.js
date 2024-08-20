@@ -43,9 +43,9 @@ const Template = ({ title, img }) => {
                       </Col>
 
                       <Col md="6">
-                        <div className="resForm box">
+                        <div className="resForm box bgbggb">
                           <h4> Enquire Now</h4>
-                        <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
+                        <div class="npf_wgts" data-height="400px"  data-w="1222078993f709a639ec1d6ca2d2d084"></div>
                         </div>
                       </Col>
 

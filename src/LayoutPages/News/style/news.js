@@ -171,14 +171,20 @@ export const Styless = styled.div`
       margin: auto;
     }
     .section-title h3 {
-      font-size: 40px;
+      font-size: 22px;
       font-weight: 700;
-      line-height: 49px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      color: #f02f2f;
+      /* line-height: 49px; */ 
+      margin-bottom: 20px; 
       font-style: normal;
     }
+
+   .stroyNews  h2 {
+    font-weight: 600; 
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
     .section-title p {
       font-family: Poppins, sans-serif;
       font-size: 16px;
@@ -412,4 +418,9 @@ export const Styless = styled.div`
       width: 100% !important;
     }
   }
+
+  .stroyNews ul li {
+    display: list-item !IMPORTANT;
+}
+
 `

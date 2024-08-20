@@ -354,9 +354,7 @@ span.btn-text {
   float: right;
   margin-bottom: 20px;
 }
-.dDmFWc .event-page {
-  background: #f6f6f6;
-}
+
 
 .post-list-item .event-item:hover {
   box-shadow: 0 0 30px 0px rgb(15 15 15 / 15%);

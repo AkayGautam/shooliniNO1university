@@ -44,6 +44,9 @@ export const getServerSideProps = async (ctx) => {
 
   const data = await fetchData(id?.success[0]?.facultyid);
 
+
+
+
   return {
     props: {
       name,
@@ -60,6 +63,15 @@ const FacultyProfile = ({ id, data, Data }) => {
       document.body.removeAttribute("pageId");
     };
   }, [id]);
+
+  console.log(data.publications, "data.publications")
+
+  // if(data.publications!=='null')   
+  // {
+  //   console.log("blank Pub");
+  //   document.getElementById("heading").style.display = "block";
+  // }
+
 
   return (
     <SuspenseBoundary>
@@ -82,17 +94,21 @@ const FacultyProfile = ({ id, data, Data }) => {
                 <Col lg="8" md="8" sm="12">
                   <>
                     <Row>
-                      <Col lg="3" md="3">
-                        <figure className="m-0">
+                      <Col lg="4" md="4">
+                        <figure className="m-0 bg-light dddsssaaa p-3">
                           <img
                             src={data.imageurl}
                             className="img-responsive"
                             style={{ width: "100%", borderRadius: "8px" }}
                             alt=""
                           />
+                          <div className="text-center">   <h5 className="mb-0 mt-3"> {data.name} </h5>
+                            <p className="mb-2"> {data.designation} </p>
+                            <p className="font-13"> {data.description} </p>
+                          </div>
                         </figure>
                       </Col>
-                      <Col lg="9" md="9">
+                      <Col lg="8" md="8">
                         <p
                           dangerouslySetInnerHTML={{
                             __html: data.intro,
@@ -102,7 +118,15 @@ const FacultyProfile = ({ id, data, Data }) => {
                     </Row>
 
                     <div className="gallery myPub">
-                      <h3>Publication</h3>
+                       {data.publications !== null && data.publications !== 'null' &&  (
+                         <h3>Publication</h3>
+                      )  }
+                       
+
+
+
+
+
                       <div
                         dangerouslySetInnerHTML={{
                           __html: data.publications,

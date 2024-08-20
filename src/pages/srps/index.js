@@ -12,8 +12,7 @@ const Mbas = () => {
 
     useEffect(() => {
 
-        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
-
+        var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
 
     }, [])
 
@@ -108,7 +107,7 @@ const Mbas = () => {
 
                 <Head>
                     <title>Summit Research Program (SRP) | Shoolini University</title>
-                    <meta name="description" content="Become a future scientist with the highly competitive Summit Research Program (SRP) at India’s No.1 Research University, Shoolini (QS Rankings 2023)." />
+                    <meta name="description" content="Become a fellow at Undergrad level with Shoolini University Summit Research Program. File patents, papers and work at cutting-edge labs. Apply now!" />
                     <meta name="keywords" content="SRP, Summit Research programs, Research programs, No.1 Research University in India, India's No.1 Research University, QS University Rankings 2023, Applied Sciences, BTech Biotech, BTech Food Technology, Faculty of Applied Sciences & Biotechnology " />
 
 
@@ -129,8 +128,7 @@ const Mbas = () => {
 
                         <Modal.Body>
                             <h2>Apply Now</h2>
-                            <div class="npf_wgts" data-height="400px" data-w="6ecc20f484a5111a5bc1e4b3bc04c426"></div>
-
+                            <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
 
                             {/* <div className="modals auto-off" id="demoModal">
                             <div className="modal-dialog  modal-dialog-centered" role="document">
@@ -262,15 +260,23 @@ const Mbas = () => {
                                 <div className="row">
                                     <div className="col-md-8 centerDiv">
                                         <div className="leftCatd">
-                                            <h1 className="mb-0"> <span> Reimagined</span> <br /> Summit Research Program </h1>
+                                        <h1 className="mb-0"> <span> India's first Undergrad</span> <br /> Research Program </h1>
+                                           
                                             <div className="noretype">
-                                                <p className="border-right-1"> at India's No.1 <br /> Private University </p>
-                                                <p className="text-center py-0">
+                                                {/* <p className="border-right-1"> Be an SRP Fellow </p> */}
+                                                <p className="text-center pb-0">
                                                     <Image
                                                         src="/assets/images/theLogo.png"
                                                         alt="THE Logo"
                                                         width={120}
                                                         height={54}
+                                                        className="mr-2 pr-3"
+                                                    />
+                                                      <Image
+                                                        src="/assets/images/qs-rankingNew.png"
+                                                        alt="THE Logo"
+                                                        width={220}
+                                                        height={60}
                                                     />
                                                 </p>
                                             </div>
@@ -288,7 +294,7 @@ const Mbas = () => {
                                             </div>
 
                                             <div className="px-0 btn btn-grad-red xs-none"> <a target="_blank"
-                                                href="https://admissions.shooliniuniversity.com/"> Apply Now</a>
+                                                href="https://admissions.shooliniuniversity.com/"> Be an SRP Fellow</a>
                                             </div>
                                             {/* <div className="ugImage">
                                             <img src="assets/images/uglogos.png" />
@@ -297,17 +303,17 @@ const Mbas = () => {
                                             <div className="row my-md-5">
                                                 <div className="col-4">
                                                     <div className="placeVal">
-                                                        <h3><strong>  1300+  </strong> <br /> Patents Filed   </h3>
+                                                        <h3><strong>  1500+  </strong> <br /> Patents Filed   </h3>
                                                     </div>
                                                 </div>
                                                 <div className="col-3">
                                                     <div className="placeVal">
-                                                        <h3><strong>  {'>'}107 {'+'}  </strong> <br /> H-Index  </h3>
+                                                        <h3><strong>  {'>'}115 {'+'}  </strong> <br /> H-Index  </h3>
                                                     </div>
                                                 </div>
                                                 <div className="col-5">
                                                     <div className="placeVal">
-                                                        <h3><strong>  Top 1%   </strong> <br /> Scientists of the World  </h3>
+                                                        <h3><strong>  Top 2%   </strong> <br /> Scientists of the World  </h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -354,8 +360,7 @@ const Mbas = () => {
                                                         >Success Stories  </a></li>
                                                         <li ><a href="#Abroad"
                                                         >International Collaborations </a></li>
-                                                        <li ><a href="#specialisation"
-                                                        >Specialisation </a></li>
+                                                    
 
                                                         <li ><a target="_blank" href="https://admissions.shooliniuniversity.com/" className="applyBtn"
 
@@ -371,15 +376,18 @@ const Mbas = () => {
 
                                                                 <div className="pagetitle text-center mb-4  ">
                                                                     <div className="pagetitle text-center">
-                                                                        <h2> <span> India’s 1st</span> Undergrad Research Program  </h2>
+                                                                        <h2> Summit Research Program </h2>
                                                                     </div>
 
 
 
                                                                     <div className="mt-3">
                                                                         <p>
-                                                                        With a proven high-impact research model, Shoolini’s Faculty of Applied Sciences and Biotechnology <strong> empowers students  </strong> with research from the first year itself. It provides first-hand exposure to high-quality research in <strong>  state-of-the-art </strong>global research environments, experience with writing and publishing papers, <strong>personal mentorship</strong> in filing patents, and interaction with acclaimed research practitioners/experts from around the world.   
+                                                                        With a proven high-impact research model, Shoolini <strong> empowers students  </strong> with research from the first year itself. The Fully Residential Program provides first-hand exposure to high-quality research in <strong>  state-of-the-art </strong>global research environments, experience with writing and publishing papers, <strong>personal mentorship</strong> in filing patents, and interaction with acclaimed research practitioners/experts from around the world.   
                                                                         </p>
+                                                                        <p>
+                                                                        With your bachelor's program, SRP incorporates a research-intensive curriculum designed by the Top 2% Scientists of the World (Stanford University 2021). This gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. It is a transformational program that provides cutting-edge research training and develops scientific temper among young minds.
+                                                                            </p>
                                                                       
 
 
@@ -396,9 +404,9 @@ const Mbas = () => {
                                                                 <div className="dataBrdcrmb text-center">
                                                                     <ul className="p-0 m-0">
                                                                         <li><span> <img src="assets/images/icon1.png" /> </span>
-                                                                            Duration: <strong> 4 yrs</strong></li>
+                                                                            Duration: <strong> 4 yrs</strong>(Exit as per NEP/ UGC rules)</li>
                                                                         <li> <img src="assets/images/icon2.png" /> Research Degree: <strong>
-                                                                            BTech in Biotech/Food Tech</strong></li>
+                                                                        BTech | BSc </strong></li>
                                                                         {/* <li> <img src="assets/images/icon3.png" /> Mode <strong> Full Time, with Hostel Facility</strong></li> */}
                                                                     </ul>
                                                                 </div>
@@ -410,7 +418,7 @@ const Mbas = () => {
 
                                                                             <h3 className=" text-dark"> Accreditations {'&'} Rankings </h3>
 
-                                                                            <p> India’s No.1 Research University as per QS Asian Rankings 2023, Shoolini has consistently been ranked among the leading institutes of higher education. 
+                                                                            <p> India’s No.1 Research University as per QS Asian Rankings 2024, Shoolini has consistently been ranked among the leading institutes of higher education. 
  </p>
 
 
@@ -458,17 +466,17 @@ const Mbas = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/qs-rankingNew.png"
+                                                                                            src="/assets/images/qs-rankingNew-2024.png"
                                                                                             width={100}
-                                                                                            height={40}
+                                                                                            height={36}
                                                                                             className="img-responsive"
                                                                                         />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> No.1 in India No.9 in Asia </h4>
-                                                                                        <p> QS World University Rankings (Asia 2023)
+                                                                                        <h4> No.1 in India No.5 in Asia </h4>
+                                                                                        <p> Citations Per Paper
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -506,8 +514,10 @@ const Mbas = () => {
                                                                             <p className="lightTexty">
                                                                                 at India’s First Biotechnology University  <br />
                                                                                 <small>  (fields with * are mandatory)</small></p>
-                                                                            {/* <form method="post" enctype="multipart/form-data"
-                                                                            action="https://web-in21.mxradon.com/t/FormTracker.aspx"
+                                                                            {/* 
+                                                                            
+                                                                            <form method="post" enctype="multipart/form-data"
+                                                                            action="#"
                                                                             className="form-card">
                                                                             <fieldset className="form-fieldset">
 
@@ -583,8 +593,7 @@ const Mbas = () => {
 
                                                                         </form> */}
 
-                                                                            <div class="npf_wgts" data-height="400px" data-w="6ecc20f484a5111a5bc1e4b3bc04c426"></div>
-
+<div class="npf_wgts" data-height="400px" data-w="a5c6f2dfd05619f11b2095ddcd313946"></div>
 
 
                                                                         </div>
@@ -782,7 +791,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
        <div className="icon-wrapper">
        <i class="fa fa-users" aria-hidden="true"></i>
        </div>
-       <h3> Top 1% Faculty </h3>
+       <h3> Top 2% Faculty </h3>
       
      </div>
    </div>
@@ -816,6 +825,50 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
 
                                 <div className="row">
                                 <Slider {...stories}> 
+
+                                <div className="col-md-4">
+                                    <a target="_blank" href="https://shooliniuniversity.com/blog/meet-the-next-gen-biotechnologists-ready-to-conquer-the-world/"> 
+                                        <div className="cardImage">
+                                            <img className="img-responsive" src="https://shooliniuniversity.com/blog/wp-content/uploads/2023/07/BTech-Biotechnology-Graduates.png" />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> Meet the Next-gen Biotechnologists ready to Conquer the World </h3>
+
+                                            <p className="text-18"> In a world full of dreams and determination, four exceptional individuals emerge… ready to script their success stories. Meet Shubhang Jha, Aditya Misra, Aakash K, and Geetika Khattri, talented BTech Biotechnology graduates from Shoolini University who are now ready to revolutionise the landscape of biotechnology and shape a brighter future for humanity.
+                                            </p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                 
+
+                                    <div className="col-md-4">
+                                        <a target="_blank" href="https://shooliniuniversity.com/blog/transforming-journey-of-bapin/"> 
+                                        <div className="cardImage">
+                                            <img className="img-responsive" src="assets/images/bapin-shoolini.jpg" />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default">Nurtured at Shoolini: Transforming Journey of Bapin </h3>
+
+                                            <p className="text-18"> “A research-focused university and the esteemed faculty list were the compelling factors that drew me to Shoolini University for my Master’s degree. From the very beginning, I was immersed in a stimulating learning environment, where engaging lectures and meaningful interactions with the faculty became an integral part of my educational journey,” 
+                                            </p>
+                                        </div>
+                                        </a>
+                                    </div>
+
+                                    <div className="col-md-4">
+                                        <a target="_blank"  href="https://shooliniuniversity.com/blog/srp-student-prekshi-among-top-10-pitchers-at-iit/"> 
+                                        <div className="cardImage">
+                                            <img className="img-responsive" src="https://shooliniuniversity.com/blog/wp-content/uploads/2023/08/Prekshi-SRP-Student-Shoolini.jpg" />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> SRP Student Prekshi Among Top 10 Pitchers at IIT
+ </h3>
+
+                                            <p className="text-18"> This is a story of the determination and creativity… of Prekshi Sharma… a first-year BTech SRP student at Shoolini University. Making her mark at the ‘Carbon Zero Challenge 2023’ held at IIT Madras, she emerged as one of the top 10 pitchers among a competitive group of IITians, PhD scholars, and tech enthusiasts across India. Her idea bridges innovation and agriculture.
+                                            </p>
+                                        </div>
+                                        </a>
+                                    </div>
                                     <div className="col-md-4">
                                         <div className="cardImage">
                                             <img className="img-responsive" src="assets/images/Arkansas.jpeg" />
@@ -829,6 +882,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                     </div>
 
                                     <div className="col-md-4">
+                                        <a target="_blank" href="https://shooliniuniversity.com/blog/mba-2022/"> 
                                     <div className="cardImage">
                                             <img className="img-responsive" src="assets/images/aman.jpg" />
                                         </div>
@@ -838,11 +892,13 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                             <p className="text-18"> Dr Amanpreet Kaur Virk (Alumni, PhD Biotechnology, 2019) is the only Indian to win the Brussels, Belgium-based Young Water Fellowship in 2019. She achieved this for her work on Moringa-based water purification systems. 
                                             </p>
                                         </div>
+                                        </a>
                                     </div>
 
                                  
 
                                     <div className="col-md-4">
+                                        <a target="_blank" href="https://shooliniuniversity.com/blog/from-shoolini-to-johns-hopkins/"> 
                                     <div className="cardImage">
                                             <img className="img-responsive" src="assets/images/Raghav-Rastogi.jpeg" />
                                         </div>
@@ -853,6 +909,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                             <p className="text-18"> In a momentous achievement, Raghav Rastogi, a BTech Biotechnology Summit Research Program (SRP) student of Shoolini University has been accepted into an advanced Master’s program at Johns Hopkins University in the United States.Being America’s first research university, admission to a master’s program at Johns Hopkins University is highly competitive. 
                                             </p>
                                         </div>
+                                        </a>
                                     </div>
 
 
@@ -926,6 +983,9 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                                 <div class="slides">
                                                     <img src="/srp-lp/img/download.png" alt="" />
                                                 </div>
+                                                <div class="slides">
+                                                    <img src="/assets/images/images/melbourne.jpg" alt="" />
+                                                </div>
 
 
                                             </div>
@@ -958,6 +1018,18 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
 
 
                                             <div className="row">
+
+                                            <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/CSE/Cogni.jpeg" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/images/nestle.png" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                </div>
+
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
                                                         <Image src="/assets/images/images/1631353749-nes.jpg" width={200} className="img-responsive" height={100} />
@@ -995,6 +1067,9 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                                 </div>
 
 
+                                                <div className={isActive ? 'allLogoss row position-relative ' : null} style={{ display: "none" }}>
+
+
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
                                                         <Image src="/assets/images/images/Cremica.png" width={200} className="img-responsive" height={90} />
@@ -1009,8 +1084,6 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                                         <Image src="/assets/images/images/Oxigen.png" width={200} className="img-responsive" height={80} />
                                                     </div>
                                                 </div>
-                                                <div className={isActive ? 'allLogoss row position-relative ' : null} style={{ display: "none" }}>
-
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
                                                         <Image src="/assets/images/images/macro.png" width={200} className="img-responsive" height={100} />
@@ -1121,22 +1194,30 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                             <div className="container">
                                 <div className="row">
 
-                                    <div className="col-md-6 pr-md-0">
-                                        <div className="card-box">
-                                            <h3 className="title-default"> <span className="text-red"> Summit Research Program</span>: Join the League of Extraordinary Biotechnologists  </h3>
+                                    <div className="col-md-6 pr-md-0 align-centered">
+                                        <div className="card-box ht-auto">
+                                            <h3 className="title-default"> <span className="text-red"> Summit Research Program</span>: Join the League of Extraordinary Researchers  </h3>
                                           
-                                            <p> Our research-intensive BTech curriculum designed by the <strong> Top 1%</strong> Scientists of the World (Stanford University 2021), gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. This <strong>transformational program</strong> provides cutting-edge research training and <strong>develops scientific temper </strong> among young minds.  </p>
+                                            {/* <p> Our research-intensive BTech curriculum designed by the <strong> Top 2%</strong> Scientists of the World (Stanford University 2021), gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. This <strong>transformational program</strong> provides cutting-edge research training and <strong>develops scientific temper </strong> among young minds.  </p> */}
+                                            <ul>
+                                                <li>Get an Individual Guide from the 1st Year </li>
+                                                <li>Conduct Real-life research program </li>
+                                                <li> Get extra research credits</li>
+                                                <li> Receive an SRP Certificate at the end of the program </li>
+                                  
+                                                </ul>
 
-                                            <div className="courselist">
+                                            {/* <div className="courselist">
                                                 <ul className="p-0">
                                                     <li> <a target="_blank" href="https://shooliniuniversity.com/b-tech-biotechnology-with-summit-research-program ">  <strong> BTech Biotech </strong>  </a> </li>
                                                     <li> <a target="_blank" href="https://shooliniuniversity.com/b-tech-food-technology-with-summit-research-program "> <strong>BTech Food Tech  </strong>
                                                     </a> </li>
+                                                  
 
                                                 </ul>
-                                            </div>
+                                            </div> */}
 
-                                            <div class="px-0 btn btn-grad-red"> <button onClick={handleShow}  > Need Help? Talk to our Career Counsellor</button></div>
+                                            <div class="px-0 btn btn-grad-red"> <a target="_blank" href="https://admissions.shooliniuniversity.com/"  > Need Help? Talk to our Career Counsellor</a></div>
 
                                         </div>
                                     </div>

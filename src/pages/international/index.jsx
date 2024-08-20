@@ -488,6 +488,12 @@ const PathwayPrograms = () => {
                     </div>
                   </div>
                 </Slider>
+
+                <Col md="12">
+                  <div className="text-center nainBtn">
+                      <a href="/chat-with-ambassador"> Reach a Student Ambassador </a> 
+                  </div>
+                </Col>
               </Row>
             </Container>
           </section>
@@ -585,7 +591,7 @@ const PathwayPrograms = () => {
                                                     <img src="/srp-lp/img/sheffield-hallam-university.png" alt="" />
                                                 </div>
                                                 <div class="slides">
-                                                    <img src="/srp-lp/img/TMU_CoM_Logo.png" alt="" />
+                                                    <img class="smallG" src="/assets/images/NM-state.jpg" alt="" />
                                                 </div>
                                                 <div class="slides">
                                                     <img src="/srp-lp/img/University-of-Reading-Logo.png" alt="" />

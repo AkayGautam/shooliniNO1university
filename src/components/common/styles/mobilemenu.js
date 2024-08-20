@@ -3,7 +3,9 @@ import { colors } from '../elements/elements'
 
 export const Styles = styled.div`
 
-
+.searchedCourse .col-md-8 {
+  order: 2;
+}
 .mobilemenu2 ul li {
   background: transparent;
   display: block;

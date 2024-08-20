@@ -896,11 +896,11 @@ ul.nav.menu-nav li:nth-child(2) ul.dropdown .nav-link {
 
 
 .sticky-icon  {
-	z-index:9;
+	z-index:99;
 	position:fixed;
 	top:25%;
 	right:0%;
-	width:220px;
+	width:270px;
 	display:flex;
 	flex-direction:column;
 }  
@@ -955,7 +955,7 @@ button.bg-salmon span svg {
 
 .sticky-icon a  {
   color:transparent;
-	transform:translate(175px,0px);
+	transform:translate(225px,0px);
 	text-align:left;
 	text-decoration:none;
 	text-transform:capitalize;
@@ -1037,6 +1037,43 @@ button.bg-salmon span svg {
 
 @media screen and (max-width:767px)
 {
+ 
+  a#xd-block span.iconsFile {
+    display: none !important;
+}
+  a#xd-block {
+    display: block !important;
+    white-space: nowrap;
+    text-align: center;
+}
+  .xd-none {
+    display: none !important;
+}
+
+  .xs-d-none {
+    display: none !important;
+}
+a#grad_bg2, a#grad_bg2 span {
+  background: #fff !important;
+  color: #000 !important;
+}
+a#grad_bg2 {
+  border: 1px solid #cecece !important;
+}
+.bg-salmon2 .xs-design {
+  background: linear-gradient(rgb(238,44,60),rgb(218,32,47)) !important;
+  padding: 13px 0 !important;
+  margin: 5px 5px;
+  border-radius: 0.5rem;
+}
+span.icnName { 
+  font-size: 12px !important; 
+  font-weight: 600 !important;
+}
+.bg-salmon2 {
+  background: #fff;
+  padding: 2px 19px;
+}
   .bg-salmon2.sticky-icon.showcase {
     bottom: 0 ;
     transition:all 0.2s;
@@ -1064,6 +1101,7 @@ button.bg-salmon span svg {
 footer.footer1 {
   margin-bottom: 20px;
 }
+
 .sticky-icon {
   flex-direction: row !important;
   width: auto !important;
@@ -1073,7 +1111,7 @@ a.Instagram {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 40%;
 }
 .sticky-icon {
   flex-direction: row !important;
@@ -1113,5 +1151,156 @@ a.Instagram.whatsApp {
 {
   background:#ee1e3d !important;
 }
+a.nav-link.dropdown-toggle.newSearch {
+  opacity: 0;
+}
+ul.subMenus li:after {
+  
+  background: url(../assets/images/check.png);
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-size: 100%;
+  opacity:0.6
+}
+ul.subMenus {
+position: relative;
+}  
+a.LinkBold {
+  font-weight: 500 !important;
+  font-size: 13px !important;
+}
+a.viewBtn {
+  background: #e52525;
+  display: inline-block !important;
+  width: auto !important;
+  color: #fff !important;
+  padding: 8px 30px;
+}
+
+@media screen and (min-width:900px)
+{
+
+
+.bdr-right
+{
+  border-right:1px solid #cecece;
+}
+.react-tabs h4 {
+  text-transform: uppercase;
+}
+.react-tabs li a:hover {
+  color: #e33535 !important;
+  font-weight: 500 !important;
+}
+  .ddCou {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #cecece;
+}
+.ddCou h4 a {
+  font-weight: 500 !important;
+}
+  ul.dropdown.dek-wid {
+    min-width: 900px !important;
+    left: -300px !important;
+    padding: 15px !important;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    opacity: 0;
+    border-radius: 10px !important;
+}
+.dek-wid h4 {
+  font-size: 13px;
+}
+ 
+ul.nav.menu-nav li a {
+  font-size: 13px;
+  line-height: 15px;
+  display: block;
+  font-weight: 300;
+  color: #000;
+  transition: all 0.4s ease;
+}
+ ul.dek-wid li {
+  display: block;
+  margin-bottom: 8px;
+  position:relative;
+}
+ul.subMenus {
+  padding: 0px 0px 0px 0px;
+} 
+ul.navTabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+ul.navTabs li {
+  width: 25%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 2;
+}
+.react-tabs__tab--selected { 
+  border-color: #dee2e6 !important; 
+  border-bottom:0px !important;
+}
+ul.navTabs li {
+  border-bottom: 1px solid #cecece;
+}
+}
+
+
+@media screen and (max-width:767px)
+{
+
+.Instagram.whatsApp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  bottom: 80px;
+  left: 10px;
+}
+a.whatsAAP span.icnName {
+  display: none;
+}
+
+a.whatsAAP span.iconsFile {
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+}
+}
+
+
+.flag {
+  width: 70px;
+}
+.topWithFlag {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.flagANimation span {
+  font-weight: 700;
+  color: #c70620;
+  font-size: 20px;
+}
+.flagANimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
 
 `

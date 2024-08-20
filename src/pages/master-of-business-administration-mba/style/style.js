@@ -115,6 +115,15 @@ a.applyBtn {
         left: 18%;
         transition : all 0.3s ease-out;
     }
+
+    .modal-dialog {
+        max-width: 750px !important;
+    }
+    tbody.text-left td {
+        white-space: nowrap;
+    }
+
+
 }
 
 
@@ -318,6 +327,17 @@ table td {
     text-align: left;
     margin:10px 0;
 }
+p.smalltext {
+    font-size: 14px !important;
+} 
+ h3.mod-titlt {
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 23px;
+    color: #000;
+    font-family: 'Poppins' !important;
+}
 
 .btn-grad-red a, .btn-grad-red button  {
     display: block;
@@ -483,20 +503,27 @@ h3.title-red {
 
 .courselist ul li {
     display: block;
-    flex-basis: 50%;
+    flex-basis: 100%;
 }
-
+.ht-100 {
+    height: 100%;
+}
 .courselist ul li a {
     display: inline-flex;
     padding: 5px 10px;
     width: 100%;
-    font-size: 15px;
     height: 100%;
     align-items: center;
     position: relative;
     color: #000;
+    flex-wrap: wrap;
 }
 
+.no-link li a:hover {
+    background: transparent !important;
+    color:#333 !important;
+    pointer-events: none !important;
+}
 .courselist ul li a:after {
     content: "";
     background: url(../../assets/images/arrow.png);
@@ -505,6 +532,7 @@ h3.title-red {
     background-size: 100%;
     left: -12px;
     position: absolute;
+    top:11px;
 }
 
 .courselist ul li a:hover {
@@ -690,12 +718,26 @@ button.btnView {
     top: -1px;
 }
 
-.voices-image {
-    border-radius: 0px 30px 30px 0px;
-    position: relative;
-    overflow: hidden;
+
+.centers {
+    display: flex;
+    align-items: center;
 }
 
+.voices-image {
+    border-radius: 30px 0px 0px 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.voices-image img{
+width:100%;    
+}
+a.viewFeeDetail {
+    white-space: initial;
+    width: 135px;
+    display: block;
+}
 
 @media screen and (min-width:980px)
 {
@@ -1517,6 +1559,427 @@ section#shooliniMBA {
     background-position: center 0
   }
  
+
+  
+button.slick-arrow.slick-prev {
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    box-shadow: 0 0 16px 4px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    left: -40px;
+  }
+  button.slick-arrow.slick-next {
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    box-shadow: 0 0 16px 4px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    right: -40px;
+  }
+  .slick-prev:before {
+    left: 14px;
+    background-size: 100%;
+    transform: rotate(180deg);
+    opacity: 0.2 !important;
+    top: 17px !important;
+  }
+  .slick-next:before {
+    left: 17px;
+    background-size: 100%;
+    transform: rotate(0deg);
+    opacity: 0.2 !important;
+    top: 16px !important;
+  }
+  
+  .blog-card:before {
+    position: absolute;
+    content: " ";
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    border-color: #d3e9ff;
+    border-style: solid;
+    border-width: 10px 0 0 10px;
+    border-top-left-radius: 4px;
+  }
+  .blog-card {
+    border-radius: 4px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+    background-color: #fff;
+    width: 288px;
+    padding: 15px;
+    position: relative;
+    margin: 15px 0;
+  }
+  button.slick-arrow.slick-prev {
+    z-index: 9;
+  }
+  button.slick-arrow.slick-next {
+    z-index: 9;
+  }
+  .max-100
+  {
+    max-width:100% !important;
+  }
+  .placementLogos h3.text-left {
+    text-align: center !important;
+  }
+  .blogsCard {
+    background: #f6f6f6;
+    padding: 40px 0;
+  }
+  .cLogo {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+  .cLogo img {
+    width: 90%;
+    max-height: 96px;
+  }
+  a.AppyBtn {
+    font-size: 17px !important;
+    border: 1px solid #3e3e3e;
+    line-height: 17px;
+    background-color: #e41a1a !important;
+    color: #ffffff;
+    border: 1px solid #e41a1a;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 4px 4px 5px rgba(0,0,0,.2);
+    width: 220px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .rankingsLogo {
+    margin-bottom: 6px;
+  }
+  
+  .all-rev-btn
+  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
+  }
+  .allFac-Card:hover {
+    background: #e41a1a !important;
+    color: #fff;
+    cursor: pointer;
+  }
+  .fac-img {
+    background: #e0e0e0;
+  }
+  section.placementLogos {
+    margin: 40px 0;
+  }
+  
+  
+  
+  
+  
+  @-webkit-keyframes pulse-border{0%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity:1}100%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);opacity:0}}@keyframes pulse-border{0%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity:1}100%{-webkit-transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);opacity:0}}
+  
+  
+  @media screen and (min-width:768px)
+  {
+    .for-mobile
+    {
+      display:none;
+    }
+  }
+  
+  @media screen and (max-width:767px)
+  {
+    .for-desktop
+    {
+      display:none;
+    }
+    section#bg-image {
+      background: none !important;
+  }
+  
+  .play-btn-area {
+    position: absolute !important;
+    top: 130px !important;
+  }
+  .header-content {
+    margin-top: 0 !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+    margin-bottom: 0 !important;
+  }
+  h3.banner-subheading-aiml {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .header-content ul {
+    display: inline-block;
+    padding: 0;
+  }
+  .header-content ul li {
+    display: inline-block;
+  }
+  .lc-btn-section a, .application-btn-section a {
+    width: 100% !important;
+    margin: 8px 0 !important;
+  }
+  
+  .featureDiv {
+    clear: both;
+    padding: 20px 0 40px;
+  }
+  .application-btn-section {
+    margin-right: 0;
+  }
+  button.slick-arrow.slick-prev {
+    width: 30px;
+    height: 30px;
+    left: 0px !important;
+    z-index: 9;
+  }
+  button.slick-arrow.slick-next {
+    width:30px;
+    height: 30px;
+    right: 0px !important;
+    z-index: 9;
+  }
+  .fac-mentor .fac-mem {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+  .blog-card, .allFaculty .allFac-Card,  .allFac-Card p,  .fac-list {
+    width: 100% !important;
+  }
+  .slider-content.slider-image {
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+  }
+  
+  .slider-content.slider-image img{
+  transform: scale(2);
+  }
+  .fDiv {
+    margin-top: 20px;
+  }
+  .featureDiv {
+    padding-bottom: 0 !important;
+  }
+  
+  .slick-prev:before {
+    left: 4px;
+    background-size: 83%;
+    top: 4px !important;
+    background-repeat: no-repeat;
+  }
+  .slick-next:before
+  {
+  top:8px !important;
+  left: 9px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  }
+  
+
+  }
+
+  .fac-mem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: unset;
+    -ms-flex-wrap: unset;
+    flex-wrap: wrap;
+}
+ .fac-img {
+  border-radius:50%;
+}
+a.blog-card__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.cardImage {
+  height: 110px;
+  width: 90px;
+  flex-shrink: 0;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+
+.fac-mem {
+    display: flex;
+    flex-wrap: unset;
+}
+.fac-list {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 210px;
+}
+.fac-list h5 {
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.fac-mentor .fac-mem {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+    border: 1px solid transparent;
+    height: 100%;
+    width: 288px;
+    background-color: #fff;
+    transition: all .3s ease-out;
+}
+
+.allFaculty .allFac-Card {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+  border: 1px solid transparent;
+  height: 100%;
+  width: 268px;
+  background-color: #fff;
+  transition: all .3s ease-out;
+}
+.allFac-Card p {
+  width: 250px;
+}
+.fac-img {
+    border-radius: 50%;
+}
+.fac-img img {
+    width: 70px;
+}
+.fac-img {
+    width: 90px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.fac-list p {
+    font-size: 14px !important;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-container
+{  
+        display:block !important;
+ 
+}
+.bannerbody p {
+    font-size: 30px !important;
+    line-height: 1.5 !important;
+    margin-left: 200px;
+    padding-right: 70px;
+}
+.bannerId p {  
+    margin-left: 200px;
+}
+.mba-banner {
+    background: url(../assets/images/ashish-g.jpg);
+    background-size: 100%; 
+    object-fit: cover;
+    background-repeat: no-repeat !important;
+}
+ 
+.mba-banner2nd {
+    background: url(../assets/images/munish-g.jpg);
+    background-size: 100%; 
+    object-fit: cover;
+    background-repeat: no-repeat !important;
+}
+
+@media screen and (min-width:768px)
+{
+    .mba-banner,  .mba-banner2nd { 
+        min-height: 500px; 
+    }
+ 
+
+    .bannerbody p:after {
+        content: "";
+        position: absolute;
+        background: url(assets/images/comas.png);
+        height: 30px;
+        width: 30px;
+        background-size: 100%;
+        top: 50px;
+        left: 140px;
+        background-repeat: no-repeat;
+    }
+
+  
+
+}
+
+@media screen and (max-width:767px)
+{
+    .bannerbody p {
+        font-size: 20px !important;
+        line-height: 1.5 !important;
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+    .bannerId p {
+        margin-left: 20px;
+    }
+    .xs-order-2 {
+        order: 2;
+    }
+    .topbanner-fac-section
+    {
+        background: #f6f6f6 !important;
+        padding: 30px !important;
+        box-sizing: border-box;
+    
+    } 
+
+    .mba-banner, .mba-banner2nd {
+        max-height: 270px;
+        position: relative;
+        overflow: hidden !important;
+        padding: 0 !important;
+        height: 270px !important;
+    }
+
+
+
+}
+.slick-dots li { 
+    background: #c3c3c3;
+    border-radius: 50%;
+}
+.pad-y {
+    min-height: 500px;
+}
+.slick-dots { 
+    bottom: 15px;
+}
+
 `
 
 export default Styless

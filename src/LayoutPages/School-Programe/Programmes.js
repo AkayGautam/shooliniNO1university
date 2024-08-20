@@ -10,17 +10,19 @@ import DialogContentText from "@mui/material/DialogContentText";
 import Slide from "@mui/material/Slide";
 
 const settings = {
-  dots: false,
+  dots: true,
   infinite: true,
-  speed: 500,
+  speed: 300,
+  rows:2, 
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1300,
   responsive: [
     {
       breakpoint: 767,
+      rows:2,
     },
     {
       breakpoint: 10000,
@@ -94,7 +96,7 @@ const Programmes = ({ programs }) => {
                       return (
                         <Fragment key={index}>
                           <div id={data?.slug} className="col-md-4">
-                            <div className="programme_card">
+                            <div className="programme_card mb-4">
                               {/* <div className="featured_img">
                                 <img
                                   loading="lazy"

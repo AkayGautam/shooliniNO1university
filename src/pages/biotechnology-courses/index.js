@@ -17,11 +17,7 @@ import Schema from "@/components/Schema";
 
 const Mbas = (props) => {
   useEffect(() => {
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = "https://widgets.nopaperforms.com/emwgts.js";
-    document.body.appendChild(s);
+    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
   }, []);
 
   const data = [
@@ -94,7 +90,7 @@ const Mbas = (props) => {
       <Suspense>
         <Head>
           <title>
-            Biotech Course, Eligibility, Fees, Admissions 2023 | Shoolini
+          Biotech Course, Eligibility, Fees, Admissions 2024 | Shoolini
           </title>
           <meta
             name="description"
@@ -115,11 +111,7 @@ const Mbas = (props) => {
           <Modal className="" show={show} onHide={handleClose}>
             <Modal.Body>
               <h2>Apply Now</h2>
-              <div
-                class="npf_wgts"
-                data-height="400px"
-                data-w="6ecc20f484a5111a5bc1e4b3bc04c426"
-              ></div>
+              <div class="npf_wgts" data-height="400px" data-w="a5c6f2dfd05619f11b2095ddcd313946"></div>
 
               {/* <div className="modals auto-off" id="demoModal">
                             <div className="modal-dialog  modal-dialog-centered" role="document">
@@ -1308,9 +1300,9 @@ const Mbas = (props) => {
                           </li>
                           <li>
                             {" "}
-                            <Link href="/b-tech-biotechnology-with-summit-research-program">
+                            <Link href="/b-tech-biotechnology">
                               {" "}
-                              BTech Biotechnology (With/Without Research){" "}
+                              B Tech Biotechnology{" "}
                             </Link>{" "}
                           </li>
 
@@ -1392,13 +1384,7 @@ const Mbas = (props) => {
                               MSc Food Technology{" "}
                             </Link>{" "}
                           </li>
-                          <li>
-                            {" "}
-                            <Link href="/msc-microbiology-research">
-                              {" "}
-                              MSc Microbiology{" "}
-                            </Link>{" "}
-                          </li>
+                      
                           <li>
                             {" "}
                             <Link href="/msc-nutrition-and-dietetics">
@@ -1454,9 +1440,9 @@ const Mbas = (props) => {
 
                       <div class="px-0 btn btn-grad-red">
                         {" "}
-                        <button onClick={handleShow}>
+                        <a target="_blank" href="https://admissions.shooliniuniversity.com/">
                           Need Help? Talk to our Career Counsellor
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>

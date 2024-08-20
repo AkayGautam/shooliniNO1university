@@ -14,8 +14,42 @@ import Head from "next/head";
 import Link from "next/link";
 import { GetNavigationSchema, GetFaq } from "@/Api";
 import Schema from "@/components/Schema";
+import Slider from "react-slick";
+
 
 const Engineering = (props) => {
+
+
+  
+  const setting = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade:true,
+    slidesToShow:1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+
+    autoplaySpeed: 2500,
+
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1 ,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   useEffect(() => {
     var s = document.createElement("script");
     s.type = "text/javascript";
@@ -87,12 +121,18 @@ const Engineering = (props) => {
     }
   };
 
+  
+  useEffect(() => {
+    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
+  }, []);
+
+
   return (
     <>
       <Suspense>
         <Head>
           <title>
-            Engineering Courses, Placements, Admissions 2023 | Shoolini
+         Engineering Courses, Placements, Admissions 2024 | Shoolini
           </title>
           <meta
             name="description"
@@ -114,7 +154,7 @@ const Engineering = (props) => {
             <Modal.Body>
               <h2>Apply Now</h2>
               <div
-                class="npf_wgts"
+                className="npf_wgts"
                 data-height="400px"
                 data-w="6ecc20f484a5111a5bc1e4b3bc04c426"
               ></div>
@@ -137,26 +177,38 @@ const Engineering = (props) => {
             </a>
           </div>
           <main className="innerBody">
-            <section id="shooliniMBA" className="heroBanner">
+            <section id="shooliniMBA" className="heroBanner bg-white">
               <div className="container">
                 <div className="row">
-                  <div className="col-md-8">
-                    <div className="leftCatd">
-                      <h1 className="mb-0">
-                        {" "}
-                        <span> Engineering on World</span> <br /> Map with
-                        Diamond Rating{" "}
-                      </h1>
-                      <div className="noretype">
-                        {/* <p className="border-right-1"> at India's No.1 <br /> Private University </p> */}
-                        <p className="text-center py-0">
+                  <div className="col-md-6">
+                    <div className="leftCatrd pt-4">
+
+                    <p className="text-left py-0">
                           <Image
-                            src="/assets/images/qs-rankingNew.webp"
+                            src="/assets/images/The_logoc.png"
                             alt="THE Logo"
-                            width={140}
-                            height={45}
+                            width={130}
+                            height={60}
                           />
                         </p>
+
+                      <p className="h2 mb-0">
+                        {" "}
+                        <span> LEADING THE WAY  </span>  
+                      </p>
+                      <div className="noretypeS">
+                       <span className="text-red"> NO.1 PRIVATE </span> <br/>
+                       UNIVERSITY IN INDIA
+                     
+                    <p className="text-left mt-3 py-0">
+                          <Image
+                            src="/assets/images/for.png"
+                            alt="THE Logo"
+                            width={74}
+                            height={58}
+                          />
+                        </p>
+                        <h2 className="L_text"> Engineering </h2>
                       </div>
 
                       <div className="forMobile d-md-none">
@@ -179,48 +231,32 @@ const Engineering = (props) => {
                           Apply Now
                         </a>
                       </div>
-                      {/* <div className="ugImage">
-                                            <img src="assets/images/uglogos.png" />
-                                        </div> */}
+                   
                     </div>
-                    <div className="row my-md-5">
-                      <div className="col-4">
-                        <div className="placeVal">
-                          <h3>
-                            <strong> 100% </strong> <br /> Placements{" "}
-                          </h3>
-                        </div>
-                      </div>
-                      <div className="col-4">
-                        <div className="placeVal">
-                          <h3>
-                            <strong> ₹18LPA </strong> <br /> Highest Salary{" "}
-                          </h3>
-                        </div>
-                      </div>
-                      <div className="col-4">
-                        <div className="placeVal">
-                          <h3>
-                            <strong> 250+ </strong> <br /> Global Alliances{" "}
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
+                   
                   </div>
-                  <div className="col-md-4">
+                  <div className="col-md-6 P-0">
                     <div className="rightCard">
                       <Image
-                        src="/assets/images/heroOne1.png"
+                        src="/assets/images/ai-girl.png"
                         alt="Hero Banner"
-                        className="mg-responsive w-100"
-                        width={356}
-                        height={521}
+                        className="img-responsive d-none w-100"
+                        width={700}
+                        height={650}
                       />
                     </div>
                   </div>
                 </div>
               </div>
             </section>
+
+            {/* <section className="hero mt-0 pt-0">
+              <div classname="herobannermain">
+                 <img className="w-100" src="assets/images/mbaslider.jpg" />  
+                 </div>
+            </section> */}
+
+
 
             {/* section  */}
 
@@ -342,21 +378,21 @@ const Engineering = (props) => {
                                       No.3 In India in Mech. Engg.{" "}
                                       <strong>
                                         {" "}
-                                        SCImago Institutions Rankings 2023{" "}
+                                        SCImago Institutions Rankings{" "}
                                       </strong>
                                     </li>
                                     <li>
                                       {" "}
                                       <img src="assets/images/icon2.png" />{" "}
-                                      India’s No.2 Engineering University{" "}
+                                      No.1 in India in Engineering{" "}
                                       <strong>
                                         Times Higher Education Rankings
                                       </strong>
                                     </li>
                                     <li>
                                       {" "}
-                                      <img src="assets/images/icon3.png" /> No.
-                                      125 in India in Engineering{" "}
+                                      <img src="assets/images/icon3.png" />
+                                      101-150 in India in Engineering{" "}
                                       <strong>NIRF Rankings</strong>
                                     </li>
 
@@ -492,11 +528,7 @@ const Engineering = (props) => {
                                         </small>
                                       </p>
 
-                                      <div
-                                        class="npf_wgts"
-                                        data-height="410px"
-                                        data-w="6ecc20f484a5111a5bc1e4b3bc04c426"
-                                      ></div>
+                                      <div class="npf_wgts" data-height="400px" data-w="d5ad466046dab12b6d16994337879962"></div>
                                     </div>
                                   </div>
 
@@ -548,27 +580,12 @@ const Engineering = (props) => {
                                       />
                                       <div className="namedes">
                                         <h4> Prof Virender Rihani </h4>
-                                        <h5>
-                                          {" "}
-                                          Dean of Engineering {"& "}Adviser,
-                                          Shoolini University{" "}
-                                        </h5>
+                                  
                                         <p>
                                           {" "}
-                                          Former Head of Electronics Dept, IT
-                                          Dept {"&"} Registrar, PEC University
-                                          of Technology{" "}
+                                          Dean Engineering and Technology
                                         </p>
-                                        <p>
-                                          {" "}
-                                          On the Panel of Experts of NBA, CSIR{" "}
-                                          {"&"} DRDO India.{" "}
-                                        </p>
-                                        <p>
-                                          {" "}
-                                          Alumnus Delhi College of Engineering,
-                                          now DTU{" "}
-                                        </p>
+                                      
                                       </div>
                                     </div>
                                   </div>
@@ -781,7 +798,7 @@ const Engineering = (props) => {
 
                       <div className="text-center">
                         <div className="row">
-                          <div className="col-3 inRow">
+                          <div className="col-4 inRow">
                             <div className="icon-image">
                               <Image
                                 src="/assets/images/icon14.png"
@@ -797,7 +814,7 @@ const Engineering = (props) => {
                             </div>
                           </div>
 
-                          <div className="col-3 inRow">
+                          <div className="col-4 inRow">
                             <div className="icon-image">
                               <Image
                                 src="/assets/images/icon13.png"
@@ -813,7 +830,7 @@ const Engineering = (props) => {
                             </div>
                           </div>
 
-                          <div className="col-3 inRow">
+                          {/* <div className="col-3 inRow">
                             <div className="icon-image">
                               <Image
                                 src="/assets/images/icon12.png"
@@ -827,9 +844,9 @@ const Engineering = (props) => {
                                 <strong> ₹18LPA </strong> <br /> Highest CTC{" "}
                               </h3>
                             </div>
-                          </div>
+                          </div> */}
 
-                          <div className="col-3 inRow">
+                          <div className="col-4 inRow">
                             <div className="icon-image">
                               <Image
                                 src="/assets/images/icon11.png"
@@ -852,6 +869,318 @@ const Engineering = (props) => {
                 </div>
               </div>
             </section>
+
+
+
+                          <section className="testimonials">
+                          <div className="col-md-12  order-xs-5">
+                                    <div
+                                      id="hiring"
+                                      className="student-voices mt-md-5"
+                                    >
+                                      <div className="container">
+                                        <div className="row">
+                                        <Slider {...setting}>
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/astha.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                              <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+
+                                              <div className="all-discription"> 
+                                              <p className="text-white text-18">
+                                                {" "}
+                                                From the first glance, I fell in love with Shoolini University. Its natural beauty captured my heart.  With 100% placements, outstanding faculty, skill development, and NBA Accreditation, Shoolini became the canvas where my aspirations painted a bright future.{" "}
+                                              </p>
+
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/lorel.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                              </div>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/anuj.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}  I secured a placement at the leading global insurance firm. The Shoolini placement cell worked diligently to help me land this dream job. If you're considering an MBA, Shoolini is the place to be.
+                                              </p>
+
+                                            
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/marsh.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                            </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/subham.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div className="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}  Shoolini's curriculum, faculty from top institutions, and emphasis on practical skills have been instrumental in shaping my career path. The university's commitment to industry exposure played a pivotal role in my success. 
+                                              </p>
+ 
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/lorel2.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                            </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/hasan.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div className="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "} My MBA journey was amazing at Shoolini! The ATP program gave practical insights and prepared me well, and the top-notch faculty guided me throughout. Thanks to Shoolini.  I not only got a degree but also gained mentors for life.
+                                              </p>
+
+                                             
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/life.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/sparsh.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div className="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "} I got placed at Aditya Birla Group. All thanks to my faculty and mentors at Shoolini. The Sprint Program was a game-changer in preparing me for my interview. I recommend Shoolini to all MBA aspirants—it's not just education; it's your pathway to success.
+                                              </p>
+
+                                             
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/birla.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                         </div>
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/Deepika.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div className="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}  Shoolini's curriculum, faculty from top institutions, and emphasis on practical skills have been instrumental in shaping my career path. The university's commitment to industry exposure played a pivotal role in my success. 
+                                              </p>
+
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/icici.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                          </div> </div>
+                                         
+                                              </div>
+                                          </div>
+                                          
+
+                                          
+                                         </Slider>
+                                         
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <section id="hiring" className="student-voices">
               <div className="container">
@@ -896,7 +1225,7 @@ const Engineering = (props) => {
                   </div>
                 </div>
               </div>
-            </section>
+            </section>  
 
             <section id="fees" className="student-voices">
               <div className="container">
@@ -969,7 +1298,283 @@ const Engineering = (props) => {
                 </div>
               </div>
             </section>
+            <section id="special" className="spiecalisation">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6 pr-md-0">
+                    <div className="card-box">
+                      <h3 className="title-default">
+                        {" "}
+                        Choose More with{" "}
+                        <span className="text-red">
+                          {" "}
+                          Shoolini Engineering{" "}
+                        </span>{" "}
+                      </h3>
+                      <p>
+                        <small> Start your Engineering Journey Today </small>
+                      </p>
+                      <p>
+                        Our future-ready Engineering specialisations are
+                        designed by leading industry experts from the world’s
+                        top 1% companies to help you succeed in a dynamic,
+                        fast-changing professional landscape.{" "}
+                      </p>
 
+                      <div className="courselist ht-custom">
+                        <ul className="p-0">
+                          <li>
+                            {" "}
+                            <Link href="/ba-bsc-hons-mathematics">
+                              {" "}
+                              BA/BSc (Hons) Mathematics (3/4 years){" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/bca-artificial-intelligence-machine-learning">
+                              {" "}
+                              BCA Artificial Intelligence and Machine Learning{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/bca-full-stack-developer">
+                              {" "}
+                              BCA Full-stack Developer{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/bca-gaming-graphic">
+                              {" "}
+                              BCA Gaming and Graphics{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/bca-ui-ux"> BCA UI/UX </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-cse-artificial-intelligence-and-machine-learning">
+                              {" "}
+                              BTech CSE Artificial Intelligence{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-artificial-intelligence-summit-research-program">
+                              {" "}
+                              BTech Artificial Intelligence (With/Without
+                              Research){" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/btech-cse-blockchain-iot">
+                              {" "}
+                              BTech CSE Blockchain & IoT{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-civil-engineering">
+                              {" "}
+                              BTech Civil Engineering{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-civil-engineering-leet">
+                              {" "}
+                              BTech Civil Engineering (LEET){" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-cse-leet">
+                              {" "}
+                              BTech (LEET) CSE{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-cse-cloud-computing">
+                              {" "}
+                              BTech CSE Cloud Computing{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-cse-cyber-security">
+                              {" "}
+                              BTech CSE Cyber Security{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-cse-data-science">
+                              {" "}
+                              BTech CSE Data Science{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/btech-cse-devops">
+                              {" "}
+                              BTech CSE DevOps{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/btech-cse-game-design-arvr">
+                              {" "}
+                              BTech CSE Game Design {"&"} AR/ VR{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/btech-mechanical-robotics-ai">
+                              {" "}
+                              BTech Mechanical (Robotics {"&"} AI){" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/b-tech-renewable-energy">
+                              {" "}
+                              BTech Renewable Energy {"&"} Sustainability{" "}
+                            </Link>{" "}
+                          </li>
+                       
+                          <li>
+                            {" "}
+                            <Link href="/mca"> MCA </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/ma-msc-mathematics">
+                              {" "}
+                              MSc / MA Mathematics{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/mtech-civil-engineering">
+                              {" "}
+                              MTech Civil Engineering{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-ai"> PhD AI </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-big-data">
+                              {" "}
+                              PhD Big Data{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-cloud-computing">
+                              {" "}
+                              PhD Cloud Computing Tech{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-civil-engineering">
+                              {" "}
+                              PhD Civil{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-computer-science-and-engineering">
+                              {" "}
+                              PhD CSE{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-cyber-security">
+                              {" "}
+                              PhD Cyber Security{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-data-analytics">
+                              {" "}
+                              PhD Data Analytics{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-data-science">  PhD Data
+                            Sciences </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-disaster-management">
+                              {" "}
+                              PhD Disaster Management{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-electronics-communication-engineering">
+                              {" "}
+                              PhD ECE{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-energy"> PhD Energy </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-mathematics">
+                              {" "}
+                              PhD Mathematics{" "}
+                            </Link>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <Link href="/phd-mechanical-engineering">
+                              {" "}
+                              PhD Mechanical{" "}
+                            </Link>{" "}
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="px-0 btn btn-grad-red">
+                        {" "}
+                        <button onClick={handleShow}>
+                          {" "}
+                          Need Help? Ask the Counsellor
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-md-6 pl-md-0">
+                    <div className="voices-image position-relative">
+                      <Image
+                        src="/assets/images/eng-girl.jpg"
+                        width={558}
+                        className="img-responsive"
+                        height={500}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             <section id="faqs" className="student-voices">
               <div className="container">
                 <div class="pagetitle text-center mb-4">
@@ -1445,293 +2050,7 @@ const Engineering = (props) => {
               </div>
             </section>
 
-            <section id="special" className="spiecalisation">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-6 pr-md-0">
-                    <div className="card-box">
-                      <h3 className="title-default">
-                        {" "}
-                        Choose More with{" "}
-                        <span className="text-red">
-                          {" "}
-                          Shoolini Engineering{" "}
-                        </span>{" "}
-                      </h3>
-                      <p>
-                        <small> Start your Engineering Journey Today </small>
-                      </p>
-                      <p>
-                        Our future-ready Engineering specialisations are
-                        designed by leading industry experts from the world’s
-                        top 1% companies to help you succeed in a dynamic,
-                        fast-changing professional landscape.{" "}
-                      </p>
-
-                      <div className="courselist ht-custom">
-                        <ul className="p-0">
-                          <li>
-                            {" "}
-                            <Link href="/ba-bsc-hons-mathematics">
-                              {" "}
-                              BA/BSc (Hons) Mathematics (3/4 years){" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/bca-artificial-intelligence-machine-learning">
-                              {" "}
-                              BCA Artificial Intelligence and Machine Learning{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/bca-full-stack-developer">
-                              {" "}
-                              BCA Full-stack Developer{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/bca-gaming-graphic">
-                              {" "}
-                              BCA Gaming and Graphics{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/bca-ui-ux"> BCA UI/UX </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-cse-artificial-intelligence-and-machine-learning">
-                              {" "}
-                              BTech CSE Artificial Intelligence{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-artificial-intelligence-summit-research-program">
-                              {" "}
-                              BTech Artificial Intelligence (With/Without
-                              Research){" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/btech-cse-blockchain-iot">
-                              {" "}
-                              BTech CSE Blockchain & IoT{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-civil-engineering">
-                              {" "}
-                              BTech Civil Engineering{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-civil-engineering-leet">
-                              {" "}
-                              BTech Civil Engineering (LEET){" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-cse-leet">
-                              {" "}
-                              BTech (LEET) CSE{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-cse-cloud-computing">
-                              {" "}
-                              BTech CSE Cloud Computing{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-cse-cyber-security">
-                              {" "}
-                              BTech CSE Cyber Security{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-cse-data-science">
-                              {" "}
-                              BTech CSE Data Science{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/btech-cse-devops">
-                              {" "}
-                              BTech CSE DevOps{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/btech-cse-game-design-arvr">
-                              {" "}
-                              BTech CSE Game Design {"&"} AR/ VR{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/btech-mechanical-robotics-ai">
-                              {" "}
-                              BTech Mechanical (Robotics {"&"} AI){" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/b-tech-renewable-energy">
-                              {" "}
-                              BTech Renewable Energy {"&"} Sustainability{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/btech-ece"> BTech ECE </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/MA-MSc-Data-Science-&-Analytics">
-                              {" "}
-                              MA/MSc Data Analytics{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/mca"> MCA </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/ma-msc-mathematics">
-                              {" "}
-                              MSc / MA Mathematics{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/mtech-civil-engineering">
-                              {" "}
-                              MTech Civil Engineering{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-ai"> PhD AI </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-big-data">
-                              {" "}
-                              PhD Big Data{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-cloud-computing">
-                              {" "}
-                              PhD Cloud Computing Tech{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-civil-engineering">
-                              {" "}
-                              PhD Civil{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-computer-science-and-engineering">
-                              {" "}
-                              PhD CSE{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-cyber-security">
-                              {" "}
-                              PhD Cyber Security{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-data-analytics">
-                              {" "}
-                              PhD Data Analytics{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-data-science"> </Link> PhD Data
-                            Sciences{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-disaster-management">
-                              {" "}
-                              PhD Disaster Management{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-electronics-communication-engineering">
-                              {" "}
-                              PhD ECE{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-energy"> PhD Energy </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-mathematics">
-                              {" "}
-                              PhD Mathematics{" "}
-                            </Link>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <Link href="/phd-mechanical-engineering">
-                              {" "}
-                              PhD Mechanical{" "}
-                            </Link>{" "}
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div class="px-0 btn btn-grad-red">
-                        {" "}
-                        <button onClick={handleShow}>
-                          {" "}
-                          Need Help? Ask the Counsellor
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-6 pl-md-0">
-                    <div className="voices-image position-relative">
-                      <Image
-                        src="/assets/images/eng-girl.jpg"
-                        width={558}
-                        className="img-responsive"
-                        height={500}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+          
           </main>
         </Styless>
         <div id="mba_footer">

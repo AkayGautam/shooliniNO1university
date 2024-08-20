@@ -54,7 +54,7 @@ const ShooliniAdvantage = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <span>Flagship BTech Biotech Program</span>
+                          <span>Flagship UG Research Programs</span>
                           <span>
                             <IoIosArrowDropright />
                           </span>
@@ -144,7 +144,7 @@ const ShooliniAdvantage = () => {
                 </div> */}
 
 <div className="text-white pd-right sec-title z-index-9">
-                <Link href="/international-students" className="text-white">
+                <Link href="/international" className="text-white">
 
                 {/* <div className="sec-title mb-5">
                 <h2> </h2>
@@ -163,7 +163,7 @@ const ShooliniAdvantage = () => {
                   </p>
                 </Link>
                 <Link
-                  href="/international-students"
+                  href="/international"
                   className="iconArrL btnRedaas p-0"
                 >
                   Apply Now <FiArrowRightCircle />

@@ -17,32 +17,40 @@ export const server = process.env.BASE_URL;
 
 export default function homepage({
   programs,
-  testimonials,
-  navigationSchema,
+  testimonials, 
   sitlinkSchema,
 }) {
   return (
     <>
-      <Schema navigation={navigationSchema} siteLink={sitlinkSchema} />
+      {/* <Schema navigation={navigationSchema} siteLink={sitlinkSchema} /> */}
 
-      <Header />
+      <div className="header-homepage"> <Header />
+      </div>
 
       <SliderDemo />
 
       <IconBox />
 
+ <Ranking />
+ <div className="for-desktop"> 
+     <Companies />
+      <ShooliniAdvantage />
+     </div>
+ <Programmes programs={programs} />
 
-      <ResearchStories />
 
+ <div className="for-mobile"> 
+     <Companies />
+      <ShooliniAdvantage />
+     </div>
+     
+    
+     <ResearchStories />
       {/* <GalleryView /> */}
 
-      {/* <Ranking /> */}
 
-      <Companies />
 
-      <ShooliniAdvantage />
-
-      <Programmes programs={programs} />
+     
 
       <Testimonials testimonials={testimonials} />
 
@@ -52,6 +60,7 @@ export default function homepage({
       <ScrollButton />
 
       <Footer />
+
     </>
   );
 }

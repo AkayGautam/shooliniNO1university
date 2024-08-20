@@ -13,6 +13,9 @@ import Image from "next/legacy/image";
 import Head from "next/head";
 import Schema from "@/components/Schema";
 import { GetNavigationSchema, GetFaq } from "@/Api";
+import Slider from "react-slick";
+import { TryRounded } from "@mui/icons-material";
+
 
 const Mbas = (props) => {
   useEffect(() => {
@@ -51,7 +54,7 @@ const Mbas = (props) => {
 
     {
       title:
-        "What are the job prospects after completing MBA International Relations?",
+        "What are the job prospects after completing MBA? ",
       content:
         "After completing this program, students have a wide range of job opportunities in the commercial sectors, multinational companies and organisations at the global level.         ",
     },
@@ -93,13 +96,72 @@ const Mbas = (props) => {
         : setStickyClass("relative");
     }
   };
+ 
+
+  const setting = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade:true,
+    slidesToShow:1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+
+    autoplaySpeed: 2500,
+
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1 ,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const slidesetting = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade:true,
+    slidesToShow:1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+
+    autoplaySpeed: 2500,
+
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1 ,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <>
       <Suspense>
         <Head>
           <title>
-            MBA Course, Eligibility, Fees, Admissions 2023 | Shoolini
+            MBA Course, Eligibility, Fees, Admissions 2024 | Shoolini
           </title>
           <meta
             name="description"
@@ -107,7 +169,7 @@ const Mbas = (props) => {
           />
           <meta
             name="keywords"
-            content="master of business administration,mba, mba specialisation, mba courses, mba fees, mba eligibility, mba admissions 2023, shoolini admissions, admissions 2023, data science, agri business management, logistics and supply chain management, tourism, biotechnology, food technology, banking and insurance, business analytics, finance, financial markets, pharma and healthcare management, human resources, marketing, digital marketing, operations, retail management, strategy and consulting, communications, shoolini university, no.1 private university in India"
+            content="master of business administration,mba, mba specialisation, mba courses, mba fees, mba eligibility, mba admissions 2024, shoolini admissions, admissions 2024, data science, agri business management, logistics and supply chain management, tourism, biotechnology, food technology, banking and insurance, business analytics, finance, financial markets, pharma and healthcare management, human resources, marketing, digital marketing, operations, retail management, strategy and consulting, communications, shoolini university, no.1 private university in India"
           />
         </Head>
         <Schema navigation={props.schema} faq={props.faq} />
@@ -119,121 +181,79 @@ const Mbas = (props) => {
         <Styless>
           <Modal className="" show={show} onHide={handleClose}>
             <Modal.Body>
-              <h2>Apply Now</h2>
-              <div
-                class="npf_wgts"
-                data-height="400px"
-                data-w="6ecc20f484a5111a5bc1e4b3bc04c426"
-              ></div>
+               <div id="scholarships" className="col-md-12 mt-0">
+                                    <div className="card-box">
+                                      <h4 className="title-default text-center mod-titlt">
+                                        {" "}
+                                        Annual Tuition Fee 2024-25
+                                      </h4>{" "}
+                                
 
-              {/* <div className="modals auto-off" id="demoModal">
-                            <div className="modal-dialog  modal-dialog-centered" role="document">
-                                <div className="modal-content">
+                                  <div className="table-responsive">                
+                                  <table className="table table-striped">
+                                    <thead>
+                                    
+                                    </thead>
+                                    <tbody className="text-left">
+                                    <tr>
+                                      
+                                      <th  className="text-left" scope="row">
+                                      </th>
+                                    <th>Annual Fee (HP) </th>
+                                    <th>Annual Fee (Others) </th>
+                                    <td>   </td>
+                                   
+                                  </tr>
+                                      <tr>
+                                      
+                                          <th  className="text-left" scope="row">
+                                          MBA Finance</th>
+                                        <td>Rs 3,50,000 </td>
+                                        <td>Rs 3,95,000 </td>
+                                        <td> + Hostel </td>
+                                       
+                                      </tr>
 
-                                    <div className="container-fluid">
+                                      <tr>
+                                     
+                                        <th  className="text-left" scope="row">MBA Business Analytics</th>
+                                        <td>Rs 3,50,000 </td>
+                                        <td>Rs 3,95,000 </td>
+                                        <td> + Hostel </td>
+                                       
+                                      </tr>
 
+                                      <tr>
+                                        <th  className="text-left" scope="row">MBA Marketing  </th>
+                                        <td>Rs 3,25,000 </td>
+                                        <td>Rs 3,80,000 </td>
+                                        <td> + Hostel </td>
+                                    </tr>
+                                    <tr>
+                                        <th  className="text-left" scope="row">MBA HR </th>
+                                        <td>Rs 3,25,000 </td>
+                                        <td>Rs 3,80,000 </td>
+                                        <td> + Hostel </td>
+                                    </tr>
+                                    <tr>
+                                        <th  className="text-left" scope="row">MBA Pharma {'&'} Healthcare  </th>
+                                        <td>Rs 3,25,000 </td>
+                                        <td>Rs 3,80,000 </td>
+                                        <td> + Hostel </td>
+                                    </tr>
 
-                                        <div className="row">
+                                   
+                                    </tbody>
+                                  </table>
+                                  <p className="smalltext"> <i>*Hostel Mandatory for all students <br />
+                                  *Fee is approved by the Govt. Of Himachal Pradesh <br />
+*There is 5% annual escalation in the tuition fee
+                                  
+                                     </i></p>
 
-                                            <div className="col-md-12 text-center ">
-                                                <h2>Apply Now</h2>
-
-
-                                                <form method="post" enctype="multipart/form-data"
-                                                    action="https://web-in21.mxradon.com/t/FormTracker.aspx"
-                                                    className="form-card">
-                                                    <fieldset className="form-fieldset">
-
-
-                                                        <div className="form-element form-input">
-                                                            <input type='text' id='FirstName' name='FirstName'
-                                                                maxlength='100' autocomplete='off'
-                                                                required='required' className="form-element-field"
-                                                                placeholder="Name " />
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label"
-                                                                for='FirstName'>Enter Name *</label>
-                                                        </div>
-
-                                                        <div className="form-element form-input">
-                                                            <input type='email' id='EmailAddress'
-                                                                name='EmailAddress' maxlength='100'
-                                                                autocomplete='off' required='required'
-                                                                className="form-element-field" placeholder=" "
-                                                            />
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label"
-                                                                for='EmailAddress'>Enter Email Address *</label>
-
-                                                        </div>
-
-
-                                                        <div className="form-element form-input">
-                                                            <input id='Phone' name='Phone'
-                                                                maxlength='10' autocomplete='off'
-                                                                required='required' className="form-element-field"
-                                                                placeholder="Number" type="number" />
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label" for='Phone'>Enter
-                                                                Phone Number *</label>
-
-                                                        </div>
-
-                                                        <div className="form-element form-input">
-
-
-                                                            <select id='mx_Course' name='mx_Course' required='required' className="form-element-field" >
-                                                                <option value='' selected="true"></option>
-                                                                <option value='Undergraduate' >Undergraduate</option>
-                                                                <option value='Postgraduate' >Postgraduate</option>
-                                                                <option value='PhD' >PhD</option></select>
-
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label" for='mx_Course'>Select Course *</label>
-
-                                                        </div>
-
-                                                        <div className="form-element form-input">
-                                                            <input type='text' id='mx_Specialization' name='mx_Specialization' maxlength='100' autocomplete='off' required='required' className="form-element-field"
-                                                                placeholder="Specialization" />
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label" for='mx_Specialization'>Select Specialization *</label>
-
-                                                        </div>
-
-
-                                                    </fieldset>
-
-
-                                                    <div className="form-actions">
-                                                        <button id="form-submit-button" type="submit"
-                                                            className="form-btn">Apply</button>
-
-                                                    </div>
-
-                                                    <input type="hidden" name="MXHOrgCode" value="64755" />
-                                                    <input type="hidden" name="MXHLandingPageId"
-                                                        value="8b8c0c2f-5e98-11ed-a19b-0acc9d8b1d02" />
-                                                    <input type="hidden" name="MXHFormBehaviour" value="1" />
-                                                    <input type="hidden" name="MXHFormDataTransfer" value="0" />
-                                                    <input type="hidden" name="MXHRedirectUrl"
-                                                        value="https://shooliniuniversity.com/thankyou" />
-                                                    <input type="hidden" name="MXHAsc" value="5" /> <input
-                                                        type="hidden" name="MXHPageTitle" value="Enquire Now" />
-                                                    <input type="hidden" name="MXHOutputMessagePosition"
-                                                        value="0" />
-                                                    <input type="hidden" name="MXHIsExternallyUsed" value="1" />
-
-
-                                                </form>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+                                      </div>
+                                       </div>
+                                       </div> 
             </Modal.Body>
           </Modal>
 
@@ -249,7 +269,7 @@ const Mbas = (props) => {
                         </a>
                     </div> */}
           <main className="innerBody">
-            <section id="shooliniMBA" className="heroBanner">
+            {/* <section id="shooliniMBA" className="heroBanner">
               <div className="container">
                 <div className="row">
                   <div className="col-md-8">
@@ -267,12 +287,18 @@ const Mbas = (props) => {
                           {" "}
                           at India's No.1 <br /> Private University{" "}
                         </p>
-                        <p className="text-center py-0">
+                        <p className="text-center rankinglogos py-0">
                           <Image
                             src="/assets/images/theLogo.png"
                             alt="THE Logo"
                             width={120}
                             height={54}
+                          />
+                           <Image
+                            src="/assets/images/qs-rankingNew.png"
+                            alt="THE Logo"
+                            width={120}
+                            height={45}
                           />
                         </p>
                       </div>
@@ -297,9 +323,7 @@ const Mbas = (props) => {
                           Apply Now
                         </a>
                       </div>
-                      {/* <div className="ugImage">
-                                            <img src="assets/images/uglogos.png" />
-                                        </div> */}
+                    
                     </div>
                     <div className="row my-md-5">
                       <div className="col-4">
@@ -309,13 +333,7 @@ const Mbas = (props) => {
                           </h3>
                         </div>
                       </div>
-                      <div className="col-4">
-                        <div className="placeVal">
-                          <h3>
-                            <strong> 18LPA </strong> <br /> Highest Salary{" "}
-                          </h3>
-                        </div>
-                      </div>
+                  
                       <div className="col-4">
                         <div className="placeVal">
                           <h3>
@@ -338,11 +356,68 @@ const Mbas = (props) => {
                   </div>
                 </div>
               </div>
+            </section> */}
+
+            <section className="p-0 bg-white topbanner-fac-section">
+            <Slider {...slidesetting}>
+              <div className="custom-container">
+                <div className="row">
+                  <div className="col-md-7 flex-wrap d-flex align-items-center xs-order-2 pad-y">
+                    <div className="bannerbody pt-4">
+                        <p> Our mission is to be a  <strong> Top 20 B-School.</strong> The Shoolini Business School experience goes much beyond the classroom <span className="text-red">  here you are taught by CXOs</span> and learn through live projects {'&'} business simulations. </p>
+                    </div>
+                    
+                    <div className="bannerId mt-4">
+                        <p> <strong> Munish Sehrawat </strong> <br />
+                       <strong>  President {'&'} Dean, School of Business Management</strong> <br />
+                       ex-HSBC | Citibank | ANZ
+                        </p>
+                    </div>
+
+                  </div>
+                  <div className="col-md-5 mba-banner2nd xs-order-1">
+                    <div className="bannerimages">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="custom-container">
+                <div className="row">
+                  <div className="col-md-7 flex-wrap d-flex align-items-center xs-order-2 pad-y">
+                    <div className="bannerbody pt-4">
+                        <p> <strong> The Shoolini MBA</strong> is one of India's highest ROI programs. It’s where you learn to <strong> think globally, execute strategically</strong> and <span className="text-red"> become a leader who dares to dream bigger.”</span></p>
+                    </div>
+                    
+                    <div className="bannerId mt-4">
+                        <p> <strong> Atul Khosla </strong> <br />
+                       <strong>  Founder {'&'} VC, Shoolini University</strong> <br />
+                        ex-McKinsey | CEO Oliver Wyman | IIT (K) Alumnus 
+                        </p>
+                    </div>
+
+                  </div>
+                  <div className="col-md-5 mba-banner xs-order-1">
+                    <div className="bannerimages">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </Slider>
             </section>
+
+
+
+
+
+
+
 
             {/* section  */}
 
-            <section id="mentorship" className="mba_tabs pt-0">
+            <section id="mentorship" className="mba_tabs pt-md-5">
               <div className="container">
                 <div className="row">
                   <div className="col-md-12">
@@ -367,7 +442,7 @@ const Mbas = (props) => {
                               <a href="#fees">Fees </a>
                             </li>
                             <li>
-                              <a href="#scholarships">Scholarships </a>
+                              <a href="/mba-merit-scholarships">Scholarships </a>
                             </li>
                             <li>
                               <a href="#faqs"> FAQs</a>
@@ -406,9 +481,9 @@ const Mbas = (props) => {
                                       </strong>{" "}
                                       at Shoolini University is designed for the
                                       future leaders of the corporate world. In
-                                      the prestigious NIRF Rankings (2022), the
+                                      the prestigious NIRF Rankings (2023), the
                                       Shoolini Management School figured among
-                                      the 102-125 best Indian institutions.
+                                      the 101-125 best Indian institutions.
                                       Shoolini offers an innovative and unique
                                       curriculum that delivers transformative
                                       educational experiences with cutting-edge
@@ -421,31 +496,7 @@ const Mbas = (props) => {
                                       style={{ display: "none" }}
                                     >
                                       <p>
-                                        The MBA program at Shoolini aims to
-                                        achieve <strong> 'Mission 130'</strong>,
-                                        which means 100% placement and 30% in
-                                        top companies. The{" "}
-                                        <strong>100% placement record</strong>{" "}
-                                        in recent years speaks volumes about the
-                                        exceptional education modules. The
-                                        program combines theoretical knowledge
-                                        with practical experiences, internships,
-                                        and campus placements to develop
-                                        well-rounded professionals. <br />
-                                        The MBA Program at Shoolini University
-                                        has been{" "}
-                                        <strong>
-                                          accredited by the National Board of
-                                          Accreditation (NBA)
-                                        </strong>
-                                        , making it the
-                                        <strong>
-                                          {" "}
-                                          first university in Himachal Pradesh
-                                        </strong>{" "}
-                                        to receive this recognition. Moreover,
-                                        it is approved by HPPERC (Govt of HP)
-                                        and UGC.
+                                      The program combines theoretical knowledge with practical experiences, internships, and campus placements to develop well-rounded professionals. Shoolini University is the first university in Himachal Pradesh to receive the prestigious <strong> NBA accreditation. </strong>Moreover, it is approved by <strong> HPPERC</strong> (Govt of HP) and <strong>UGC </strong>.
                                       </p>
                                     </div>
                                   </div>
@@ -474,7 +525,7 @@ const Mbas = (props) => {
                                     <li>
                                       {" "}
                                       <img src="assets/images/icon2.png" />{" "}
-                                      Degree <strong>Full-time MBA</strong>
+                                      Degree <strong>Fully Residential MBA</strong>
                                     </li>
                                     {/* <li> <img src="assets/images/icon3.png" /> Mode <strong> Fully
                                                                         Residential, on Campus</strong></li> */}
@@ -553,7 +604,7 @@ const Mbas = (props) => {
                                                   </div>
                                                 </div>
 
-                                                <div className="col-6 inRow">
+                                                {/* <div className="col-6 inRow">
                                                   <div className="icon-image">
                                                     <Image
                                                       src="/assets/images/icon12.png"
@@ -568,7 +619,7 @@ const Mbas = (props) => {
                                                       <br /> Highest CTC{" "}
                                                     </h3>
                                                   </div>
-                                                </div>
+                                                </div> */}
 
                                                 <div className="col-6 inRow">
                                                   <div className="icon-image">
@@ -688,9 +739,10 @@ const Mbas = (props) => {
 
                                       <div
                                         class="npf_wgts"
-                                        data-height="400px"
+                                        data-height="450px"
                                         data-w="6ecc20f484a5111a5bc1e4b3bc04c426"
                                       ></div>
+
                                     </div>
                                   </div>
 
@@ -711,7 +763,7 @@ const Mbas = (props) => {
                                               <strong>
                                                 {" "}
                                                 Unlock Career Opportunities at
-                                                India’s Top Companies.{" "}
+                                                Multinational Companies.{" "}
                                               </strong>{" "}
                                               <br />
                                               Join the Elite Ranks of our MBA
@@ -722,7 +774,18 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/citrix.png"
+                                                    src="/assets/images/management/accenture.png"
+                                                    width={174}
+                                                    className="img-responsive"
+                                                    height={46}
+                                                  />
+                                                </div>
+                                              </div>
+
+                                              <div className="col-md-3 col-3">
+                                                <div className="logo-file">
+                                                  <Image
+                                                    src="/assets/images/logos/deloitte.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -733,7 +796,18 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/CodeBrew.jpeg"
+                                                    src="/assets/images/logos/ericsson.png"
+                                                    width={165}
+                                                    className="img-responsive"
+                                                    height={51}
+                                                  />
+                                                </div>
+                                              </div>
+
+                                              <div className="col-md-3 col-3">
+                                                <div className="logo-file">
+                                                  <Image
+                                                    src="/assets/images/logos/ici.png"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -744,7 +818,7 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/Cogni.jpeg"
+                                                    src="/assets/images/logos/kpmg.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -755,7 +829,7 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/Damco.jpeg"
+                                                    src="/assets/images/logos/l1.png"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -766,7 +840,18 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/Genpact.png"
+                                                    src="/assets/images/management/mercer.png"
+                                                    width={200}
+                                                    className="img-responsive"
+                                                    height={130}
+                                                  />
+                                                </div>
+                                              </div>
+
+                                              <div className="col-md-3 col-3">
+                                                <div className="logo-file">
+                                                  <Image
+                                                    src="/assets/images/logos/adani.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -777,7 +862,7 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/huges.png"
+                                                    src="/assets/images/logos/grant.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -788,7 +873,7 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/IBM.jpeg"
+                                                    src="/assets/images/logos/loreal.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -799,53 +884,20 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/KhannaPaper.jpeg"
+                                                    src="/assets/images/logos/piramal.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
                                                   />
                                                 </div>
                                               </div>
-
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/Lg.png"
+                                                    src="/assets/images/logos/hind.png"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/CSE/Netsolutions.jpeg"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/CSE/NPF.jpeg"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/CSE/orange.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={70}
                                                   />
                                                 </div>
                                               </div>
@@ -862,10 +914,10 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/Peoplestrong.jpeg"
+                                                    src="/assets/images/management/AdityaBirla.jpg"
                                                     width={200}
                                                     className="img-responsive"
-                                                    height={80}
+                                                    height={100}
                                                   />
                                                 </div>
                                               </div>
@@ -873,7 +925,7 @@ const Mbas = (props) => {
                                               <div className="col-md-2 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/polariss.jpeg"
+                                                    src="/assets/images/logos/america.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -884,7 +936,7 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/CSE/TataHitachi.png"
+                                                    src="/assets/images/logos/genpact.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={100}
@@ -895,7 +947,7 @@ const Mbas = (props) => {
                                               <div className="col-md-3 col-3">
                                                 <div className="logo-file">
                                                   <Image
-                                                    src="/assets/images/engg/havells.png"
+                                                    src="/assets/images/logos/american.jpg"
                                                     width={200}
                                                     className="img-responsive"
                                                     height={80}
@@ -903,221 +955,6 @@ const Mbas = (props) => {
                                                 </div>
                                               </div>
 
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/engg/Onida.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/engg/SBIcard.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/engg/Shubham.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/engg/microtek.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/CSE/citrix.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/engg/logo55.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/engg/Windowit.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/engg/xcelris.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/logos/zydu.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/logos/l1.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/logos/bio.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/logos/hind.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/management/airtel.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/management/Byjus.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={60}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/management/Lg.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/management/ICICIBAnk.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={100}
-                                                  />
-                                                </div>
-                                              </div>
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/management/jio.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/management/hindustantimes.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/management/accenture.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={60}
-                                                  />
-                                                </div>
-                                              </div>
-                                              <div className="col-md-3 col-3">
-                                                <div className="logo-file">
-                                                  <Image
-                                                    src="/assets/images/management/airtel.png"
-                                                    width={200}
-                                                    className="img-responsive"
-                                                    height={80}
-                                                  />
-                                                </div>
-                                              </div>
                                             </div>
 
                                             <div className="col-md-12">
@@ -1146,7 +983,7 @@ const Mbas = (props) => {
                                     </div>
                                   </div>
 
-                                  <div id="scholarships" className="col-md-12 mt-5">
+                                  {/* <div id="scholarships" className="col-md-12 mt-5">
                                     <div className="card-box">
                                       <h3 className="title-default">
                                         {" "}
@@ -1159,8 +996,8 @@ const Mbas = (props) => {
                                     <thead>
                                       <tr className="bg-reds">
                                         <th scope="col">Merit Type</th>
-                                        <th className="text-center" scope="col">Tution Fee</th>
-                                        <th className="text-center"  scope="col">Hostal Fee</th>
+                                        <th className="text-center" scope="col">Tuition Fee</th>
+                                        <th className="text-center"  scope="col">Hostel Fee</th>
                                         <th className="text-center"  scope="col">School %</th>
                                         <th className="text-center"  scope="col">Annual School Amt</th>
                                         <th className="text-center"  scope="col">Number of Scholarships</th>
@@ -1212,7 +1049,7 @@ const Mbas = (props) => {
                                   </table>
                                       </div>
                                        </div>
-                                       </div>
+                                       </div> */}
 
                                   <div className="col-md-6 mt-5 order-xs-3">
                                     <div className="card-box">
@@ -1289,6 +1126,7 @@ const Mbas = (props) => {
                                   </div>
 
 
+
                                     <section id="special" className="spiecalisation pb-0">
               <div className="container">
                 <div className="row">
@@ -1320,51 +1158,9 @@ const Mbas = (props) => {
                               href="https://shooliniuniversity.com/mba-marketing"
                             >
                               {" "}
-                              Marketing
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a target="_blank" href="https://shooliniuniversity.com/mba-business-analytics">
-                              {" "}
-                              Business Analytics{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-digital"
-                            >
-                              {" "}
-                              Digital Marketing{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-logistics-and-supply-chain-management"
-                            >
-                              Logistics and Supply Chain Management{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://shooliniuniversity.com/mba-human-resource"
-                            >
-                              {" "}
-                              Human Resources{" "}
-                            </a>{" "}
-                          </li>
-                        
-                          <li>
-                            {" "}
-                            <a target="_blank" className="nopointer" href="https://shooliniuniversity.com/mba-agri-business">
-                              {" "}
-                              Agri Business{" "}
+                          <strong>  Marketing  </strong> 
+                              <p> (Digital Marketing, Brand Management & Retail)
+ </p> 
                             </a>{" "}
                           </li>
                           <li>
@@ -1374,9 +1170,22 @@ const Mbas = (props) => {
                               href="https://shooliniuniversity.com/mba-finance"
                             >
                               {" "}
-                              Finance{" "}
-                            </a>
+                              <strong>   Finance  </strong>  {" "}
+                             <p> (FinTech, Venture Capital, BFSI, Financial Derivatives)
+ </p>
+                            </a>{" "}
                           </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href="https://shooliniuniversity.com/mba-human-resource"
+                            >
+                              {" "}
+                              <strong>   Human Resources  </strong>  {" "}
+                            </a>{" "}
+                          </li>
+                        
                           <li>
                             {" "}
                             <a
@@ -1384,32 +1193,17 @@ const Mbas = (props) => {
                               href="https://shooliniuniversity.com/mba-pharma"
                             >
                               {" "}
-                              Pharma and Healthcare{" "}
-                            </a>{" "}
-                          </li>
-                          <li>
-                            {" "}
-                            <a target="_blank" href="https://shooliniuniversity.com/mba-financial-markets">
-                              {" "}
-                              Financial Markets{" "}
+                              <strong>   Pharma and Healthcare  </strong>  {" "}
                             </a>{" "}
                           </li>
                           <li>
                             {" "}
                             <a
                               target="_blank"
-                              href="https://shooliniuniversity.com/mba-biotechnology"
+                              href="https://shooliniuniversity.com/mba-business-analytics"
                             >
-                              Biotechnology{" "}
-                            </a>{" "}
-                          </li>
-                      
-
-                          <li>
-                            {" "}
-                            <a target="_blank" className="nopointer" href="https://shooliniuniversity.com/mba-communications">
                               {" "}
-                              Communications{" "}
+                              <strong>  Business Analytics  </strong>  {" "}
                             </a>{" "}
                           </li>
                           
@@ -1418,10 +1212,10 @@ const Mbas = (props) => {
 
                       <div className="px-0 btn btn-grad-red">
                         {" "}
-                        <button onClick={handleShow}>
+                        <a target="_blank" href="https://admissions.shooliniuniversity.com/">
                           {" "}
                           Need Help? Consult MBA Mentor
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1448,13 +1242,9 @@ const Mbas = (props) => {
                         skills and conceptual knowledge.
                         <br />
                         <br />
-                        <strong> The Troops</strong>
+                        <strong> Leadership Through Mentorship</strong>
                         <br />
-                        The Troops Program brings students out of their comfort
-                        zones, ensuring they learn and excel outside the
-                        classroom with indoor and outdoor sports. These include
-                        trekking with a cause, tree plantations, case studies,
-                        etc.
+                        This connects MBA students with the corporate world. The innovative program brings together top industry experts like CEOs, CHROs, CLOs, and other country heads to provide career guidance and networking opportunities.
                       </p>
                     </div>
                   </div>
@@ -1536,11 +1326,11 @@ const Mbas = (props) => {
                                               <div className="sb_text">
                                                 <h4>
                                                   {" "}
-                                                  #102-125 in Management{" "}
+                                                  #101-125 in Management{" "}
                                                 </h4>
                                                 <p>
                                                   {" "}
-                                                  NIRF India Rankings 2022{" "}
+                                                  NIRF India Rankings 2024{" "}
                                                   <br /> Ministry of Education,
                                                   Government of India
                                                 </p>
@@ -1583,16 +1373,73 @@ const Mbas = (props) => {
                                     >
                                       <div className="container">
                                         <div className="row">
-                                          <div className="col-md-6 pr-md-0">
+                                        <Slider {...setting}>
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
                                             <div className="voices-image">
                                               <img
                                                 className="img-responsive"
-                                                src="assets/images/students.jpg"
+                                                src="assets/images/astha.jpg"
                                               />
                                             </div>
+                                          
                                           </div>
-                                          <div className="col-md-6 pl-md-0">
-                                            <div className="voices-text card-box card-box-dark pt-5">
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                              <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+
+                                              <div className="all-discription"> 
+                                              <p className="text-white text-18">
+                                                {" "}
+                                                From the first glance, I fell in love with Shoolini University. Its natural beauty captured my heart.  With 100% placements, outstanding faculty, skill development, and NBA Accreditation, Shoolini became the canvas where my aspirations painted a bright future.{" "}
+                                              </p>
+
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/lorel.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                              </div>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/anuj.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
                                               <h3 className="title-default text-white">
                                                 MBA graduates{" "}
                                                 <span className="text-red">
@@ -1604,18 +1451,189 @@ const Mbas = (props) => {
                                                 University
                                               </h3>
                                               <p className="text-white text-18">
-                                                {" "}
-                                                “The MBA program at Shoolini
-                                                University exceeded my
-                                                expectations. The faculty
-                                                members here are world-class.
-                                                They provided invaluable
-                                                training, equipping me with the
-                                                skills to excel in the business
-                                                world. Shoolini MBA is both a
-                                                challenging and transforming
-                                                experience, professionally as
-                                                well as personally.”{" "}
+                                                {" "}  I secured a placement at the leading global insurance firm. The Shoolini placement cell worked diligently to help me land this dream job. If you're considering an MBA, Shoolini is the place to be.
+                                              </p>
+
+                                            
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/marsh.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                            </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/subham.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}  Shoolini's curriculum, faculty from top institutions, and emphasis on practical skills have been instrumental in shaping my career path. The university's commitment to industry exposure played a pivotal role in my success. 
+                                              </p>
+ 
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/lorel2.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                            </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/hasan.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "} My MBA journey was amazing at Shoolini! The ATP program gave practical insights and prepared me well, and the top-notch faculty guided me throughout. Thanks to Shoolini.  I not only got a degree but also gained mentors for life.
+                                              </p>
+
+                                             
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/life.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/sparsh.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "} I got placed at Aditya Birla Group. All thanks to my faculty and mentors at Shoolini. The Sprint Program was a game-changer in preparing me for my interview. I recommend Shoolini to all MBA aspirants—it's not just education; it's your pathway to success.
+                                              </p>
+
+                                             
+                                              <div className="text-right mt-4">
+                                                <Image
+                                                  src="/assets/images/birla.png"
+                                                  width={250}
+                                                  className="w-70"
+                                                  height={89}
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                         </div>
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="assets/images/Deepika.jpg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                                MBA graduates{" "}
+                                                <span className="text-red">
+                                                  {" "}
+                                                  land dream jobs
+                                                </span>{" "}
+                                                thanks to the mentorship and
+                                                placement program at Shoolini
+                                                University
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}  Shoolini's curriculum, faculty from top institutions, and emphasis on practical skills have been instrumental in shaping my career path. The university's commitment to industry exposure played a pivotal role in my success. 
                                               </p>
 
                                               <div className="text-right mt-4">
@@ -1627,7 +1645,15 @@ const Mbas = (props) => {
                                                 />
                                               </div>
                                             </div>
+                                          </div> </div>
+                                         
+                                              </div>
                                           </div>
+                                          
+
+                                          
+                                         </Slider>
+                                         
                                         </div>
                                       </div>
                                     </div>
@@ -1650,26 +1676,20 @@ const Mbas = (props) => {
                 <div className="row">
                   <div className="col-md-6 mb-xs-20">
                     <div className="card-box">
-                      <h3 className="title-default"> Fee Structure </h3>
+                      <h3 className="title-default"> Fees </h3>
                       <table className="table table-responsive">
                         <thead>
                           <tr>
                             <td>
                               {" "}
-                              <strong> Semester Fee </strong>{" "}
+                              <strong> Tuition Fee  </strong>{" "}
                             </td>
-                            <td> </td>{" "}
+                            {/* <td> ₹221000 </td> */}
+                            <td> <a className="viewFeeDetail" onClick={handleShow} href="javascript:void(0)"> Click for Details </a>  </td>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td> Himachal Pradesh Domicile : </td>
-                            <td> ₹135000 </td>
-                          </tr>
-                          <tr>
-                            <td> Others : </td>
-                            <td>₹148750</td>
-                          </tr>
+                        
                           <tr>
                             <td> Duration </td>
                             <td> 2 Years </td>
@@ -1684,7 +1704,7 @@ const Mbas = (props) => {
                           <tr>
                             <td>
                               {" "}
-                              A bachelor’s degree (any discipline) with minimum 50% marks
+                              A bachelor’s degree (any discipline) with minimum 55% marks
                             </td>
                             <td> </td>
                           </tr>
@@ -1697,28 +1717,224 @@ const Mbas = (props) => {
                           </tr>
                           <tr>
                             <td>
-                            GMAT (score 550)/ CAT (min 55 percentile)/ NMAT (min 60 percentile)/ MAT (min 70 percentile)/ any other state entrance or Shoolini's MBA entrance test (SMART), letter of intent and faculty interaction.
+                            GMAT{'>'}=550 OR NAMT{'>'}=160 OR CAT/XAT-{'>'}=50 percentile or MAT/CMAT/HPUMAT-70 percentile or Shoolini University's multiple choice entrance test, and faculty interaction
                             </td>
                             <td> </td>
                           </tr>
+                       
                         </tbody>
                       </table>
                     </div>
                   </div>
 
                   <div className="col-md-6">
-                    <div className="voices-image position-relative">
-                      <Image
+                    <div className="voices-image position-relative ht-100">
+                    <div className="card-box ">
+                                             <div className="courselist">
+                                               <h3> <span className="text-red"> Shoolini MBA:</span> Where Dreams Get Down <br />to Business </h3> <br />
+                                               <h5 className="title-default"> <strong> Bigger Exposure </strong>  </h5>
+                        <ul className="p-0 no-link">
+                          {/* <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href=""
+                            >
+                              {" "}
+                             1+1 Program in Australia, UK, USA, Italy, Indonesia, UAE, Taiwan  
+                             
+                            </a>{" "}
+                          </li> */}
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href=""
+                            >
+                              {" "}
+                              Global Immersion Program & global internships    {" "}
+
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href=""
+                            >
+                              {" "}
+                              Taught by CXOs from Top MNCs   {" "}
+                            </a>{" "}
+                          </li>
+                          
+                        </ul>
+
+                        <h5 className="title-default"> <strong>  Bigger Impact  </strong> </h5>
+                        <ul className="p-0 no-link">
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href=""
+                            >
+                              {" "}
+                              100% placements in top corporates
+                             
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href=""
+                            >
+                              {" "}
+                              Fully Residential Program for 24x7 learning  {" "}
+
+                            </a>{" "}
+                          </li>
+                          <li>
+                            {" "}
+                            <a
+                              target="_blank"
+                              href=""
+                            >
+                              {" "}
+                              Unique MBA with one of the highest average packages {" "}
+                            </a>{" "}
+                          </li>
+                          
+                        </ul>
+                         <i> Select MBA students can avail global immersion tours and internships *On Paid Basis  </i>             
+                      </div>
+                      </div>
+                      {/* <Image
                         src="/assets/images/girlstudent.jpg"
                         width={558}
                         className="img-responsive"
                         height={550}
-                      />
+                      /> */}
                     </div>
                   </div>
                 </div>
               </div>
             </section>
+
+            {/* <section className="  allFaculty mb-5">
+            <div className="container">
+              <div className=" pagetitle text-center">
+                <h2 class=" mb-4">Testimonials  </h2>
+              
+              </div>
+              <div className="mentorss">
+                <Slider {...setting}>
+                
+                      <div>
+                        <div  className="allFac-Card">
+                          <div className="fac-mem"  >
+                            <div className="fac-img">
+                              <img
+                                src="assets/images/shivamverma.jpg" className="img-fluid"
+                              />
+                            </div>
+                            <div className="fac-list">
+                              <h5>Shivam Verma,<br /> MBA </h5>
+                            </div>
+                          </div>
+                          <div className="fac-list p-0">  <p className="m-0">
+                          I'm proudly carrying Shoolini's flag at Universitas Muhammadiyah Yogyakarta, Indonesia, through the Student Exchange Program. Now, I look forward to the most of this enriching experience in Indonesia.
+                              </p> </div>
+                        </div>
+                        </div>
+                        <div>
+                        <div  className="allFac-Card">
+                          <div className="fac-mem"  >
+                            <div className="fac-img">
+                              <img
+                                src="assets/images/Deepika.jpg"
+                              
+                                className="img-fluid"
+                              />
+                            </div>
+                            <div className="fac-list">
+                              <h5>Deepika Dahiya,<br /> MBA </h5>
+                            </div>
+                          </div>
+                          <div className="fac-list p-0">  <p className="m-0">
+                          The Shoolini MBA program gave diverse learning experiences, from competing with IIM grads in national contests to finding entrepreneurial confidence in Startbuzz. Shoolini is my home away from home. 
+                              </p> </div>
+                        </div>
+                        </div>
+                        <div>
+                        <div  className="allFac-Card">
+                          <div className="fac-mem"  >
+                            <div className="fac-img">
+                              <img
+                                src="assets/images/Achyut.jpg"
+                              
+                                className="img-fluid"
+                              />
+                            </div>
+                            <div className="fac-list">
+                              <h5>Achyut Kaul,<br /> MBA </h5>
+                            </div>
+                          </div>
+                          <div className="fac-list p-0">  <p className="m-0">
+                          Shoolini's Student Exchange Program gave me a chance to study and broaden my horizons at Universitas Muhammadiyah Yogyakarta. I thank all my professors for all the exceptional guidance.
+                              </p> </div>
+                        </div>
+                        </div>
+                        <div> 
+                        <div  className="allFac-Card">
+                          <div className="fac-mem"  >
+                            <div className="fac-img">
+                              <img
+                                src="assets/images/palak.jpg"
+                              
+                                className="img-fluid"
+                              />
+                            </div>
+                            <div className="fac-list">
+                              <h5>Palak Bankotia,<br /> MBA </h5>
+                            </div>
+                          </div>
+                          <div className="fac-list p-0">  <p className="m-0">
+                          As a Shoolinian, I've honed my personal and professional skills through diverse masterclasses and the SPRINT programs. My experience here enhanced my public speaking, project management, and leadership abilities.
+                              </p> </div>
+                        </div>
+                        </div>
+                        <div>
+                       
+                        <div  className="allFac-Card">
+                          <div className="fac-mem"  >
+                            <div className="fac-img">
+                              <img
+                                src="assets/images/firdos.jpg"
+                              
+                                className="img-fluid"
+                              />
+                            </div>
+                            <div className="fac-list">
+                              <h5>Firdos Saifi,<br /> MBA </h5>
+                            </div>
+                          </div>
+                          <div className="fac-list p-0">  <p className="m-0">
+                          My professors helped me imbibe management knowledge & skills that landed me up at the Bank Of America. Everyone here supports us in shaping a strong future. I’ll always remember the valuable lessons learned here.
+                              </p> </div>
+                        </div>
+                      </div>
+                      
+                 
+                </Slider> */}
+
+                 
+
+{/* 
+              </div>
+            </div>
+
+
+          </section> */}
 
             <section id="faqs" className="student-voices">
               <div className="container">

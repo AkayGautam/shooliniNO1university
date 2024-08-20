@@ -30,7 +30,7 @@ const NewsTemplate = ({ result }) => {
   })
 
 
-
+let news = result?.[0]?.alt.replace(/[-0-9]|\.png|\.jpg/g, ' ')
 
   return (
     <>
@@ -63,7 +63,7 @@ const NewsTemplate = ({ result }) => {
                         {/* <h4>About Us</h4> */}
                        
                         {/* <h3>{re/sult?.[0]?.title}</h3> */}
-                        <img  className="img-thumbnail mb-3" src={result?.[0]?.imageurl} />
+                        <img alt={news}  className="img-thumbnail mb-3" src={result?.[0]?.imageurl} />
                         {/* <div class="fb-share-button" 
 data-href="https://www.your-domain.com/your-page.html" 
 data-layout="button_count">
@@ -74,7 +74,7 @@ data-layout="button_count">
                           }}
                         ></p></div>
 
-                        <Row>
+                        <Row className="stroyNews">
                           <Col md={12} sm={12}>
                             <p
                               dangerouslySetInnerHTML={{
@@ -96,7 +96,7 @@ data-layout="button_count">
 
                       <div className="sideBarNew">
                       <div className="enqForm course-search">
-                          <h5 className="formName"> Admissions Open: 2023 </h5>
+                          <h5 className="formName"> Admissions Open: 2024 </h5>
                           <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
                       </div>
                       </div>

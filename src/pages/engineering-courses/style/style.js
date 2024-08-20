@@ -4,9 +4,28 @@ import { colors } from '../../../components/common/elements/elements'
 const Styless = styled.div`
 
 
+.noretypeS {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 15px 0;
+    display: block;
+    font-family: 'Poppins';
+}
+.L_text {
+    font-size: 50px !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eb3333;
+}
 .courselist.ht-custom {
     max-height: 160px;
     overflow: auto;
+}
+section#shooliniMBA {
+    background: url(../../assets/images/ai-bg.jpg);
+    background-size: 100%;
+    padding-bottom: 0;
 }
 
 section {
@@ -15,11 +34,9 @@ section {
     padding:40px 0px;
 }
 
-section#shooliniMBA {
-    background: url(../../assets/images/heroimage.jpg);
-    background-size: 100%;
+.rightCard img {
+    object-fit: cover;
 }
-
 
 .container {
     max-width: 1140px !important;
@@ -99,7 +116,10 @@ a.applyBtn {
     font-size: 17px;
     font-weight:500;
 }
-
+.xs-only
+{
+    display:none;
+}
 @media (min-width: 980px) {
 
     .fixedCHildNav {
@@ -113,9 +133,18 @@ a.applyBtn {
     
 }
 
+p.h2 {
+    font-size: 30px !important;
+}
 
 @media (max-width: 767px) {
-
+.xs-only
+{
+    display:block !important;
+}
+section#shooliniMBA {
+    background: #fff !important;
+}
     .img-responsive {
         height: auto !important;
         min-height: auto !important;

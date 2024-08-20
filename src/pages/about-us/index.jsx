@@ -105,7 +105,7 @@ const About = (props) => {
                                   </Col>
                                   <Col>
                                     <div className="counter-box box3 text-center">
-                                      <h3>1300+</h3>
+                                      <h3>1500+</h3>
                                       <p>Patents Filed</p>
                                     </div>
                                   </Col>

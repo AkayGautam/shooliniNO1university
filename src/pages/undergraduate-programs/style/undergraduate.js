@@ -59,6 +59,12 @@ const Styles = styled.div`
       overflow: hidden;
     }
   }
+
+  #courseID_747 .cuCourse.dddc a:first-child {
+    display: none;
+}
+
+
 `
 
 export default Styles

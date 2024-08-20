@@ -11,6 +11,7 @@ import { Container, Row, Col, Form } from 'react-bootstrap'
 const BaseURL = process.env.REACT_APP_BASE_URI
 
 const SearchResult = ({ result, query }) => {
+
   // const [searchResults, setSearchResults] = useState([])
   // const [searchTerm, setSearchTerm] = useState(null)
 
@@ -44,12 +45,29 @@ const SearchResult = ({ result, query }) => {
   //   setSearchPageResults([data.success, searchPages])
   // }
 
+
+ 
   
   return (
     <>
       <Styles>
         <Header />
-        <BreadcrumbBox />
+        <section
+          className="breadcrumb-area" 
+          style={{
+            backgroundImage: `url(/assets/images/breadcrumb-bg.jpg)`,
+          }}
+          >   
+          <Container>
+            <Row>
+              <Col md="12" className="text-center">
+                <div className="breadcrumb-box mt-5">
+                  <h1 className="breadcrumb-title"> {query} </h1>
+                </div>
+              </Col>
+            </Row> 
+          </Container>
+        </section>
         <Container className="p-3">
           <div className="row searchedCourse mainContent">
             <div className="col-md-8 pt-2">

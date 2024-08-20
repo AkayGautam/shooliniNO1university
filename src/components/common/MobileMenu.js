@@ -55,6 +55,7 @@ const MobileMenu = ({ links }) => {
   const searchHandler = async (e) => {
     console.log(searchTerm);
     e.preventDefault();
+    router.push(`/search?q=${searchTerm}`)
   };
 
   return (
@@ -91,28 +92,31 @@ const MobileMenu = ({ links }) => {
                         />
                       </Link>
                     </div>
+                    {/* <div className="flagANimation">   
+                <img  id="flag" class="flag" src="https://www.crossed-flag-pins.com/animated-flag-gif/gifs/India_120-animated-flag-gifs.gif" alt="" />
+                </div> */}
                   </div>
                   <div className="mb-search-box">
 
-                    <div className="searchMobile">
+                    {/* <div className="searchMobile">
                       <SearchResearcher />
-                    </div>
+                    </div> */}
 
-                    {/* <form action="#">
+                     <form action="#">
                       <input
                         type="text"
                         name="search"
                         onChange={(e) => setSearchTerm(e.target.value)}
                         autoComplete="off"
-                        placeholder="Search Here"
+                        placeholder="Search Program"
                       />
                       
                      
-                      {/* <button onClick={searchHandler} type="submit">
+                     <button onClick={searchHandler} type="submit">
                        
-                        <i className="las la-search"></i>
+                        <i className="fa fa-search"></i>
                       </button> 
-                    </form> */}
+                    </form> 
                   </div>
                 </div>
               </Col>
@@ -166,6 +170,7 @@ const MobileMenu = ({ links }) => {
                           ) : (
                             <span> </span>
                           )}
+                         
 
                         </>
                       )}
@@ -177,8 +182,8 @@ const MobileMenu = ({ links }) => {
                             return (
                               <li className="nav-item" key={sub_index}>
 
-
-                                <Link className="bottmDropdown" href={`/${row.link.replace("/", "")}`}>
+                                
+                                <Link className="bottmDropdown" href={`${row.link.replace("/", "")}`}>
                                   <span className="rowText"> {row.text}  </span>
 
                                   {row?.sub_menu?.length > 0 && (
@@ -188,7 +193,8 @@ const MobileMenu = ({ links }) => {
                                         setOpenSubMenu(!openSubMenu)
                                       }
                                     ></i>
-                                  )}
+                                  )
+                                  }
                                 </Link>
                                 <ul
                                   className={`mb-menu-content list-unstyled ${openSubMenu && "show"
@@ -196,6 +202,7 @@ const MobileMenu = ({ links }) => {
                                 >
                                   {row?.sub_menu &&
                                     row?.sub_menu.map(
+                                      
                                       (sub_row, sub_sub_index) => {
                                         return (
                                           <li
@@ -217,7 +224,10 @@ const MobileMenu = ({ links }) => {
                                               </span>
                                             </Link>
                                           </li>
+                                          
+
                                         );
+                                      
                                       }
                                     )}
                                 </ul>

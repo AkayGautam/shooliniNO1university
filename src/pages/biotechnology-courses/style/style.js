@@ -309,7 +309,7 @@ table td {
     color: #fff;
     padding: 12px 15px;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     box-shadow: 3px 2px 12px 2px rgb(0 0 0 / 20%);
     border-radius: 5px;
 }

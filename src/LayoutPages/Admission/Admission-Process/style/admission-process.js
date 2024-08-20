@@ -9,6 +9,15 @@ export const Styless = styled.div`
     font-weight: 400;
   }
 
+  .titleAdjust p span a {
+    display: inline-block;
+    background: red;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
   .admidsionProcess {
     li {
       display: block;

@@ -50,7 +50,7 @@ const Testimonials = ({ testimonials }) => {
       </Head>
       <Styles>
         <div className="bg-image">
-          <section className="testimonials-area">
+          <section className="testimonials-area mt-5">
             <div
               className="testimonialsSection"
               style={{

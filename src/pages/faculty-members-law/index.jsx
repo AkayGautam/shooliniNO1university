@@ -9,6 +9,7 @@ import SearchResearcher from '../../components/SearchResearcher'
 import AdmissionFormSidebar from '../../components/AdmissionFormSidebar'
 import SuspenseBoundary from '../../helper/SuspenseBoundary'
 import Head from 'next/head'
+import Image from "next/legacy/image";
 
 const BASE_URI = 'https://shooliniuniversity.com/media'
 
@@ -110,8 +111,8 @@ const Faculty = ({ Data, Gallery, Numbers, facList, facD }) => {
                       <div className="row">
                         {facD.map((i, idx) => {
                           return (
-                            <div className="col-md-3 mb-3 col-sm-6" key={idx}>
-                              <div className="cnt-block equal-hight">
+                            <div className="col-md-6 mb-3 col-sm-6" key={idx}>
+                              {/* <div className="cnt-block equal-hight">
                                 <figure>
                                   <img
                                     src={i.imageurl}
@@ -131,6 +132,34 @@ const Faculty = ({ Data, Gallery, Numbers, facList, facD }) => {
                                 </h3>
 
                                 <p> {i.description} </p>
+                              </div> */}
+                               <div className="blog-card" key={idx}> 
+                                <Link
+                                  state={{ id: i.id }}
+                                  href={`/faculty/profile/${i.title
+                                    .split(" ")
+                                    .join("-")}`}
+                                  className="blog-card__link"
+                                >
+                                  <div className="cardImage">
+                                    <Image
+                                      width={304}
+                                      height={380}
+                                      variant="top"
+                                      src={i.imageurl}
+                                      className="img-responsive card-img-top"
+                                      alt={i.imageurl}
+                                    />
+                                  </div>
+                                  <div className="card-body  position-relative">
+                                    <h5 className="card-title">  {i.title} </h5>
+                                    <p className="designation"> {i.designation} </p>
+                                    <p className="card-text">
+                                      {i.description}
+                                    </p>
+                                  </div>
+                                </Link>
+
                               </div>
                             </div>
                           )

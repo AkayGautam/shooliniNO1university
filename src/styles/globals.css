@@ -21,8 +21,39 @@ a {
   font-family: "Poppins" !important;
 }
 .admidsionProcess .titleAdjust table span {
-  word-break: unset !important;
+  word-break: keep-all !important;
 }
+
+.all_p_justifie table td p {
+  text-align: justify;
+  white-space: pre-line;
+}
+h5.formName {
+  color: rgb(24, 43, 73);
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  margin:18px 20px;
+}
+h5.formName:after {
+  position: absolute;
+  content: "";
+  background: #ff2023;
+  width: 50px;
+  height: 2px;
+  bottom: 2px;
+  left: 0;
+}
+
+.course-details-area .single-details-sidbar .course-details-feature ul.feature-list li span {
+  text-transform: none;
+}
+
+p.smalltext {
+  font-size: 15px !important;
+} 
+
 .videosSec {
   display: none;
 }
@@ -99,7 +130,7 @@ section.course-details-area h4 {
 }
 .sec-title h2 {
   font-weight: 700;
-  font-size: 58px;
+  font-size: 52px;
   text-transform: uppercase;
   color: #f02f2f;
   line-height: 1;
@@ -119,11 +150,28 @@ div#root {
   width: 100%;
 }
 .ReactModal__Content.ReactModal__Content--after-open {
-  max-width: 850px;
+  max-width: 400px;
   transition: all 0.5s ease;
+  background: transparent !important;
+  border: none !important;
+  margin:auto;
+  max-height: 220px;
 }
 .ReactModal__Overlay.ReactModal__Overlay--after-open {
   background: rgba(0, 0, 0, 0.75) !important;
+}
+.tableHt {
+  max-height: 350px;
+  overflow: auto;
+}
+.curriculum_awaited .MuiBox-root.css-1wnsr1i {
+  width: 900px;
+}
+.shadowPage.page {
+  background: #fff;
+}
+.feeses .MuiBox-root.css-1wnsr1i {
+  width: 450px;
 }
 .myModal {
   display: flex;
@@ -184,8 +232,9 @@ button.closeBtn {
   border-radius: 6px;
   margin-bottom: 10px;
 }
-.titleAdjust p div {
-  display: inline-block;
+.section-title.titleAdjust p span, .section-title.titleAdjust ol li {
+  font-family: Poppins!important;
+  font-size: 15px;
 }
 .titleAdjust ol li {
   margin: 13px 0;
@@ -221,6 +270,22 @@ a.detailView h3 {
 }
 
 @media (max-width: 767px) {
+
+  
+.apply-btns.onMobiledNone a {
+  background: #fff;
+  color: #e33535 !important;
+  font-weight: 700;
+}
+
+
+  .tableHt iframe {
+    width: 100%;
+}
+
+  .curriculum_awaited .MuiBox-root.css-1wnsr1i {
+    width: 100% !important;
+}
 
   .faqs section.breadcrumb-area {
     background-size: cover !important;
@@ -707,13 +772,20 @@ figure.snip1527:hover figcaption {
   margin: 0 !important;
 }
 
+.blog-card span img {
+  filter: grayscale(1);
+}
+
+.mb-search-box .hideForm {
+  display: none;
+}
 
 @media (max-width: 767px) {
 
-  #search-form {
+  .hideForm {
     display: none;
-}
-.modEnq {
+  }
+.modEnq  {
   display: none;
 }
 .apply-btns.onMobiledNone a {
@@ -721,7 +793,7 @@ figure.snip1527:hover figcaption {
   color: rgb(255, 255, 255) !important;
   background: rgb(228, 26, 26);
   display: inline-block;
-  width: 110px;
+  width: 160px;
   height: 35px;
   text-align: center;
   text-transform: uppercase;
@@ -861,16 +933,16 @@ img.flagTirnga {
   width: 100% !important;
   max-width: 100%;
 }
-.default-chatbot-indicator {
+/* .default-chatbot-indicator {
   display: none !important;
-}
+} */
 .titleAdjust table a {
   word-break: break-all;
 }
-.npf_chatbots.active {
+/* .npf_chatbots.active {
   transform: translateY(0%);
   opacity: 0 !important;
-}
+} */
 .impactSU {
   position: relative;
 }
@@ -887,17 +959,26 @@ img.flagTirnga {
 .searchProgram section {
   padding: 30px !important;
 }
-
-a.viewDBtn {
-  box-shadow: 0px 3px 0 #cf2020;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 9px 10px;
-  background: #e41a1a !important;
-  color:#fff !important;
+.viewDBtn:hover {
+  background: #3842a7 !important;
+}
+.viewDBtn {
+  box-shadow: 0px 3px 0 #474fa2;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 10px;
+    background: #5562ED !important;
+    color: #fff !important;
+    margin-bottom: 10px;
+    width: 100%;
+}
+p.text-red {
+  color: red;
+  margin-bottom: 0;
+  padding-top: 10px;
 }
 .serchingWidget {
   background: #f6f6f6;
@@ -1730,6 +1811,21 @@ h2.formName {
   font-size: 18px;
 }
 
+.header-content ul li {
+  display: block !important;
+  font-size: 15px;
+  font-family: 'Poppins';
+}
+
+.overview-dta table > tbody > tr:nth-of-type(2n+1) > * {
+  background: transparent !important;
+}
+
+#bg-image.new-header .container .header-content ul li {
+  font-size: 15px;
+  font-family: 'Poppins';
+}
+
 @media (max-width: 980px) {
 
   .slider-content.slider-image {
@@ -1965,4 +2061,349 @@ p#modal-modal-description p {
 }
 h2#modal-modal-title {
   color: #f42b2b;
+}
+
+.all_p_justifie p
+{
+text-align: justify;
+}
+figure.snip1527 {
+  box-shadow: none !important;
+}
+.all_p_justifie div {
+  border: 0 !important;
+}
+.body404 {
+  background-color: #313942;
+  font-family: "Montserrat", sans-serif;
+}
+
+.body404 main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height:80vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.body404 h1 {
+  color: #e7ebf2;
+  font-size: 12.5rem;
+  letter-spacing: 0.1em;
+  margin: 0.025em 0;
+  text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+@media (max-width: 30rem) {
+  .body404 h1 {
+    font-size: 8.5rem;
+  }
+}
+.body404 h1 > span {
+  -webkit-animation: spooky 2s alternate infinite linear;
+          animation: spooky 2s alternate infinite linear;
+  color: #f02f2f;
+  display: inline-block;
+}
+
+.body404 h2 {
+  color: #e7ebf2;
+  margin-bottom: 0.4em;
+}
+
+.body404 p {
+  color: #ccc;
+  margin-top: 0;
+}
+.body404 a.backHome {
+  background: rgb(240, 47, 47);
+  color: #fff;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+}
+@-webkit-keyframes spooky {
+  from {
+    transform: translatey(0.15em) scaley(0.95);
+  }
+  to {
+    transform: translatey(-0.15em);
+  }
+}
+
+@keyframes spooky {
+  from {
+    transform: translatey(0.15em) scaley(0.95);
+  }
+  to {
+    transform: translatey(-0.15em);
+  }
+}
+
+.sideBarNewside iframe {
+  height: 400px !important;
+}
+
+.iframeStyle
+{
+  width:100%;
+  height:100vh;
+  display:block;
+}
+button.closebtn {
+  width: 30px;
+  height: 30px;
+  display: block; 
+  background: linear-gradient(45deg, #fa0618 , #fa2b93);
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0px;
+} 
+.allFaculty  .slick-track
+{
+  display: flex;
+  justify-content:center;
+}
+.allFaculty .slick-slide
+{
+  margin-right:10px;
+}
+
+.tableHt table td {
+  border: 1px solid #cecece;
+  padding: 6px;
+}
+.fac-img img {
+  filter: grayscale(1);
+}
+.curriculum_awaiteded .MuiBox-root.css-1wnsr1i {
+  width: 630px;
+}
+.tableHt table {
+  width: 100% !important;
+}
+
+p.MsoNormal, p.MsoNormal span {
+  font-family: 'Poppins' !important;
+  font-size: 16px !important;
+}
+.Paragraph p span, .Paragraph span {
+  font-family: 'Poppins' !important;
+  font-size: 16px;
+}
+.for-mobile
+{
+  display:none;
+}
+
+.event-page-color {
+  background: #f5f5f5 !important; 
+  margin-bottom:30px;
+}
+.event-faq-area { 
+  margin-top: 40px;
+}
+table.cj-wysiwyg-table tr {
+  height: auto ! IMPORTANT;
+}
+
+.main8-title h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(240, 47, 47);
+  line-height: 1;
+  text-align: center;
+}
+.header-homepage .logo-area {
+  padding: 0px 0;
+  position: absolute !important;
+  width: 100%;
+  background: transparent !important;
+  z-index: 9999;
+}
+
+
+@media screen and (max-width:767px)
+{
+  .main8-title h1 { 
+    font-size: 28px !important; 
+}
+.mainslidecard  ul.slick-dots button {
+  background: #fff;
+  width: 10px !important;
+  height: 10px !important;
+  font-size: 15px;
+}
+.mainslidecard ul.slick-dots {
+  width: 100%;
+  margin: auto;
+  bottom: -30px;
+}
+
+
+  .textLmt table.cj-wysiwyg-table td {
+    display: contents !important;
+}
+.textLmt  table.cj-wysiwyg-table {
+  width: 100% ! IMPORTANT;
+}
+
+
+
+  button.apply-btns.onMobiledNone {
+    font-size: 13px;
+    color: #e33535;
+    background: #fff;
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 11px;
+    border-radius: 5px;
+    position: relative;
+    border: 0;
+    font-weight: 700;
+}
+
+  .event-page {
+    background: #fff !important;
+}
+
+  .for-mobile
+  {
+    display:block !important;
+  }
+  .for-desktop
+  {
+    display:none;
+  }
+
+  .searchProgram { 
+    position: inherit !important; 
+}
+
+  .curriculum_awaiteded .MuiBox-root.css-1wnsr1i {
+    width: 100% !important;
+}
+
+  .feeses .MuiBox-root.css-1wnsr1i {
+    width: 380px;
+}
+
+.blogsCard  .slick-slider.slick-initialized {
+  padding: 0px 20px;
+}
+
+}
+
+ .admidsionProcess .MsoTableGrid li { 
+  margin: 0 !important;
+}
+
+div#courseID_620 {
+  order: 1;
+}
+div#courseID_619 {
+  order: 2;
+}
+div#courseID_622 {
+  order: 3;
+}
+div#courseID_701 {
+  order: 4;
+}
+div#courseID_703 {
+  order: 5;
+}
+div#courseID_704 {
+  order: 6;
+}
+div#courseID_705 {
+  order: 7;
+}
+div#courseID_706 {
+  order: 8;
+}
+div#courseID_707 {
+  order: 9;
+}
+div#courseID_708 {
+  order: 10;
+}
+div#courseID_621 {
+  order: 11;
+}
+div#courseID_698 {
+  order: 1;
+}
+div#courseID_699 {
+  order: 2;
+}
+div#courseID_700 {
+  order: 3;
+}
+div#courseID_710 {
+  order: 4;
+}
+div#courseID_714 {
+  order: 5;
+}
+div#courseID_719 {
+  order: 1;
+}
+div#courseID_713 {
+  order: 2;
+}
+div#courseID_712 {
+  order: 3;
+}
+div#courseID_711 {
+  order: 4;
+}
+div#courseID_745 {
+  order: 5;
+}
+
+ 
+
+.sideBarNew { 
+  position: sticky;
+  color: #fff;
+  bottom: auto;
+  top: 80px;
+}
+.notifications  {
+  z-index: 999;
+}
+
+.searchProgram { 
+  position: sticky; 
+  bottom: auto;
+  z-index: 99;
+  top: 80px;
+}
+.sticky-menu.sticky {
+  background: #fff !important;
+  z-index: 9999 !important;
+}
+
+.max-wid-visions {
+  width: 750px !important;
+  overflow: auto !important;
+  height: 500px;
+}
+
+.max-wid-visions h3 {
+  font-size: 21px;
+}
+.max-wid-visions li, .max-wid-visions p, .max-wid-visions p span {
+  font-size: 14px;
+  color: #000 !important;
 }

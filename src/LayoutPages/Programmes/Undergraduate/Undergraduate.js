@@ -87,7 +87,7 @@ const Undergraduate = () => {
                   <Row>
                     {result_pg?.map((data, index) => (
                       <Col md="6" key={index}>
-                        <div className="cuCourse">
+                        <div className="cuCourse vv"> 
                           <Link href={`/${data?.slug}`} className="detailView">
                             <div className="detailView">
                               <div key={index} value={data?.id}>

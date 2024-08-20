@@ -8,6 +8,7 @@ export const Styles = styled.div`
     background-repeat: no-repeat;
     position: relative;
     background: #fff !important;
+    
 
     .footerAbout {
       padding: 100px 0;
@@ -352,7 +353,7 @@ export const Styles = styled.div`
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  max-width: 322px;
+  max-width: 270px;
   margin-left:0px;
   box-shadow: 0 1px 1rem -3px rgba(0,0,0,.15)!important;
 }
@@ -379,8 +380,8 @@ span.btn.btn-md.text-link {
 }
 .notifications.position-relative {
   position: fixed !important;
-  right: 25px;
-  bottom: 50px;
+  right: 35px;
+  bottom: 115px;
   z-index: 10;
   transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
@@ -389,9 +390,9 @@ span.btn.btn-md.text-link {
   -o-transition: .3s ease-in-out;
 }
 .not_card {
-  width: 320px;
+  width: 270px;
   position: absolute;
-  right: -20px;
+  right: 0px;
   bottom: 50px;
 }
 span.bellicon {
@@ -429,7 +430,7 @@ span.bellicon {
 
 
 .parent:after{
-  content: "";
+  content:"";
   position: absolute;
   top: -35px;
   left: -35px;
@@ -471,8 +472,23 @@ p.copyrt {
 
 @media screen and (max-width:767px)
 {
+
+.hide-mobile
+{
+  display:none !important;
+}
+
+.whatsapp-button { 
+  bottom: 5px !important;
+  right: 9px !important;
+}
+
+a.whatsAAP.Instagram.whatsApp {
+  bottom: 68px;
+}
   .notifications.position-relative {
-    bottom: 70px;
+    bottom: 90px;
+    right: 16px;
   }
   .logosFooter {
     display: flex;
@@ -492,6 +508,65 @@ p.copyrt {
 }
 
 
+a.reg-btn {
+  color: #fff;
+  font-size: 14px;
+  background: red;
+  padding: 3px 12px;
+  border-radius: 10px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+
+
+footer.footer1 { 
+  z-index: 99;
+}
+
+.shadowNotification p { 
+  margin: 3px 0;
+}
+
+.whatsapp-button{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  background-color: #25d366;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  animation: effect 5s infinite ease-in;
+}
+
+@keyframes effect {
+  20%, 100% {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+  0%, 10%{
+      width: 55px;
+      height: 55px;
+      font-size: 35px;
+  }
+  5%{
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+}
 
 
 

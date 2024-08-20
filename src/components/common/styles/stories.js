@@ -240,4 +240,9 @@ ul.slick-dots {
 
 }
 
+section.stories-area {
+    margin-top: 40px;
+}
+
+
 `

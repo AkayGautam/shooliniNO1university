@@ -50,7 +50,13 @@ const NewsListTemplate = ({ data }) => {
  );
  console.log(strAscending);
 
-
+ const cleanString = (str) => { 
+  if (str === null || str === undefined) {
+      return ''; 
+  }
+  return str.replace(/[-0-9]|\.png|\.jpg/g, ' ');   
+};
+  
   return (
     <>
       <Styles>
@@ -81,30 +87,26 @@ const NewsListTemplate = ({ data }) => {
                           <>
                             <Row>
                               {strAscending?.map((item, index) => {
-                                return (
-                                  <Col
+                                 return (
+                                   <Col
                                     md={6}
                                     sm={12}
                                     className="mb-3 newsSection"
                                     key={index}
                                   >
                                     <Link href={`/news/${item.slug}`}>
-                                   
-                                        <Card>
+                                      <Card>
                                           <div className="newsImg">
                                             <Card.Img
-                                              variant="top" alt={item.title}
+                                              variant="top" alt={cleanString(item?.alt)}
                                               src={`https://shooliniuniversity.com/media/${item.avatar}`}
                                             />
-                                          </div>
+                                           </div>
                                           <Card.Body>
                                             <Card.Title>
                                               {item.title}
                                             </Card.Title>
-                                            {/* <Card.Subtitle>
-                                              {dateFormat(item.updated_at)}
-                                            </Card.Subtitle> */}
-                                            <Card.Text>
+                                           <Card.Text>
                                             { removeHTML(item?.content) } 
                                             </Card.Text>
                                           </Card.Body>
@@ -127,8 +129,8 @@ const NewsListTemplate = ({ data }) => {
 
                       <div className="sideBarNew">
                       <div className="enqForm course-search">
-                          <h5 className="formName"> Admissions Open: 2023 </h5>
-                          <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
+                          <h5 className="formName"> Admissions Open: 2024 </h5>
+                          <div className="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
                       </div>
                       </div>
                     </div>

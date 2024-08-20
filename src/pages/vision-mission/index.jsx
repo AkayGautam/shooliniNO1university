@@ -73,7 +73,7 @@ const VisionMission = ({ visiondata }) => {
                     <div className="cuCourse">
                       <Row>
                         <Col md="12">
-                          <div className="about-content">
+                          <div className="about-content vsn-page">
                             <div
                              
                               dangerouslySetInnerHTML={{
@@ -89,7 +89,7 @@ const VisionMission = ({ visiondata }) => {
                     <SearchResearcher />
                     <div className="sideBarNew">
                       <div className="enqForm course-search">
-                          <h5 className="formName"> Admissions Open: 2023 </h5>
+                          <h5 className="formName"> Admissions Open: 2024 </h5>
                       <div class="npf_wgts text-right" data-height="450px" data-w="c57c3e7d09ac9528ae58dc877386a87f"></div>
                       </div>
                     </div>

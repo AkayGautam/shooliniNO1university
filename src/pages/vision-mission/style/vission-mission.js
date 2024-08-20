@@ -2,6 +2,17 @@ import styled from 'styled-components'
 import { colors } from '../../../components/common/elements/elements'
 
 const Styless = styled.div`
+
+
+.about-content p, .about-content li span {
+  font-size: 1rem !important;
+  line-height: 25px !important;
+  font-family: 'Poppins' !important;
+}
+.vsn-page h2 {
+  margin-bottom: 2px !important;
+}
+
   .about-page {
     .icon-box-area {
       padding-bottom: 72px;

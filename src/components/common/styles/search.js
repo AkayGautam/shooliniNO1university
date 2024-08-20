@@ -2,6 +2,139 @@ import styled from 'styled-components'
 import { colors } from '../elements/elements'
 
 export const Styles = styled.div`
+
+@import url("https://fonts.googleapis.com/css?family=Inter:400'");
+
+.card {
+  position: relative;
+  z-index: 99;
+}
+
+#react-select-9-listbox{
+  z-index:999;
+}
+
+
+.srChfOrm {
+  padding: 20px;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #e41a1a;
+  border-bottom: 4px solid #e41a1a;
+}
+.inputGroup {
+  background-color: #f6f6f6;
+  display: block;
+  margin:1px 0;
+  position: relative;
+
+  label {
+    padding: 12px 15px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #3C454C;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+
+    &:before {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      content: '';
+      background-color: #5562eb;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale3d(1, 1, 1);
+      transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+      opacity: 0;
+      z-index: -1;
+    }
+
+    &:after {
+      width: 32px;
+      height: 32px;
+      content: '';
+      border: 2px solid #D1D7DC;
+      background-color: #fff;
+      background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+      background-repeat: no-repeat;
+      background-position: 2px 3px;
+      border-radius: 50%;
+      z-index: 2;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: all 200ms ease-in;
+    }
+  }
+
+  input:checked ~ label {
+    color: #fff;
+
+    &:before {
+      transform: translate(-50%, -50%) scale3d(56, 56, 1);
+      opacity: 1;
+    }
+
+    &:after {
+      background-color: #54E0C7;
+      border-color: #54E0C7;
+    }
+  }
+
+  input {
+    width: 32px;
+    height: 32px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+  }
+}
+
+
+.card   .input-radio {
+  box-shadow: 0px 0px 0px 1px #6d6d6d;
+  font-size: 3em;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  border: 4px solid #fff;
+  background-clip: border-box;
+  border-radius: 50%;
+  appearance: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+.card  label {
+  display: flex; 
+  align-items: center;
+}
+
+.input-radio.on:checked {
+  box-shadow: 0px 0px 0px 4px #00eb27;
+  background-color: #51ff6e;
+}
+.input-radio.off:checked {
+  box-shadow: 0px 0px 0px 4px #eb0000;
+  background-color: #ff5151;
+}
+
+
   a.nav-search {
     padding: 18px 0 0 10px;
 
@@ -234,4 +367,36 @@ export const Styles = styled.div`
       font-style: normal;
     }
   }
+
+  section.breadcrumb-area {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 90px 0px;
+    position: relative;
+}
+ .breadcrumb-area::before {
+  position: absolute;
+  content: "";
+  background: rgb(0, 0, 0);
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.breadcrumb-area .breadcrumb-box {
+  background: rgb(227, 53, 53);
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  z-index: 9;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+
+
 `

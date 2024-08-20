@@ -123,7 +123,7 @@ const FacultyProfile = () => {
                     </Row>
 
                     <div className="gallery myPub">
-                      <h3>Publication</h3>
+                    
                       <div
                         dangerouslySetInnerHTML={{
                           __html: Data?.publications,

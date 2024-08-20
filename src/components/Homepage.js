@@ -15,12 +15,12 @@ import SliderDemo from './components/SliderDemo'
 import Companies from './components/Companies'
 import GalleryImage from './components/GalleryImage'
 import { HomeTestimonial } from './components/HomeTestimonial'
- 
+ import MobileMenu from './common/MobileMenu'
 const Homepage = () => {
   return (
     <>
       <Header />
-
+      
       <SliderDemo />
       {/* <HeroSlider /> */}
 

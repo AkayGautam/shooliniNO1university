@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from 'react'
+import React, { useEffect, Suspense } from 'react'
 import Header from '../../components/Header'
 // import HeaderOne from '../../components/HeaderOne';
 import BreadcrumbBox from '../../components/common/Breadcrumb'
@@ -7,7 +7,7 @@ import { Styles } from './style/shooliniadmission'
 import Footer from '../../components/Footer'
 import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link'
-
+import Head from 'next/head';
 import Modal from 'react-modal'
 
 const customStyles = {
@@ -43,6 +43,16 @@ const ShooliniAdmission = () => {
 
   return (
     <>
+
+<Suspense> 
+
+<Head>
+<title>Shoolini University Course Admissions | Apply Open</title>
+<meta name="description" content="Join India's leading new-age university - Shoolini University. UGC Approved and NAAC Accredited. Inviting applications for admissions 2024. Apply now!" />
+<meta name="keywords" content="Shoolini University Course Admissions | Apply Open" />
+</Head>
+
+
       <Styles>
         <Header />
         <div className="addmisionPage">
@@ -62,10 +72,10 @@ const ShooliniAdmission = () => {
                   <div className="row">
                     <div className="col-lg-12 col-md-12">
                       <div className="section-title">
-                        <h3>Admissions Open 2023</h3>
+                        <h3>Admissions Open 2024</h3>
                         <p>
                           {' '}
-                          Located in Kasauli Hills, just 90km from the Chandigarh Airport, Shoolini University is India's No.1 Private University (Times Higher Education World University Rankings 2023). This dynamic new-age university has state-of-the-art infrastructure and follows a research-based model. Shoolini provides high-impact, high-quality education to students who excel in their chosen area of study. Shoolini university is UGC Approved & ISO Certified 9001:2008.
+                          Located in Kasauli Hills, just 90km from the Chandigarh Airport, Shoolini University is India's No.1 Private University (Times Higher Education World University Rankings 2024). This dynamic new-age university has state-of-the-art infrastructure and follows a research-based model. Shoolini provides high-impact, high-quality education to students who excel in their chosen area of study. Shoolini university is UGC Approved & ISO Certified 9001:2008.
                           <br /> <br />
                           Established in 2009, Shoolini University has made its mark in academics and research. We also boast of an engaged alumni network that provides valuable support and resourses to current students. Over the years, Shoolini students have seen global successes and become leaders in their chosen prefessions. Students from all courses — Management, Science, Commerce & Arts avail the best of placement opportunities with top MNCs such as Unilever, HILTI, Nestle, Genpact, TATA Hitachi, Oberoi, Biocon & many more!
                         </p>
@@ -128,7 +138,7 @@ const ShooliniAdmission = () => {
 
               <div className="col-lg-3 col-sm-6">
                 <div className="single-simple-steps">
-                  <h3>1300+ PATENTS FILED </h3>
+                  <h3>1500+ PATENTS FILED </h3>
                   <p>Focus on research {"&"} innovation right from the graduate level.</p>
                 </div>
               </div>
@@ -175,7 +185,7 @@ const ShooliniAdmission = () => {
                       Once we receive the application, our admissions team will contact you regarding the eligibility criteria of your chosen course. All courses have different eligibility criteria. While some have entrance exams, others are based on interviews or regulatory requirements.{' '}
                     </li>
                     <li>
-                      Admissions for the year 2023 are currently underway. You are eligible to receive a firm offer of admission, even before Board exams, if you submit one of the following entrance exam scores:{' '}
+                      Admissions for the year 2024 are currently underway. You are eligible to receive a firm offer of admission, even before Board exams, if you submit one of the following entrance exam scores:{' '}
 
                       <ol>
                         <li> NEET/ JEE/ CLAT</li>
@@ -185,7 +195,7 @@ const ShooliniAdmission = () => {
 
                     <li>
                       {' '}
-                      Once you meet the criteria, the university will send you a letter of enrollment. All students who pay the first-semester fee are enrolled into the course to join India's No.1 Private University (THE World University Rankings 2023){' '}
+                      Once you meet the criteria, the university will send you a letter of enrollment. All students who pay the first-semester fee are enrolled into the course to join India's No.1 Private University (THE World University Rankings 2024){' '}
                     </li>
                   </ul>
                 </div>
@@ -241,6 +251,9 @@ const ShooliniAdmission = () => {
 
         <Footer />
       </Styles>
+
+      </Suspense>
+
     </>
   )
 }

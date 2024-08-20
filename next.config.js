@@ -13,11 +13,7 @@ const nextConfig = {
       {
         source: "/mba-admission",
         destination: "/html/index.html",
-      },
-      {
-        source: "/how-to-apply",
-        destination: "/hta/index.html",
-      },
+      }, 
       {
         source: "/gmb",
         destination: "/gmb/index.html",
@@ -81,12 +77,94 @@ const nextConfig = {
       {
         source: "/apply-new", 
         destination: "/applynew/index.html",
+      },
+      {
+        source: "/mba-admission-2024", 
+        destination: "/mba-admission-2024/index.html",
+      },
+      {
+        source: "/mba-test", 
+        destination: "/mba-test/index.html",
+      },
+      {
+        source: "/mba-ranking", 
+        destination: "/mba-ranking/index.html",
+      }
+      ,
+      {
+        source: "/mba-placement", 
+        destination: "/mba-placement/index.html",
+      },
+      {
+        source: "/centre-for-leadership-coaching", 
+        destination: "/clc/index.html",
       }
     ];
   },
 
   async redirects() {
     return [
+      {
+        source: "/ba-hons-event-management", 
+        destination: "/bajmc-hons-event-management",
+        permanent: true,
+      },
+      {
+        source: "/ba-hons-advertising-pr", 
+        destination: "/bajmc-hons-advertising-pr",
+        permanent: true,
+      },
+      {
+        source: "/mba-agri-business",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-banking-and-insurance",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-biotechnology",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-communications",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-data-science",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, 
+       {
+        source: "/mba-e-commerce-operations",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-executive",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-financial-markets",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-food-technology",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-logistics-and-supply-chain-management",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      }, {
+        source: "/mba-international-relations",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      },
+       {
+        source: "/mba-tourism",
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      },
       {
         source: "/faculty-of-applied-sciences-biotechnology",
         destination: "/faculty-members-applied-sciences-biotechnology",
@@ -147,6 +225,36 @@ const nextConfig = {
         destination: "/faculty-of-legal-sciences",
         permanent: true,
       },
+      {
+        source: "/mba", 
+        destination: "/master-of-business-administration-mba",
+        permanent: true,
+      },
+      {
+        source: "/activates-on-climate-actions", 
+        destination: "/activities-on-climate-actions",
+        permanent: true,
+      },
+      {
+        source: "/b-tech-computer-science-and-engineering", 
+        destination: "/b-tech-computer-science-engineering",
+        permanent: true,
+      },
+      {
+        source: "/bsc-university-of-melbourne", 
+        destination: "/international/dual-degree?utm_source=organic&utm_medium=MELBOURNE-Degree&utm_campaign=MELBOURNE-Degree",
+        permanent: true,
+      },
+      {
+        source: "/shoolini-melbourne-science-technology-global-program", 
+        destination: "/international/dual-degree",
+        permanent: true,
+      },  
+      {
+        source: "/srp-media", 
+        destination: "/srp",
+        permanent: true,
+      }
     ];
   },
  

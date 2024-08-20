@@ -6,7 +6,7 @@ export const Styles = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 0;
+    padding: 90px 0;
     position: relative;
 
     &:before {

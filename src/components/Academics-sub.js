@@ -116,6 +116,13 @@ const AcademicsSub = ({ id, data, ldJson }) => {
                           __html: data[0]?.content,
                         }}
                       ></p>
+
+                      <div className="visionMision"
+                        dangerouslySetInnerHTML={{
+                          __html: data[0]?.visionmission,
+                        }}
+                      ></div>
+
                     </div>
                   )}
                 </Col>
@@ -197,8 +204,8 @@ const AcademicsSub = ({ id, data, ldJson }) => {
 
                 <Col md="12">
                   {data[0]?.courses && (
-                    <div className="placements mb-4">
-                      <div className="sec-title pt-md-0 p-md-5 pb-md-4 text-left color-red">
+                    <div className="placements">
+                      <div className="sec-title pt-md-0   pb-md-4 text-left color-red">
                         <h2>Programs </h2>
                       </div>
                       <div className="placements-list table-responsive">
@@ -237,11 +244,9 @@ const AcademicsSub = ({ id, data, ldJson }) => {
               </Row>
             </Container>
           </section>
-          <section>
-            <ResearchStories />
-          </section>
     
-          {data[0]?.testimonial?.length > 0 && (
+    
+          {/* {data[0]?.testimonial?.length > 0 && (
             <section className="templateOne templateHeading bg-white py-5">
               <Container>
                 <div className=" text-left sec-title color-red">
@@ -280,13 +285,13 @@ const AcademicsSub = ({ id, data, ldJson }) => {
                 </Row>
               </Container>
             </section>
-          )}
+          )} */}
 
 
 
 
 {data[0]?.companies?.length > 0 && (
-            <section className="templateOne templateHeading bg-white py-5">
+            <section className="templateOne templateHeading bg-white pb-0 py-5">
               <Container>
                 <div className=" text-left sec-title color-red mb-5">
                   <h2 className=" py-3"> THINK PLACEMENTS   </h2>
@@ -318,6 +323,35 @@ const AcademicsSub = ({ id, data, ldJson }) => {
               </Container>
             </section>
           )}
+
+
+<section className="applySection py-5 pt-0">
+            <Container>
+              <Row>
+                <Col md="8">
+                  <div className="application-deadline">
+
+                    <div className="grid">
+                      <div className="text-wrapper">
+                        <h2 className="heading-left mb-0">
+                          Still have Queries? Contact Us
+                        </h2>
+                        <p>Please fill in the form and an expert from the admissions office will call you in the next 4 working hours.</p>
+                      </div>
+                    </div>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="application-deadline text-right">
+
+                    <a className=" AppyBtn" target="_blank" href="https://shooliniuniversity.com/apply?utm_source=organic&utm_medium=admissions&utm_campaign=admissions">Apply Now</a>
+                  </div>
+                </Col>
+
+
+              </Row>
+            </Container>
+          </section>
 
         </>
 

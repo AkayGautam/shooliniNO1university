@@ -11,6 +11,7 @@ import ProgramSingle from './ProgramSingle'
 import SearchResearcher from '../../components/SearchResearcher'
 import { resetMetaTags, setMetaTags } from '../../helper/setMetaTags'
 import SuspenseBoundary from '../../helper/SuspenseBoundary'
+import Link from "next/link";
 import Head from 'next/head'
 function useQuery() {
   const { search } = useLocation()
@@ -32,6 +33,11 @@ const SchoolDetail = ({ id, data }) => {
       document.body.removeAttribute('pageId')
     }
   }, [])
+
+
+  useEffect(() => {
+    var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
+  })
 
 
   return (
@@ -72,7 +78,13 @@ const SchoolDetail = ({ id, data }) => {
                               </div>
 
                               <div className="sideOpen">
-                                <ProgramSingle slug={row.slug} />
+                                {/* <ProgramSingle slug={row.slug} /> */}
+                                <Link
+                                       href={`/${row?.slug}`}
+                                      className="nav-link nav-sidebar"
+                                    >
+                                     View Detail
+                                    </Link>
                               </div>
                             </div>
                           </div>
@@ -104,7 +116,10 @@ const SchoolDetail = ({ id, data }) => {
                                   </figure>
                                   <div className="userContent col-8">
                                     <h5>{row.name}</h5>
-                                    <span>{row.content}</span>
+                                    <span  dangerouslySetInnerHTML={{
+                                  __html: row?.content,
+                                }}>
+                                      </span> 
                                   </div>
                                 </div>
                               </div>
@@ -120,6 +135,17 @@ const SchoolDetail = ({ id, data }) => {
                 <div className="sideBarpage course-search">
                   <SearchResearcher />
                 
+                  <div className="sideBarNew">
+                      <div className="enqForm">
+                      <div className="sideBarNew">
+                    <div className="enqForm">
+                          <h5 className="formName"> Admissions Open: 2024 </h5>
+                          <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
+                      </div>
+                    </div>
+                      </div>
+                    </div>
+
                 </div>
               </Col>
             </Row>

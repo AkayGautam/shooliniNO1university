@@ -14,6 +14,7 @@ import SuspenseBoundary from "../helper/SuspenseBoundary";
 import Head from "next/head";
 import Image from "next/legacy/image";
 
+
 const settings = {
   dots: false,
   infinite: false,
@@ -24,7 +25,7 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
-   
+
     {
       breakpoint: 600,
       settings: {
@@ -34,7 +35,153 @@ const settings = {
     },
   ],
 };
+
+const imagesSlide = {
+  dots: false,
+  infinite: false,
+  arrows: true,
+  autoplay: false,
+  speed: 500,
+  autoplaySpeed: 1500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+  ],
+};
+
+
+
+var allBlogs = {
+  dots: false,
+  infinite: true,
+  arrows: true,
+  autoplay: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 0,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        mobileFirst: true,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        mobileFirst: true,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst: true,
+      },
+    },
+  ],
+};
+const settingss = {
+  dots: false,
+  infinite: false,
+  speed: 1500,
+  slidesToShow: 1,
+  slidesToScroll: 0,
+  arrows: false,
+  autoplay: false,
+  speed: 500,
+  rows: 3,
+  vertical: true,
+  verticalSwiping: false,
+  adaptiveHeight: true,
+  variableHeight: false,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        rows: 1,
+      },
+    },
+  ],
+};
+
+// const faculties = {
+//   dots: false,
+//   infinite: true,
+//   arrows: true,
+//   autoplay: true,
+//   rows:2,
+//   slidesPerRow: 1,
+//   speed: 500,
+//   autoplaySpeed: 1500,
+//   slidesToShow:3,
+//   slidesToScroll: 1,
+//   responsive: [
+
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         row:2,
+//       }
+//     },
+//   ],
+// };
+
 const Academics = ({ id, data, ldJson }) => {
+
+
+  const [newsdata, setNewsdata] = useState([]);
+
+  var news_data = [];
+
+  useEffect(() => {
+    fetch("https://shooliniuniversity.com/media/LatestewsAPI", {
+      method: "post",
+      headers: new Headers({
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      }),
+      body: JSON.stringify({ auth: "shoolini@999" }),
+    })
+      .then((response) => response.json())
+      .then((res) => setNewsdata(res));
+  }, []);
+
+  news_data = newsdata?.success?.slug;
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    fade: false,
+    speed: 2000,
+  };
+
+
+
+
   const [showTable, setShowTable] = useState(false);
   const [setting, setSetting] = useState({});
   const [jsonLd, setJsonLd] = useState({});
@@ -57,7 +204,37 @@ const Academics = ({ id, data, ldJson }) => {
   const gallery = data[0].gallery ? JSON.parse(data[0].gallery) : [];
 
   const Numbers = data[0].numbers ? JSON.parse(data[0]?.numbers) : [];
- 
+
+  const [showFullContent, setShowFullContent] = useState(false);
+  const maxWordsToShow = 75; // You can set your desired word limit here
+
+  const toggleContent = () => {
+    setShowFullContent(!showFullContent);
+  };
+
+  const content = data[0]?.content; // Assuming data is available in the scope
+
+  // Function to truncate content to the specified word limit
+  const truncateContent = (text, limit) => {
+    const words = text.split(' ');
+    const truncatedWords = words.slice(0, limit);
+    return truncatedWords.join(' ');
+  };
+
+  const displayedContent = showFullContent ? content : truncateContent(content, maxWordsToShow);
+
+  const testimonialSlider = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    autoplaySpeed: 2500,
+  };
+
   return (
     <SuspenseBoundary>
       <Head>
@@ -76,18 +253,85 @@ const Academics = ({ id, data, ldJson }) => {
 
         <Template title={data[0]?.title} img={bgImg?.image_url} />
 
-        <section className="templateOne templateHeading py-5 pt-0">
+        <section className="templateOne templateHeading py-5 mt-md-3">
           <Container>
             <Row>
-              <Col md="12">
+              <Col md="6">
                 <div className="sec-para">
-                  <p
+
+                  {/* <p
                     dangerouslySetInnerHTML={{
                       __html: data[0]?.content,
                     }}
-                  ></p>
+                  > */}
+
+                  <p dangerouslySetInnerHTML={{ __html: displayedContent }}></p>
+                  {content.split(' ').length > maxWordsToShow && (
+                    <button className="readmoreText" onClick={toggleContent}>
+                      {showFullContent ? 'Close' : 'Read More'}
+                    </button>
+                  )}
+
                 </div>
               </Col>
+
+
+              <Col md="6">
+                {data.testimonialdetails?.length > 0 && (
+                  <div className="">
+                    <div className="col-md-12">
+                      <div
+                        id="hiring"
+                        className="student-voices"
+                      >
+                        <div className="">
+                          <div className="row">
+                            {data.testimonialdetails && (
+                              <Slider {...testimonialSlider}>
+                                {data.testimonialdetails?.map((item, i) => (
+                                  <div className="col-md-12 bg-custom">
+                                    <div className="row">
+                                      <div className="col-md-6 pr-md-0">
+                                        <div className="voices-image">
+                                          <img
+                                            className="img-responsive"
+                                            src={item?.imageurl}
+                                          />
+                                        </div>
+                                      </div>
+
+                                      <div className="col-md-6 pl-md-0">
+                                        <div className="voices-text card-box card-box-dark pt-5">
+                                          <div className="all-discription">
+                                            <h4 className="text-white"> {item.name} </h4>
+                                            <p className="text-white text-18">
+                                              {" "}
+                                              {item.content.replace(/(<([^>]+)>)/ig, '')}
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                ))}
+
+                              </Slider>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                )}
+              </Col>
+
+
+
+
+
+
             </Row>
           </Container>
         </section>
@@ -129,31 +373,37 @@ const Academics = ({ id, data, ldJson }) => {
               <div className="gallery">
                 <Row>
                   {gallery.length > 0 &&
-                    gallery.map((row, idx) => (
-                      <Col md={4} sm={6} key={idx}>
-                        <figure className="snip1527">
-                          <div className="image">
-                            <Image
-                              width={415}
-                              height={280}
-                              className="img-fluid"
-                              src={row?.image_url}
-                              alt={row?.title}
-                            />
-                          </div>
-                          <figcaption>
-                            <h3> {row?.title} </h3>
-                          </figcaption>
-                        </figure>
-                      </Col>
-                    ))}
+                    (
+                      <Slider {...imagesSlide}>
+                        {gallery.map((row, idx) => (
+                          <Col md={4} sm={6} key={idx}>
+                            <div className="cardDesign">
+                              <figure className="snip1527">
+                                <div className="image">
+                                  <Image
+                                    width={415}
+                                    height={280}
+                                    className="img-fluid"
+                                    src={row?.image_url}
+                                    alt={row?.title}
+                                  />
+                                </div>
+                                <figcaption>
+                                  <h3> {row?.title} </h3>
+                                </figcaption>
+                              </figure>
+                            </div>
+                          </Col>
+                        ))}
+                      </Slider>
+                    )}
                 </Row>
               </div>
             )}
           </Container>
         </section>
 
-        <section className="templateHeading templateOne py-4">
+        {/* <section className="templateHeading templateOne py-4">
           <Container>
             <Row>
               <Col md="12">
@@ -174,9 +424,10 @@ const Academics = ({ id, data, ldJson }) => {
               </Col>
             </Row>
           </Container>
-        </section>
+        </section> */}
 
-        <section className="templateOne templateHeading bg-white py-5">
+
+        <section className="templateOne templateHeading bg-white pt-4 pb-5">
           <Container>
             <Row>
               <Col md="12">
@@ -198,45 +449,49 @@ const Academics = ({ id, data, ldJson }) => {
                           )}
                         </div>
                       </Col>
+
+
+
+
                       <Col md="12">
                         <Row>
+                        
+                            
                           {data.facultydetail.map((i, idx) => {
                             return (
-                              <Col className="col-6 my-2" md="3" key={idx}>
-                                <Card>
+                              <Col md="4"> 
+                                <div className="blog-card"  key={idx}>
                                   <Link
                                     state={{ id: i.id }}
                                     href={`/faculty/profile/${i.title
                                       .split(" ")
                                       .join("-")}`}
-                                    style={{
-                                      fontSize: "14px",
-                                      color: "black",
-                                      fontWeight: 600,
-                                    }}
+                                    className="blog-card__link"
                                   >
-                                    <Image
-                                      width={304}
-                                      height={380}
-                                      variant="top"
-                                      src={i.imageurl}
-                                      className="img-responsive"
-                                      alt={i.title}
-                                    />
-                                    <Card.Body className="text-center">
-                                      <h5 className="proTitle"> {i.title} </h5>
-                                      <p className="font-300">
+                                    <div className="cardImage">
+                                      <Image
+                                        width={304}
+                                        height={380}
+                                        variant="top"
+                                        src={i.imageurl}
+                                        className="img-responsive card-img-top"
+                                        alt={i.title}
+                                      />
+                                    </div>
+                                    <div className="card-body  position-relative">
+                                      <h5 className="card-title">  {i.title} </h5>
+                                      {/* <p className="designation"> { i.designation } </p> */}
+                                      <p className="card-text">
                                         {i.description}
                                       </p>
-                                    </Card.Body>
+                                    </div>
                                   </Link>
-                                  <div className="facDetail">
-                                    <p> {i.intro} </p>
-                                  </div>
-                                </Card>
+                                   
+                              </div>
                               </Col>
                             );
                           })}
+                         
                         </Row>
                       </Col>
                     </div>
@@ -245,6 +500,53 @@ const Academics = ({ id, data, ldJson }) => {
               </Col>
             </Row>
           </Container>
+        </section>
+
+        <section className="blogsCard mb-0">
+
+          <Container>
+            {data.facultydetail?.length > 0 && (
+              <Row>
+                {data.facultydetail.map((i, idx) => {
+
+
+
+                  <Col md="3" key={idx}>
+                    <div className="blog-card">
+                      <Link
+                        state={{ id: i.id }}
+                        href={`/faculty/profile/${i.title
+                          .split(" ")
+                          .join("-")}`}
+                        className="blog-card__link"
+                      >
+                        <div className="cardImage">
+                          <Image
+                            width={304}
+                            height={380}
+                            variant="top"
+                            src={i.imageurl}
+                            className="img-responsive card-img-top"
+                            alt={i.title}
+                          />
+                        </div>
+                        <div className="card-body  position-relative ffff">
+                          <h5 className="card-title">  {i.title} </h5> 
+                          <p className="designation"> { i.designation } </p>
+                          <p className="card-text">
+                            {i.description}
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  </Col>
+
+                })}
+
+              </Row>
+            )}
+          </Container>
+
         </section>
 
         <section className="templateOne bgSearch templateHeading py-4">
@@ -332,7 +634,7 @@ const Academics = ({ id, data, ldJson }) => {
           </Container>
         </section>
 
-        <section className="templateHeading py-5">
+        {/* <section className="templateHeading">
           <Container>
             {Numbers.length > 0 && (
               <div className="gallery mb-4">
@@ -363,9 +665,84 @@ const Academics = ({ id, data, ldJson }) => {
               </div>
             )}
           </Container>
-        </section>
+        </section> */}
 
-        {data.testimonialdetails?.length > 0 && (
+
+
+        {/* <section className="impact-box-area py-5">
+          <Container>
+     
+     
+            <Row>
+              <Col md="12" lg="8">
+                <div className="impactSU">
+                  {gallery.length > 0 && (
+                    <div className="imSUtext">
+                      {gallery.length > 0 &&
+                        (
+                          <Slider {...settings}>
+                            {gallery.map((row, idx) => (
+                              <div className="team-item" key={idx}>
+                                <div className="dflex-card fixHeight">
+
+                                  <img src={row?.image_url} alt="" className="" />
+
+                                </div>
+                                <div className="IMDetail">
+                                  <h5>{row.title}</h5>
+
+                                </div>
+                              </div>
+                            ))}
+                          </Slider>
+                        )}
+                    </div>
+                  )}
+                </div>
+              </Col>
+              <Col md="12" lg="4">
+                <Row>
+                  <Col lg="12" md="12">
+                    <Slider {...settingss}>
+                      {gallery?.map((data) => (
+                        <div className="post-list-item col-md-12 px-2">
+                          <div className="event-item ">
+                            <div className="event-item-inner">
+                              <div className="event-item-thumbnail">
+                                <a href={data?.weburl} title="Mobile Games Battle">
+                                  <div className="vfvfv placeholder-thumbnail-bg">
+                                    <img className="img-thumbnail"
+                                      src={data?.image_url}
+                                      width={250}
+                                      loading="lazy"
+                                    />
+                                  </div>
+                                </a>
+                              </div>
+                              <div className="event-item-content">
+                                <h4 className="event-title font-2">
+                                  National Law Fest
+                                </h4>
+
+                                <div className="event-excerpt">
+                                  <p>Participate in Moot Courts, Crime Scene Investigations, and thought-provoking competitions.  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </Slider>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </section> */}
+
+
+
+        {/* {data.testimonialdetails?.length > 0 && (
           <section className="templateOne testimonial-aca templateHeading bg-white py-5">
             <Container>
               <div className=" text-left sec-title color-red">
@@ -389,7 +766,8 @@ const Academics = ({ id, data, ldJson }) => {
                             </figure>
                             <div className="userContent col-8">
                               <h5>{item.name}</h5>
-                              <p>{item.content}</p>
+                              <p>{item.content.replace(/(<([^>]+)>)/ig, '')}</p>
+
                             </div>
                           </div>
                         </div>
@@ -400,7 +778,7 @@ const Academics = ({ id, data, ldJson }) => {
               </Row>
             </Container>
           </section>
-        )}
+        )} */}
 
         <Footer />
       </Styles>

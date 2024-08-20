@@ -85,7 +85,7 @@ const FacultyAll = ({ id, data, ldJson }) => {
                                   {item?.faculty.map((fac, index) => {
                                     return (
                                       <div
-                                        className="col-md-3 mb-3"
+                                        className="col-md-3 mb-3 ccdddsss"
                                         key={index}
                                       >
                                         <div className="cnt-block mm facAll equal-hight">
@@ -132,7 +132,7 @@ const FacultyAll = ({ id, data, ldJson }) => {
 
                       <div className="sideBarNew">
                       <div className="enqForm course-search">
-                          <h5 className="formName"> Admissions Open: 2023 </h5>
+                          <h5 className="formName"> Admissions Open: 2024 </h5>
                           <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
                     </div>
                       </div>

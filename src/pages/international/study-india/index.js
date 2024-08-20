@@ -140,7 +140,7 @@ const Blogs = () => {
               <Row>
               <Col md="6">
                   <div className="card-box p-0">
-                    <img className="w-100 img-thumbnail" src="../../assets/images/offers.jpeg" />
+                    <img className="w-100 img-thumbnail" src="../../assets/images/kallu.jpeg" />
                   </div>
                 </Col>
 

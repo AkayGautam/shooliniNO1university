@@ -3,7 +3,7 @@ import Academics from "../components/Academics";
 import AcademicsSub from "../components/Academics-sub";
 import { DynamicApi } from "../helper/dynamicreq";
 import AdmissionProcess from "../LayoutPages/Admission/Admission-Process/AdmissionProcess";
-import ProgrameDetails from "../LayoutPages/Programmes/ProgrameDetails";
+import ProgrameDetails from "../LayoutPages/Programmes/ProgrameDetails.js";
 import FacultyAll from "../LayoutPages/FacultyAll/FacultyAll";
 import CampusTemplate from "../LayoutPages/Campus/Community-Programes/CampusTemplate";
 import CampusApiTemplate from "../LayoutPages/Admission/Admission-Process/CampusApiTemplate";

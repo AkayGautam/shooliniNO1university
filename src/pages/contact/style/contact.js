@@ -47,6 +47,65 @@ const Styles = styled.div`
     flex-basis:50%;
     wisth:50%;
 }
+
+.card-box {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    height: 100%;
+}
+.acordianFaq button {
+    background: rgb(255, 255, 255);
+    border-width: 0px 0px 1px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(206, 206, 206);
+}
+.accordion-body {
+    font-size: 16px;
+    padding: 10px 20px;
+    font-family: Poppins;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px !important;
+}
+.accordion-title {
+    font-weight: 700;
+    display: block;
+    font-size: 18px !important;
+    padding: 10px 20px !important;
+}
+section#faqs {
+    font-family: CircularStd;
+    background: rgb(245, 245, 247);
+    padding: 40px 0px;
+    margin-top: 30px;
+}
+
+
+
+@media screen and (max-width:767px)
+{
+    .xs-2 {
+        order: 2;
+        margin-top: 20px;
+    }
+    .xs-1 {
+        order: 1; 
+    }
+}
+
+
+
+
 `
 
 export default Styles

@@ -3,18 +3,27 @@ import { colors } from '../../../components/common/elements/elements'
 
 const Styless = styled.div`
 
-
+.ht-auto
+{
+    height:auto !important;
+}
 section {
     font-family: CircularStd;
     background: #f5f5f7;
     padding:40px 0px;
 }
-
+.align-centered {
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
 section#shooliniMBA {
     background: url(../../assets/images/heroimage.jpg);
     background-size: 100%;
 }
-
+p.text-18 {
+    color: #333;
+}
 .slick-slide {
     padding: 0 10px;
 }
@@ -296,7 +305,10 @@ table td {
     text-align: left;
     margin:10px 0;
 }
-
+.pr-3
+{
+    padding-right:10px !important;
+}
 .btn-grad-red a, .btn-grad-red button  {
     display: block;
     max-width: 440px;
@@ -304,7 +316,7 @@ table td {
     color: #fff;
     padding: 12px 15px;
     text-align: center;
-    font-size: 22px;
+    font-size: 19px;
     box-shadow: 3px 2px 12px 2px rgb(0 0 0 / 20%);
     border-radius: 5px;
 }

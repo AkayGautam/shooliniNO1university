@@ -8,7 +8,7 @@ const Admission = () => {
     <>
     
   <HeaderTwo />
-    <HeroSlider />
+    {/* <HeroSlider /> */}
 
   <Footer />
     </>

@@ -49,12 +49,23 @@ const Styless = styled.div`
   outline-offset: 0 !important;
   opacity: 1;
 }
+.yit-thumbnail {
+  max-height: 250px;
+  overflow: hidden;
+}
+p.yit-p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .yit-testimonial .yit-img {
   line-height: normal;
   max-width: 100%;
   vertical-align: middle;
-  width: 70px;
-  height: 70px;
+  width: 100%;
+  height: auto;
 }
 .yit-testimonial .yit-style-15 .yit-content {
   overflow: hidden;
@@ -98,7 +109,9 @@ a.yit-a {
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-
+.yit-item {
+  cursor: pointer;
+}
 
 
 

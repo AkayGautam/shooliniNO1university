@@ -20,7 +20,7 @@ import "../styles/css/animate.css";
 import "../styles/css/normalize.css";
 import "../styles/fonts/fonts.css";
 import "../styles/css/font-awesome.min.css";
-
+import "../styles/fonts/gilroy.css"
 export default function App({ Component, pageProps, metric }) {
 
 
@@ -29,11 +29,28 @@ export default function App({ Component, pageProps, metric }) {
     `https://shooliniuniversity.com` +
     (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
+
+  const allSchemaData = 
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Shoolini University",
+    "url": "https://shooliniuniversity.com/",
+    "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://shooliniuniversity.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+    }
+  }
+
+
   return (
     <>
       <Head>
         <link rel="canonical" href={canonicalUrl} />
         <link rel="shortcut icon" href="/favicon.png" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(allSchemaData) }} />
+
       </Head>
       <SSRProvider>
         <NextNProgress />

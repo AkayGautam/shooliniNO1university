@@ -159,7 +159,7 @@ const HeaderTwo = () => {
 
 </div>
 
-      <div className="notification-top-bar">
+      {/* <div className="notification-top-bar">
         <Slider {...settings}>
           <div>
             <a className="font-16"
@@ -171,7 +171,7 @@ const HeaderTwo = () => {
             </a>
           </div>
  </Slider>
-      </div>
+      </div> */}
 
       <section className="position-relative">
         <div className="top-bar">

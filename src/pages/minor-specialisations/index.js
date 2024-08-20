@@ -8,7 +8,7 @@ import Image from "next/legacy/image";
 import Head from 'next/head';
 import Minorcourses from './Minorcourses';
 
-const Minor = () => {
+const Minor = () => { 
     const data = [
         {
             title: "How is the Minor Degree awarded?",
@@ -171,21 +171,24 @@ const Minor = () => {
 
                     <section id="fees" className="student-voices">
                         <div className="container">
-                            <div className="pagetitle text-center mb-4"><h2>The Choice is Yours </h2>
-                                        <p>Consider the possibility of pursuing two specialisations simultaneously, a concept that promises an abundance of opportunities and rewards. A dual specialisation opens doors to a world of knowledge and personal growth, allowing you to expand your horizons and excel in multiple disciplines.</p> 
+                            <div className="pagetitle text-center mb-4">
+                                {/* <h2>See how can you structure your degree! </h2> */}
+                                        <p>At Shoolini University students pursue minors that are not part of their core subject curriculum. So, a Science student can choose to learn Economics or Music. On the other hand, a Liberal Arts student can learn Data Mining or Cyber Laws. That is the beauty of the choice-based curriculum at Shoolini! </p> 
+
+                                        <h2>See how can you structure your degree! </h2>
                             </div>
                             <div className="row">
                                 <div className="col-md-6 mb-xs-20">
                                     <div className="card-box">
                                         <h3 className="title-default title-red ">Major  </h3>
-                                        <p> A Major is the primary area of study that you choose to focus on during your college or university education. It's like your main specialisation or the subject you want to specialise in. It usually requires you to take a specific set of courses and fulfil certain requirements in that particular field. Your major represents your main academic focus and expertise in a specific subject area.</p>
+                                        <p> A Major is the primary subject you choose as the focus of your college or university degree. It’s the main specialisation demanded by a degree. For example, biotechnology, computer science, management studies, English literature, law etc</p>
                                     </div>
                                 </div>
 
                                 <div className="col-md-6">
                                     <div className="card-box">
                                         <h3 className="title-default title-red "> Minor</h3>
-                                        <p className="text-18"> A Minor is a program of study that you can pursue alongside your Major. It allows you to explore a secondary area of interest or expertise while focusing on your primary field of study. It's like having a bonus that complements your main degree and helps you gain a broader range of knowledge and skills. It's a great way to enhance your educational experience and make you more versatile in the job market.
+                                        <p className="text-18"> Students pursue a Minor as an exploratory and secondary area of interest. A minor may not align with the primary specialisation. Instead, it complements your main degree and helps you gain a new knowledge or skill. 
                                         </p>
 
 
@@ -209,10 +212,15 @@ const Minor = () => {
                             <div className="row">
                                 <div className="col-md-12 mb-xs-20">
                                     <div className="card-box">
-                                        <p> With a Major, you'll attain new heights in your chosen field, while a Minor becomes your secret superpower, unlocking a parallel world of knowledge. Embrace the extraordinary as you conquer two domains and become the hero of your own academic adventure!</p>
-                                        <p>
-                                        Know more about Minor courses at Shoolini. Scroll down!
-                                        </p>
+                                        <p> With a Major, you'll attain new heights in your chosen field. A Minor becomes your secret superpower to unlock a parallel expertise. Embrace this extraordinary combination or a major and a minor to conquer two domains and become the hero of your own academic adventure!</p>
+                                       
+                                       <ul>
+                                           <li>Learning beyond the classroom because students need to choose a minor that is not a part of their core area of study </li>
+                                           <li> It is exploratory & transdisciplinary</li>
+                                           <li> Showcases student’s versatility, thus enhancing job prospects </li>
+                                           <li> Offers better job security as companies are looking for talent with parallel skills </li>
+
+                                       </ul>
                                     </div>
                                 </div>
 
@@ -220,6 +228,7 @@ const Minor = () => {
                             </div>
                             
                             <div className="row cardANimated">
+                            <div className="pagetitle text-center mb-4"><h2>Choose a Minor</h2> </div>
                             <Minorcourses />
                             </div>
                            

@@ -20,7 +20,7 @@ const Templatecourse = ({ title, img, data, id, ldJson }) => {
   return (
     <Styles>
 
-<section className="new-header aiml-new__header js-section-track"   id="bg-image" data-init="true">
+{/* <section className="new-header aiml-new__header js-section-track"   id="bg-image" data-init="true">
               <div className="container">
               {Datas.map((data, i) => (
             <div
@@ -63,9 +63,9 @@ const Templatecourse = ({ title, img, data, id, ldJson }) => {
               </div>
   ))}
               </div>
-            </section>
+            </section> */}
 
-      {/* <section className="hero-slider-area scSlider sliderForBio">
+      <section className="for-desktop hero-slider-area scSlider sliderForBio">
         <div className="slider-wrapper">
           {Datas.map((data, i) => (
             <div
@@ -103,7 +103,7 @@ const Templatecourse = ({ title, img, data, id, ldJson }) => {
             </div>
           ))}
         </div>
-      </section> */}
+      </section>
     </Styles>
   )
 }

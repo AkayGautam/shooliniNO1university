@@ -460,7 +460,7 @@ const Placements = () => {
                     <div className="picture">
                       <img
                         className="img-fluid"
-                        src="assets/images/management/ICICIBank.png"
+                        src="assets/images/management/ICICIBAnk.png"
                       />
                     </div>
                   </div>
@@ -510,7 +510,7 @@ const Placements = () => {
                     <div className="picture">
                       <img
                         className="img-fluid"
-                        src="assets/images/management/lg.png"
+                        src="assets/images/management/Lg.png"
                       />
                     </div>
                   </div>
@@ -1422,7 +1422,7 @@ const Placements = () => {
                     <div className="picture">
                       <img
                         className="img-fluid"
-                        src="assets/images/CSE/lg.png"
+                        src="assets/images/CSE/Lg.png"
                       />
                     </div>
                   </div>

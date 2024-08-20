@@ -11,6 +11,16 @@ import { Row, Col } from "react-bootstrap";
 
 
 const Footer = () => {
+
+  // useEffect(() => {
+  //   var s=document.createElement("script");
+  //   s.type="text/javascript";
+  //   s.async=true;
+  //   s.src="https://chatbot.in1.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/3845f35478c52082/1325773dd3dd43a7a3e8c868b32f1c35";
+  //   document.body.appendChild(s);
+  // }, []);
+
+
   const [pgdata, setPgata] = useState([]);
 
   const [isActive, setActive] = useState(false);
@@ -61,30 +71,30 @@ const Footer = () => {
     <>
       <Styles>
         <footer className="footer1">
-          <div  className="notifications position-relative">
-        
-
-            {/* <a onClick={handleClick} class="parent"> */}
-            {/* <a className="text-white" target="_blank" href="https://shooliniuniversity.com/convocation"> */}
-            <div className="parent" onClick={handleClick}> 
+          <div className="notifications position-relative">
+         
+           <div onClick={handleClick} className="parent">
+              <span> <FaBell /> </span>
+            </div>
            
-  <span> <FaBell /> </span>
-  </div>
 
-
-
-            <div className= {notification ? "note_hide3 not_card" : "footer_show not_card"}>
+            <div className={notification ? "note_hide3 not_card" : "footer_show not_card"}>
               <div className="shadowNotification">
-                <a href="https://shooliniuniversity.com/convocation" target="_blank">
-                  <h6 className="text-white">7th Convocation 2023</h6>
-                  <p>Oct 16: Countdown Begins to Convocation 2023!</p>
-                  <p>Get ready to don your cap and gown. </p>
-                  {/* <span class="btn btn-md text-link">Apply Here</span> */}
-                </a>
+              <h6 className="text-white m-0">Admissions 2024 Closing Soon!</h6>
+               
+                  <Link href="https://shooliniuniversity.com/apply?utm_source=organic&utm_medium=notificationbell&utm_campaign=notificationbell" className="reg-btn">  Apply Now    </Link>
+            
               </div>
-
             </div>
           </div>
+
+
+
+        <div className="whatsAppIconFixed">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=917018007000&text=Hi%20Shoolini%20University" class="whatsapp-button"><i className="fab fa-whatsapp"></i></a>
+        </div>
+
+
           <div className="container-fluid ">
             <div className="row">
               <div className="col-md-3 bg-reds">
@@ -92,30 +102,30 @@ const Footer = () => {
 
                 <div className="footerAbout text-center">
                   <div className="logosFooter">
-              <Row>
-                <div className="col-md-12 col-6"> 
-                  <Link href="/">
-                    <Image
-                      src="/assets/images/footer-logo.png"
-                      alt="Shoolini University"
-                      className="logo-footer"
-                      width={250}
-                      height={130}
-                    />
-                  </Link>
-                  </div>
-                  <div className="col-6"> 
-                  <div className="gptw for_mobile">
-                    <Image
-                      src="/assets/images/gptw.png"
-                      alt="Shoolini University"
-                      className="logo-footer"
-                      width={64}
-                      height={96}
-                    />
-                  </div>
-                  </div>
-                  </Row>       
+                    <Row>
+                      <div className="col-md-12 col-6">
+                        <Link href="/">
+                          <Image
+                            src="/assets/images/footer-logo.png"
+                            alt="Shoolini University"
+                            className="logo-footer"
+                            width={250}
+                            height={130}
+                          />
+                        </Link>
+                      </div>
+                      <div className="col-6">
+                        <div className="gptw for_mobile">
+                          <Image
+                            src="/assets/images/gptw.png"
+                            alt="Shoolini University"
+                            className="logo-footer"
+                            width={64}
+                            height={96}
+                          />
+                        </div>
+                      </div>
+                    </Row>
                   </div>
 
                   <h5 className="text-white">Think Learning. Think Success.</h5>
@@ -177,7 +187,7 @@ const Footer = () => {
                   </ul>
 
 
-                  
+
 
                   <div className="gptw for_desktop">
                     <Image
@@ -253,7 +263,7 @@ const Footer = () => {
                               </a>
                             ) : (
                               <Link
-                                href={`/${data?.link.replace("/", "")}`}
+                                href={`/${data?.link.replace("/", "/")}`}
                                 className="detailView"
                               >
                                 <div key={index} value={data?.id}>
@@ -291,7 +301,7 @@ const Footer = () => {
                           <li key={index}>
                             {data.link.indexOf("https") > -1 ? (
                               <Link
-                                href={`${data?.link.replace("/", "")}`}
+                                href={`${data?.link.replace("/", "/")}`}
                                 className="detailView"
                               >
                                 <div key={index} value={data?.id}>
@@ -300,7 +310,7 @@ const Footer = () => {
                               </Link>
                             ) : (
                               <Link
-                                href={`/${data?.link.replace("/", "")}`}
+                                href={`/${data?.link.replace("/", "/")}`}
                                 className="detailView"
                               >
                                 <div key={index} value={data?.id}>
@@ -343,9 +353,9 @@ const Footer = () => {
                     </div>
 
                     <div className="col-md-12">
-                            <p className="copyrt">
-                            Copyright ©2022 Shoolini Foundation of Life Sciences and Business Management
-                            </p>
+                      <p className="copyrt">
+                        Copyright ©2024 Shoolini Foundation of Life Sciences and Business Management
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -362,6 +372,9 @@ const Footer = () => {
             <div className="EnqlUS shortBtn">
               <EnquireForMob />
             </div>
+          </div>
+            <div className="hide-mobile"> 
+          <div class="npf_chatbots" data-w="1325773dd3dd43a7a3e8c868b32f1c35"></div>
           </div>
         </footer>
       </Styles>

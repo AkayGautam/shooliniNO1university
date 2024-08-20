@@ -6,6 +6,11 @@ export const Styles = styled.div`
     z-index: 99;
     position: relative;
   }
+
+  .styleIframe iframe {
+
+    height: 400px !important;
+  }
 .slider-content
 {
   background-size:100% !important;
@@ -43,7 +48,7 @@ a.viewTest {
     position: relative;
     max-width: 370px;
     top: 0px !important;
-    height: 350px !important;
+    height:400px !important;
 }
 
   .bannerVideo {
@@ -1511,6 +1516,274 @@ a.broucher.btn:before {
 .slick-slide span {
   width: 100% !important;
 }
+
+@media screen and (min-width:768px)
+{
+  .for-desktop.scSlider 
+  {
+    display:none;
+  }
+  .for-mobile
+  {
+    display:none !important;
+  }
+
+
+
+}
+
+
+@media screen and (max-width:767px)
+{
+
+  .slideSlickContent {
+    margin-bottom: 80px !important;
+  }
+
+  .hreSlider  h2.slideTitle { 
+    font-size: 32px !important;
+}
+.hreSlider  p.slideInfo { 
+  font-size: 18px !important;
+}
+  .studentImage {
+    display: none;
+}
+section.hreSlider {
+  background: url(../../assets/slide-icons/shoolini-slider-mobile.jpg) !important;
+  background-size: 100% 100%  !important;
+} 
+.slideSlickContent {
+  margin-bottom: 40px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -30px; 
+}
+
+  .slide1 {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slideBox {
+  background: #ececec;
+}
+
+  .slider { 
+    height: auto !important; 
+}
+
+  .for-desktop.scSlider 
+  {
+    display:none;
+  }
+  .for-desktop
+  {
+    display:none !important;
+  }
+}
+
+
+.studentImage span {
+  width: 100% !important;
+}
+.studentImage span img {
+  width: 100% !important;
+}
+
+section.hreSlider {
+  background: url(../../assets/slide-icons/shoolini-slider.jpg);
+  max-height: 650px;
+  background-size: 100% 100%;
+}
+h2.slideTitle {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 42px !important;
+}
+p.slideInfo {
+  text-align: center;
+  font-size: 24px !important; 
+  margin: auto;
+  color: #fff;
+  line-height: 1.4 !important;
+}
+.mainslidecard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 600px;
+}
+.iconTitle h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color:#fff;
+  text-align:center;
+}
+.schoolIcon {
+  text-align: center;
+  display: block;
+}
+.slideSlickContent {
+  margin-bottom: 40px;
+}
+.studentImage {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.studentImage img {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.mainslidecard {
+  position: relative;
+  z-index: 11;
+}
+section.hreSlider:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(0deg, #00000070 30%, transparent);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.iconStyle {
+  background: linear-gradient(45deg, #ff0066, #ff0000);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin: 10px auto;
+}
+.iconStyle img { 
+  padding: 8px; 
+  display:inline !important;
+}
+ section.hreSlider {
+  padding-top: 50px;
+}
+
+
+
+
+
+
+.hovicon {
+  display: inline-block;
+  font-size: 45px;
+  line-height: 90px;
+  cursor: pointer;
+  margin: 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  color: #fff;
+} 
+
+.hovicon:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content:'';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.hovicon:before {
+  speak: none;
+  font-size: 48px;
+  line-height: 90px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+} 
+/* Effect 4 */
+.hovicon.effect-4 {
+  width: 92px;
+  height: 92px;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
+}
+
+.hovicon.effect-4.sub-a {
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+.hovicon.effect-4:before {
+  line-height: 92px;
+}
+.hovicon.effect-4:after {
+  top: -4px;
+  left: -4px;
+  padding: 0;
+  z-index: 10;
+  border: 4px dashed #fff;
+}
+.hovicon.effect-4:hover {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  color: #fff;
+}
+.hovicon.effect-4:hover i {
+  color: #fff;
+}
+/* Effect 4b */
+.hovicon.effect-4.sub-b:hover {
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+.hovicon.effect-4.sub-b:hover:after {
+  -webkit-animation: spinAround 9s linear infinite;
+  -moz-animation: spinAround 9s linear infinite;
+  animation: spinAround 9s linear infinite;
+}
+@-webkit-keyframes spinAround {
+  from {
+      -webkit-transform: rotate(0deg)
+  }
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinAround {
+  from {
+      -moz-transform: rotate(0deg)
+  }
+  to {
+      -moz-transform: rotate(360deg);
+  }
+}
+@keyframes spinAround {
+  from {
+      transform: rotate(0deg)
+  }
+  to {
+      transform: rotate(360deg);
+  }
+} 
 
 
 

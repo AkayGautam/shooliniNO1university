@@ -64,7 +64,7 @@ const CampusTemplate = ({ id, data, ldJson }) => {
                 <div className="container">
                   <div className="row">
                     <div className="col-md-8">
-                      <div className="section-title titleAdjust">
+                      <div className="section-title titleAdjust all_p_justifie">
                         {/* <h4>About Us</h4> */}
                         <h3>{data[0][0]?.title}</h3>
                         <p

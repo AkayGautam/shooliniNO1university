@@ -2,6 +2,15 @@ import styled from 'styled-components'
 import { colors } from '../elements/elements'
 
 export const Styles = styled.div`
+
+span.theColor {
+  background: linear-gradient(to right, #ea3d42, #5a4c97);
+  color: #fff;
+  padding: 0px 9px;
+  border-radius: 5px;
+  font-size: 21px;
+}
+
   .event-faq-area {
     padding: 65px 0;
 
@@ -309,7 +318,7 @@ export const Styles = styled.div`
       padding: 30px 0;
 
 
-      .introVDO, .sec-title br {
+     .sec-title br {
         display: none;
     }
 

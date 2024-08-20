@@ -1165,25 +1165,7 @@ export const Styles = styled.div`
 .programme_detail {
   position: relative;
 }
-.programme_detail:hover .programme_list {
-  transform: translate(0%,-13px);
-  background: #fff;
-  height: auto;
-  opacity: 1;
-  visibility: visible;
-  padding: 10px 0;
-}
-ul.programme_list {
-  transform: translate(0%,-50%);
-  background: #fff;
-  height: 0;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: 9;
-  visibility: hidden;
-}
+
 .programme-area .programme_detail {
   margin-top: 0px;
 }
@@ -1278,6 +1260,8 @@ ul.programme_list {
 }
 
 }
-
+.programme-area .sec-title {
+  padding-left: 20px;
+}
 
 `
