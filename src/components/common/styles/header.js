@@ -1118,7 +1118,7 @@ a.Instagram {
   width: auto !important;
   right: auto !important;
   width: 100% !important;
-  bottom: 0;
+  bottom: 32px;
   top: auto !important;
 }
 span.icnName {
@@ -1128,6 +1128,12 @@ span.icnName {
 }
 a.Instagram {
   padding:5px;
+}
+.marquee--inner a { 
+  font-size: 15px !important;
+}
+.marquee--inner span {
+  width: auto !important;
 }
 }
 
@@ -1287,6 +1293,9 @@ a.whatsAAP span.iconsFile {
   justify-content: space-between;
 }
 
+.marquee--inner span {
+  width: 100%;
+}
 
 .flagANimation span {
   font-weight: 700;
@@ -1298,9 +1307,61 @@ a.whatsAAP span.iconsFile {
   justify-content: center;
   align-items: center;
 }
+ 
+a.regBtn {
+  color: #fff;
+  font-size: 14px;
+  background: red;
+  padding: 1px 12px;
+  border-radius: 0;
+  margin-top: 8px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+.marquee {
+  font-size: 19px;
+  color: #fff;
+  height: 32px;
+  overflow: hidden !important;
+  bottom: 0; 
+  z-index: 99;
+  margin: auto;
+  position: relative;
+}
+section.marText {
+  background: linear-gradient(90deg, rgba(27, 21, 136, 1) 0%, rgba(13, 13, 181, 1) 51%, rgba(8, 135, 161, 1) 100%);
+  position: fixed;
+  width: 100%;
+  height: 34px;
+  bottom: 0;
+  z-index: 99;
+}
+.marquee--inner span {
+  color: #fff;
+}
+.marquee--inner a {
+  color: #fff;
+  font-size: 17px;
+}
+.marquee--inner {
+  display: block;
+  width: 200%;
+ 
+  &:hover {
+    animation-play-state: paused;
+    color: red;
+  }
+}
+ 
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
 
-
-
-
-
+ 
 `

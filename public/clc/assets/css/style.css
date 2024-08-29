@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 img.img-icon {
   width: 100%;
-  max-width: 17px;
+  max-width: 25px;
   margin: 0px 0px 0px 8px;
 }
 .social-links .nav-link1:after {
@@ -70,6 +70,11 @@ i {
   padding: 2px;
   transition: all 0.2s;
   font-size: 22px;
+}
+.at-center {
+  display: flex;
+  align-items: center;
+  font-size: 12px !important;
 }
 /*--------------------------------------------------------------
 #footer
@@ -646,7 +651,230 @@ a.getstarted {
 nav.regidter-btn li {
   display: block;
 }
-@media (max-width: 768px) {
+.table-image td, .table-image th {
+  vertical-align: middle;
+}
+.bg-yellow{
+  background: #393939;
+}
+.conf-table table tr td:nth-child(1) {
+  white-space: nowrap;
+  text-align: left;;
+}
+.img-full img{
+  width:100%;
+}
+th.text-left {
+  text-align: left;
+}
+tr.text-left td {
+  text-align: left;
+}
+td.colm {
+  max-width: 200px;
+  text-align: left;
+}
+.uniqetitile h3 {
+  margin: 0;
+}
+.conf-table h4 {
+  font-size: 34px;
+}
+.conf-table td {
+  font-size: 14px;
+  padding: 4px 12px !important;
+}
+.uniqetitile {
+  background: #3F51B5;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.conf-table .points {
+  margin: 0 0 20px;
+  display: inline-block;
+  padding: 20px 20px;
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  font-style: italic;
+  border-left: 3px solid red;
+  background-color: #dee2e64a;
+  border-radius: 0 4px 4px 0;
+  width: 100%;
+}
+
+#speakers-sliders figcaption {  
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 15px;
+}
+#speakers-sliders figcaption h2 {
+  font-size: 20px;
+}
+#speakers-sliders figcaption p {
+  font-size: 14px;
+}
+#speakers-sliders figure.effect-steve.modal-link {
+  position: relative;
+  display: flex;
+}
+
+/* table */
+
+.benifitscontent p {
+  color: #ffff;
+}
+.goldtable {
+  border: 2px solid gold;
+  min-height: 200px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.silvertable {
+  border: 2px solid #ffff;
+  min-height: 206px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+h5.goldtext {
+  color: gold;
+  font-size: 28px;
+  font-weight: 800;
+}
+h5.silvertext {
+  color: #ffff;
+  font-size: 28px;
+  font-weight: 800;
+}
+p.seatshighlight {
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+p.costhiglight {
+  font-size: 14px;
+  color: #ffff;
+}
+p.ultimatetext {
+  color: #ffff;
+  font-size: 17px;
+  font-weight: 500;
+}
+.registration-container p {
+  margin: 0;
+}
+p.usdtext {
+  margin: 20px 0px;
+  color: #ffff;
+  font-weight: 600;
+}
+h4.pricetext {
+  color: gold;
+}
+h2.silverpricetext{
+color: #fff;
+}
+#speakers-sliders figure.effect-steve.modal-link { 
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.spekr {
+  flex-basis: 30%;
+}
+span.text-wraps {
+  white-space: nowrap;
+  padding-left: 40px;
+  color: #ffff;
+}
+
+p.smallusd {
+  font-size: 13px;
+  color: #ffff;
+  font-weight: 700;
+  position: absolute;
+}
+.benifitscontent p {
+  color: #ffff;
+}
+.total_price {
+  color: #fff;
+}
+img.marktick {
+  width: 100%;
+  max-width: 16px;
+}
+table.goldtable.table td {
+  border: 0;
+}
+table.silvertable.table td {
+  border: 0;
+}
+.goldtable td {
+  border: 0;
+}
+.silvertable td {
+  border: 0;
+}
+.networking {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+span.text-wraps::after {
+  content: "";
+  background: url(/clc/assets/img/checkmark.png);
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 8px;
+  top: 0;
+  background-size: 100%;
+}
+section.price-element {
+  background: url(/clc/assets/img/bgprice.jpg);
+  background-attachment: fixed;
+    background-size: 100%;
+}
+
+@media (max-width: 767px) {
+  .price-element hr {
+    background-color: #fff !important;
+    height: 2px !important;
+    opacity: 1;
+}
+h4.silverpricetext, .pricetext  {
+  font-size: 42px;
+}
+
+.networking { 
+  justify-content: center;
+}
+span.text-wraps {
+  position: relative;
+}
+.xs-none {
+  height: 0 !important;
+  padding: 0 !important;
+}
+  section.price-element { 
+    background-size: cover !important;
+}
+.silvertable td {
+  border: 0;
+  display: block;
+  text-align: center;
+}
+  .goldtable td, .benifitscontent td {
+    display: block;
+    text-align: center !important;
+}
+
+
+  #speakers-sliders figcaption {
+    position: relative;
+  }
  
   section#topbar {
     display: none !important;

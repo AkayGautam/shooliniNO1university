@@ -473,13 +473,14 @@ p.copyrt {
 @media screen and (max-width:767px)
 {
 
+
 .hide-mobile
 {
   display:none !important;
 }
 
 .whatsapp-button { 
-  bottom: 5px !important;
+  bottom: 40px !important;
   right: 9px !important;
 }
 

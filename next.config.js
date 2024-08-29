@@ -98,6 +98,14 @@ const nextConfig = {
       {
         source: "/centre-for-leadership-coaching", 
         destination: "/clc/index.html",
+      },
+      {
+        source: "/centre-for-leadership-coaching/launch-conference", 
+        destination: "/clc/launch-conference.html",
+      },
+      {
+        source: "/centre-for-leadership-coaching/list-of-speakers", 
+        destination: "/clc/speakers.html",
       }
     ];
   },

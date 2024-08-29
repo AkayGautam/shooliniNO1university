@@ -71,7 +71,7 @@ const Footer = () => {
     <>
       <Styles>
         <footer className="footer1">
-          <div className="notifications position-relative">
+          {/* <div className="notifications position-relative">
          
            <div onClick={handleClick} className="parent">
               <span> <FaBell /> </span>
@@ -86,7 +86,7 @@ const Footer = () => {
             
               </div>
             </div>
-          </div>
+          </div> */}
 
 
 

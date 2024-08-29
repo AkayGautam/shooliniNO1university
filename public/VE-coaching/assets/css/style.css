@@ -2629,7 +2629,9 @@ div#coaches-slider {
 section#testimonials {
   background: #fff !important;
 }
-
+a.navbar-brand img {
+  max-width: 250px;
+}
 .expected-output .card-text-round ul li {
   display: block;
   position: relative;

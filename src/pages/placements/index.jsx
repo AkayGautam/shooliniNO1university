@@ -42,6 +42,17 @@ const Placements = () => {
                       Intelligence {'&'} offer an integrated Biotechnology
                       program at the graduate level.
                     </p>
+
+                    <table className="table w-50 bg-white">
+  <thead className="thead-white">
+    <tr>
+      <th scope="col">Placements details for the year 2018-19 to 2022-23</th> 
+      <th scope="col"> <a target="_blank" href="https://shooliniuniversity.com/media/pdf/Placement_details.pdf" > View </a></th>
+    </tr>
+  </thead>
+ 
+</table>
+
                   </div>
 
                   <div className="col-12">

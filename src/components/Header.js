@@ -146,6 +146,17 @@ const Header = () => {
       </Dialog>
 
 
+ <section className="marText"> 
+      <marquee className="marquee">
+  <div className="marquee--inner">
+    <span>
+      <a href="/centre-for-leadership-coaching"> India's First Global Coaching Conference on 20-21 Sept. Register Now! </a>
+    </span>
+  </div> 
+</marquee>
+ 
+</section> 
+
 
       <div className={isActive ? 'bg-salmon2 sticky-icon showcase' : 'bg-salmon2 sticky-icon'} >
 
