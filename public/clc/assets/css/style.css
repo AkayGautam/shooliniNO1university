@@ -730,9 +730,10 @@ td.colm {
   top: -40px;
 }
 /*expect*/
+
 section.expect {
   background-color: #d5d5d53b;
-
+  padding: 15px 0px 60px 0px;
 }
 .expectt.text-center {
   padding: 10px 0px;
