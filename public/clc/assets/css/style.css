@@ -838,6 +838,34 @@ section.price-element {
     background-size: 100%;
 }
 
+
+section.expect {
+  background-color: #d5d5d53b;
+
+}
+.expectt.text-center {
+  padding: 10px 0px;
+}
+.expectcontent img {
+  width: 100%;
+  max-width: 15%;
+}
+.expectcontent {
+  background: #ffff;
+  height: 100%;
+}
+.expectcontent h3 {
+  font-size: 17px;
+  font-weight: 800;
+  color: black;
+  margin: 20px 0px;
+}
+.expectcontent p {
+
+    color: lightslategray;
+    font-size: 14px;
+}
+
 @media (max-width: 767px) {
   .price-element hr {
     background-color: #fff !important;
