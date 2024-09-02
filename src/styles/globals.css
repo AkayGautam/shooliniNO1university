@@ -9,7 +9,7 @@ h5,
 h6,
 a {
   font-family: "Poppins";
-}
+}    
 p,
 h1,
 h2,
@@ -23,7 +23,9 @@ a {
 .admidsionProcess .titleAdjust table span {
   word-break: keep-all !important;
 }
-
+.g{
+  font:100%;
+}
 .all_p_justifie table td p {
   text-align: justify;
   white-space: pre-line;
