@@ -132,7 +132,7 @@ footer#footerdown {
 }
 
 #header .logo img {
-  max-height: 70px;
+  max-height: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -399,11 +399,15 @@ h2.Launchheading {
   font-weight: 600;
   letter-spacing: 1px;
 }
+.feature.icon img {
+  width: 100%;
+  max-width: 40px;
+}
 .feature.icon {
   border: 1px solid #333;
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   justify-content: center;
   border-radius: 50%;
   align-items: center;
