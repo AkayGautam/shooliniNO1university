@@ -699,6 +699,14 @@ td.colm {
   padding: 10px;
   text-align: center;
 }
+.clcabout.suntext li {
+  list-style: none;
+  padding: 4px 0px;
+}
+img.img-fluid.clc-img {
+  min-height: 345px;
+  border-radius: 3px;
+}
 
 .conf-table .points {
   margin: 0 0 20px;
