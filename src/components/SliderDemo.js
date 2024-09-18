@@ -305,7 +305,7 @@ const SliderDemo = () => {
         <section>
           <Row className="m-0">
               <Col md="12">
-              <div className="main8-title mb-3 text-left"><h1>Join Shoolini — The Top Private University in India!
+              <div className="main8-title mb-3 text-left"><h1>Join Shoolini — A Top Private University in India!
  </h1></div>
               </Col>
           </Row>

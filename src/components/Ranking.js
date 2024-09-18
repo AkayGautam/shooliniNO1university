@@ -93,12 +93,12 @@ const Ranking = () => {
                               {eventData.eventdesc7}
                             </p> */}
 
-                            <h6 className="mt-3 for-desktop">
+                            {/* <h6 className="mt-3 for-desktop">
                               <a href="/news/shoolini-outshines-claims-top-spot-in-the-asia-rankings">  {eventData.eventdesc8} </a>
                             </h6>
                             <p className=" for-desktop" style={{ margin: "0" }}>
                               {eventData.eventdesc9}
-                            </p>
+                            </p> */}
                             <p className=" for-desktop" style={{ margin: "0" }}>
                               {eventData.eventdesc1a}
                             </p>
@@ -296,12 +296,12 @@ const Ranking = () => {
                 <h2> 
                 Apply to Shoolini
                 </h2>
-                <h4> India’s <span className=""> No. 1</span>  Private University</h4>
+                {/* <h4> India’s <span className=""> No. 1</span>  Private University</h4> */}
               </div>
               <div className="introVDO for-desktop">
                 <Link href="/blog/shoolini-student-lands-42-lakh-job-at-algo8/?utm_source=organic&utm_medium=newsshowcase-highestpackage&utm_campaign=newsshowcase-highestpackage">
                  <Image
-                  src={`/assets/images/Research-Future3.jpeg`}
+                  src={`/assets/images/Research-Future3.jpg`}
                   alt="ranking_logo"
                   className="img-fluid"
                   width={700}
