@@ -3,20 +3,18 @@
     {
       "id": "1",
       "ranking_logo": "../../assets/images/the-ranking.png",
-      "eventDate": "2024",
-      "eventTitle": "THE World Rankings 2024",
+      "eventDate": "2025",
+      "eventTitle": "THE World Rankings 2025",
       "eventTime": "5:30pm - 7.00pm",
-      "eventLocation": "Newyork,NY.",
-      "eventdesc1": "No.1 Private University in India ",
-      "eventdesc2": "Overall Global Rank: 501-600",
+      "eventLocation": "Newyork,NY.", 
+      "eventdesc2": "Overall Global Rank: 401-500",
       "eventdesc3": "No.1 in International Outlook in India",
       "eventdesc4": "Engineering",
       "eventdesc5": "No.2 in India; #201-250 globally",
       "eventdesc6": "Physical Sciences",
       "eventdesc7": "No.1 in India #201-250 globally",
       "eventLink": "/event-details",
-      "eventdesc8": "THE Asia University Rankings 2024",
-      "eventdesc9": "No.1 Private University in India",
+      "eventdesc8": "THE Asia University Rankings 2024", 
       "eventdesc1a": " "
 
     }

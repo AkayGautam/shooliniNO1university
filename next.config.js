@@ -262,6 +262,11 @@ const nextConfig = {
         source: "/srp-media", 
         destination: "/srp",
         permanent: true,
+      },  
+      {
+        source: "/news/shoolini-ranks-high-with-20-scientists-in-stanfords-top-2", 
+        destination: "/news/shoolini-ranks-high-with-19-scientists-in-stanfords-top-2?utm_source=organic&utm_medium=websiteticker&utm_campaign=19scientiststop2",
+        permanent: true,
       }
     ];
   },

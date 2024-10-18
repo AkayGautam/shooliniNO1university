@@ -150,7 +150,8 @@ const Header = () => {
       <marquee className="marquee">
   <div className="marquee--inner">
     <span>
-      <a href="/centre-for-leadership-coaching"> India's First Global Coaching Conference on 20-21 Sept. Register Now! </a>
+      <a href="/news/shoolini-ranks-high-with-19-scientists-in-stanfords-top-2?utm_source=organic&utm_medium=websiteticker&utm_campaign=19scientiststop2"> Shoolini Ranks High with 19 Scientists in Stanford University’s Top 2% List
+</a>
     </span>
   </div> 
 </marquee>

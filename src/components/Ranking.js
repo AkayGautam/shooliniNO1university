@@ -105,7 +105,7 @@ const Ranking = () => {
 
                           </div>
                           <div className="seeMoreBtn">
-                            <a href="/news/shoolini-outshines-claims-top-spot-in-the-asia-rankings">
+                            <a href="/">
                               See More
                             </a>
                           </div>
@@ -225,9 +225,9 @@ const Ranking = () => {
                             <p style={{ margin: "0 0 0 0" }}>
                               {eventData.eventdesc}
                             </p>
-                            <p style={{ margin: "0" }}>
+                            {/* <p style={{ margin: "0" }}>
                               {eventData.eventdesc1}
-                            </p>
+                            </p> */}
                             <p>{eventData.eventdesc2}</p>
                           </div>
                           <div className="seeMoreBtn">
@@ -264,11 +264,11 @@ const Ranking = () => {
                         <div className="alignLefts">
                           <div className="event-details">
                             <h6>
-                              <Link  href="/news/shoolini-scores-hat-trick-retains-position-among-top-100-universities-in-india">
+                              <Link  href="/news/shoolini-climbs-nirf-rankings-secures-70th-spot">
                               {eventData.eventTitless}
                               </Link>
                             </h6>
-                            <h6>  <Link className="p-font" href="/news/shoolini-scores-hat-trick-retains-position-among-top-100-universities-in-india">  {eventData.eventTitle}</Link>  </h6>
+                            <h6>  <Link className="p-font" href="/news/shoolini-climbs-nirf-rankings-secures-70th-spot">  {eventData.eventTitle}</Link>  </h6>
                             <p><strong>    {eventData.eventdesc} </strong> </p> 
                             <p>  {eventData.eventdesc5}</p>
                             <p> <strong>  {eventData.eventdesc6} </strong></p>
@@ -278,7 +278,7 @@ const Ranking = () => {
                             <p>  {eventData.eventdesc4}</p>
                           </div>
                           <div className="seeMoreBtn">
-                            <Link href="/news/shoolini-scores-hat-trick-retains-position-among-top-100-universities-in-india">
+                            <Link href="/news/shoolini-climbs-nirf-rankings-secures-70th-spot">
                               See More
                             </Link>
                           </div>
