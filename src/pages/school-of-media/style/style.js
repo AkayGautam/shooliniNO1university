@@ -3,7 +3,7 @@ import { colors } from '../../../components/common/elements/elements'
 
 const Styless = styled.div`
 
-.ht-auto
+.ht-auto 
 {
     height:auto !important;
 }
@@ -208,7 +208,7 @@ section.rinakingSection {
     align-items: center;
 }
  .leftCatd h1 {
-    font-size: 58px;
+    font-size: 50px;
     font-weight: 800;
     color: #000;
     line-height: 1.3;
@@ -500,6 +500,7 @@ h3.title-red {
     background-size: 100%;
     left: -12px;
     position: absolute;
+    top:10px !important;
 }
 
 .courselist ul li a:hover {
@@ -1445,6 +1446,10 @@ section#shooliniMBA {
     text-transform: uppercase;
     font-weight: 600
   }
+    }
+a.journlismatag {
+    display: block !important;
+}
 
   .open-frame,
   .open-frame:hover {
