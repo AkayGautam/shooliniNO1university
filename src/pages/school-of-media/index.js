@@ -299,10 +299,10 @@ const Mbas = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/logo3.jpg"
-                                                                                            width={80}
+                                                                                       src="/assets/images/smc/shoolinilnew.png"
+                                                                                            width={128}
                                                                                             className="img-responsive"
-                                                                                            height={81}
+                                                                                            height={42}
                                                                                         />
                                                                                     </div>
                                                                                 </div>
@@ -338,12 +338,12 @@ const Mbas = () => {
                                                                             <div className="row my-4">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
-                                                                                        <Image
-                                                                                            src="/assets/images/qs-rankingNew-2024.png"
+                                                                                      <a     href="https://youtube.com/@shoolinitv8154?feature=shared" >  <Image
+                                                                                            src="/assets/images/smc/shooliniTv-logo.jpg" 
                                                                                             width={100}
-                                                                                            height={36}
-                                                                                            className="img-responsive"
-                                                                                        />
+                                                                                            height={100}
+                                                                                            className="img-responsive" 
+                                                                                        /></a>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="col-9">
@@ -357,15 +357,41 @@ const Mbas = () => {
 
 
                                                                             </div>
+
+
                                                                             <div className="row my-4">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
-                                                                                        <Image
-                                                                                            src="/assets/images/Indyjskie.png"
+                                                                                       <a href="https://youtube.com/@shoolinitv8154?feature=shared"><Image
+                                                                                                       src="/assets/images/smc/shooliniSavaad.png"
                                                                                             width={150}
                                                                                             className="img-responsive"
-                                                                                            height={60}
-                                                                                        />
+                                                                                            height={80}
+                                                                                        /></a> 
+
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div className="col-9">
+                                                                                    <div className="sb_text">
+                                                                                        <h4> Shoolini Samvaad  </h4>
+                                                                                        <p>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+
+
+                                                                            <div className="row my-4">
+                                                                                <div className="col-3">
+                                                                                    <div className="sb_logo">
+                                                                                     <a href="https://open.spotify.com/show/2K8gy8K3BhhrDYtmnZNjcs?si=83efcd5facc84926">  <Image
+                                                                                                       src="/assets/images/smc/radioshoolini.jpeg"
+                                                                                            width={150}
+                                                                                            className="img-responsive"
+                                                                                            height={100}
+                                                                                        /></a> 
 
                                                                                     </div>
                                                                                 </div>
@@ -376,7 +402,7 @@ const Mbas = () => {
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
+                                                                            </div>+
 
 
 
@@ -409,7 +435,7 @@ const Mbas = () => {
 <br />
 
 <h3 className="title-default">Events and Fests  </h3> 
-<p className="m-0"> The annual Media Fest and Creators' Fest organised gives students a chance to interact with top media professionals and showcase their own talent. These events feature panel discussions, workshops, and creative competitions, providing students with the opportunity to collaborate with peers and industry experts. It’s the perfect space to learn, network, and grow in the media world.
+<p className="m-0"> The annual <strong>Media Fest and Creators </strong> Fest organised gives students a chance to interact with top media professionals and showcase their own talent. These events feature panel discussions, workshops, and creative competitions, providing students with the opportunity to collaborate with peers and industry experts. It’s the perfect space to learn, network, and grow in the media world.
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -621,76 +647,67 @@ const Mbas = () => {
 
 
    
-    <div class="col-md-4">
-    <div class="expectcontent">
-    <div class="expecticon-inner text-center p-4">
-    <img src=""/>
+ <div class="col-md-4">
+ <div class=" globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Nishtha Anand.jpg"   width={300}  height={300}/>
     <h3>Nishtha Shukla Anand</h3>
-    <span>Ex-Reuters, India Today, Founder: TechThirsty.com & Pen Pundit Media, Trustee and Director, Shoolini University</span>
+    <span><strong className='hightlightprofile'>Ex-Reuters,</strong> India Today, Founder: TechThirsty.com & Pen Pundit Media, Trustee and Director, Shoolini University</span>
     </div>
     </div>  
+
+    <div class="col-md-4">
+ <div class="globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Misha Bajwa Chaudhary.jpg"   width={300} height={300}/>
+    <h3>Misha Bajwa Chaudhary</h3>
+    <span> News Presenter & Actor, <strong className='hightlightprofile'>ex-AajTak and India TodayN</strong></span>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+ <div class=" globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/kunal_nandwani.jpg"   width={300} height={300}/>
+    <h3>Kunal Nandwani</h3>
+    <span> Co-founder & CEO of<strong className='hightlightprofile'> uTrade </strong> & Founder - Chandigarh Angels Network</span>
+    </div>
+    </div>
+    </div>
+     
+    <div class="row mt-3">
+
+    <div class="col-md-4">
+ <div class="globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Gurpreet Tuthgur.jpg"   width={300} height={300}/>
+    <h3> Gurpreet Tathgur</h3>
+    <span> AVP Non-Fiction<strong className='hightlightprofile'> (Viacom 18)</strong></span>
+    </div>
+    </div>
+
+     <div class="col-md-4">
+ <div class="globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Namit Sharma.jpg"   width={300} height={300}/>
+    <h3>Namit Sharma</h3>
+    <span> Creator, Producer, Catalyst. CEO -<strong className='hightlightprofile'> Dreamers & Doers Co.</strong> </span>
+    </div>
     </div>
  
     <div class="col-md-4">
-       <div class="expectcontent">
-       <div class="expecticon-inner text-center p-4">
-      <img src=""/>
-       <h3>Misha Bajwa Chaudhary</h3>
-         <span>News Presenter & Actor, ex-AajTak and India TodayN</span>
-    
-       </div>  
-       </div>
-       </div>
+ <div class="globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Tanvi Gandhi.jpg"   width={300} height={300}/>
+    <h3>Tanvi Gandhi</h3>
+    <span> Independent Producer, <strong className='hightlightprofile'>ex-YRF & Phantom Films</strong> </span>
+    </div>
+    </div> 
  
+     
  
-       <div class="col-md-4">
-          <div class="expectcontent">
-          <div class="expecticon-inner text-center p-4">
-         <img src=""/>
-          <h3> Gurpreet Tathgur</h3>
-            <span> AVP Non-Fiction (Viacom 18) </span>
-   
-          </div>  
-          </div>
-          </div>
-       </div>
- 
- <div class="row mt-3">
-          <div class="col-md-4">
-             <div class="expectcontent">
-             <div class="expecticon-inner text-center p-4">
-            <img src=""/>
-             <h3>Namit Sharma</h3>
-               <span>Creator, Producer, Catalyst. CEO - Dreamers & Doers Co. </span>
-           
-             </div>  
-             </div>
-             </div>
- 
- 
- 
-             <div class="col-md-4">
-                <div class="expectcontent">
-                <div class="expecticon-inner text-center p-4">
-        <img src=""/>
-                <h3>Tanvi Gandhi</h3>
-                  <span> Independent Producer, ex-YRF & Phantom Films </span>
-              
-                </div>  
-                </div>
-                </div>
- 
- 
-                <div class="col-md-4">
-                   <div class="expectcontent">
-                   <div class="expecticon-inner text-center p-4">
-            <img src=""/>
-                   <h3>Kunal Nandwani</h3>
-                     <span> Co-founder & CEO of uTrade & Founder - Chandigarh Angels Network</span>
 
-                   </div>  
-                   </div>
-                   </div>
+     
+ 
+ 
+ 
+ 
+ 
+           
  
  
                 </div>
@@ -967,11 +984,11 @@ const Mbas = () => {
 <p> <strong>Shoolini University’s Media and Communications programs </strong>are created around hands-on learning, equipping students with practical skills that impact the media industry and beyond. Through live projects like newspapers, TV bulletins, and radio shows, students are ready for the fast-paced media landscape. Combined with expert mentorship and internships, these programs prepare graduates to shape the future of communication. </p>
 <div class="courselist">
 <ul class="p-0">
-<li> <a className='journlismatag' target="_blank" href="#"> <strong>  BA Journalism & Mass Communication with specialisations </strong>
-<p> 3 years</p></a> </li>
-<li> <a  className='journlismatag' target="_blank" href="#"> <strong>  MA Journalism & Mass Communication  </strong>  <p> 2 years</p></a> </li>
-<li> <a className='journlismatag' target="_blank" href="#"> <strong>  PhD Journalism  </strong> <p>3 years</p> </a> </li>
-<li> <a className='journlismatag' target="_blank" href="#"> <strong>  PhD Mass Communication </strong> <p>3 years</p> </a> </li>
+<li> <a className='journlismatag'  target="_blank" href="https://shooliniuniversity.com/ba-in-journalism-and-mass-communication"> <strong>  BA Journalism & Mass Communication </strong>
+<p> (Event Management, Advertising & PR)</p></a> </li>
+<li> <a  className='journlismatag' target="_blank" href="https://shooliniuniversity.com/ma-in-journalism"> <strong>  MA Journalism & Mass Communication  </strong>  </a> </li>
+<li> <a className='journlismatag' target="_blank" href="https://shooliniuniversity.com/phd-journalism"> <strong>  PhD Journalism  </strong> </a> </li>
+<li> <a className='journlismatag' target="_blank" href="https://shooliniuniversity.com/phd-mass-communication"> <strong>  PhD Mass Communication </strong>  </a> </li>
 
 </ul>
 </div> 
