@@ -697,124 +697,127 @@ const Mbas = () => {
     <span> Independent Producer, <strong className='hightlightprofile'>ex-YRF & Phantom Films</strong> </span>
     </div>
     </div> 
- 
-     
- 
-
-     
- 
- 
- 
- 
- 
-           
- 
- 
-                </div>
+   </div>
 
  </div>
 </section>
 
 
+
+
+
+
+
                         <section id="Stories" className="student-voices">
                             <div className="container">
-                            <div class="pagetitle text-center mb-4"><h2> Our Students Who Have Gone Places...Literally </h2></div>
+                            <div class="pagetitle text-center mb-4"><h2> Shoolini Media Students Making an Impact </h2></div>
 
                                 <div className="row">
                                 <Slider {...stories}> 
 
                                 <div className="col-md-4">
-                                    <a target="_blank" href="https://shooliniuniversity.com/blog/meet-the-next-gen-biotechnologists-ready-to-conquer-the-world/"> 
+                
                                         <div className="cardImage">
-                                            <img className="img-responsive" src="https://shooliniuniversity.com/blog/wp-content/uploads/2023/07/BTech-Biotechnology-Graduates.png" />
+                                            <img className="img-responsive"  src="/assets/images/smc/Vishakha Thakur.jpeg"  />
                                         </div>
                                         <div className="card-box">
-                                            <h3 className="title-default"> Meet the Next-gen Biotechnologists ready to Conquer the World </h3>
+                                            <h3 className="title-default"> Vishakha Thakur</h3>
 
-                                            <p className="text-18"> In a world full of dreams and determination, four exceptional individuals emerge… ready to script their success stories. Meet Shubhang Jha, Aditya Misra, Aakash K, and Geetika Khattri, talented BTech Biotechnology graduates from Shoolini University who are now ready to revolutionise the landscape of biotechnology and shape a brighter future for humanity.
+                                            <p className="text-18"> 3.0 TV
+                                            The experienced faculty guided and supported me every step of the way, bringing out the best in me. I applied my newfound skills during my paid internship and got rave reviews. Thanks to the networking and professional development at Shoolini, I got placed at 3.0 TV in Mumbai.
                                             </p>
                                         </div>
-                                        </a>
+                                        
                                     </div>
                                  
-
                                     <div className="col-md-4">
-                                        <a target="_blank" href="https://shooliniuniversity.com/blog/transforming-journey-of-bapin/"> 
-                                        <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/bapin-shoolini.jpg" />
-                                        </div>
-                                        <div className="card-box">
-                                            <h3 className="title-default">Nurtured at Shoolini: Transforming Journey of Bapin </h3>
-
-                                            <p className="text-18"> “A research-focused university and the esteemed faculty list were the compelling factors that drew me to Shoolini University for my Master’s degree. From the very beginning, I was immersed in a stimulating learning environment, where engaging lectures and meaningful interactions with the faculty became an integral part of my educational journey,” 
-                                            </p>
-                                        </div>
-                                        </a>
-                                    </div>
-
-                                    <div className="col-md-4">
-                                        <a target="_blank"  href="https://shooliniuniversity.com/blog/srp-student-prekshi-among-top-10-pitchers-at-iit/"> 
-                                        <div className="cardImage">
-                                            <img className="img-responsive" src="https://shooliniuniversity.com/blog/wp-content/uploads/2023/08/Prekshi-SRP-Student-Shoolini.jpg" />
-                                        </div>
-                                        <div className="card-box">
-                                            <h3 className="title-default"> SRP Student Prekshi Among Top 10 Pitchers at IIT
- </h3>
-
-                                            <p className="text-18"> This is a story of the determination and creativity… of Prekshi Sharma… a first-year BTech SRP student at Shoolini University. Making her mark at the ‘Carbon Zero Challenge 2023’ held at IIT Madras, she emerged as one of the top 10 pitchers among a competitive group of IITians, PhD scholars, and tech enthusiasts across India. Her idea bridges innovation and agriculture.
-                                            </p>
-                                        </div>
-                                        </a>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/Arkansas.jpeg" />
-                                        </div>
-                                        <div className="card-box">
-                                            <h3 className="title-default"> Student Exchange at the University of Arkansas, USA </h3>
-
-                                            <p className="text-18"> Shoolini collaborates with the University of Arkansas for exchange programs and joint research. Six of our students spent 6+ months in Arkansas university labs. Dr Stephenson from Arkansas also visited Shoolini on Fulbright fellowship. 
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-md-4">
-                                        <a target="_blank" href="https://shooliniuniversity.com/blog/mba-2022/"> 
-                                    <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/aman.jpg" />
-                                        </div>
-                                        <div className="card-box">
-                                            <h3 className="title-default"> Dr Amanpreet wins International Young Water Fellowship </h3>
-
-                                            <p className="text-18"> Dr Amanpreet Kaur Virk (Alumni, PhD Biotechnology, 2019) is the only Indian to win the Brussels, Belgium-based Young Water Fellowship in 2019. She achieved this for her work on Moringa-based water purification systems. 
-                                            </p>
-                                        </div>
-                                        </a>
-                                    </div>
-
-                                 
-
-                                    <div className="col-md-4">
-                                        <a target="_blank" href="https://shooliniuniversity.com/blog/from-shoolini-to-johns-hopkins/"> 
-                                    <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/Raghav-Rastogi.jpeg" />
-                                        </div>
-                                        <div className="card-box">
                                    
-                                            <h3 className="title-default">From Shoolini to Johns Hopkins </h3>
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Gautam.jpeg"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> Gautam Sukhija (BAJMC)</h3>
 
-                                            <p className="text-18"> In a momentous achievement, Raghav Rastogi, a BTech Biotechnology Summit Research Program (SRP) student of Shoolini University has been accepted into an advanced Master’s program at Johns Hopkins University in the United States.Being America’s first research university, admission to a master’s program at Johns Hopkins University is highly competitive. 
+                                            <p className="text-18"> 
+                                            I always wanted to pursue journalism, but I was not that confident. With continuous support, I have grown from a shy student to leading the Literature and Anchoring Clubs. Shoolini has given me the confidence to embrace the spotlight and I invite others to join this enchanting journey. I applied my newfound skills during my paid internship and got rave reviews. Thanks to the networking and professional development at Shoolini, I got placed at 3.0 TV in Mumbai.
                                             </p>
                                         </div>
-                                        </a>
+                                        
                                     </div>
 
 
+                                    <div className="col-md-4">
+                                   
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Arushi mishra.png"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> Aarushi Mishra (BAJMC)</h3>
+
+                                            <p className="text-18"> 
+                                            I take pride in telling the world that I am a student of Shoolini and have been mentored by veteran journalist Vipin Pubby. I am grateful to him for making a confident journalist out of me. Thanks to the practical training, I was placed at WebBila as Senior Marketing Executive.
+                                            </p>
+                                        </div>
+                                    
+                                    </div>
+                                
+
+                                
+                                    <div className="col-md-4">
+                                    
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Manan.jpeg"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> 
+                                            Manan Monga, JMC​</h3>
+
+                                            <p className="text-18"> 
+                                            The comprehensive curriculum, experienced faculty with industry experience, and practical learning opportunities have shaped my career and helped my personal growth. The university's state-of-the-art facilities, industry visits, and international collaborations provided a well-rounded education. Thank you, Shoolini University for an exceptional education.​
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+
+
+                                    <div className="col-md-4">
+                                 
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Saket.jpeg"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> 
+                                            Saket Saurabh​</h3>
+
+                                            <p className="text-18"> 
+                                            Photographing a landscape, person & event is something that has always stuck with me! And I am thankful for all the practical experiences I gained from Shoolini during my program & internship.
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+
+
+                                    
+                                    <div className="col-md-4">
+                                  
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Nihit.jpeg"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> 
+                                            Nihit (BAJMC)​</h3>
+
+                                            <p className="text-18"> 
+                                            Studying journalism at Shoolini has been an incredible experience. I am humbled to have the chance to shape the narrative and leave my mark on the world, one frame and one post at a time. I feel prepared and confident about my skills in photography & filmmaking.
+                                            </p>
+                                        </div>
+                                    
+                                    </div>
                                     </Slider>
                                 </div>
                                 
                             </div>
-                        </section>
+                        </section> 
 
  
                 
@@ -1000,7 +1003,7 @@ const Mbas = () => {
 
                                     <div className="col-md-6 pl-md-0">
                                         <div className="voices-image position-relative">
-                                            <Image src="/assets/images/collabs.jpg" width={558} className="img-responsive" height={420} />
+                                            <Image src="/assets/images/smc/jsmedia.png" width={600} className="img-responsive" height={600} />
 
                                         </div>
                                     </div>

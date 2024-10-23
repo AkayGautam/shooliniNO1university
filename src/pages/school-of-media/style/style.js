@@ -483,7 +483,7 @@ h3.title-red {
 
 .courselist ul li a {
     display: inline-flex;
-    padding: 5px 10px;
+    padding: 0px 10px;
     width: 100%;
     font-size: 15px;
     height: 100%;
@@ -1649,10 +1649,6 @@ a.journlismatag {
     opacity: 0;
     visibility: hidden;
 }
-
-
-
-
 
 
 
