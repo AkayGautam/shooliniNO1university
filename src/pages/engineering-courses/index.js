@@ -180,27 +180,17 @@ const Engineering = (props) => {
             <section id="shooliniMBA" className="heroBanner bg-white">
               <div className="container">
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-6 d-flex align-items-center">
                     <div className="leftCatrd pt-4">
-
-                    <p className="text-left py-0">
-                          <Image
-                            src="/assets/images/The_logoc.png"
-                            alt="THE Logo"
-                            width={130}
-                            height={60}
-                          />
-                        </p>
-
-                      <p className="h2 mb-0">
+ <p className="h2 pt-3 mb-0">
                         {" "}
                         <span> LEADING THE WAY  </span>  
                       </p>
-                      <div className="noretypeS">
-                       <span className="text-red"> NO.1 PRIVATE </span> <br/>
+                      <h1 className="noretypeS"> BEST
+                       <span className="text-red"> ENGINEERING </span> <br/>
                        UNIVERSITY IN INDIA
                      
-                    <p className="text-left mt-3 py-0">
+                    {/* <p className="text-left mt-3 py-0">
                           <Image
                             src="/assets/images/for.png"
                             alt="THE Logo"
@@ -208,9 +198,9 @@ const Engineering = (props) => {
                             height={58}
                           />
                         </p>
-                        <h2 className="L_text"> Engineering </h2>
-                      </div>
-
+                        <h2 className="L_text"> Engineering </h2> */}
+                      </h1>
+                        <p> From AI to Civil, explore diverse engineering courses to shape your future!</p>
                       <div className="forMobile d-md-none">
                         <Image
                           src="/assets/images/mobile-banner.jpg"
@@ -872,7 +862,7 @@ const Engineering = (props) => {
 
 
 
-                          <section className="testimonials">
+                          {/* <section className="testimonials">
                           <div className="col-md-12  order-xs-5">
                                     <div
                                       id="hiring"
@@ -1165,7 +1155,7 @@ const Engineering = (props) => {
                                       </div>
                                     </div>
                                   </div>
-                          </section>
+                          </section> */}
 
 
 

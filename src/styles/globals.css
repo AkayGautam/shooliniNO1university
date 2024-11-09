@@ -27,7 +27,6 @@ a {
   font:100%;
 }
 .all_p_justifie table td p {
-  text-align: justify;
   white-space: pre-line;
 }
 h5.formName {
@@ -2408,4 +2407,15 @@ div#courseID_745 {
 .max-wid-visions li, .max-wid-visions p, .max-wid-visions p span {
   font-size: 14px;
   color: #000 !important;
+}
+
+
+body#pageid-634 .titleAdjust p div a {
+  background: transparent;
+  padding: 0;
+  color: #4260a2;
+  font-weight: 500;
+}
+body#pageid-634 .admidsionProcess .titleAdjust table span {
+  word-break: break-all !important;
 }

@@ -192,12 +192,12 @@ Encouraging the students to work hard, he emphasised that hard work is even more
 
                 <ul className="whyUs text-white pl-0">
                   <li>1500+ Patents Filed </li>
-                  <li> H-index {">"} 115</li>
+                  <li> H-index {">"} 137</li>
                   <li>Field Weighted Citation Impact (FWCI) 2.22 </li>
                   <li>No.1 In India in Citations Per Paper </li>
                   <li> 104+ State-of-the-Art Laboratories </li>
                   <li> 11 Centres of Excellence </li>
-                  <li> 13 Shoolini Researchers among Top 2% Scientists </li>
+                  <li> 19 Shoolini Researchers among Top 2% Scientists </li>
                 </ul>
                 <a
                   target="_blank"
