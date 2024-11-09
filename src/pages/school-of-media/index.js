@@ -129,14 +129,14 @@ const Mbas = () => {
 
                     </Modal>
 
-                   
+                     
                     <main className="innerBody">
                         <section id="shooliniMBA" className="heroBanner">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-8 centerDiv">
                                         <div className="leftCatd">
-                                        <h1 className="mb-0"> <span> India's first Undergrad</span> <br /> Research Program </h1>
+                                        <h1 className="mb-0"> <span>  Top Media Experts,</span> <br /> <span>Real-World Projects, </span> <br/>Future-Ready Careers</h1>
                                            
                                             <div className="noretype">
                                                 {/* <p className="border-right-1"> Be an SRP Fellow </p> */}
@@ -252,17 +252,18 @@ const Mbas = () => {
 
                                                                 <div className="pagetitle text-center mb-4  ">
                                                                     <div className="pagetitle text-center">
-                                                                        <h2> Summit Research Program </h2>
+                                                                        <h2> Your Media Journey Begins at Shoolini</h2>
                                                                     </div>
 
 
 
                                                                     <div className="mt-3">
                                                                         <p>
-                                                                        With a proven high-impact research model, Shoolini <strong> empowers students  </strong> with research from the first year itself. The Fully Residential Program provides first-hand exposure to high-quality research in <strong>  state-of-the-art </strong>global research environments, experience with writing and publishing papers, <strong>personal mentorship</strong> in filing patents, and interaction with acclaimed research practitioners/experts from around the world.   
+                                                                        With the rapid growth of digital media and the constant flow of information, there is a growing need for journalists who understand the ins and outs of balanced news and new journalistic tools. <strong>Addressing this demand, Shoolini University's School of Media & Communications provides students with industry-leading expertise and practical insights.</strong>
                                                                         </p>
                                                                         <p>
-                                                                        With your bachelor's program, SRP incorporates a research-intensive curriculum designed by the Top 2% Scientists of the World (Stanford University 2021). This gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. It is a transformational program that provides cutting-edge research training and develops scientific temper among young minds.
+                                                                        The faculty also comprises experts from various new-age mediums such as radio, films, television, and digital media. Visiting faculty from diverse communication fields, including journalism, advertising, PR, photography, graphic design, and corporate communication, regularly interact with students. Graduates receive hands-on training through projects such as the fortnightly broadsheet newspapers in English and Hindi, scripting and anchoring TV bulletins, and producing radio shows.
+
                                                                             </p>
                                                                       
 
@@ -288,7 +289,7 @@ const Mbas = () => {
                                                                     <div className="col-md-6 pl-md-0">
                                                                         <div className="card-box">
 
-                                                                            <h3 className=" text-dark"> Accreditations {'&'} Rankings </h3>
+                                                                            <h3 className=" text-dark"> Real-Life Media Experience on Campus</h3>
 
                                                                             <p> India’s No.1 Research University as per QS Asian Rankings 2024, Shoolini has consistently been ranked among the leading institutes of higher education. 
  </p>
@@ -298,17 +299,17 @@ const Mbas = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/logo3.jpg"
-                                                                                            width={80}
+                                                                                       src="/assets/images/smc/shoolinilnew.png"
+                                                                                            width={128}
                                                                                             className="img-responsive"
-                                                                                            height={81}
+                                                                                            height={42}
                                                                                         />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> Approved by UGC </h4>
-                                                                                        <p> University Grants Commission
+                                                                                        <h4> Shoolini Newsletter</h4>
+                                                                                        <p> (English)
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -327,8 +328,8 @@ const Mbas = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> NAAC Accreditation  </h4>
-                                                                                        <p> National Assessment And Accreditation Council
+                                                                                        <h4> Shoolini Patrika</h4>
+                                                                                        <p> (Hindi)
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -337,42 +338,71 @@ const Mbas = () => {
                                                                             <div className="row my-4">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
-                                                                                        <Image
-                                                                                            src="/assets/images/qs-rankingNew-2024.png"
+                                                                                      <a     href="https://youtube.com/@shoolinitv8154?feature=shared" >  <Image
+                                                                                            src="/assets/images/smc/shooliniTv-logo.jpg" 
                                                                                             width={100}
-                                                                                            height={36}
-                                                                                            className="img-responsive"
-                                                                                        />
+                                                                                            height={100}
+                                                                                            className="img-responsive" 
+                                                                                        /></a>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> No.1 in India No.5 in Asia </h4>
-                                                                                        <p> Citations Per Paper
+                                                                                        <h4> Shoolini TV</h4>
+                                                                                        <p> 
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
+
+
+
                                                                             </div>
+
+
                                                                             <div className="row my-4">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
-                                                                                        <Image
-                                                                                            src="/assets/images/Indyjskie.png"
+                                                                                       <a href="https://youtube.com/@shoolinitv8154?feature=shared"><Image
+                                                                                                       src="/assets/images/smc/shooliniSavaad.png"
                                                                                             width={150}
                                                                                             className="img-responsive"
-                                                                                            height={60}
-                                                                                        />
+                                                                                            height={80}
+                                                                                        /></a> 
 
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> No. 3 in India </h4>
-                                                                                        <p>in Patent Filing
+                                                                                        <h4> Shoolini Samvaad  </h4>
+                                                                                        <p>
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+
+
+
+
+                                                                            <div className="row my-4">
+                                                                                <div className="col-3">
+                                                                                    <div className="sb_logo">
+                                                                                     <a href="https://open.spotify.com/show/2K8gy8K3BhhrDYtmnZNjcs?si=83efcd5facc84926">  <Image
+                                                                                                       src="/assets/images/smc/radioshoolini.jpeg"
+                                                                                            width={150}
+                                                                                            className="img-responsive"
+                                                                                            height={100}
+                                                                                        /></a> 
+
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div className="col-9">
+                                                                                    <div className="sb_text">
+                                                                                        <h4> Radio Shoolini </h4>
+                                                                                        <p>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>+
 
 
 
@@ -397,14 +427,15 @@ const Mbas = () => {
 
                                                                     <div className="col-md-6 mt-5">
                                                                         <div className="card-box">
-                                                                            <h3 className="title-default">Research-Driven Program That Drives Innovation {"&"} Makes You Industry-Ready  </h3> <br />
-                                                                            <p className="m-0"> Through SRP, Shoolini fosters scientific curiosity and encourages <strong> out-of-the-box thinking</strong>. Additionally, students are encouraged to innovate in the lab as well as provided <strong>startup workshops</strong> to turn their ideas into reality.  
-<br /><br />
-The faculty comprises highly experienced, research-oriented postdocs from top national and international institutions such as NIH USA, IISc, IIT, ISB. The program <strong> combines course work with research,</strong> starting from the first semester, preparing students for careers as professional biotechnologists, microbiologists, and future scientists.  
-<br /><br />
-The degree follows a <strong>one-student one-patent norm</strong> that is supported by <strong>104+ high-tech labs</strong>, a <strong>cancer research center</strong> and several <strong>research fellowships for UG</strong> students in government-funded projects. 
+                                                                            <h3 className="title-default">Real-World Media Exposure   </h3> 
+                                                                            <p className="m-0"> 
+                                                                            At the Shoolini School of Media, students get industry exposure through visits to newspaper offices, TV studios, and radio stations. These experiences give them a taste of the fast-paced newsroom environment, sharpening their practical skills and preparing them for the media landscape.
+</p>
 
+<br />
 
+<h3 className="title-default">Events and Fests  </h3> 
+<p className="m-0"> The annual <strong>Media Fest and Creators </strong> Fest organised gives students a chance to interact with top media professionals and showcase their own talent. These events feature panel discussions, workshops, and creative competitions, providing students with the opportunity to collaborate with peers and industry experts. It’s the perfect space to learn, network, and grow in the media world.
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -413,15 +444,16 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                                                         <div className="voices-image position-relative">
 
                                                                             <Image
-                                                                                src="/assets/images/sourabh.JPG"
+                                                                                src="/assets/images/smc/Vipin Pubby.jpeg"
                                                                                 width={548}
                                                                                 className="img-responsive"
                                                                                 height={543}
                                                                             />
                                                                             <div className="namedes">
-                                                                                <h4> Saurabh Kulshrestha</h4>
-                                                                                <h5> Dean (Research {"&"} Development) </h5>
-                                                                                <p> PhD Biosciences (Jamia Millia Islamia, New Delhi), Postdoc Assignments (University of Kentucky, USA {"&"} Max-Planck Institute for Plant Breeding Research Köln, Germany) </p>
+                                                                                <h4> Vipin Pubby </h4>
+                                                                                <h5>Veteran Journalist  </h5>
+                                                                                <p> Columnist with 45 years of experience ; Former Editor (The Indian Express)
+                                                                                </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -556,8 +588,8 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
 
                         <section>
                         <div className="container">
-                        <div class="pagetitle text-center mb-4"><h2>Why India's Top-ranked Students Choose SRP?  </h2></div>
- <div className="row">
+                        <div class="pagetitle text-center mb-4"><h2>Meet our Global Advisory Board </h2></div>
+ {/* <div className="row">
 
  <div className="column">
      <div className="card card-box">
@@ -607,196 +639,190 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
      </div>
    </div>
   
- </div>
+ </div> */}
+ 
+ <div class="row">
+    
+      
+
+
+   
+ <div class="col-md-4">
+ <div class=" globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Nishtha Anand.jpg"   width={300}  height={300}/>
+    <h3>Nishtha Shukla Anand</h3>
+    <span><strong className='hightlightprofile'>Ex-Reuters,</strong> India Today, Founder: TechThirsty.com & Pen Pundit Media, Trustee and Director, Shoolini University</span>
+    </div>
+    </div>  
+
+    <div class="col-md-4">
+ <div class="globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Misha Bajwa Chaudhary.jpg"   width={300} height={300}/>
+    <h3>Misha Bajwa Chaudhary</h3>
+    <span> News Presenter & Actor, <strong className='hightlightprofile'>ex-AajTak and India TodayN</strong></span>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+ <div class=" globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/kunal_nandwani.jpg"   width={300} height={300}/>
+    <h3>Kunal Nandwani</h3>
+    <span> Co-founder & CEO of<strong className='hightlightprofile'> uTrade </strong> & Founder - Chandigarh Angels Network</span>
+    </div>
+    </div>
+    </div>
+     
+    <div class="row mt-3">
+
+    <div class="col-md-4">
+ <div class="globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Gurpreet Tuthgur.jpg"   width={300} height={300}/>
+    <h3> Gurpreet Tathgur</h3>
+    <span> AVP Non-Fiction<strong className='hightlightprofile'> (Viacom 18)</strong></span>
+    </div>
+    </div>
+
+     <div class="col-md-4">
+ <div class="globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Namit Sharma.jpg"   width={300} height={300}/>
+    <h3>Namit Sharma</h3>
+    <span> Creator, Producer, Catalyst. CEO -<strong className='hightlightprofile'> Dreamers & Doers Co.</strong> </span>
+    </div>
+    </div>
+ 
+    <div class="col-md-4">
+ <div class="globalcard text-center">
+   <img className="imgcardimg" src="/assets/images/smc/Tanvi Gandhi.jpg"   width={300} height={300}/>
+    <h3>Tanvi Gandhi</h3>
+    <span> Independent Producer, <strong className='hightlightprofile'>ex-YRF & Phantom Films</strong> </span>
+    </div>
+    </div> 
+   </div>
+
  </div>
 </section>
 
 
+
+
+
+
+
                         <section id="Stories" className="student-voices">
                             <div className="container">
-                            <div class="pagetitle text-center mb-4"><h2> Our Students Who Have Gone Places...Literally </h2></div>
+                            <div class="pagetitle text-center mb-4"><h2> Shoolini Media Students Making an Impact </h2></div>
 
                                 <div className="row">
                                 <Slider {...stories}> 
 
                                 <div className="col-md-4">
-                                    <a target="_blank" href="https://shooliniuniversity.com/blog/meet-the-next-gen-biotechnologists-ready-to-conquer-the-world/"> 
+                
                                         <div className="cardImage">
-                                            <img className="img-responsive" src="https://shooliniuniversity.com/blog/wp-content/uploads/2023/07/BTech-Biotechnology-Graduates.png" />
+                                            <img className="img-responsive"  src="/assets/images/smc/Vishakha Thakur.jpeg"  />
                                         </div>
                                         <div className="card-box">
-                                            <h3 className="title-default"> Meet the Next-gen Biotechnologists ready to Conquer the World </h3>
+                                            <h3 className="title-default"> Vishakha Thakur</h3>
 
-                                            <p className="text-18"> In a world full of dreams and determination, four exceptional individuals emerge… ready to script their success stories. Meet Shubhang Jha, Aditya Misra, Aakash K, and Geetika Khattri, talented BTech Biotechnology graduates from Shoolini University who are now ready to revolutionise the landscape of biotechnology and shape a brighter future for humanity.
+                                            <p className="text-18"> 3.0 TV
+                                            The experienced faculty guided and supported me every step of the way, bringing out the best in me. I applied my newfound skills during my paid internship and got rave reviews. Thanks to the networking and professional development at Shoolini, I got placed at 3.0 TV in Mumbai.
                                             </p>
                                         </div>
-                                        </a>
+                                        
                                     </div>
                                  
-
                                     <div className="col-md-4">
-                                        <a target="_blank" href="https://shooliniuniversity.com/blog/transforming-journey-of-bapin/"> 
-                                        <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/bapin-shoolini.jpg" />
-                                        </div>
-                                        <div className="card-box">
-                                            <h3 className="title-default">Nurtured at Shoolini: Transforming Journey of Bapin </h3>
-
-                                            <p className="text-18"> “A research-focused university and the esteemed faculty list were the compelling factors that drew me to Shoolini University for my Master’s degree. From the very beginning, I was immersed in a stimulating learning environment, where engaging lectures and meaningful interactions with the faculty became an integral part of my educational journey,” 
-                                            </p>
-                                        </div>
-                                        </a>
-                                    </div>
-
-                                    <div className="col-md-4">
-                                        <a target="_blank"  href="https://shooliniuniversity.com/blog/srp-student-prekshi-among-top-10-pitchers-at-iit/"> 
-                                        <div className="cardImage">
-                                            <img className="img-responsive" src="https://shooliniuniversity.com/blog/wp-content/uploads/2023/08/Prekshi-SRP-Student-Shoolini.jpg" />
-                                        </div>
-                                        <div className="card-box">
-                                            <h3 className="title-default"> SRP Student Prekshi Among Top 10 Pitchers at IIT
- </h3>
-
-                                            <p className="text-18"> This is a story of the determination and creativity… of Prekshi Sharma… a first-year BTech SRP student at Shoolini University. Making her mark at the ‘Carbon Zero Challenge 2023’ held at IIT Madras, she emerged as one of the top 10 pitchers among a competitive group of IITians, PhD scholars, and tech enthusiasts across India. Her idea bridges innovation and agriculture.
-                                            </p>
-                                        </div>
-                                        </a>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/Arkansas.jpeg" />
-                                        </div>
-                                        <div className="card-box">
-                                            <h3 className="title-default"> Student Exchange at the University of Arkansas, USA </h3>
-
-                                            <p className="text-18"> Shoolini collaborates with the University of Arkansas for exchange programs and joint research. Six of our students spent 6+ months in Arkansas university labs. Dr Stephenson from Arkansas also visited Shoolini on Fulbright fellowship. 
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-md-4">
-                                        <a target="_blank" href="https://shooliniuniversity.com/blog/mba-2022/"> 
-                                    <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/aman.jpg" />
-                                        </div>
-                                        <div className="card-box">
-                                            <h3 className="title-default"> Dr Amanpreet wins International Young Water Fellowship </h3>
-
-                                            <p className="text-18"> Dr Amanpreet Kaur Virk (Alumni, PhD Biotechnology, 2019) is the only Indian to win the Brussels, Belgium-based Young Water Fellowship in 2019. She achieved this for her work on Moringa-based water purification systems. 
-                                            </p>
-                                        </div>
-                                        </a>
-                                    </div>
-
-                                 
-
-                                    <div className="col-md-4">
-                                        <a target="_blank" href="https://shooliniuniversity.com/blog/from-shoolini-to-johns-hopkins/"> 
-                                    <div className="cardImage">
-                                            <img className="img-responsive" src="assets/images/Raghav-Rastogi.jpeg" />
-                                        </div>
-                                        <div className="card-box">
                                    
-                                            <h3 className="title-default">From Shoolini to Johns Hopkins </h3>
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Gautam.jpeg"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> Gautam Sukhija (BAJMC)</h3>
 
-                                            <p className="text-18"> In a momentous achievement, Raghav Rastogi, a BTech Biotechnology Summit Research Program (SRP) student of Shoolini University has been accepted into an advanced Master’s program at Johns Hopkins University in the United States.Being America’s first research university, admission to a master’s program at Johns Hopkins University is highly competitive. 
+                                            <p className="text-18"> 
+                                            I always wanted to pursue journalism, but I was not that confident. With continuous support, I have grown from a shy student to leading the Literature and Anchoring Clubs. Shoolini has given me the confidence to embrace the spotlight and I invite others to join this enchanting journey. I applied my newfound skills during my paid internship and got rave reviews. Thanks to the networking and professional development at Shoolini, I got placed at 3.0 TV in Mumbai.
                                             </p>
                                         </div>
-                                        </a>
+                                        
                                     </div>
 
 
+                                    <div className="col-md-4">
+                                   
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Arushi mishra.png"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> Aarushi Mishra (BAJMC)</h3>
+
+                                            <p className="text-18"> 
+                                            I take pride in telling the world that I am a student of Shoolini and have been mentored by veteran journalist Vipin Pubby. I am grateful to him for making a confident journalist out of me. Thanks to the practical training, I was placed at WebBila as Senior Marketing Executive.
+                                            </p>
+                                        </div>
+                                    
+                                    </div>
+                                
+
+                                
+                                    <div className="col-md-4">
+                                    
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Manan.jpeg"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> 
+                                            Manan Monga, JMC​</h3>
+
+                                            <p className="text-18"> 
+                                            The comprehensive curriculum, experienced faculty with industry experience, and practical learning opportunities have shaped my career and helped my personal growth. The university's state-of-the-art facilities, industry visits, and international collaborations provided a well-rounded education. Thank you, Shoolini University for an exceptional education.​
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+
+
+                                    <div className="col-md-4">
+                                 
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Saket.jpeg"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> 
+                                            Saket Saurabh​</h3>
+
+                                            <p className="text-18"> 
+                                            Photographing a landscape, person & event is something that has always stuck with me! And I am thankful for all the practical experiences I gained from Shoolini during my program & internship.
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+
+
+                                    
+                                    <div className="col-md-4">
+                                  
+                                        <div className="cardImage">
+                                            <img className="img-responsive"  src="/assets/images/smc/Nihit.jpeg"  />
+                                        </div>
+                                        <div className="card-box">
+                                            <h3 className="title-default"> 
+                                            Nihit (BAJMC)​</h3>
+
+                                            <p className="text-18"> 
+                                            Studying journalism at Shoolini has been an incredible experience. I am humbled to have the chance to shape the narrative and leave my mark on the world, one frame and one post at a time. I feel prepared and confident about my skills in photography & filmmaking.
+                                            </p>
+                                        </div>
+                                    
+                                    </div>
                                     </Slider>
                                 </div>
                                 
                             </div>
-                        </section>
+                        </section> 
 
  
                 
 
-                        <section id="Abroad" className="student-voices">
-                            <div className="container">
-                            <div class="pagetitle text-center mb-4"><h2>International Collaborations  </h2>
-                          
-                            </div>
-                                <div className="row">
-
-                                <div className="col-md-6">
-                                        <div className="card-box">
-                                        <p className="mb-0"> Shoolini University has strong academic bonds with 250+ higher educational institutions in 28+ countries. Through meaningful collaborations, our faculty and students avail exchange opportunities in leading foreign universities under various scholarship programs.     </p>                     
-                                          
-                                            <div class="slide-track logosMax">
-                                                <div class="slides">
-                                                    <span>  <img src="/srp-lp/img/TMU_CoM_Logo.png" alt="" /></span>
-                                                </div>
-                                                <div class="slides">
-                                                    <span> 	<img src="/srp-lp/img/Uni_Napoli_512px.png" alt="" /></span>
-                                                </div>
-
-
-                                                <div class="slides">
-                                                    <span> 	<img src="/srp-lp/img/usa.png" alt="" /></span>
-                                                </div>
-
-                                                <div class="slides">
-                                                    <span> 	<img src="/srp-lp/img/nih.jpg" alt="" /></span>
-                                                </div>
-                                                <div class="slides">
-                                                    <span> <img src="/srp-lp/img/Gachonlogo.jpg" alt="" /></span>
-                                                </div>
-                                                <div class="slides">
-                                                    <span> 	<img src="/srp-lp/img/lu.jpg" alt="" /></span>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        </div>
-                                        <div className="col-md-6">
-                                        <div className="card-box twoPtwo">
-                                            <h3 className="title-default"> 2+2 Study Abroad Programs </h3>
-                                            <p> Study first 2 years at Shoolini University and final 2 years at a leading university abroad.   </p>
-                                                <div class="slide-track ">
-                                                <div class="slides">
-                                                    <img src="/srp-lp/img/mlogo.png" alt="" />
-                                                </div>
-                                                <div class="slides">
-                                                    <img src="/srp-lp/img/sheffield-hallam-university.png" alt="" />
-                                                </div>
-                                                <div class="slides">
-                                                    <img src="/srp-lp/img/TMU_CoM_Logo.png" alt="" />
-                                                </div>
-                                                <div class="slides">
-                                                    <img src="/srp-lp/img/University-of-Reading-Logo.png" alt="" />
-                                                </div>
-                                                <div class="slides">
-                                                    <img src="/srp-lp/img/WSU_logo.jpg" alt="" />
-                                                </div>
-                                                <div class="slides">
-                                                    <img src="/srp-lp/img/download.png" alt="" />
-                                                </div>
-                                                <div class="slides">
-                                                    <img src="/assets/images/images/melbourne.jpg" alt="" />
-                                                </div>
-
-
-                                            </div>
-
-
-                                        </div>
-
-                                    </div>
-
-                                    
-                          </div>
-                            </div>
-                        </section>
-
-
-
-
-                        <section id="faqs" className="student-voices">
+      <section id="faqs" className="student-voices">
                             <div className="container">
 
                                 <div className="row">
@@ -806,161 +832,108 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
 
                                         <div className="card-box">
                                             <h3 className="title-default">250+  <span> Hiring Partners </span></h3>
-                                            <p> <strong> Unlock Career Opportunities at India’s Top Companies. </strong> <br />
-                                            Join the Elite Ranks of our BTech (Biotech{" &"} Food Tech) Alumni Network. </p>
+                                            <p> <strong> Internships And Placements:</strong> <br />
+                                            Create Your Own Success Story </p>
 
 
                                             <div className="row">
 
                                             <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/CSE/Cogni.jpeg" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/ABP.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/nestle.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/1631353749-nes.jpg" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/News18 TV.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/Abbot.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/News Nation TV.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/Aishwarya.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/Punjab Kesari TV.png" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                </div>
+
+                                               
+
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/HT.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/Alchemist.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/Times of India.png" width={200} className="img-responsive" height={70} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/Altruist.png" width={200} className="img-responsive" height={70} />
+                                                        <Image src="/assets/images/smc/The Indian Express.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/biogentek.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className={isActive ? 'allLogoss row position-relative ' : null} style={{ display: "none" }}>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/Cremica.png" width={200} className="img-responsive" height={90} />
-
-                                                    </div>
-                                                </div>
-
-                                              
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/Oxigen.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/macro.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/Adfactor PR.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/thermo.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/Amar Ujala.jpg" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/PTCgroup.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/Patanjali.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/srl.png" width={200} className="img-responsive" height={70} />
-                                                    </div>
-                                                </div>
-
-
-
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/Sentiss.jpg" width={180} className="img-responsive" height={90} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-2 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/SatyamAuto.jpg" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/Verka.png" width={200} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/ZEON.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/Neptune.jpg" width={180} className="img-responsive" height={80} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/images/Panacea.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/Dainik Bhaskar.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/mcain.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/The Tribune.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/images/macro.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/i-Catchers PR.png" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/Bingo Media.png" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/fuzion.jpeg" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
 
-                                                </div>
+
+                                         
 
                                             </div>
 
@@ -973,7 +946,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                         </div>
 
 
-
+ 
                                     </div>
                                 </div>
                             </div>
@@ -987,7 +960,7 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                             <div className="container">
                                 <div className="row">
 
-                                    <div className="col-md-6 pr-md-0 align-centered">
+                                    {/* <div className="col-md-6 pr-md-0 align-centered">
                                         <div className="card-box ht-auto">
                                             <h3 className="title-default"> <span className="text-red"> Summit Research Program</span>: Join the League of Extraordinary Researchers  </h3>
                                           
@@ -1005,11 +978,32 @@ The degree follows a <strong>one-student one-patent norm</strong> that is suppor
                                             <div class="px-0 btn btn-grad-red"> <a target="_blank" href="https://admissions.shooliniuniversity.com/"  > Need Help? Talk to our Career Counsellor</a></div>
 
                                         </div>
-                                    </div>
+                                    </div> */}
+
+
+<div class="col-md-6">
+<div class="card-box">
+<h3 class="title-default"> <span class="text-red"> Get Industry-Ready with Media & Communications Programs</span></h3>
+<p> <strong>Shoolini University’s Media and Communications programs </strong>are created around hands-on learning, equipping students with practical skills that impact the media industry and beyond. Through live projects like newspapers, TV bulletins, and radio shows, students are ready for the fast-paced media landscape. Combined with expert mentorship and internships, these programs prepare graduates to shape the future of communication. </p>
+<div class="courselist">
+<ul class="p-0">
+<li> <a className='journlismatag'  target="_blank" href="https://shooliniuniversity.com/ba-in-journalism-and-mass-communication"> <strong>  BA Journalism & Mass Communication </strong>
+<p> (Event Management, Advertising & PR)</p></a> </li>
+<li> <a  className='journlismatag' target="_blank" href="https://shooliniuniversity.com/ma-in-journalism"> <strong>  MA Journalism & Mass Communication  </strong>  </a> </li>
+<li> <a className='journlismatag' target="_blank" href="https://shooliniuniversity.com/phd-journalism"> <strong>  PhD Journalism  </strong> </a> </li>
+<li> <a className='journlismatag' target="_blank" href="https://shooliniuniversity.com/phd-mass-communication"> <strong>  PhD Mass Communication </strong>  </a> </li>
+
+</ul>
+</div> 
+<div class="px-0 btn btn-grad-red"> 
+<a target="_blank" href="https://admissions.shooliniuniversity.com/"> Need Help? Talk to our Career Counsellor</a>
+ </div>
+ </div>
+ </div>
 
                                     <div className="col-md-6 pl-md-0">
                                         <div className="voices-image position-relative">
-                                            <Image src="/assets/images/collabs.jpg" width={558} className="img-responsive" height={420} />
+                                            <Image src="/assets/images/smc/jsmedia.png" width={600} className="img-responsive" height={600} />
 
                                         </div>
                                     </div>

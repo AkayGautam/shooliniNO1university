@@ -3,7 +3,7 @@ import { colors } from '../../../components/common/elements/elements'
 
 const Styless = styled.div`
 
-.ht-auto
+.ht-auto 
 {
     height:auto !important;
 }
@@ -208,7 +208,7 @@ section.rinakingSection {
     align-items: center;
 }
  .leftCatd h1 {
-    font-size: 58px;
+    font-size: 50px;
     font-weight: 800;
     color: #000;
     line-height: 1.3;
@@ -483,7 +483,7 @@ h3.title-red {
 
 .courselist ul li a {
     display: inline-flex;
-    padding: 5px 10px;
+    padding: 0px 10px;
     width: 100%;
     font-size: 15px;
     height: 100%;
@@ -500,8 +500,28 @@ h3.title-red {
     background-size: 100%;
     left: -12px;
     position: absolute;
+    top:10px !important;
 }
-
+    .globalcard {
+    height: 100%;
+}
+    .globalcard h3 {
+    font-size: 23px;
+    padding: 5px;
+}
+    strong.hightlightprofile {
+    color: red;
+    font-size: 20px;
+}
+.globalcard.globalcard.text-center {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+img.imgcardimg{
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
 .courselist ul li a:hover {
     background: linear-gradient(to right,#f63030 0%,#e33535 100%);
     color: #fff;
@@ -1445,6 +1465,10 @@ section#shooliniMBA {
     text-transform: uppercase;
     font-weight: 600
   }
+    }
+a.journlismatag {
+    display: block !important;
+}
 
   .open-frame,
   .open-frame:hover {
@@ -1625,10 +1649,6 @@ section#shooliniMBA {
     opacity: 0;
     visibility: hidden;
 }
-
-
-
-
 
 
 
