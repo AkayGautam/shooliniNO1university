@@ -39,7 +39,7 @@ const SliderDemo = () => {
     autoplay: true,
     speed: 500,
     autoplaySpeed: 3000,
-    slidesToShow: 8,
+    slidesToShow: 6,
     slidesToScroll: 1,
     cssEase: 'linear' ,
         responsive: [
@@ -192,9 +192,10 @@ const SliderDemo = () => {
           <div className="mainslidecard">
               <div className="slideContent text-center pt-md-5">
                   <h2 className="slideTitle"> Driven by Innovation {'&'} Creativity </h2>
-                  <p  className="slideInfo"> We redefine the future of education, empowering changemakers to lead! </p>
+                  {/* <p  className="slideInfo"> We redefine the future of education, empowering changemakers to lead! </p> */}
+                  <p className="slideInfo"> Fast-track your academic journey with the February 2025 Session! </p>
               </div>
-              <div className="slideSlickContent">
+              {/* <div className="slideSlickContent">
                   <div className="row m-0">
                   <Slider {...settings}>
                  
@@ -279,6 +280,75 @@ const SliderDemo = () => {
                          </Link> 
                 
                   </div>
+                    </Slider>
+                  </div> 
+              </div> */}
+
+<div className="slideSlickContent">
+                  <div className="row m-0">
+                  <Slider {...settings}>
+                 
+                  <div className="cols col-xs">
+                  <Link href="/b-tech-computer-science-engineering" className="schoolIcon">
+                            <div className="iconStyle hovicon effect-4 sub-b">
+                              <img src="assets/slide-icons/icon-biotech.png" />
+                            </div>
+                            <div className="iconTitle">
+                                <h5> CSE</h5>
+                            </div>
+                         </Link> 
+                  </div>  
+                  <div className="cols col-xs">
+                  <Link href="/master-of-business-administration-mba"  className="schoolIcon">
+                            <div className="iconStyle hovicon effect-4 sub-b">
+                              <img src="assets/slide-icons/icon-mba.png" />
+                            </div>
+                            <div className="iconTitle">
+                                <h5> MBA</h5>
+                            </div>
+                         </Link> 
+                  </div> 
+                  <div className="cols col-xs">
+                  <Link href="/school-of-biotechnology"  className="schoolIcon">
+                            <div className="iconStyle hovicon effect-4 sub-b">
+                              <img src="assets/slide-icons/icon-bio.png" />
+                            </div>
+                            <div className="iconTitle">
+                                <h5> Biotech </h5>
+                            </div>
+                         </Link> 
+                  </div> 
+                  <div className="cols col-xs">
+                  <Link href="/babsc-hons-with-specialisations">
+                            <div className="iconStyle hovicon effect-4 sub-b">
+                              <img src="assets/slide-icons/icon-psyco.png" />
+                            </div>
+                            <div className="iconTitle">
+                                <h5> Psychology</h5>
+                            </div>
+                         </Link> 
+                  </div> 
+                  <div className="cols col-xs">
+                  <Link href="/doctoral-programs">
+                            <div className="iconStyle hovicon effect-4 sub-b">
+                              <img src="assets/slide-icons/icon-research.png" />
+                            </div>
+                            <div className="iconTitle">
+                                <h5> PhD </h5>
+                            </div>
+                         </Link> 
+                  </div> 
+                  <div className="cols col-xs">
+                  <Link href="/llb"  className="schoolIcon">
+                            <div className="iconStyle hovicon effect-4 sub-b">
+                              <img src="assets/slide-icons/icon-law.png" />
+                            </div>
+                            <div className="iconTitle">
+                                <h5> LLB </h5>
+                            </div>
+                         </Link> 
+                  </div> 
+              
                     </Slider>
                   </div> 
               </div>

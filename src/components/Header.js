@@ -146,7 +146,7 @@ const Header = () => {
       </Dialog>
 
 
- <section className="marText"> 
+ {/* <section className="marText"> 
       <marquee className="marquee">
   <div className="marquee--inner">
     <span>
@@ -156,7 +156,7 @@ const Header = () => {
   </div> 
 </marquee>
  
-</section> 
+</section>  */}
 
 
       <div className={isActive ? 'bg-salmon2 sticky-icon showcase' : 'bg-salmon2 sticky-icon'} >

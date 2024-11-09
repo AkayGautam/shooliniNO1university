@@ -1785,7 +1785,10 @@ section.hreSlider:after {
   }
 } 
 
-
+.slideSlickContent {
+  max-width: 980px;
+  margin: 40px auto;
+}
 
 
 `

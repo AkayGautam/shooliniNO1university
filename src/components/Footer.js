@@ -71,7 +71,7 @@ const Footer = () => {
     <>
       <Styles>
         <footer className="footer1">
-          {/* <div className="notifications position-relative">
+          <div className="notifications position-relative">
          
            <div onClick={handleClick} className="parent">
               <span> <FaBell /> </span>
@@ -80,14 +80,13 @@ const Footer = () => {
 
             <div className={notification ? "note_hide3 not_card" : "footer_show not_card"}>
               <div className="shadowNotification">
-              <h6 className="text-white m-0">Shoolini Ranks High with 20 Scientists in Stanford University’s Top 2% List
-</h6>
+              <h6 className="text-white m-0">February 2025 Admissions Open</h6>
                
-                  <Link href="https://shooliniuniversity.com/news/shoolini-ranks-high-with-20-scientists-in-stanfords-top-2?utm_source=organic&utm_medium=websiteticker&utm_campaign=20scientiststop2" className="reg-btn">  Apply Now    </Link>
+                  <Link target="_blank" href="https://admissions.shooliniuniversity.com/" className="reg-btn">  Apply Now    </Link>
             
               </div>
             </div>
-          </div> */}
+          </div>
 
 
 

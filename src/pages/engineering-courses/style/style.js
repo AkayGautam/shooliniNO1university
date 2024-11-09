@@ -7,7 +7,7 @@ const Styless = styled.div`
 .noretypeS {
     font-size: 48px;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 900;
     margin: 15px 0;
     display: block;
     font-family: 'Poppins';

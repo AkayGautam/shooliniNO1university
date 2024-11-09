@@ -308,7 +308,7 @@ const Mbas = () => {
                                                 </div>
                                                 <div className="col-3">
                                                     <div className="placeVal">
-                                                        <h3><strong>  {'>'}115 {'+'}  </strong> <br /> H-Index  </h3>
+                                                        <h3><strong>  {'>'}137  </strong> <br /> H-Index  </h3>
                                                     </div>
                                                 </div>
                                                 <div className="col-5">
@@ -386,7 +386,7 @@ const Mbas = () => {
                                                                         With a proven high-impact research model, Shoolini <strong> empowers students  </strong> with research from the first year itself. The Fully Residential Program provides first-hand exposure to high-quality research in <strong>  state-of-the-art </strong>global research environments, experience with writing and publishing papers, <strong>personal mentorship</strong> in filing patents, and interaction with acclaimed research practitioners/experts from around the world.   
                                                                         </p>
                                                                         <p>
-                                                                        With your bachelor's program, SRP incorporates a research-intensive curriculum designed by the Top 2% Scientists of the World (Stanford University 2021). This gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. It is a transformational program that provides cutting-edge research training and develops scientific temper among young minds.
+                                                                        With your bachelor's program, SRP incorporates a research-intensive curriculum designed by the Top 2% Scientists of the World (Stanford University 2023). This gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. It is a transformational program that provides cutting-edge research training and develops scientific temper among young minds.
                                                                             </p>
                                                                       
 
@@ -418,7 +418,7 @@ const Mbas = () => {
 
                                                                             <h3 className=" text-dark"> Accreditations {'&'} Rankings </h3>
 
-                                                                            <p> India’s No.1 Research University as per QS Asian Rankings 2024, Shoolini has consistently been ranked among the leading institutes of higher education. 
+                                                                            <p> India’s No.1 Research University as per QS Asian Rankings 2025, Shoolini has consistently been ranked among the leading institutes of higher education. 
  </p>
 
 
@@ -466,7 +466,7 @@ const Mbas = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/qs-rankingNew-2024.png"
+                                                                                            src="/assets/images/qsw.png"
                                                                                             width={100}
                                                                                             height={36}
                                                                                             className="img-responsive"
@@ -475,7 +475,7 @@ const Mbas = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> No.1 in India No.5 in Asia </h4>
+                                                                                        <h4> No.1 in India </h4>
                                                                                         <p> Citations Per Paper
                                                                                         </p>
                                                                                     </div>
