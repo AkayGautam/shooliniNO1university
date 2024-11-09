@@ -19,6 +19,10 @@ const nextConfig = {
         destination: "/gmb/index.html",
       },
       {
+        source: "/apply-feb-2025",
+        destination: "/apply-feb2025/index.html",
+      }, 
+      {
         source: "/apply",
         destination: "/apply/index.html",
       },
