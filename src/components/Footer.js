@@ -80,9 +80,9 @@ const Footer = () => {
 
             <div className={notification ? "note_hide3 not_card" : "footer_show not_card"}>
               <div className="shadowNotification">
-              <h6 className="text-white m-0">February 2025 Admissions Open</h6>
+              <h6 className="text-white m-0">India's No.1 Private University is now NAAC A+</h6>
                
-                  <Link target="_blank" href="https://admissions.shooliniuniversity.com/" className="reg-btn">  Apply Now    </Link>
+                  <Link target="_blank" href="https://shooliniuniversity.com/apply-feb-2025" className="reg-btn">  Apply Now    </Link>
             
               </div>
             </div>

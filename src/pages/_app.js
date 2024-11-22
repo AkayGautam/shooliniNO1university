@@ -43,6 +43,8 @@ export default function App({ Component, pageProps, metric }) {
     }
   }
 
+  
+  
 
   return (
     <>
@@ -50,6 +52,8 @@ export default function App({ Component, pageProps, metric }) {
         <link rel="canonical" href={canonicalUrl} />
         <link rel="shortcut icon" href="/favicon.png" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(allSchemaData) }} />
+
+      
 
       </Head>
       <SSRProvider>

@@ -72,7 +72,7 @@ const ShooliniAdmission = () => {
                   <div className="row">
                     <div className="col-lg-12 col-md-12">
                       <div className="section-title">
-                        <h3>Admissions Open 2024</h3>
+                        <h3>Admissions Open 2025</h3>
                         <p>
                           {' '}
                           Located in Kasauli Hills, just 90km from the Chandigarh Airport, Shoolini University is India's No.1 Private University (Times Higher Education World University Rankings 2024). This dynamic new-age university has state-of-the-art infrastructure and follows a research-based model. Shoolini provides high-impact, high-quality education to students who excel in their chosen area of study. Shoolini university is UGC Approved & ISO Certified 9001:2008.
@@ -185,7 +185,7 @@ const ShooliniAdmission = () => {
                       Once we receive the application, our admissions team will contact you regarding the eligibility criteria of your chosen course. All courses have different eligibility criteria. While some have entrance exams, others are based on interviews or regulatory requirements.{' '}
                     </li>
                     <li>
-                      Admissions for the year 2024 are currently underway. You are eligible to receive a firm offer of admission, even before Board exams, if you submit one of the following entrance exam scores:{' '}
+                      Admissions for the year 2025 are currently underway. You are eligible to receive a firm offer of admission, even before Board exams, if you submit one of the following entrance exam scores:{' '}
 
                       <ol>
                         <li> NEET/ JEE/ CLAT</li>
