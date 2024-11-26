@@ -1522,7 +1522,6 @@ section#shooliniMBA {
 }
  .slides img {
     width: 100%;
-    padding: 10px;
     border: 1px solid #f6f6f6;
 }
 
@@ -1551,14 +1550,14 @@ section#shooliniMBA {
 .logosMax .slides {
     display: flex;
     align-items: center;
-    padding: 7px;
+
     background: #fff;
     margin-bottom: 5px;
     justify-content: center;
 }
 .logosMax {
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 

@@ -1650,6 +1650,13 @@ a.journlismatag {
     visibility: hidden;
 }
 
+.sb_text a {
+    color: black;
+}
+.sb_text a:hover {
+    color: red !important;
+}
+
 
 
 
