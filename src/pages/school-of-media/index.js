@@ -298,17 +298,17 @@ const Mbas = () => {
                                                                             <div className="row my-4">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
-                                                                                        <Image
+                                                                                    <a href="https://shooliniuniversity.com/newsletter" >  <Image
                                                                                             src="/assets/images/smc/shoolinilnew.png"
                                                                                             width={128}
                                                                                             className="img-responsive"
                                                                                             height={42}
-                                                                                        />
+                                                                                        /> </a>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> Shoolini Newsletter</h4>
+                                                                                    <a href="https://shooliniuniversity.com/newsletter" >   <h4> Shoolini Newsletter</h4> </a>
                                                                                         <p> (English)
                                                                                         </p>
                                                                                     </div>
@@ -350,8 +350,9 @@ const Mbas = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> Shoolini TV</h4>
+                                                                                    <a href="https://youtube.com/@shoolinitv8154?feature=shared" >      <h4> Shoolini TV</h4> </a>
                                                                                         <p>
+                                                                                    (English) 
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -372,8 +373,8 @@ const Mbas = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> Shoolini Samvaad  </h4>
-                                                                                        <p>
+                                                                                    <a href="https://youtube.com/@shoolinitv8154?feature=shared">    <h4> Shoolini Samvaad  </h4> </a>
+                                                                                        <p> (Hindi)
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -396,8 +397,8 @@ const Mbas = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                        <h4> Radio Shoolini </h4>
-                                                                                        <p>
+                                                                                    <a href="https://open.spotify.com/show/2K8gy8K3BhhrDYtmnZNjcs?si=83efcd5facc84926">    <h4> Radio Shoolini </h4> </a>
+                                                                                        <p> (Bilingual)
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>

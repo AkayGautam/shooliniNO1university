@@ -278,6 +278,13 @@ const Mbas = () => {
                                                         width={220}
                                                         height={60}
                                                     />
+
+<Image
+                                                        src="/assets/images/NAAC A+.png"
+                                                        alt="THE Logo"
+                                                        width={96}
+                                                        height={90}
+                                                    />
                                                 </p>
                                             </div>
 
@@ -504,6 +511,26 @@ const Mbas = () => {
                                                                                 </div>
                                                                             </div>
 
+                                                                            <div class="slide-track logosMax">
+
+<div class="slides"><span>  <img src="/assets/images/logo1.png" alt=""/></span>
+</div>
+
+<div class="slides"><span>  <img src="/assets/images/logo2.png" alt=""/></span>
+</div>
+
+<div class="slides"><span>  <img src="/assets/images/logo3.png" alt=""/></span>
+</div>
+
+<div class="slides"><span>  <img src="/assets/images/log04.png" alt=""/></span>
+</div>
+
+
+<div class="slides"><span>  <img src="/assets/images/logo5.png" alt=""/></span>
+</div>
+
+</div>
+
 
 
                                                                         </div>
@@ -531,17 +558,17 @@ const Mbas = () => {
                                                                         <div className="card-box">
                                                                             <h3 className="title-default">SHOOLINI ADVANTAGE   </h3> <br />
                                                                             <ul>
-                                                                                <li> Faculty from top institutions like NCI, NIH, IISc, IITs, PEC, and Oxford  </li>
-                                                                                <li> 'One Student One Patent' policy, with over 1,500 patents filed  </li>
-                                                                                <li> 'Mission 130': 100% placements, with 30% in top global organisations  </li>
-                                                                                <li> Accredited by NAAC, approved by UGC, BCI, and PCI  </li>
-                                                                                <li> Awarded government grants, including PURSE, SERB, and DST FIST  </li>
-                                                                                <li> Home to Himachal's first MOFPI-funded commercial food testing lab  </li>
-                                                                                <li> IPR cell collaborates with DST, HPPIC, and SCSTE (Shimla)  </li>
-                                                                                <li> BIRAC Grant recipient for the region's first E-Yuva Centre  </li>
-                                                                                <li> In-house hotel establishments: Shoolini Chalet and Yogananda Ville  </li>
-                                                                                <li> 24/7 Yogananda Library, 104+ labs, and a Cancer Research Centre  </li>
-                                                                                <li> 250+ global partnerships with universities like Stanford and Melbourne  </li>
+                                                                                <li> Faculty from top institutions like NCI, NIH, IISc, IITs, PEC, and Oxford</li>
+                                                                               
+                                                                                <li> 'Mission 130': 100% placements, with 30% in top global organisations </li>
+                                                                                <li>Awarded government grants, including PURSE, SERB, and DST FIST  </li>
+                                                                               
+                                                                                <li>Home to Himachal's first MOFPI-funded commercial food testing lab </li>
+                                                                                <li> 24/7 Yogananda Library, 104+ labs, and a Cancer Research Centre </li>
+                                                                             
+                                                                                <li> Hosts XR and AI Research Centre and BOSCH Centre </li>
+                                                                                <li>Partnerships with ICT Academy, IBM, AWS, NASSCOM, KPMG, and others  </li>
+                                                                              
                                                                             </ul>
 
                                                                         </div>
@@ -551,16 +578,12 @@ const Mbas = () => {
                                                                         <div className="voices-image position-relative">
 
                                                                             <Image
-                                                                                src="/assets/images/sourabh.JPG"
-                                                                                width={548}
+                                                                                src="/assets/images/Aerial.jpg"
+                                                                                width={800}
                                                                                 className="img-responsive"
-                                                                                height={543}
+                                                                                height={600}
                                                                             />
-                                                                            <div className="namedes">
-                                                                                <h4> Saurabh Kulshrestha</h4>
-                                                                                <h5> Dean (Research {"&"} Development) </h5>
-                                                                                <p> PhD Biosciences (Jamia Millia Islamia, New Delhi), Postdoc Assignments (University of Kentucky, USA {"&"} Max-Planck Institute for Plant Breeding Research Köln, Germany) </p>
-                                                                            </div>
+                                                                          
                                                                         </div>
                                                                     </div>
 
@@ -583,7 +606,7 @@ const Mbas = () => {
                             </div>
                         </section>
 
-  
+{/*   
                         <section id="Abroad" className="student-voices">
                             <div className="container">
                                 <div class="pagetitle text-center mb-4"><h2>ACCREDITATIONS </h2>
@@ -597,7 +620,7 @@ const Mbas = () => {
 
                                             <div class="slide-track logosMax">
                                                 <div class="slides">
-                                                    <span>  <img src="/srp-lp/img/TMU_CoM_Logo.png" alt="" /></span>
+                                                    <span>  <img src="/assets/images/PCI.png" alt="" /></span>
                                                 </div>
                                                 <div class="slides">
                                                     <span> 	<img src="/srp-lp/img/Uni_Napoli_512px.png" alt="" /></span>
@@ -627,7 +650,7 @@ const Mbas = () => {
                                 </div>
                             </div>
                         </section>
-
+ */}
 
 
 
@@ -686,7 +709,7 @@ const Mbas = () => {
 
                                         <div className="card-box">
                                             <h3 className="title-default">250+  <span> Hiring Partners </span></h3>
-                                            <p> <strong> Unlock Career Opportunities at India’s Top Companies. </strong> <br />
+                                            <p> <strong> Unlock Career Opportunities at Leading Multinational Companies. </strong> <br />
                                                 Join the Elite Ranks of our BTech (Biotech{" &"} Food Tech) Alumni Network. </p>
 
 
