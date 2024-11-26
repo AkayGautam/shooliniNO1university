@@ -43,7 +43,7 @@ const Placements = () => {
                       program at the graduate level.
                     </p>
 
-                    <table className="table w-50 bg-white">
+                    {/* <table className="table w-50 bg-white">
   <thead className="thead-white">
     <tr>
       <th scope="col">Placements details for the year 2018-19 to 2022-23</th> 
@@ -51,7 +51,7 @@ const Placements = () => {
     </tr>
   </thead>
  
-</table>
+</table> */}
 
                   </div>
 

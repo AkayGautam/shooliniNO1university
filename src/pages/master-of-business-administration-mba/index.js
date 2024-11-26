@@ -481,7 +481,7 @@ const Mbas = (props) => {
                                       </strong>{" "}
                                       at Shoolini University is designed for the
                                       future leaders of the corporate world. In
-                                      the prestigious NIRF Rankings (2023), the
+                                      the prestigious NIRF Rankings, the
                                       Shoolini Management School figured among
                                       the 101-125 best Indian institutions.
                                       Shoolini offers an innovative and unique
