@@ -80,9 +80,10 @@ const Footer = () => {
 
             <div className={notification ? "note_hide3 not_card" : "footer_show not_card"}>
               <div className="shadowNotification">
-              <h6 className="text-white m-0">India's No.1 Private University is now NAAC A+</h6>
+              <h6 className="text-white m-0">February 2025 Admissions Open
+Apply Now!</h6>
                
-                  <Link target="_blank" href="https://shooliniuniversity.com/apply-feb-2025" className="reg-btn">  Apply Now    </Link>
+                  <Link target="_blank" href="https://shooliniuniversity.com/apply-feb-2025?utm_source=organic&utm_medium=Febadmissions&utm_campaign=admissions" className="reg-btn">  Apply Now    </Link>
             
               </div>
             </div>
@@ -245,7 +246,45 @@ const Footer = () => {
                       </h6>
 
                       <ul className={isActive ? "footer_show" : "footer_hide"}>
-                        {footerTwo?.map((data, index) => (
+  {footerTwo?.map((data, index) => {
+    // Update the link conditionally
+    if (data?.text === "What is the Academic Bank of Credits (ABC)?") {
+      data.link = "https://www.youtube.com/watch?v=9AQYf9wSHXg"; // Updated link
+    }
+
+    // Determine the final href for the link
+    const href =
+      data?.text === "What is the Academic Bank of Credits (ABC)?"
+        ? "https://www.youtube.com/watch?v=9AQYf9wSHXg"
+        : `https://shooliniuniversity.com/${data?.link.replace("/", "")}`;
+
+    return (
+      <li key={index}>
+        <a
+          target="_blank"
+          href={href} // Use the determined link
+          className="detailView neww"
+          rel="noreferrer"
+        >
+          <div key={index} value={data?.id}>
+            <span>{data?.text}</span>
+          </div>
+        </a>
+      </li>
+    );
+  })}
+</ul>
+
+
+                      {/* <ul className={isActive ? "footer_show" : "footer_hide"}>
+                        {footerTwo?.map((data, index) =>  {
+
+                            if (data?.text === "What is the Academic Bank of Credits (ABC)?") {
+                              data.link = "https:/www.youtube.com/watch?v=9AQYf9wSHXg"; // Change to Rankings URL
+                            }
+
+                      return (
+
                           <li key={index}>
                             {data.link.indexOf("http") > -1 ? (
                               <a
@@ -273,7 +312,7 @@ const Footer = () => {
                               </Link>
                             )}
 
-                            {data.text == "What is the Academic Bank of Credits (ABC)?" ? (
+                             {data.text == "What is the Academic Bank of Credits (ABC)?" ? (
                               <a target="_blank"
                                 href="https://www.youtube.com/watch?v=9AQYf9wSHXg&feature=youtu.be"
                                 className="detailView onShow"
@@ -286,8 +325,11 @@ const Footer = () => {
                             ) : null}
 
                           </li>
-                        ))}
-                      </ul>
+                      )
+                          }
+
+                        )}
+                      </ul> */}
                     </div>
 
                     <div className="col-md-3">

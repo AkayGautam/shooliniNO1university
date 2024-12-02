@@ -471,7 +471,7 @@ const StickyMenu = ({ links }) => {
                                       <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/phd-programmes">      PhD Programs        </Link>
                                     </li>
                                     <li className="nav-item navItem_unpos">
-                                      <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/National-Calls">      Research Grants    </Link>
+                                      <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com/national-Calls">      Research Grants    </Link>
                                     </li>
                                     <li className="nav-item navItem_unpos">
                                     <Link className="nav-link dropdown-toggle" target="_blank" href="https://research.shooliniuniversity.com//patents">  Patents   </Link>

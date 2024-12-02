@@ -1521,7 +1521,7 @@ section#shooliniMBA {
     height: auto;
 }
  .slides img {
-    width: 100%;
+    width:75%;
     border: 1px solid #f6f6f6;
 }
 
@@ -1624,7 +1624,10 @@ section#shooliniMBA {
     opacity: 0;
     visibility: hidden;
 }
-
+ul.text-light-weight li {
+    font-family: 'Poppins';
+    font-size: 15px;
+}
 
 
 

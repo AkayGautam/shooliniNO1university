@@ -44,15 +44,57 @@ const Ranking = () => {
            
             <Col lg="7" md="12">
               <div className="event-area vfvffv">
+              <div className="event-area dddd mt-0">
+                  <Row>
+                    <Col md="12">
+                      {Datas.eventDataListNew.map((eventData, i) => (
+                        <div className="event-box d-flex" key={i}>
+                          <div className="alignLefts_o">
+                            <div className="rankingYear pt-3">
+                              <p> 2024</p>
+                            </div>
+                            {eventData.ranking_logo && (
+                              <div className="rankingLogo pt-3">
+                                <Image
+                                  src={`/assets/images/shoolini-NAAC.jpg`}
+                                  alt="ranking_logo"
+                                  className="img-fluid"
+                                  width={200}
+                                  height={66}
+                                />
+                              </div>
+                            )}
+                          </div>
+                          <div className="alignLefts pt-2">
+                            <div className="event-details">
+                              <h6>
+                                <Link href="/news/shoolini-earns-prestigious-naac-a-accreditation?utm_source=organic&utm_medium=homepageranking_naac&utm_campaign=news">
+                              NAAC 2024
+                                </Link>
+                              </h6>
+                              <p>   Accredited A+</p>
+ 
+                            </div>
+                            <div className="seeMoreBtn">
+                              <Link href="/news/shoolini-earns-prestigious-naac-a-accreditation?utm_source=organic&utm_medium=homepageranking_naac&utm_campaign=news">
+                                See More
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </Col>
+                  </Row>
+                </div>
                 <Row>
                   <Col md="12">
                     {Datas.latestRanking.map((eventData, i) => (
-                      <div className="event-box pb-2 ddd  d-flex mb-3" key={i}>
+                      <div className="event-box pb-2 ddd  d-flex mb-1" key={i}>
                         <div className="alignLefts_o">
-                          <div className="rankingYear">
+                          <div className="rankingYear pt-2">
                             <p>{eventData.eventDate}</p>
                           </div>
-                          <div className="rankingLogo">
+                          <div className="rankingLogo pt-2">
                             <Image
                               src={`https://shooliniuniversity.com/assets/images/the-ranking.png`}
                               alt="ranking_logo"
@@ -63,7 +105,7 @@ const Ranking = () => {
                           </div>
                         </div>
                         <div className="alignLefts">
-                          <div className="event-details">
+                          <div className="event-details pt-2">
                             <h6>
                               <a href="https://shooliniuniversity.com/news/the-rankings-shoolini-tops-private-univs-again">
                                 {eventData.eventTitle}
@@ -79,26 +121,7 @@ const Ranking = () => {
                             <p style={{ margin: "0" }}>
                               {eventData.eventdesc2}
                             </p>
-
-                            {/* <p style={{ margin: "0" }}>
-                              <strong> {eventData.eventdesc4} </strong>
-                            </p>
-                            <p style={{ margin: "0" }}>
-                              {eventData.eventdesc5}
-                            </p>
-                            <p style={{ margin: "0" }}>
-                              <strong> {eventData.eventdesc6} </strong>{" "}
-                            </p>
-                            <p style={{ margin: "0" }}>
-                              {eventData.eventdesc7}
-                            </p> */}
-
-                            {/* <h6 className="mt-3 for-desktop">
-                              <a href="/news/shoolini-outshines-claims-top-spot-in-the-asia-rankings">  {eventData.eventdesc8} </a>
-                            </h6>
-                            <p className=" for-desktop" style={{ margin: "0" }}>
-                              {eventData.eventdesc9}
-                            </p> */}
+ 
                             <p className=" for-desktop" style={{ margin: "0" }}>
                               {eventData.eventdesc1a}
                             </p>
@@ -273,9 +296,9 @@ const Ranking = () => {
                             <p>  {eventData.eventdesc5}</p>
                             <p> <strong>  {eventData.eventdesc6} </strong></p>
                             <p>{eventData.eventdesc7}  </p> 
-                            <p>  {eventData.eventdesc2}</p>
+                            {/* <p>  {eventData.eventdesc2}</p>
                             <p>  {eventData.eventdesc3}</p>
-                            <p>  {eventData.eventdesc4}</p>
+                            <p>  {eventData.eventdesc4}</p> */}
                           </div>
                           <div className="seeMoreBtn">
                             <Link href="/news/shoolini-climbs-nirf-rankings-secures-70th-spot">
@@ -287,7 +310,7 @@ const Ranking = () => {
                     ))}
                   </Col>
                 </Row>
-
+               
               </div>
 
             </Col>

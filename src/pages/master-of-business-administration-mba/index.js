@@ -185,7 +185,7 @@ const Mbas = (props) => {
                                     <div className="card-box">
                                       <h4 className="title-default text-center mod-titlt">
                                         {" "}
-                                        Annual Tuition Fee 2024-25
+                                        Semester Fee 2025-26
                                       </h4>{" "}
                                 
 
@@ -199,8 +199,8 @@ const Mbas = (props) => {
                                       
                                       <th  className="text-left" scope="row">
                                       </th>
-                                    <th>Annual Fee (HP) </th>
-                                    <th>Annual Fee (Others) </th>
+                                    <th>Semester Fee (HP) </th>
+                                    <th>Semester Fee (Others) </th>
                                     <td>   </td>
                                    
                                   </tr>
@@ -208,8 +208,8 @@ const Mbas = (props) => {
                                       
                                           <th  className="text-left" scope="row">
                                           MBA Finance</th>
-                                        <td>Rs 3,50,000 </td>
-                                        <td>Rs 3,95,000 </td>
+                                        <td>Rs 1,77,000 </td>
+                                        <td>Rs 1,99,500 </td>
                                         <td> + Hostel </td>
                                        
                                       </tr>
@@ -217,28 +217,28 @@ const Mbas = (props) => {
                                       <tr>
                                      
                                         <th  className="text-left" scope="row">MBA Business Analytics</th>
-                                        <td>Rs 3,50,000 </td>
-                                        <td>Rs 3,95,000 </td>
+                                        <td>Rs  1,77,000 </td>
+                                        <td>Rs 1,99,500  </td>
                                         <td> + Hostel </td>
                                        
                                       </tr>
 
                                       <tr>
                                         <th  className="text-left" scope="row">MBA Marketing  </th>
-                                        <td>Rs 3,25,000 </td>
-                                        <td>Rs 3,80,000 </td>
+                                        <td>Rs 1,64,000 </td>
+                                        <td>Rs 1,92,000 </td>
                                         <td> + Hostel </td>
                                     </tr>
                                     <tr>
                                         <th  className="text-left" scope="row">MBA HR </th>
-                                        <td>Rs 3,25,000 </td>
-                                        <td>Rs 3,80,000 </td>
+                                        <td>Rs 1,64,000 </td>
+                                        <td>Rs 1,92,000 </td>
                                         <td> + Hostel </td>
                                     </tr>
                                     <tr>
                                         <th  className="text-left" scope="row">MBA Pharma {'&'} Healthcare  </th>
-                                        <td>Rs 3,25,000 </td>
-                                        <td>Rs 3,80,000 </td>
+                                        <td>Rs 1,64,000 </td>
+                                        <td>Rs 1,92,000 </td>
                                         <td> + Hostel </td>
                                     </tr>
 

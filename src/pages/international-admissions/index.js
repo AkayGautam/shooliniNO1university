@@ -8,7 +8,7 @@ import Image from "next/legacy/image";
 import Head from 'next/head'
 import Slider from 'react-slick'
 
-const Mbas = () => {
+const International = () => {
 
     useEffect(() => {
 
@@ -129,131 +129,10 @@ const Mbas = () => {
                         <Modal.Body>
                             <h2>Apply Now</h2>
                             <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
-
-                            {/* <div className="modals auto-off" id="demoModal">
-                            <div className="modal-dialog  modal-dialog-centered" role="document">
-                                <div className="modal-content">
-
-                                    <div className="container-fluid">
-
-
-                                        <div className="row">
-
-                                            <div className="col-md-12 text-center ">
-                                                <h2>Apply Now</h2>
-
-
-                                                <form method="post" enctype="multipart/form-data"
-                                                    action="https://web-in21.mxradon.com/t/FormTracker.aspx"
-                                                    className="form-card">
-                                                    <fieldset className="form-fieldset">
-
-
-                                                        <div className="form-element form-input">
-                                                            <input type='text' id='FirstName' name='FirstName'
-                                                                maxlength='100' autocomplete='off'
-                                                                required='required' className="form-element-field"
-                                                                placeholder="Name " />
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label"
-                                                                for='FirstName'>Enter Name *</label>
-                                                        </div>
-
-                                                        <div className="form-element form-input">
-                                                            <input type='email' id='EmailAddress'
-                                                                name='EmailAddress' maxlength='100'
-                                                                autocomplete='off' required='required'
-                                                                className="form-element-field" placeholder=" "
-                                                            />
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label"
-                                                                for='EmailAddress'>Enter Email Address *</label>
-
-                                                        </div>
-
-
-                                                        <div className="form-element form-input">
-                                                            <input id='Phone' name='Phone'
-                                                                maxlength='10' autocomplete='off'
-                                                                required='required' className="form-element-field"
-                                                                placeholder="Number" type="number" />
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label" for='Phone'>Enter
-                                                                Phone Number *</label>
-
-                                                        </div>
-
-                                                        <div className="form-element form-input">
-
-
-                                                            <select id='mx_Course' name='mx_Course' required='required' className="form-element-field" >
-                                                                <option value='' selected="true"></option>
-                                                                <option value='Undergraduate' >Undergraduate</option>
-                                                                <option value='Postgraduate' >Postgraduate</option>
-                                                                <option value='PhD' >PhD</option></select>
-
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label" for='mx_Course'>Select Course *</label>
-
-                                                        </div>
-
-                                                        <div className="form-element form-input">
-                                                            <input type='text' id='mx_Specialization' name='mx_Specialization' maxlength='100' autocomplete='off' required='required' className="form-element-field"
-                                                                placeholder="Specialization" />
-                                                            <div className="form-element-bar"></div>
-                                                            <label className="form-element-label" for='mx_Specialization'>Select Specialization *</label>
-
-                                                        </div>
-
-
-                                                    </fieldset>
-
-
-                                                    <div className="form-actions">
-                                                        <button id="form-submit-button" type="submit"
-                                                            className="form-btn">Apply</button>
-
-                                                    </div>
-
-                                                    <input type="hidden" name="MXHOrgCode" value="64755" />
-                                                    <input type="hidden" name="MXHLandingPageId"
-                                                        value="8b8c0c2f-5e98-11ed-a19b-0acc9d8b1d02" />
-                                                    <input type="hidden" name="MXHFormBehaviour" value="1" />
-                                                    <input type="hidden" name="MXHFormDataTransfer" value="0" />
-                                                    <input type="hidden" name="MXHRedirectUrl"
-                                                        value="https://shooliniuniversity.com/thankyou" />
-                                                    <input type="hidden" name="MXHAsc" value="5" /> <input
-                                                        type="hidden" name="MXHPageTitle" value="Enquire Now" />
-                                                    <input type="hidden" name="MXHOutputMessagePosition"
-                                                        value="0" />
-                                                    <input type="hidden" name="MXHIsExternallyUsed" value="1" />
-
-
-                                                </form>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-
-                        </Modal.Body>
+                          </Modal.Body>
 
                     </Modal>
-
-                    {/* <div className="sidebar-icons">
-                        <a target="_blank" href="tel:+917018007000" rel="noreferrer">
-                            <Image src="/assets/images/call.png" width={50} height={50} />
-                            <span> Talk to us</span><small> Mon-Fri | 9 AM to 5 PM</small>
-                        </a>
-                        <a href="https://admissions.shooliniuniversity.com/?utm_source=Organic&utm_medium=MbaTraffic2023&utm_campaign=MbaTraffic2023" target="_blank">
-                            <Image src="/assets/images/hands.png" width={50} height={50} />
-
-                            <span> Apply Now</span>
-                        </a>
-                    </div> */}
+ 
                     <main className="innerBody">
                         <section id="shooliniMBA" className="heroBanner">
                             <div className="container">
@@ -270,20 +149,21 @@ const Mbas = () => {
                                                         alt="THE Logo"
                                                         width={120}
                                                         height={54}
-                                                        className="mr-2 pr-3"
+                                                        className="mr-3 pr-3"
                                                     />
                                                     <Image
                                                         src="/assets/images/qs-rankingNew.png"
                                                         alt="THE Logo"
-                                                        width={220}
-                                                        height={60}
+                                                        width={180}
+                                                        height={50}
+                                                        className="mr-3 pr-3"
                                                     />
 
-<Image
-                                                        src="/assets/images/NAAC A+.png"
+                                                    <Image
+                                                        src="/assets/images/naac-sticker.png"
                                                         alt="THE Logo"
-                                                        width={96}
-                                                        height={90}
+                                                        width={150}
+                                                        height={50}
                                                     />
                                                 </p>
                                             </div>
@@ -299,13 +179,7 @@ const Mbas = () => {
                                                 />
 
                                             </div>
-                                            {/* 
-                                            <div className="px-0 btn btn-grad-red xs-none"> <a target="_blank"
-                                                href="/"> Be an SRP Fellow</a>
-                                            </div> */}
-                                            {/* <div className="ugImage">
-                                            <img src="assets/images/uglogos.png" />
-                                        </div> */}
+                                          
 
                                             <div className="row my-md-5">
                                                 <div className="col-4">
@@ -341,9 +215,6 @@ const Mbas = () => {
                                     </div>
                                 </div>
 
-
-
-
                             </div>
                         </section>
 
@@ -359,24 +230,7 @@ const Mbas = () => {
                                         <div className="tablist">
                                             <div className="demo">
                                                 <div>
-
-                                                    {/* <ul className={`nav tablistItems nav-tabs nav-justified nav-tabs-dropdown border-0 ${stickyClass}`}>
-                                                        <li className="active"><a href="#home"
-                                                        >Program Highlights</a></li>
-                                                        <li ><a href="#Stories"
-                                                        >Success Stories  </a></li>
-                                                        <li ><a href="#Abroad"
-                                                        >International Collaborations </a></li>
-                                                    
-
-                                                        <li ><a target="_blank" href="https://admissions.shooliniuniversity.com/" className="applyBtn"
-
-                                                        >Apply
-                                                            Now</a></li>
-
-                                                    </ul> */}
-
-
+ 
                                                     <div className="tab-content mt-md-5">
                                                         <div className="tab-pane active" id="home">
                                                             <div className="tabItemData">
@@ -401,24 +255,19 @@ const Mbas = () => {
 
 
 
-                                                                    </div>
-
-                                                                    {/* <button onClick={toggleClass} className="btnView">
-
-                                                                        <img className={isActive ? 'rotatebtn ' : null}
-                                                                            style={{ width: '60px', height: "auto" }} src="assets/images/seemore.png" /></button> */}
+                                                                    </div> 
                                                                 </div>
 
 
-                                                                <div className="dataBrdcrmb text-center">
+                                                                {/* <div className="dataBrdcrmb text-center">
                                                                     <ul className="p-0 m-0">
                                                                         <li><span> <img src="assets/images/icon1.png" /> </span>
                                                                             Duration: <strong> 4 yrs</strong>(Exit as per NEP/ UGC rules)</li>
                                                                         <li> <img src="assets/images/icon2.png" /> Research Degree: <strong>
                                                                             BTech | BSc </strong></li>
-                                                                        {/* <li> <img src="assets/images/icon3.png" /> Mode <strong> Full Time, with Hostel Facility</strong></li> */}
+                                                                       
                                                                     </ul>
-                                                                </div>
+                                                                </div> */}
 
                                                                 <div className="row mt-md-5">
 
@@ -426,12 +275,11 @@ const Mbas = () => {
                                                                         <div className="card-box">
 
                                                                             <h3 className=" text-dark"> Rankings </h3>
-
-                                                                            <p> India’s No.1 Research University as per QS Asian Rankings 2025, Shoolini has consistently been ranked among the leading institutes of higher education.
+                                                                             <p> India’s No.1 Research University as per QS Asian Rankings 2025, Shoolini has consistently been ranked among the leading institutes of higher education.
                                                                             </p>
 
 
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
@@ -452,14 +300,14 @@ const Mbas = () => {
                                                                                 </div>
                                                                             </div>
 
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/NAAC_LOGO.png"
+                                                                                            src="/assets/images/theLogo.png"
                                                                                             width={80}
                                                                                             className="img-responsive"
-                                                                                            height={70}
+                                                                                            height={35}
                                                                                         />
                                                                                     </div>
                                                                                 </div>
@@ -472,7 +320,7 @@ const Mbas = () => {
                                                                                 </div>
                                                                             </div>
 
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
@@ -491,7 +339,7 @@ const Mbas = () => {
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
@@ -513,23 +361,23 @@ const Mbas = () => {
 
                                                                             <div class="slide-track logosMax">
 
-<div class="slides"><span>  <img src="/assets/images/logo1.png" alt=""/></span>
-</div>
+                                                                                <div class="slides"><span>  <img src="assets/images/logo1.png" alt="" /></span>
+                                                                                </div>
 
-<div class="slides"><span>  <img src="/assets/images/logo2.png" alt=""/></span>
-</div>
+                                                                                <div class="slides"><span>  <img src="assets/images/logo2.png" alt="" /></span>
+                                                                                </div>
 
-<div class="slides"><span>  <img src="/assets/images/logo3.png" alt=""/></span>
-</div>
+                                                                                <div class="slides"><span>  <img src="assets/images/logo3.png" alt="" /></span>
+                                                                                </div>
 
-<div class="slides"><span>  <img src="/assets/images/log04.png" alt=""/></span>
-</div>
+                                                                                <div class="slides"><span>  <img src="assets/images/log04.png" alt="" /></span>
+                                                                                </div>
 
 
-<div class="slides"><span>  <img src="/assets/images/logo5.png" alt=""/></span>
-</div>
+                                                                                <div class="slides"><span>  <img src="assets/images/logo5.png" alt="" /></span>
+                                                                                </div>
 
-</div>
+                                                                            </div>
 
 
 
@@ -545,7 +393,7 @@ const Mbas = () => {
                                                                                 <small>  (fields with * are mandatory)</small></p>
 
 
-                                                                            <div class="npf_wgts" data-height="470px" data-w="a5c6f2dfd05619f11b2095ddcd313946"></div>
+                                                                            <div className="npf_wgts" data-height="470px" data-w="a5c6f2dfd05619f11b2095ddcd313946"></div>
 
 
                                                                         </div>
@@ -556,19 +404,19 @@ const Mbas = () => {
 
                                                                     <div className="col-md-6 mt-5">
                                                                         <div className="card-box">
-                                                                            <h3 className="title-default">SHOOLINI ADVANTAGE   </h3> <br />
-                                                                            <ul>
+                                                                            <h3 className="title-default">SHOOLINI ADVANTAGE   </h3>  
+                                                                            <ul className="text-light-weight">
                                                                                 <li> Faculty from top institutions like NCI, NIH, IISc, IITs, PEC, and Oxford</li>
-                                                                               
+
                                                                                 <li> 'Mission 130': 100% placements, with 30% in top global organisations </li>
                                                                                 <li>Awarded government grants, including PURSE, SERB, and DST FIST  </li>
-                                                                               
+
                                                                                 <li>Home to Himachal's first MOFPI-funded commercial food testing lab </li>
                                                                                 <li> 24/7 Yogananda Library, 104+ labs, and a Cancer Research Centre </li>
-                                                                             
+
                                                                                 <li> Hosts XR and AI Research Centre and BOSCH Centre </li>
                                                                                 <li>Partnerships with ICT Academy, IBM, AWS, NASSCOM, KPMG, and others  </li>
-                                                                              
+
                                                                             </ul>
 
                                                                         </div>
@@ -583,7 +431,7 @@ const Mbas = () => {
                                                                                 className="img-responsive"
                                                                                 height={600}
                                                                             />
-                                                                          
+
                                                                         </div>
                                                                     </div>
 
@@ -592,10 +440,6 @@ const Mbas = () => {
 
                                                         </div>
 
-
-                                                    
-
-                                                         
 
                                                     </div>
                                                 </div>
@@ -606,99 +450,7 @@ const Mbas = () => {
                             </div>
                         </section>
 
-{/*   
-                        <section id="Abroad" className="student-voices">
-                            <div className="container">
-                                <div class="pagetitle text-center mb-4"><h2>ACCREDITATIONS </h2>
-
-                                </div>
-                                <div className="row">
-
-                                    <div className="col-md-12">
-                                        <div className="card-box">
-                                            <p className="mb-0"> Shoolini University has strong academic bonds with 250+ higher educational institutions in 28+ countries. Through meaningful collaborations, our faculty and students avail exchange opportunities in leading foreign universities under various scholarship programs.     </p>
-
-                                            <div class="slide-track logosMax">
-                                                <div class="slides">
-                                                    <span>  <img src="/assets/images/PCI.png" alt="" /></span>
-                                                </div>
-                                                <div class="slides">
-                                                    <span> 	<img src="/srp-lp/img/Uni_Napoli_512px.png" alt="" /></span>
-                                                </div>
-
-
-                                                <div class="slides">
-                                                    <span> 	<img src="/srp-lp/img/usa.png" alt="" /></span>
-                                                </div>
-
-                                                <div class="slides">
-                                                    <span> 	<img src="/srp-lp/img/nih.jpg" alt="" /></span>
-                                                </div>
-                                                <div class="slides">
-                                                    <span> <img src="/srp-lp/img/Gachonlogo.jpg" alt="" /></span>
-                                                </div>
-                                                <div class="slides">
-                                                    <span> 	<img src="/srp-lp/img/lu.jpg" alt="" /></span>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                   
-
-                                </div>
-                            </div>
-                        </section>
- */}
-
-
-
-                      
-
-
-                        <section id="specialisation" className="spiecalisation">
-                            <div className="container">
-                                <div className="row">
-
-                                    <div className="col-md-6 pr-md-0 align-centered">
-                                        <div className="card-box ht-auto">
-                                            <h3 className="title-default"> <span className="text-red"> Summit Research Program</span>: Join the League of Extraordinary Researchers  </h3>
-
-                                            {/* <p> Our research-intensive BTech curriculum designed by the <strong> Top 2%</strong> Scientists of the World (Stanford University 2021), gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. This <strong>transformational program</strong> provides cutting-edge research training and <strong>develops scientific temper </strong> among young minds.  </p> */}
-                                            <ul>
-                                                <li>Get an Individual Guide from the 1st Year </li>
-                                                <li>Conduct Real-life research program </li>
-                                                <li> Get extra research credits</li>
-                                                <li> Receive an SRP Certificate at the end of the program </li>
-
-                                            </ul>
-
-                                            {/* <div className="courselist">
-                                                <ul className="p-0">
-                                                    <li> <a target="_blank" href="https://shooliniuniversity.com/b-tech-biotechnology-with-summit-research-program ">  <strong> BTech Biotech </strong>  </a> </li>
-                                                    <li> <a target="_blank" href="https://shooliniuniversity.com/b-tech-food-technology-with-summit-research-program "> <strong>BTech Food Tech  </strong>
-                                                    </a> </li>
-                                                  
-
-                                                </ul>
-                                            </div> */}
-
-                                            <div class="px-0 btn btn-grad-red"> <a target="_blank" href="https://admissions.shooliniuniversity.com/"  > Need Help? Talk to our Career Counsellor</a></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div className="col-md-6 pl-md-0">
-                                        <div className="voices-image position-relative">
-                                            <Image src="/assets/images/collabs.jpg" width={558} className="img-responsive" height={420} />
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </section>
+                     
                         <section id="faqs" className="student-voices">
                             <div className="container">
 
@@ -805,10 +557,6 @@ const Mbas = () => {
                                                         </div>
                                                     </div>
 
-
-
-
-
                                                     <div className="col-md-3 col-3">
                                                         <div className="logo-file">
                                                             <Image src="/assets/images/images/Sentiss.jpg" width={180} className="img-responsive" height={90} />
@@ -882,7 +630,40 @@ const Mbas = () => {
                             </div>
                         </section>
 
+ 
+                        <section id="specialisation" className="spiecalisation">
+                            <div className="container">
+                                <div className="row">
 
+                                    <div className="col-md-6 pr-md-0 align-centered">
+                                        <div className="card-box ht-auto">
+                                            <h3 className="title-default"> <span className="text-red"> Your Global Education Destination:</span>Top Courses at Shoolini </h3>
+
+                                            {/* <p> Our research-intensive BTech curriculum designed by the <strong> Top 2%</strong> Scientists of the World (Stanford University 2021), gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. This <strong>transformational program</strong> provides cutting-edge research training and <strong>develops scientific temper </strong> among young minds.  </p> */}
+                                            <ul>
+                                                <li>B Tech CSE with Specialisations </li>
+                                                <li> B Tech/Biotech </li>
+                                                <li>BBA with Specialisations </li>
+                                                <li> MBA with Specialisations</li>
+                                                <li> Doctorial programs </li>
+
+                                            </ul>
+
+                                            <div class="px-0 btn btn-grad-red"> <a target="_blank" href="#"  > Explore all Courses</a></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div className="col-md-6 pl-md-0">
+                                        <div className="voices-image position-relative">
+                                            <Image src="/assets/images/collabs.jpg" width={558} className="img-responsive" height={420} />
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
 
                     </main>
 
@@ -897,4 +678,4 @@ const Mbas = () => {
     )
 }
 
-export default Mbas
+export default International
