@@ -6,7 +6,12 @@ import { Modal, Button, Form } from "react-bootstrap";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 import Image from "next/legacy/image";
 import Head from 'next/head'
+import IconBox from '@/components/IconBox';
 import Slider from 'react-slick'
+import { Container, Row, Col } from 'react-bootstrap'
+import CountUp from 'react-countup';
+
+
 
 const International = () => {
 
@@ -129,98 +134,133 @@ const International = () => {
                         <Modal.Body>
                             <h2>Apply Now</h2>
                             <div class="npf_wgts" data-height="400px" data-w="1222078993f709a639ec1d6ca2d2d084"></div>
-                          </Modal.Body>
+                        </Modal.Body>
 
                     </Modal>
- 
+
                     <main className="innerBody">
                         <section id="shooliniMBA" className="heroBanner">
                             <div className="container">
-                                <div className="row">
-                                    <div className="col-md-8 centerDiv">
-                                        <div className="leftCatd">
-                                            <h1 className="mb-0"> <span> Empowering diversity</span> <br /> Driving innovation </h1>
 
-                                            <div className="noretype">
-                                                {/* <p className="border-right-1"> Be an SRP Fellow </p> */}
-                                                <p className="text-center pb-0">
-                                                    <Image
-                                                        src="/assets/images/theLogo.png"
-                                                        alt="THE Logo"
-                                                        width={120}
-                                                        height={54}
-                                                        className="mr-3 pr-3"
-                                                    />
-                                                    <Image
-                                                        src="/assets/images/qs-rankingNew.png"
-                                                        alt="THE Logo"
-                                                        width={180}
-                                                        height={50}
-                                                        className="mr-3 pr-3"
-                                                    />
 
-                                                    <Image
-                                                        src="/assets/images/naac-sticker.png"
-                                                        alt="THE Logo"
-                                                        width={150}
-                                                        height={50}
-                                                    />
-                                                </p>
-                                            </div>
+                                <div className="slideContent text-center pt-md-5">
+                                    <h1 className="slideTitle"> Best Private University in India </h1><p class="slideInfo"> Join for World-Class International Programs</p>
+                                </div>
 
-                                            <div className="forMobile d-md-none">
+                                <div className="logotype">
+                                    <p className=" logotext-center">
+                                        <Image
+                                            src="/assets/images/theLogo.png"
+                                            alt="THE Logo"
+                                            width={120}
+                                            height={45}
+                                            className="mr-3 pr-3"
+                                        />
+                                        <Image
+                                            src="/assets/images/qs-rankingNew.png"
+                                            alt="THE Logo"
+                                            width={180}
+                                            height={50}
+                                            className="mr-3 pr-3"
+                                        />
+
+                                        <Image
+                                            src="/assets/images/naac-sticker.png"
+                                            alt="THE Logo"
+                                            width={150}
+                                            height={50}
+                                        />
+                                    </p>
+                                </div>
+
+                                {/* <div className="forMobile d-md-none">
 
                                                 <Image
-                                                    src="/assets/images/mobile-banner.jpg"
+                                                    src="/assets/images/sliderintermobile.jpg"
                                                     alt="Shoolini Banner"
                                                     className="mg-responsive w-100"
                                                     width={535}
                                                     height={514}
                                                 />
 
-                                            </div>
-                                          
-
-                                            <div className="row my-md-5">
-                                                <div className="col-4">
-                                                    <div className="placeVal">
-                                                        <h3><strong>  1500+  </strong> <br /> Patents Filed   </h3>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="placeVal">
-                                                        <h3><strong>  {'>'}137  </strong> <br /> H-Index  </h3>
-                                                    </div>
-                                                </div>
-                                                <div className="col-5">
-                                                    <div className="placeVal">
-                                                        <h3><strong>  Top 2%   </strong> <br /> Scientists of the World  </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="rightCard">
-
-                                            <Image
-                                                src="/assets/images/heroOne.png"
-                                                alt="Hero Banner"
-                                                className="mg-responsive w-100"
-                                                width={356}
-                                                height={621}
-                                            />
-
-                                        </div>
-                                    </div>
-                                </div>
+                                            </div> */}
 
                             </div>
                         </section>
 
-                        {/* section  */}
+
+                
+
+<section className="icon-box-area pb-md-4 pt-md-4 mt-2">
+          <Container>
+            <Row>
+            <div class="col-4">
+                                        <div class="placeVal text-center"><h3><strong>
+                                        <CountUp start={0} end={1500} />
+                                        +</strong> <br /> Patents Filed   </h3></div>
+                                    </div>
+
+            <div class="col-3">
+                <div class="placeVal text-center">
+                <h3><strong>  &gt;    
+                    <CountUp start={0} end={137} />
+                     </strong> <br /> Patents Filed   </h3>
+                   </div>
+                 </div>
 
 
+                 <div class="col-5">
+                 <div class="placeVal text-center"><h3><strong>
+                                        <CountUp start={0} end={900} />
+                                        +</strong> <br /> Global Research Collaborations </h3></div>
+                 </div>    
+                    
+            </Row>
+          </Container>
+        </section>
+
+                        <section id="specialisation" className="spiecalisation">
+                            <div className="container">
+                                <div className="row">
+
+                                    <div className="col-md-6 pr-md-0 align-centered">
+                                        <div className="card-box ht-auto">
+                                            <h3 className="title-default"> <span className="text-red"> Your Global Education Destination:</span><br></br>Top Courses at Shoolini </h3>
+
+                                            {/* <p> Our research-intensive BTech curriculum designed by the <strong> Top 2%</strong> Scientists of the World (Stanford University 2021), gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. This <strong>transformational program</strong> provides cutting-edge research training and <strong>develops scientific temper </strong> among young minds.  </p> */}
+                                            <ul>
+                                                <li>B Tech CSE with Specialisations </li>
+                                                <li> B Tech/Biotech </li>
+                                                <li>BBA with Specialisations </li>
+                                                <li> MBA with Specialisations</li>
+                                                <li> Doctoral programs </li>
+
+                                            </ul>
+
+                                            <div class="px-0 btn btn-grad-red"> <a target="_blank" href="https://shooliniuniversity.com/media/pdf/InternationalBrochureUSD.pdf"  > Download Brochure</a></div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div className="col-md-6 pr-md-0 
+                                    ">
+                                        <div className="voices-image position-relative">
+
+                                            <Image
+                                                src="/assets/images/interstudent.jpeg"
+                                                width={800}
+                                                className="img-responsive"
+                                                height={600}
+                                            />
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
 
 
                         <section id="mentorship" className="mba_tabs pt-0">
@@ -230,24 +270,24 @@ const International = () => {
                                         <div className="tablist">
                                             <div className="demo">
                                                 <div>
- 
+
                                                     <div className="tab-content mt-md-5">
                                                         <div className="tab-pane active" id="home">
                                                             <div className="tabItemData">
 
                                                                 <div className="pagetitle text-center mb-4  ">
                                                                     <div className="pagetitle text-center">
-                                                                        <h2> SHOOLINI UNIVERSITY: THE RESEARCH HUB </h2>
+                                                                        <h2>A Hub of Groundbreaking Ideas </h2>
                                                                     </div>
 
 
 
                                                                     <div className="mt-3">
                                                                         <p>
-                                                                            Shoolini University is internationally recognised for its research excellence, attracting outstanding academics, research staff, and students from around the world. As per the QS World University Rankings, Asia, it is the <strong> top research university in India</strong> (Citations per Paper).  </p>
-                                                                        <p>
-                                                                            Shoolini boasts over <strong> 104 research laboratories</strong>  and <strong> 11 Centres of Excellence, </strong> including an <strong> in-house Cancer Research Centre</strong> . The university is the <strong> 3rd highest patent filer</strong>  in the country, with over <strong> 1,500 patents</strong> .  </p>
-                                                                        <p>
+                                                                            Shoolini University is internationally recognised for its research excellence, attracting outstanding academics, research staff, and students from around the world. As per the QS World University Rankings, Asia, it is the <strong> top research university in India</strong> (Citations per Paper).
+
+                                                                            Shoolini boasts over <strong> 104 research laboratories</strong>  and <strong> 11 Centres of Excellence, </strong> including an <strong> in-house Cancer Research Centre</strong> . The university is the <strong> 3rd highest patent filer</strong>  in the country, with over <strong> 1,500 patents</strong> .
+
                                                                             With an <strong> H-Index of {'<'} 137 </strong>, Shoolini researchers are among the top 2% scientists globally, according to the list released by Stanford University.
                                                                         </p>
 
@@ -255,19 +295,11 @@ const International = () => {
 
 
 
-                                                                    </div> 
+                                                                    </div>
                                                                 </div>
 
 
-                                                                {/* <div className="dataBrdcrmb text-center">
-                                                                    <ul className="p-0 m-0">
-                                                                        <li><span> <img src="assets/images/icon1.png" /> </span>
-                                                                            Duration: <strong> 4 yrs</strong>(Exit as per NEP/ UGC rules)</li>
-                                                                        <li> <img src="assets/images/icon2.png" /> Research Degree: <strong>
-                                                                            BTech | BSc </strong></li>
-                                                                       
-                                                                    </ul>
-                                                                </div> */}
+
 
                                                                 <div className="row mt-md-5">
 
@@ -275,7 +307,7 @@ const International = () => {
                                                                         <div className="card-box">
 
                                                                             <h3 className=" text-dark"> Rankings </h3>
-                                                                             <p> India’s No.1 Research University as per QS Asian Rankings 2025, Shoolini has consistently been ranked among the leading institutes of higher education.
+                                                                            <p> India’s No.1 Research University as per QS Asian Rankings 2025, Shoolini has consistently been ranked among the leading institutes of higher education.
                                                                             </p>
 
 
@@ -283,10 +315,10 @@ const International = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/logo3.jpg"
-                                                                                            width={80}
+                                                                                            src="/assets/images/wur1.png"
+                                                                                            width={150}
                                                                                             className="img-responsive"
-                                                                                            height={81}
+                                                                                            height={50}
                                                                                         />
                                                                                     </div>
                                                                                 </div>
@@ -304,10 +336,10 @@ const International = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/theLogo.png"
-                                                                                            width={80}
+                                                                                            src="/assets/images/twr2.png"
+                                                                                            width={150}
                                                                                             className="img-responsive"
-                                                                                            height={35}
+                                                                                            height={50}
                                                                                         />
                                                                                     </div>
                                                                                 </div>
@@ -324,9 +356,9 @@ const International = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/qsw.png"
-                                                                                            width={100}
-                                                                                            height={36}
+                                                                                            src="/assets/images/wur1.png"
+                                                                                            width={150}
+                                                                                            height={50}
                                                                                             className="img-responsive"
                                                                                         />
                                                                                     </div>
@@ -343,10 +375,10 @@ const International = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/Indyjskie.png"
+                                                                                            src="/assets/images/tmr2.png"
                                                                                             width={150}
                                                                                             className="img-responsive"
-                                                                                            height={60}
+                                                                                            height={50}
                                                                                         />
 
                                                                                     </div>
@@ -361,11 +393,13 @@ const International = () => {
 
                                                                             <div class="slide-track logosMax">
 
+                                                                                <div class="slides"><span>  <img src="assets/images/logo2.png" alt="" /></span>
+                                                                                </div>
+
                                                                                 <div class="slides"><span>  <img src="assets/images/logo1.png" alt="" /></span>
                                                                                 </div>
 
-                                                                                <div class="slides"><span>  <img src="assets/images/logo2.png" alt="" /></span>
-                                                                                </div>
+
 
                                                                                 <div class="slides"><span>  <img src="assets/images/logo3.png" alt="" /></span>
                                                                                 </div>
@@ -404,7 +438,7 @@ const International = () => {
 
                                                                     <div className="col-md-6 mt-5">
                                                                         <div className="card-box">
-                                                                            <h3 className="title-default">SHOOLINI ADVANTAGE   </h3>  
+                                                                            <h3 className="title-default">SHOOLINI ADVANTAGE   </h3>
                                                                             <ul className="text-light-weight">
                                                                                 <li> Faculty from top institutions like NCI, NIH, IISc, IITs, PEC, and Oxford</li>
 
@@ -426,7 +460,7 @@ const International = () => {
                                                                         <div className="voices-image position-relative">
 
                                                                             <Image
-                                                                                src="/assets/images/Aerial.jpg"
+                                                                                src="/assets/images/backlightshoolini.png"
                                                                                 width={800}
                                                                                 className="img-responsive"
                                                                                 height={600}
@@ -450,7 +484,7 @@ const International = () => {
                             </div>
                         </section>
 
-                     
+
                         <section id="faqs" className="student-voices">
                             <div className="container">
 
@@ -630,40 +664,24 @@ const International = () => {
                             </div>
                         </section>
 
- 
-                        <section id="specialisation" className="spiecalisation">
+                        <section id="titlelocation">
                             <div className="container">
                                 <div className="row">
-
-                                    <div className="col-md-6 pr-md-0 align-centered">
-                                        <div className="card-box ht-auto">
-                                            <h3 className="title-default"> <span className="text-red"> Your Global Education Destination:</span>Top Courses at Shoolini </h3>
-
-                                            {/* <p> Our research-intensive BTech curriculum designed by the <strong> Top 2%</strong> Scientists of the World (Stanford University 2021), gives students a competitive edge in the industry by turning them into inventors, academicians, and entrepreneurs. This <strong>transformational program</strong> provides cutting-edge research training and <strong>develops scientific temper </strong> among young minds.  </p> */}
-                                            <ul>
-                                                <li>B Tech CSE with Specialisations </li>
-                                                <li> B Tech/Biotech </li>
-                                                <li>BBA with Specialisations </li>
-                                                <li> MBA with Specialisations</li>
-                                                <li> Doctorial programs </li>
-
-                                            </ul>
-
-                                            <div class="px-0 btn btn-grad-red"> <a target="_blank" href="#"  > Explore all Courses</a></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div className="col-md-6 pl-md-0">
-                                        <div className="voices-image position-relative">
-                                            <Image src="/assets/images/collabs.jpg" width={558} className="img-responsive" height={420} />
-
-                                        </div>
-                                    </div>
-
+                                    <div class="locationtitle text-center"><h4> Strategically Located
+                                        <span className="hightlocation"> 90 mins From Chandigarh Airport</span> </h4></div>
                                 </div>
                             </div>
                         </section>
+
+                        <section id="mapsh">
+                            <div className="mapback">
+
+                                <iframe className=" shoolinimap ht-100 w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13699.177242997901!2d77.1183538!3d30.8644333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6d5230f107c2117a!2sShoolini+University!5e0!3m2!1sen!2sin!4v1553939344345!5m2!1sen!2sin" allowfullscreen>
+                                </iframe>
+                            </div>  </section>
+
+
+
 
                     </main>
 

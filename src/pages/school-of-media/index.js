@@ -946,7 +946,7 @@ const Mbas = () => {
 
                                     <div className="col-md-6 pl-md-0">
                                         <div className="voices-image position-relative">
-                                            <Image src="/assets/images/smc/jsmedia.png" width={600} className="img-responsive" height={600} />
+                                            <Image src="/assets/images/smc/jsmedia.png" width={558} className="img-responsive" height={539} />
 
                                         </div>
                                     </div>

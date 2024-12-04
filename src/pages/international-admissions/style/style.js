@@ -16,10 +16,13 @@ section {
     background: #fff;
     display: flex;
     align-items: center;
+    border-radius: 27px;
 }
 section#shooliniMBA {
-    background: url(../../assets/images/heroimage.jpg);
+    background: url(../../assets/images/Slider-inter.jpg);
     background-size: 100%;
+        max-height: 100%;
+    min-height: 650px;
 }
 p.text-18 {
     color: #333;
@@ -27,7 +30,56 @@ p.text-18 {
 .slick-slide {
     padding: 0 10px;
 }
+    
 
+h1.slideTitle {
+text-align: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px !important;
+    margin: auto;
+}
+ .voices-image {
+        border-radius: 30px !important;
+    }
+ .logotype { 
+    align-items: center;
+    margin: 10px 0px;
+    display: flex;
+        justify-content: center;
+}
+        -----------------------------------------p {
+    background: white;
+    padding: 10px 10px;
+        display: flex
+
+;
+}
+.placeVal {
+    background: white;
+    padding: 20px 10px;
+}
+.locationtitle.text-center h4 {
+    font-size: 36px;
+    padding: 5px 0px;
+    font-weight: 700;
+    font-family: 'CircularStd';
+    color: black;
+}
+ span.hightlocation {
+  color: rgb(240, 47, 47);
+}   
+
+p.slideInfo{
+
+text-align: center;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 24px !important;
+    line-height: 1.4 !important;
+
+}
 .container {
     max-width: 1140px !important;
 }
@@ -372,20 +424,25 @@ table td {
 }
 
 .pagetitle h2 {
-    font-weight: 900;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 45px;
     position: relative;
+     color: rgb(240, 47, 47);
+}
+section#mapsh {
+    padding: 0px;
 }
 
-.pagetitle h2 span:after {
+   .pagetitle h2 span:after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -6px;
-    height: 2px;
+    bottom: 0px;
+    height: 0px;
     width: 100%;
-    background: linear-gradient(to right,#f63030 0%,#e33535 100%);
+    background: linear-gradient(to right, #f63030 0%, #e33535 100%);
 }
+
 
 .pagetitle h2 span {
     position: relative;
@@ -741,8 +798,9 @@ button.btnView {
     }
 
     .voices-image {
-        border-radius: 0;
+        border-radius: 0px !important;
     }
+
    #faqs .pagetitle h2 {
         text-align: center;
     }
@@ -1147,6 +1205,30 @@ section#shooliniMBA {
 
 @media (max-width: 767px) { 
 
+
+section#shooliniMBA {
+    background: url(../../assets/images/mobilesizeSlider.jpg);
+    background-size: 100%;
+    max-height: 100%;
+    min-height: 460px;
+}
+    p.logotext-center {
+    display: flex;
+    padding: 10px 10px !important;
+
+}
+ h1.slideTitle {
+    font-size: 28px !important;
+}
+.locationtitle.text-center h4 {
+    font-size: 21px;
+}
+p.slideInfo {
+    font-size: 16px !important;
+}
+    .slideContent {
+    margin-top: 35px;
+}
     .tablistItems {
         display: none !important;
     }
@@ -1560,8 +1642,13 @@ section#shooliniMBA {
     justify-content: space-around;
 }
 
-
-
+iframe.shoolinimap.ht-100.w-100 {
+    height: 360px;
+   
+}
+    section#titlelocation {
+    padding: 35px 0px;
+}
 .column {
     width: 100%;
     padding: 0 1em 1em 1em;
@@ -1602,6 +1689,14 @@ section#shooliniMBA {
   }
  
   @media screen and (min-width: 768px) {
+
+   section#shooliniMBA {
+    background: url(../../assets/images/Slider-inter.jpg);
+    background-size: cover;
+    max-height: 100%;
+    min-height: 650px;
+    background-repeat: no-repeat;
+}
     section {
       padding: 0 2em;
     }
