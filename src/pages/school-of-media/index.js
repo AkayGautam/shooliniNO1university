@@ -134,12 +134,12 @@ const Mbas = () => {
                         <section id="shooliniMBA" className="heroBanner">
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-md-8 centerDiv">
+                                    {/* <div className="col-md-8 centerDiv">
                                         <div className="leftCatd">
                                             <h1 className="mb-0"> <span>  Top Media Experts,</span> <br /> <span>Real-World Projects, </span> <br />Future-Ready Careers</h1>
 
                                             <div className="noretype">
-                                                {/* <p className="border-right-1"> Be an SRP Fellow </p> */}
+                                              
                                                 <p className="text-center pb-0">
                                                     <Image
                                                         src="/assets/images/theLogo.png"
@@ -172,9 +172,7 @@ const Mbas = () => {
                                             <div className="px-0 btn btn-grad-red xs-none"> <a target="_blank"
                                                 href="https://admissions.shooliniuniversity.com/"> Be an SRP Fellow</a>
                                             </div>
-                                            {/* <div className="ugImage">
-                                            <img src="assets/images/uglogos.png" />
-                                        </div> */}
+                                    
 
                                             <div className="row my-md-5">
                                                 <div className="col-4">
@@ -207,16 +205,16 @@ const Mbas = () => {
                                             />
 
                                         </div>
-                                    </div>
-                                </div>
+                                    </div> */}
+                               
 
 
 
-
+                          </div>
                             </div>
                         </section>
 
-                        {/* section  */}
+                 
 
 
 
@@ -229,7 +227,7 @@ const Mbas = () => {
                                             <div className="demo">
                                                 <div>
 
-                                                    <ul className={`nav tablistItems nav-tabs nav-justified nav-tabs-dropdown border-0 ${stickyClass}`}>
+                                                    {/* <ul className={`nav tablistItems nav-tabs nav-justified nav-tabs-dropdown border-0 ${stickyClass}`}>
                                                         <li className="active"><a href="#home"
                                                         >Program Highlights</a></li>
                                                         <li ><a href="#Stories"
@@ -243,7 +241,7 @@ const Mbas = () => {
                                                         >Apply
                                                             Now</a></li>
 
-                                                    </ul>
+                                                    </ul> */}
 
 
                                                     <div className="tab-content mt-md-5">
@@ -319,10 +317,10 @@ const Mbas = () => {
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
-                                                                                            src="/assets/images/NAAC_LOGO.png"
+                                                                                            src="/assets/images/smc/patrikaa.png"
                                                                                             width={80}
                                                                                             className="img-responsive"
-                                                                                            height={70}
+                                                                                            height={80}
 
                                                                         
                                                                                         />
@@ -598,13 +596,6 @@ const Mbas = () => {
                                         </div>
                                     </div>
 
-                                    <div class="col-md-4">
-                                        <div class="globalcard text-center">
-                                            <img className="imgcardimg" src="/assets/images/smc/Misha Bajwa Chaudhary.jpg" width={300} height={300} />
-                                            <h3>Misha Bajwa Chaudhary</h3>
-                                            <span> News Presenter & Actor, <strong className='hightlightprofile'>ex-AajTak and India TodayN</strong></span>
-                                        </div>
-                                    </div>
 
                                     <div class="col-md-4">
                                         <div class=" globalcard text-center">
@@ -613,9 +604,6 @@ const Mbas = () => {
                                             <span> Co-founder & CEO of<strong className='hightlightprofile'> uTrade </strong> & Founder - Chandigarh Angels Network</span>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="row mt-3">
 
                                     <div class="col-md-4">
                                         <div class="globalcard text-center">
@@ -624,6 +612,13 @@ const Mbas = () => {
                                             <span> AVP Non-Fiction<strong className='hightlightprofile'> (Viacom 18)</strong></span>
                                         </div>
                                     </div>
+
+                                </div>
+
+
+                                <div class="row mt-3">
+
+                                 
 
                                     <div class="col-md-4">
                                         <div class="globalcard text-center">
@@ -774,7 +769,7 @@ const Mbas = () => {
                                     <div className="col-md-12">
 
                                         <div className="card-box">
-                                            <h3 className="title-default">250+  <span> Hiring Partners </span></h3>
+                                          
                                             <p> <strong> Internships And Placements:</strong> <br />
                                                 Create Your Own Success Story </p>
 
@@ -783,12 +778,12 @@ const Mbas = () => {
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/ABP.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/abp.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/News18 TV.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/newindia.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
@@ -796,7 +791,7 @@ const Mbas = () => {
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/Punjab Kesari TV.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/punjabnew.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
@@ -804,88 +799,110 @@ const Mbas = () => {
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/HT.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/hindustannew.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/Times of India.png" width={200} className="img-responsive" height={70} />
+                                                        <Image src="/assets/images/smc/hindunews.png" width={200} className="img-responsive" height={70} />
+                                                    </div>
+                                                </div>
+
+                                              
+
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/Amarnew.png" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                </div>
+
+                                              
+
+
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/danik.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/The Indian Express.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/tribune.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/Amar Ujala.jpg" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/indiaexpree.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/PTCgroup.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/smc/Dainik Bhaskar.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/icatchers.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/The Tribune.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/bingo.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/i-Catchers PR.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/Adfactors.png" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/fuzion.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/binomedia.png" width={200} className="img-responsive" height={100} />
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-3 col-3">
-                                                    <div className="logo-file">
-                                                        <Image src="/assets/images/smc/fuzion.jpeg" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/newsnation.png" width={200} className="img-responsive" height={100} />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/News Nation TV.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/Ptc.png" width={200} className="img-responsive" height={100} />
                                                     </div>
+                                                </div>
+
+                                              
+
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/newsX.png" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                    
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/Adfactor PR.png" width={200} className="img-responsive" height={100} />
+                                                        <Image src="/assets/images/smc/TT.png" width={200} className="img-responsive" height={100} />
                                                     </div>
+                                                    
                                                 </div>
 
+                                                <div className="col-md-3 col-3">
+                                                    <div className="logo-file">
+                                                        <Image src="/assets/images/smc/penpundit.png" width={200} className="img-responsive" height={100} />
+                                                    </div>
+                                                    
+                                                </div>
 
 
 
 
                                             </div>
 
-                                            {/* <div className="col-md-12">
-                                                <div className="moreView">
-
-                                                    <button className={isActive ? 'btnView ' : "nullRotate"} onClick={toggleClass} >  <Image src="/assets/images/seemore.png" width={70} className="img-responsive rotatebtn" height={65} /></button>
-                                                </div>
-                                            </div> */}
+                                    
                                         </div>
 
 
@@ -946,7 +963,7 @@ const Mbas = () => {
 
                                     <div className="col-md-6 pl-md-0">
                                         <div className="voices-image position-relative">
-                                            <Image src="/assets/images/smc/jsmedia.png" width={558} className="img-responsive" height={539} />
+                                            <Image src="/assets/images/smc/girlmedia.jpg" width={580} className="img-responsive" height={580} />
 
                                         </div>
                                     </div>

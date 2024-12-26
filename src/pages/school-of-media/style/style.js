@@ -17,9 +17,10 @@ section {
     display: flex;
     align-items: center;
 }
-section#shooliniMBA {
-    background: url(../../assets/images/heroimage.jpg);
+section#shooliniMBA{
+    background: url(../../assets/images/smc/schoolmediaslider.jpg);
     background-size: 100%;
+    height: 80vh;
 }
 p.text-18 {
     color: #333;
