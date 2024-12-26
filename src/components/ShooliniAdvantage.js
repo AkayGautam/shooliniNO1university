@@ -80,7 +80,7 @@ const ShooliniAdvantage = () => {
                       
                       <li>
                         <a
-                          href="https://shooliniuniversity.com/VE-coaching/"
+                          href="https://shooliniuniversity.com/centre-for-leadership-coaching/"
                           target="_blank"
                           rel="noreferrer"
                         >

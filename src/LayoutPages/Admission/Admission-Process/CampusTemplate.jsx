@@ -81,7 +81,7 @@ const CampusTemplate = ({ id, data, ldJson }) => {
                                 {JSON.parse(data[0][0].content_boxes).map(
                                   (i, index) => (
                                     <Col key={index} md={12}>
-                                      <figure class="snip1527">
+                                      <figure class="snip1527  gggg">
                                         <div class="image">
                                           <Image
                                             width={416}
@@ -120,7 +120,7 @@ const CampusTemplate = ({ id, data, ldJson }) => {
                                                 )
                                               }
                                             >
-                                              <figure class="snip1527">
+                                              <figure class="snip1527 bbb">
                                                 <div class="image">
                                                   <Image
                                                     width={416}

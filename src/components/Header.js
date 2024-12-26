@@ -21,7 +21,9 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaRocketchat } from "react-icons/fa";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
- 
+import { FaUserGraduate } from "react-icons/fa";
+
+
 const settings = { 
   dots: false,
   infinite: true,
@@ -105,23 +107,22 @@ const Header = () => {
 
 
    
-  useEffect(() => {
-     
-    // (function(w, d) { w.CollectId = "673ebb1348b2ba247e882f30"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/62da7a8654f06e12d88aca6e/1g8imt7mf';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-  
-    return () => {
+//   useEffect(() => {
       
-    }
-  }, [])
+//     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+// (function(){
+// var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+// s1.async=true;
+// s1.src='https://embed.tawk.to/62da7a8654f06e12d88aca6e/1g8imt7mf';
+// s1.charset='UTF-8';
+// s1.setAttribute('crossorigin','*');
+// s0.parentNode.insertBefore(s1,s0);
+// })();
+  
+//     return () => {
+      
+//     }
+//   }, [])
 
 
 
@@ -198,6 +199,11 @@ s0.parentNode.insertBefore(s1,s0);
         <a target="_blank" href="https://shooliniuniversity.com/all-events?utm_source=organic&utm_medium=events&utm_campaign=events" className="Instagram bg-secondary xs-d-none">
           <span className="iconsFile"> <FaRegCalendarAlt /> </span>
           <span className="icnName">Events</span> </a>
+
+          <a target="_blank" href="https://shooliniuniversity.com/chat-with-ambassador" className="Instagram bg-success xs-d-none">
+          <span className="iconsFile"> <FaUserGraduate />
+  </span>
+          <span className="icnName">Chat with Student Ambassador</span> </a>
 
 
         {/* <a target="_blank" href="https://shooliniuniversity.com/chat-with-ambassador" className="xd-none xs-design Instagram bg-info xs-d-none">
@@ -582,7 +588,7 @@ s0.parentNode.insertBefore(s1,s0);
                                             <h4>Science</h4>
                                             <ul className="subMenus">
                                               <li> <Link href="/bsc">		BSc (Hons)   </Link> </li> 
-                                            
+                                              <li> <Link className="hilightLink" href="/minor-specialisations">	Minor Specialisations   </Link> </li> 
                                             </ul>
                                        
                                           </div>

@@ -906,6 +906,28 @@ section.price-element {
 }
 
 @media (max-width: 767px) {
+
+  .logo.me-auto {
+    display: flex
+  ;
+  }
+  ul.m-0 {
+    padding: 0;
+    margin: 0;
+}
+a.getstarted.scrollto {
+  font-size: 12px !important;
+  white-space: nowrap;
+}
+.logo img {
+  max-width: 140px;
+}
+.logo {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+}
   .price-element hr {
     background-color: #fff !important;
     height: 2px !important;
@@ -948,7 +970,7 @@ span.text-wraps {
 } 
 
  #clctop { 
-      height: 60vh; 
+      height: auto; 
   
 }
 #clctop h1 {

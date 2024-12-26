@@ -51,7 +51,7 @@ const nextConfig = {
         destination: "/thankyou/index.html",
       },
       {
-        source: "/VE-coaching",
+        source: "/centre-for-leadership-coaching",
         destination: "/VE-coaching/index.html",
       },
       {
@@ -100,22 +100,32 @@ const nextConfig = {
         destination: "/mba-placement/index.html",
       },
       {
-        source: "/centre-for-leadership-coaching", 
+        source: "/clc-conference-2024", 
         destination: "/clc/index.html",
       },
       {
-        source: "/centre-for-leadership-coaching/launch-conference", 
+        source: "/clc-conference-2024/launch-conference", 
         destination: "/clc/launch-conference.html",
       },
       {
-        source: "/centre-for-leadership-coaching/list-of-speakers", 
+        source: "/clc-conference-2024/list-of-speakers", 
         destination: "/clc/speakers.html",
       }
     ];
-  },
+  },  
 
   async redirects() {
     return [
+      {
+        source: "/programme/applied-sciences-biotechnology", 
+        destination: "/faculty-of-applied-sciences-and-biotechnology",
+        permanent: true,
+      }, 
+      {
+        source: "/faculty/profile/pk-khosla", 
+        destination: "/faculty/profile/Prem-Kumar-Khosla",
+        permanent: true,
+      },
       {
         source: "/ba-hons-event-management", 
         destination: "/bajmc-hons-event-management",

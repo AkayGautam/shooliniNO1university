@@ -1640,6 +1640,11 @@ section#shooliniMBA {
 .slick-slide {
     padding: 0 10px;
 }
+
+.page { 
+    background: #fff;
+}
+
 `
 
 export default Styless

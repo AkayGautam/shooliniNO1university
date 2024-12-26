@@ -385,6 +385,15 @@ const HeaderTwo = () => {
                         International
                       </Link>
                     </li>
+                    
+                    <li className="nav-item actiev">
+                      <Link
+                        href="/international-admissions"
+                        className="nav-link"
+                      >
+                        Admissions
+                      </Link>
+                    </li>
 
                     <li className="nav-item">
                       <Link

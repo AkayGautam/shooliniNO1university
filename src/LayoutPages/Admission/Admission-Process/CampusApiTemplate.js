@@ -137,7 +137,7 @@ const ShooliniAdmission = ({ id, ldJson }) => {
                             {images.map((item, index) => {
                               return (
                                 <Col md={12} sm={12} key={index}>
-                                  <figure class="snip1527">
+                                  <figure class="snip1527 ddddd">
                                     <div class="image">
                                       <Image
                                         width={416}

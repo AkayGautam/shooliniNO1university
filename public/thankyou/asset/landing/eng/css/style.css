@@ -2269,18 +2269,20 @@ header {
 
 
 .header-btn-group { margin:20px 0; text-align:center}
-.header-btn-group  .start_course {
+.header-btn-group .start_course {
     text-decoration: none;
-    color: #ffffff;
-	line-height:1.2;
-    font-size: 16px;
+    color: #000;
+    line-height: 1.2;
+    font-size: 22px;
     display: inline-block;
     padding: 15px 25px;
     border-radius: 50px;
-	background:#f7a70c;
+    background: #f7a70c;
     border: 1px solid #f7a70c;
-	margin:10px 10px;
-	font-weight:700;
+    margin: 10px 10px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 450px;
 }
 
 

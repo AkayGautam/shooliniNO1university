@@ -220,7 +220,7 @@ const AdmissionProcess = ({ data, ldJson }) => {
                   {Numbers.length > 0 &&
                     Numbers.map((row, idx) => (
                       <Col md={3} sm={6} key={idx}>
-                        <figure className="snip1527">
+                        <figure className="snip1527 nnnnnn">
                           <div className="image">
                             <Image
                               width={306}

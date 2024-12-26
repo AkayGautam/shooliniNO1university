@@ -415,9 +415,9 @@ Apply Now!</h6>
               <EnquireForMob />
             </div>
           </div>
-            <div className="hide-mobile"> 
+            {/* <div className="hide-mobile"> 
           <div class="npf_chatbots" data-w="1325773dd3dd43a7a3e8c868b32f1c35"></div>
-          </div>
+          </div> */}
         </footer>
       </Styles>
     </>

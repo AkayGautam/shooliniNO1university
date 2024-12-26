@@ -76,12 +76,12 @@ const CampusTemplate = ({ id, data, ldJson }) => {
                         {data[0][0].content_boxes && (
                           <Row className="mb-5">
                             {JSON.parse(data[0][0].content_boxes).length ===
-                            1 ? (
+                              1 ? (
                               <>
                                 {JSON.parse(data[0][0].content_boxes).map(
                                   (i, index) => (
                                     <Col key={index} md={12}>
-                                      <figure class="snip1527">
+                                      <figure class="snip1527 bhh">
                                         <div class="image">
                                           <Image
                                             width={416}
@@ -104,22 +104,50 @@ const CampusTemplate = ({ id, data, ldJson }) => {
                               </>
                             ) : (
                               <>
-                                {JSON.parse(data[0][0].content_boxes).map(
-                                  (item, index) => {
-                                    if (!item.image_url) return null;
-                                    return (
-                                      <React.Fragment key={index}>
-                                        {item.url ? (
-                                          <Col md={4} sm={12}>
-                                            <Link
-                                              href={
-                                                "/" +
-                                                item.url.replace(
-                                                  "https://shooliniuniversity.com",
-                                                  ""
-                                                )
-                                              }
-                                            >
+                                {
+                                  JSON.parse(data[0][0].content_boxes)
+                                    .sort((a, b) => {
+                                      // Parse `title` to numbers, handle non-numeric values as `0`
+                                      const numA = isNaN(new Date(a.title)) ? 0 : new Date(a.title);
+                                      const numB = isNaN(new Date(b.title)) ? 0 : new Date(b.title);
+
+                                      // Sort in descending order (last to first)
+                                      return numB - numA;
+                                    })
+                                    .map((item, index) => {
+                                      if (!item.image_url) return null;
+                                      return (
+                                        <React.Fragment key={index}>
+                                          {item.url ? (
+                                            <Col md={4} sm={12}>
+                                              <Link
+                                                href={
+                                                  "/" +
+                                                  item.url.replace(
+                                                    "https://shooliniuniversity.com",
+                                                    ""
+                                                  )
+                                                }
+                                              >
+                                                <figure class="snip1527 ghgh">
+                                                  <div class="image">
+                                                    <Image
+                                                      width={416}
+                                                      height={248}
+                                                      className="img-fluid"
+                                                      src={item.image_url}
+                                                      alt="pr-sample23"
+                                                    />
+                                                  </div>
+                                                  <figcaption>
+                                                    <h3> {item?.title} </h3>
+                                                    <p>{item?.content}</p>
+                                                  </figcaption>
+                                                </figure>
+                                              </Link>
+                                            </Col>
+                                          ) : (
+                                            <Col md={4} sm={12}>
                                               <figure class="snip1527">
                                                 <div class="image">
                                                   <Image
@@ -135,31 +163,12 @@ const CampusTemplate = ({ id, data, ldJson }) => {
                                                   <p>{item?.content}</p>
                                                 </figcaption>
                                               </figure>
-                                            </Link>
-                                          </Col>
-                                        ) : (
-                                          <Col md={4} sm={12}>
-                                            <figure class="snip1527">
-                                              <div class="image">
-                                                <Image
-                                                  width={416}
-                                                  height={248}
-                                                  className="img-fluid"
-                                                  src={item.image_url}
-                                                  alt="pr-sample23"
-                                                />
-                                              </div>
-                                              <figcaption>
-                                                <h3> {item?.title} </h3>
-                                                <p>{item?.content}</p>
-                                              </figcaption>
-                                            </figure>
-                                          </Col>
-                                        )}
-                                      </React.Fragment>
-                                    );
-                                  }
-                                )}
+                                            </Col>
+                                          )}
+                                        </React.Fragment>
+                                      );
+                                    })}
+
                               </>
                             )}
                           </Row>

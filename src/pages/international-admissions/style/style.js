@@ -1724,7 +1724,12 @@ ul.text-light-weight li {
     font-size: 15px;
 }
 
-
+p.logotext-center {
+    background: #fff;
+    padding: 10px;
+    display: flex
+;
+}
 
 
 

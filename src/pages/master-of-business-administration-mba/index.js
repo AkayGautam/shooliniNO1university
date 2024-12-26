@@ -208,8 +208,8 @@ const Mbas = (props) => {
                                       
                                           <th  className="text-left" scope="row">
                                           MBA Finance</th>
-                                        <td>Rs 1,77,000 </td>
-                                        <td>Rs 1,99,500 </td>
+                                        <td>Rs 1,85,500 </td>
+                                        <td>Rs 2,09,500 </td>
                                         <td> + Hostel </td>
                                        
                                       </tr>
@@ -217,28 +217,28 @@ const Mbas = (props) => {
                                       <tr>
                                      
                                         <th  className="text-left" scope="row">MBA Business Analytics</th>
-                                        <td>Rs  1,77,000 </td>
-                                        <td>Rs 1,99,500  </td>
+                                        <td>Rs 1,85,500 </td>
+                                        <td>Rs 2,09,500 </td>
                                         <td> + Hostel </td>
                                        
                                       </tr>
 
                                       <tr>
                                         <th  className="text-left" scope="row">MBA Marketing  </th>
-                                        <td>Rs 1,64,000 </td>
-                                        <td>Rs 1,92,000 </td>
+                                        <td>Rs 1,72,500 </td>
+                                        <td>Rs 2,01,500 </td>
                                         <td> + Hostel </td>
                                     </tr>
                                     <tr>
                                         <th  className="text-left" scope="row">MBA HR </th>
-                                        <td>Rs 1,64,000 </td>
-                                        <td>Rs 1,92,000 </td>
+                                        <td>Rs 1,72,500 </td>
+                                        <td>Rs 2,01,500 </td>
                                         <td> + Hostel </td>
                                     </tr>
                                     <tr>
                                         <th  className="text-left" scope="row">MBA Pharma {'&'} Healthcare  </th>
-                                        <td>Rs 1,64,000 </td>
-                                        <td>Rs 1,92,000 </td>
+                                        <td>Rs 1,72,500 </td>
+                                        <td>Rs 2,01,500 </td>
                                         <td> + Hostel </td>
                                     </tr>
 
@@ -637,6 +637,9 @@ const Mbas = (props) => {
                                                       Companies{" "}
                                                     </h3>
                                                   </div>
+                                                </div>
+                                                <div className="col-md-12">
+                                                <div class="px-0 btn btn-grad-red"> <a target="_blank" href="https://shooliniuniversity.com/media/pdf/Shoolini-MBA-Brochure_%202025.pdf"> Download Brochure </a></div>
                                                 </div>
                                               </div>
                                             </div>

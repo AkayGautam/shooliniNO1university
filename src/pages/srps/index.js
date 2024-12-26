@@ -308,7 +308,7 @@ const Mbas = () => {
                                                 </div>
                                                 <div className="col-3">
                                                     <div className="placeVal">
-                                                        <h3><strong>  {'>'}137  </strong> <br /> H-Index  </h3>
+                                                        <h3><strong>  {'>'}140  </strong> <br /> H-Index  </h3>
                                                     </div>
                                                 </div>
                                                 <div className="col-5">

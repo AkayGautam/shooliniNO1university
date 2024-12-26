@@ -192,7 +192,7 @@ Encouraging the students to work hard, he emphasised that hard work is even more
 
                 <ul className="whyUs text-white pl-0">
                   <li>1500+ Patents Filed </li>
-                  <li> H-index {">"} 137</li>
+                  <li> H-index {">"} 140</li>
                   <li>Field Weighted Citation Impact (FWCI) 2.22 </li>
                   <li>No.1 In India in Citations Per Paper </li>
                   <li> 104+ State-of-the-Art Laboratories </li>

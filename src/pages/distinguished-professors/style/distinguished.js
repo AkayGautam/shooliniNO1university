@@ -4,7 +4,7 @@ import { colors } from '../../../components/common/elements/elements'
 const Styless = styled.div`
 
 .cardim {
-  max-height: 223px;
+  max-height: 290px;
   position: relative;
   overflow: hidden;
 }

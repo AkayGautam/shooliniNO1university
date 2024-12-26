@@ -126,7 +126,7 @@ const setting = {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 page">
+                        <div className="col-md-6 page bg-white">
                             <div className="pageTwo">
                                 <h3 className="mod-title"> The Advantages  </h3>
 
