@@ -293,14 +293,14 @@ const Mbas = () => {
                                                                             </p>
 
 
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                     <a href="https://shooliniuniversity.com/newsletter" >  <Image
-                                                                                            src="/assets/images/smc/shoolinilnew.png"
-                                                                                            width={128}
+                                                                                            src="/assets/images/smc/newsletterr.png"
+                                                                                            width={70}
                                                                                             className="img-responsive"
-                                                                                            height={42}
+                                                                                            height={50}
                                                                                         /> </a>
                                                                                     </div>
                                                                                 </div>
@@ -313,14 +313,14 @@ const Mbas = () => {
                                                                                 </div>
                                                                             </div>
 
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <Image
                                                                                             src="/assets/images/smc/patrikaa.png"
-                                                                                            width={80}
+                                                                                            width={70}
                                                                                             className="img-responsive"
-                                                                                            height={80}
+                                                                                            height={50}
 
                                                                         
                                                                                         />
@@ -335,13 +335,13 @@ const Mbas = () => {
                                                                                 </div>
                                                                             </div>
 
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <a href="https://youtube.com/@shoolinitv8154?feature=shared" >  <Image
-                                                                                            src="/assets/images/smc/shooliniTv-logo.jpg"
-                                                                                            width={100}
-                                                                                            height={100}
+                                                                                            src="/assets/images/smc/shooliniTv-logo.png"
+                                                                                            width={70}
+                                                                                            height={50}
                                                                                             className="img-responsive"
                                                                                         /></a>
                                                                                     </div>
@@ -357,14 +357,14 @@ const Mbas = () => {
                                                                             </div>
 
 
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <a href="https://youtube.com/@shoolinitv8154?feature=shared"><Image
-                                                                                            src="/assets/images/smc/shooliniSavaad.png"
-                                                                                            width={150}
+                                                                                            src="/assets/images/smc/savad.png"
+                                                                                            width={70}
                                                                                             className="img-responsive"
-                                                                                            height={80}
+                                                                                            height={50}
                                                                                         /></a>
 
                                                                                     </div>
@@ -381,14 +381,14 @@ const Mbas = () => {
 
 
 
-                                                                            <div className="row my-4">
+                                                                            <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
                                                                                         <a href="https://open.spotify.com/show/2K8gy8K3BhhrDYtmnZNjcs?si=83efcd5facc84926">  <Image
-                                                                                            src="/assets/images/smc/radioshoolini.jpeg"
-                                                                                            width={150}
+                                                                                            src="/assets/images/smc/radiooo.png"
+                                                                                            width={70}
                                                                                             className="img-responsive"
-                                                                                            height={100}
+                                                                                            height={50}
                                                                                         /></a>
 
                                                                                     </div>
@@ -584,12 +584,16 @@ const Mbas = () => {
                         </section>
 
 
-                        <section>
+                        <section id="globalmember">
                             <div className="container">
-                                <div class="pagetitle text-center mb-4"><h2>Meet our Global Advisory Board </h2></div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class=" globalcard text-center">
+                            <div className="row">
+                                <div className="pagetitle text-center mb-3"><h2>Meet our Global Advisory Board </h2></div>
+                             </div>
+
+                               <div className="boximageglobal">
+                             <div className="row ">
+                                    <div className="col-md-4">
+                                        <div className=" globalcard text-center">
                                             <img className="imgcardimg" src="/assets/images/smc/Nishtha Anand.jpg" width={300} height={300} />
                                             <h3>Nishtha Shukla Anand</h3>
                                             <span><strong className='hightlightprofile'>Ex-Reuters,</strong> India Today, Founder: TechThirsty.com & Pen Pundit Media, Trustee and Director, Shoolini University</span>
@@ -597,15 +601,15 @@ const Mbas = () => {
                                     </div>
 
 
-                                    <div class="col-md-4">
-                                        <div class=" globalcard text-center">
+                                    <div className="col-md-4">
+                                        <div className=" globalcard text-center">
                                             <img className="imgcardimg" src="/assets/images/smc/kunal_nandwani.jpg" width={300} height={300} />
                                             <h3>Kunal Nandwani</h3>
                                             <span> Co-founder & CEO of<strong className='hightlightprofile'> uTrade </strong> & Founder - Chandigarh Angels Network</span>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-4">
+                                    <div className="col-md-4">
                                         <div class="globalcard text-center">
                                             <img className="imgcardimg" src="/assets/images/smc/Gurpreet Tuthgur.jpg" width={300} height={300} />
                                             <h3> Gurpreet Tathgur</h3>
@@ -613,27 +617,27 @@ const Mbas = () => {
                                         </div>
                                     </div>
 
-                                </div>
+                              
 
 
-                                <div class="row mt-3">
 
                                  
 
-                                    <div class="col-md-4">
-                                        <div class="globalcard text-center">
+                                    <div className="col-md-4">
+                                        <div className="globalcard text-center mt-2">
                                             <img className="imgcardimg" src="/assets/images/smc/Namit Sharma.jpg" width={300} height={300} />
                                             <h3>Namit Sharma</h3>
                                             <span> Creator, Producer, Catalyst. CEO -<strong className='hightlightprofile'> Dreamers & Doers Co.</strong> </span>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-4">
-                                        <div class="globalcard text-center">
+                                    <div className="col-md-4">
+                                        <div className="globalcard text-center mt-2">
                                             <img className="imgcardimg" src="/assets/images/smc/Tanvi Gandhi.jpg" width={300} height={300} />
                                             <h3>Tanvi Gandhi</h3>
                                             <span> Independent Producer, <strong className='hightlightprofile'>ex-YRF & Phantom Films</strong> </span>
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
 
@@ -648,7 +652,8 @@ const Mbas = () => {
 
                         <section id="Stories" className="student-voices">
                             <div className="container">
-                                <div class="pagetitle text-center mb-4"><h2> Shoolini Media Students Making an Impact </h2></div>
+                                <div className="row">
+                                <div class="pagetitle text-center mb-3"><h2> Shoolini Media Students Making an Impact </h2></div></div>
 
                                 <div className="row">
                                     <Slider {...stories}>

@@ -22,6 +22,15 @@ section#shooliniMBA{
     background-size: 100%;
     height: 80vh;
 }
+    .boximageglobal {
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+    .sb_text p {
+    margin: 0px !important;
+}
+
 p.text-18 {
     color: #333;
 }
