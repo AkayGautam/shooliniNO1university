@@ -407,6 +407,8 @@ const Mbas = () => {
                                                                             Duration: <strong> 4 yrs</strong>(Exit as per NEP/ UGC rules)</li>
                                                                         <li> <img src="assets/images/icon2.png" /> Research Degree: <strong>
                                                                         BTech | BSc </strong></li>
+                                                                        <li> <img src="assets/images/icon2.png" /> Curriculum: <strong>
+                                                                        B Tech Biotech </strong></li>
                                                                         {/* <li> <img src="assets/images/icon3.png" /> Mode <strong> Full Time, with Hostel Facility</strong></li> */}
                                                                     </ul>
                                                                 </div>

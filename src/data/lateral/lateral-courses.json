@@ -1,0 +1,66 @@
+
+ [
+        {
+            "id": "1",
+            "title": "B Design (LEET)", 
+            "link": "/b-design-leet"
+         
+        },
+        {
+            "id": "2",
+            "title": "B Pharmacy (LEET)", 
+            "link": "/b-pharmacy-leet"
+         
+        },
+        {
+            "id": "3",
+            "title": "B Tech Bioinformatics (LEET)", 
+            "link": "/b-tech-bioinformatics-leet"
+         
+        },
+        {
+            "id": "4",
+            "title": "B Tech Biotechnology (LEET) ", 
+            "link": "/btech-biotechnology-leet"
+         
+        },
+        {
+            "id": "5",
+            "title": "B Tech Civil Engineering (LEET)", 
+            "link": "/b-tech-civil-engineering-leet"
+         
+        },
+        {
+            "id": "6",
+            "title": "B Tech CSE Artificial Intelligence (LEET)", 
+            "link": "/b-tech-cse-leet-artificial-intelligence-and-machine-learning"
+         
+        },
+        {
+            "id": "7",
+            "title": "B Tech CSE Blockchain & IoT (LEET)", 
+            "link": "/"
+         
+        },
+        {
+            "id": "8",
+            "title": "B Tech CSE Cloud Computing (LEET)", 
+            "link": "/b-tech-cse-leet-cloud-computing"
+         
+        },
+        {
+            "id": "9",
+            "title": "B Tech CSE Cyber Security (LEET)", 
+            "link": "/b-tech-cse-leet-cyber-security"
+         
+        },
+        {
+            "id": "10",
+            "title": "B Tech CSE DevOps (LEET)", 
+            "link": "/"
+         
+        }
+
+       
+
+    ]

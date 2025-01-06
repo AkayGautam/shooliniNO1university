@@ -17,7 +17,9 @@ const International = () => {
 
     useEffect(() => {
 
-        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
+        // var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
+
+        var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); 
 
     }, [])
 
@@ -203,8 +205,8 @@ const International = () => {
             <div class="col-3">
                 <div class="placeVal text-center">
                 <h3><strong>  &gt;    
-                    <CountUp start={0} end={137} />
-                     </strong> <br /> Patents Filed   </h3>
+                    <CountUp start={0} end={140} />
+                     </strong> <br /> H-Index   </h3>
                    </div>
                  </div>
 
@@ -288,7 +290,7 @@ const International = () => {
 
                                                                             Shoolini boasts over <strong> 104 research laboratories</strong>  and <strong> 11 Centres of Excellence, </strong> including an <strong> in-house Cancer Research Centre</strong> . The university is the <strong> 3rd highest patent filer</strong>  in the country, with over <strong> 1,500 patents</strong> .
 
-                                                                            With an <strong> H-Index of {'<'} 137 </strong>, Shoolini researchers are among the top 2% scientists globally, according to the list released by Stanford University.
+                                                                            With an <strong> H-Index of {'<'} 140 </strong>, Shoolini researchers are among the top 2% scientists globally, according to the list released by Stanford University.
                                                                         </p>
 
 
@@ -427,7 +429,11 @@ const International = () => {
                                                                                 <small>  (fields with * are mandatory)</small></p>
 
 
-                                                                            <div className="npf_wgts" data-height="470px" data-w="a5c6f2dfd05619f11b2095ddcd313946"></div>
+                                                                            {/* <div className="npf_wgts" data-height="470px" data-w="a5c6f2dfd05619f11b2095ddcd313946"></div> */}
+
+                                                                            <div class="npf_wgts" data-height="550px" data-w="7c25122ca95295617008627540f51b38"></div>
+
+                                                
 
 
                                                                         </div>
@@ -483,6 +489,230 @@ const International = () => {
                                 </div>
                             </div>
                         </section>
+
+                        <section className="HtApply text-center bg-white pos-r pt-5 pb-5">
+  <div className="container">
+    <div className="row ">
+        
+      <div className="col-lg-12 col-md-12 ml-auto mr-auto">
+        <div className="section-title">
+         
+          <h2 className="title">How to Apply</h2>
+        </div>
+      </div>
+    </div>
+    <div className="row bg-line">
+    
+      <div className="col-lg-3 col-md-12 col-6">
+        <div className="work-process">
+          <div className="box-loader"> <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className="step-num-box">
+            <div className="step-icon"><span> <img src="assets/images/resume.png" /> </span>
+            </div>
+            <div className="step-num">01</div>
+          </div>
+          <div className="step-desc">
+            <h4>Click Apply Now to start your application</h4>
+       
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-12 mt-5 col-6 mt-md-0">
+        <div className="work-process">
+          <div className="box-loader"> <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className="step-num-box">
+            <div className="step-icon"><span> <img src="assets/images/email.png" /></span>
+            </div>
+            <div className="step-num">02</div>
+          </div>
+          <div className="step-desc">
+            <h4>Fill out the form and verify your email ID</h4>
+         
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-12 mt-5 col-6 mt-md-0">
+        <div className="work-process">
+          <div className="box-loader"> <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className="step-num-box">
+            <div className="step-icon"><span> <img src="assets/images/job-application.png" /></span>
+            </div>
+            <div className="step-num">03</div>
+          </div>
+          <div className="step-desc">
+            <h4>Pay the application fee and submit your application.</h4>
+         
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-3 col-md-12 mt-5 col-6 mt-md-0">
+        <div className="work-process">
+          <div className="step-num-box">
+            <div className="step-icon"><span> <img src="assets/images/exam.png" /></span>
+            </div>
+            <div className="step-num">04</div>
+          </div>
+          <div className="step-desc">
+            <h4>Take the online entrance exam after eligibility confirmation.</h4>
+        
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="row bg-line2 mt-4 pt-4">
+    
+    <div className="col-lg-3 col-md-12 col-6 mt-0">
+      <div className="work-process">
+        <div className="box-loader"> <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className="step-num-box">
+          <div className="step-icon"><span> <img src="assets/images/teacher.png" /></span>
+          </div>
+          <div className="step-num">05</div>
+        </div>
+        <div className="step-desc">
+          <h4>After the exam there will be a faculty interaction</h4>
+     
+        </div>
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-12 mt-5 col-6 mt-md-0">
+      <div className="work-process">
+        <div className="box-loader"> <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className="step-num-box">
+          <div className="step-icon"><span> <img src="assets/images/offer-letter.png" /></span>
+          </div>
+          <div className="step-num">06</div>
+        </div>
+        <div className="step-desc">
+          <h4>If successful, you will receive an offer letter</h4>
+       
+        </div>
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-12 mt-5 col-6 mt-md-0">
+      <div className="work-process">
+        <div className="box-loader"> <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className="step-num-box">
+          <div className="step-icon"><span> <img src="assets/images/payment.png" /></span>
+          </div>
+          <div className="step-num">07</div>
+        </div>
+        <div className="step-desc">
+          <h4>Pay the fee to confirm your admission</h4>
+       
+        </div>
+      </div>
+    </div>
+
+    <div className="col-lg-3 col-md-12 mt-5 col-6 mt-md-0">
+      <div className="work-process">
+        <div className="step-num-box">
+          <div className="step-icon"><span> <img src="assets/images/passport.png" /></span>
+          </div>
+          <div className="step-num">08</div>
+        </div>
+        <div className="step-desc">
+          <h4>Get an acceptance letter to apply for your student visa</h4>
+      
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</section>
+
+<section className="pb-5">
+    <div className="container">
+        <div className="row">
+        <div className="col-md-12 mt-5">
+                                                                        <div className="card-box text-center">
+                                                                            <h3 className="title-default">Scholarship Opportunities  </h3>
+                                                                          <p> Pursue your academic dreams in a dynamic international environment. We offer a broad spectrum of programs across various disciplines, preparing you for global success. Eligible candidates can receive up to 50% scholarships. </p> 
+
+                                                                        </div>
+                                                                    </div>
+
+<div className="courseTable mt-4">
+<h4 className="title text-center mb-3">Eligibility Criteria</h4>
+<div className="table-responsive"> 
+<table class="table table-striped">
+  <thead className="bg-dark text-white">
+    <tr>
+      <th className="text-white" scope="col">Course</th>
+      <th className="text-white" scope="col">Minimum Requirements</th>
+      <th className="text-white" scope="col">Documents required</th>
+      <th className="text-white" scope="col">Admission Criteria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Undergraduate</th>
+      <td>	Min. 55% marks in A-level/ Grade 12/ HSC/ National Senior Certificate or as mentioned by the university on the website.</td>
+      <td><ul> 
+          <li>A-level/ 12th/ HSC/ NSC certificate and marksheet. </li>
+<li>	O-level/ 10th / SSC/ ordinary level certificate and marksheets. </li>
+<li>	Migration/ Character certificate/ School Leaving certificate.
+ </li></ul></td>
+      <td>Shoolini University's multiple choice entrance test, and faculty interaction.</td>
+    </tr>
+    <tr>
+      <th scope="row">Postgraduate</th>
+      <td>Minimum 50% marks in Undergraduate degree or as mentioned by the university on the website.</td>
+      <td> <ul>
+          <li>  All docs as mentioned for UG   </li>
+ <li> Bachelor’s degree and all semester marksheets. 
+</li>
+          </ul></td>
+      <td>	Shoolini University's multiple choice entrance test, and faculty interaction.</td>
+    </tr>
+    <tr>
+      <th scope="row"> Doctorate</th>
+      <td>•	Minimum 55% marks in the related field / discipline.</td>
+      <td> <ul>
+            <li>	All docs as mentioned for PG  </li>
+<li> 	CV, Research Concept note, Master’s degree and all semester marksheets.
+</li>
+          </ul></td>
+      <td> 	Shoolini University's multiple choice entrance test, and assessment of research aptitude through </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+
+
+ 
+        </div>
+    </div>
+</section>
+
+ 
+
+
+
 
 
                         <section id="faqs" className="student-voices">

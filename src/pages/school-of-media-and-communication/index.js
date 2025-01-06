@@ -8,11 +8,11 @@ import Image from "next/legacy/image";
 import Head from 'next/head'
 import Slider from 'react-slick'
 
-const Mbas = () => {
+const index = () => {
 
     useEffect(() => {
 
-        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
+        var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
 
     }, [])
 
@@ -107,8 +107,8 @@ const Mbas = () => {
 
                 <Head>
                     <title>School of Media and Communications | Shoolini University</title>
-                    <meta name="description" content=" " />
-                    <meta name="keywords" content=" " />
+                    <meta name="description" content="School of Media and Communications, Shoolini University equips students with required set of skills to be multi-media journalists & communicators." />
+                    <meta name="keywords" content="Media and communication, Journalism and New Media, Shoolini University, BA Journalism and Mass Communication, MA Journalism, journalism courses near me, journalism masters courses" />
 
 
                 </Head>
@@ -416,7 +416,8 @@ const Mbas = () => {
                                                                                 <small>  (fields with * are mandatory)</small></p>
 
 
-                                                                            <div class="npf_wgts" data-height="400px" data-w="a5c6f2dfd05619f11b2095ddcd313946"></div>
+                                                                                <div class="npf_wgts" data-height="400px" data-w="b7a96773936817725d0a4442d6310f28"></div>
+                                               
 
 
                                                                         </div>
@@ -990,4 +991,4 @@ const Mbas = () => {
     )
 }
 
-export default Mbas
+export default index

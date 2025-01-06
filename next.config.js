@@ -120,7 +120,12 @@ const nextConfig = {
         source: "/programme/applied-sciences-biotechnology", 
         destination: "/faculty-of-applied-sciences-and-biotechnology",
         permanent: true,
-      }, 
+      },
+       {
+        source: "/journalism-and-mass-communication", 
+        destination: "/school-of-media-and-communication",
+        permanent: true,
+      },
       {
         source: "/faculty/profile/pk-khosla", 
         destination: "/faculty/profile/Prem-Kumar-Khosla",

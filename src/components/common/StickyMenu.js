@@ -277,6 +277,8 @@ const StickyMenu = ({ links }) => {
                                             <ul className="subMenus">
                                               <li> <Link href="/msc-agriculture-agronomy"> 	MSc Agriculture (Agronomy) </Link> </li>
                                               <li> <Link href="/msc-agriculture-plant-breeding-genetics"> 	MSc Agriculture Genetics {'&'} Plant Breeding </Link> </li>
+                                              <li> <Link href="/msc-agriculture-entomology"> MSc Agriculture (Entomology)
+ </Link> </li>
                                             </ul>
                                             <h4>Science</h4>
                                             <ul className="subMenus">

@@ -167,17 +167,18 @@ const Header = () => {
       </Dialog>
 
 
- {/* <section className="marText"> 
-      <marquee className="marquee">
-  <div className="marquee--inner">
+ <section className="marText"> 
+      <div className="marquee text-center">
+  <div className="marquee--inner w-100">
     <span>
-      <a href="/news/shoolini-ranks-high-with-19-scientists-in-stanfords-top-2?utm_source=organic&utm_medium=websiteticker&utm_campaign=19scientiststop2"> Shoolini Ranks High with 19 Scientists in Stanford University’s Top 2% List
+      <a target="_blank" href="https://shooliniuniversity.com/media/pdf/Registration-for-Re-appear-Jan-2025.pdf"> Registration for Re-appear Jan 2025
+Click Here {'>>'}
 </a>
     </span>
   </div> 
-</marquee>
+</div>
  
-</section>  */}
+</section> 
 
 
       <div className={isActive ? 'bg-salmon2 sticky-icon showcase' : 'bg-salmon2 sticky-icon'} >
@@ -679,6 +680,8 @@ const Header = () => {
                                             <ul className="subMenus">
                                               <li> <Link href="/msc-agriculture-agronomy"> 	MSc Agriculture (Agronomy) </Link> </li>
                                               <li> <Link href="/msc-agriculture-plant-breeding-genetics"> 	MSc Agriculture Genetics {'&'} Plant Breeding </Link> </li>
+                                              <li> <Link href="/msc-agriculture-entomology"> MSc Agriculture (Entomology)
+ </Link> </li>
                                             </ul>
                                             <h4>Science</h4>
                                             <ul className="subMenus">

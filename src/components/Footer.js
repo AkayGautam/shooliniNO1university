@@ -80,10 +80,12 @@ const Footer = () => {
 
             <div className={notification ? "note_hide3 not_card" : "footer_show not_card"}>
               <div className="shadowNotification">
-              <h6 className="text-white m-0">February 2025 Admissions Open
-Apply Now!</h6>
+              <h6 className="text-white m-0">Admissions 2025 Open </h6>
+              <Link target="_blank" href="https://shooliniuniversity.com/apply-feb-2025?utm_source=organic&utm_medium=Febadmissions&utm_campaign=admissions" className="reg-btn">  Apply Now!   </Link>
+
+              {/* <h6 className="text-white mt-2"> Registration for Re-appear Jan 2025  </h6>
+              <Link className="text-white reg-btn" target="_blank" href="https://shooliniuniversity.com/media/pdf/Registration-for-Re-appear-Jan-2025.pdf"> Click Here {">>"}</Link> */}
                
-                  <Link target="_blank" href="https://shooliniuniversity.com/apply-feb-2025?utm_source=organic&utm_medium=Febadmissions&utm_campaign=admissions" className="reg-btn">  Apply Now    </Link>
             
               </div>
             </div>
