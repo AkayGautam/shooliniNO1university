@@ -18,11 +18,17 @@ section {
     align-items: center;
 }
 section#shooliniMBA{
-    background: url(../../assets/images/smc/schoolmediaslider.jpg);
+    background: url(../../assets/images/smc/schoolslider1.jpeg);
     background-size: 100%;
     height: 80vh;
+    margin-top: 0px;
+    padding-top: 20px !important;
+    background-position: top;
+    background-size: cover;
 }
-    .boximageglobal {
+
+
+.boximageglobal {
     background: #fff;
     padding: 20px 20px;
     border-radius: 10px;
@@ -105,7 +111,9 @@ a.applyBtn {
     width: 100%;
     align-items: center;
 }
-
+.mobileslideDesign {
+    display: none;
+}
 .inRow {
     display: flex;
     align-items: center;
@@ -117,6 +125,10 @@ a.applyBtn {
 #specialization .placeVal h3 {
     font-size: 17px;
     font-weight:500;
+}
+p.adprtext {
+    font-size: 13px !important;
+    font-family: 'CircularStd';
 }
 
 @media (min-width: 980px) {
@@ -207,6 +219,9 @@ a.applyBtn {
     .nav-tabs-dropdown>li.active>a:active {
         border-color: transparent;
     }
+.mobileslideDesign {
+    display: none;
+}
 }
 section.rinakingSection {
     background: #fff;
@@ -217,11 +232,38 @@ section.rinakingSection {
     display: flex;
     align-items: center;
 }
- .leftCatd h1 {
-    font-size: 50px;
+
+noretypeS {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 900;
+    display: block;
+    font-family: 'CircularStd';
+    margin: 15px 0px;
+}
+.leftCatrd strong {
+    font-size: 21px;
+    font-family: 'CircularStd';
     font-weight: 800;
-    color: #000;
-    line-height: 1.3;
+}
+
+ h1.noretypeS {
+    margin: 15px 0px;
+    font-size: 48px;
+    font-family: 'CircularStd';
+    font-weight: 900;
+    line-height: 1.2;
+}
+.anbtn .btn-grad-red a {
+    display: block;
+    max-width: 360px;
+    background: linear-gradient(to right, #f63030 0%, #e33535 100%);
+    color: #fff;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 19px;
+    box-shadow: 3px 2px 12px 2px rgb(0 0 0 / 20%);
+    border-radius: 5px;
 }
 #Stories .card-box p {
     display: -webkit-box;
@@ -231,26 +273,24 @@ section.rinakingSection {
     font-size: 14px !important;
     line-height: 1.6 !important;
 }
-.leftCatd h1 span {
+    
+.leftCatd.text-center.pt-5 {
     position: relative;
+    left: 240px;
+    top: 155px;
+    background: red;
+}
+.leftCatd strong {
+    color: #ffffff;
+    font-size: 38px;
+    font-family: 'CircularStd';
+}
+span.cchighlight {
+    color: black;
 }
 
-.leftCatd h1 span:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -11px;
-    height: 4px;
-    width: 100%;
-    background: linear-gradient(to right,#f63030 0%,#e33535 100%);
-}
 
-.leftCatd h1 strong {
-    text-transform: uppercase;
-    background: linear-gradient(to right,#f63030 0%,#e33535 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .noretype {
     display: inline-flex;
@@ -1184,7 +1224,20 @@ section#shooliniMBA {
     {
         display:none;
     }
-
+section#shooliniMBA {
+    display: none;
+}
+    .mobileslideDesign {
+    display: block;
+}
+    section.mobilebanner {
+    padding: 0px;
+    margin: 0px;
+}
+img.none-bannerm {
+        height: 80vh;
+        width: 100%;
+    }
 	.dropdown-toggle::after {
 		position: absolute;
 		display: block;

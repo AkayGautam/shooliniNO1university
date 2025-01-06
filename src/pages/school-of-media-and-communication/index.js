@@ -128,89 +128,38 @@ const index = () => {
                         </Modal.Body>
 
                     </Modal>
-
+                     
 
                     <main className="innerBody">
+
+
+
+                    <section className="mobilebanner">
+                                    <div className="conatiner">
+                                    <div className="row">   
+                                <div class="mobileslideDesign">
+                        <a href="https://admissions.shooliniuniversity.com/">
+                         <img className="none-bannerm" src="assets/images/smc/Mobile size.jpg"/> </a></div>
+                         </div></div> </section>
+
+
+
+
+
                         <section id="shooliniMBA" className="heroBanner">
                             <div className="container">
                                 <div className="row">
-                                    {/* <div className="col-md-8 centerDiv">
-                                        <div className="leftCatd">
-                                            <h1 className="mb-0"> <span>  Top Media Experts,</span> <br /> <span>Real-World Projects, </span> <br />Future-Ready Careers</h1>
 
-                                            <div className="noretype">
-                                              
-                                                <p className="text-center pb-0">
-                                                    <Image
-                                                        src="/assets/images/theLogo.png"
-                                                        alt="THE Logo"
-                                                        width={120}
-                                                        height={54}
-                                                        className="mr-2 pr-3"
-                                                    />
-                                                    <Image
-                                                        src="/assets/images/qs-rankingNew.png"
-                                                        alt="THE Logo"
-                                                        width={220}
-                                                        height={60}
-                                                    />
-                                                </p>
-                                            </div>
+                                
 
-                                            <div className="forMobile d-md-none">
-
-                                                <Image
-                                                    src="/assets/images/mobile-banner.jpg"
-                                                    alt="Shoolini Banner"
-                                                    className="mg-responsive w-100"
-                                                    width={535}
-                                                    height={514}
-                                                />
-
-                                            </div>
-
-                                            <div className="px-0 btn btn-grad-red xs-none"> <a target="_blank"
-                                                href="https://admissions.shooliniuniversity.com/"> Be an SRP Fellow</a>
-                                            </div>
-                                    
-
-                                            <div className="row my-md-5">
-                                                <div className="col-4">
-                                                    <div className="placeVal">
-                                                        <h3><strong>  1500+  </strong> <br /> Patents Filed   </h3>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="placeVal">
-                                                        <h3><strong>  {'>'}115 {'+'}  </strong> <br /> H-Index  </h3>
-                                                    </div>
-                                                </div>
-                                                <div className="col-5">
-                                                    <div className="placeVal">
-                                                        <h3><strong>  Top 2%   </strong> <br /> Scientists of the World  </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="rightCard">
-
-                                            <Image
-                                                src="/assets/images/heroOne.png"
-                                                alt="Hero Banner"
-                                                className="mg-responsive w-100"
-                                                width={356}
-                                                height={621}
-                                            />
-
-                                        </div>
-                                    </div> */}
-                               
-
-
-
-                          </div>
+                                
+<div className="col-md-6 d-flex align-items-center mt-5">
+    <div className="leftCatrd mt-5">
+    <p className="h2 pt- mb-0"> <strong> CREATE. COMMUNICATE. INSPIRE </strong></p>
+    <h1 className="noretypeS"> INDIA’S TOP <span class="text-red"> MEDIA & COMMUNICATIONS</span>
+     <br></br> SCHOOL</h1>
+<div className="anbtn btn-grad-red"> <a target="_blank" href="https://admissions.shooliniuniversity.com/">Apply Now</a></div></div></div>
+</div>
                             </div>
                         </section>
 
@@ -412,7 +361,7 @@ const index = () => {
                                                                         <div className="card-box">
                                                                             <h3 className="title-red"> Start Your Application </h3>
                                                                             <p className="lightTexty">
-                                                                                at India’s First Biotechnology University  <br />
+                                                                               Please fill in the registration form below:  <br />
                                                                                 <small>  (fields with * are mandatory)</small></p>
 
 
@@ -954,7 +903,7 @@ const index = () => {
                                             <div class="courselist">
                                                 <ul class="p-0">
                                                     <li> <a className='journlismatag' target="_blank" href="https://shooliniuniversity.com/ba-in-journalism-and-mass-communication"> <strong>  BA Journalism & Mass Communication </strong>
-                                                        <p> (Event Management, Advertising & PR)</p></a> </li>
+                                                        <p className='adprtext'> (Event Management, Advertising & PR)</p></a> </li>
                                                     <li> <a className='journlismatag' target="_blank" href="https://shooliniuniversity.com/ma-in-journalism"> <strong>  MA Journalism & Mass Communication  </strong>  </a> </li>
                                                     <li> <a className='journlismatag' target="_blank" href="https://shooliniuniversity.com/phd-journalism"> <strong>  PhD Journalism  </strong> </a> </li>
                                                     <li> <a className='journlismatag' target="_blank" href="https://shooliniuniversity.com/phd-mass-communication"> <strong>  PhD Mass Communication </strong>  </a> </li>
