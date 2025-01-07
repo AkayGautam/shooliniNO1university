@@ -27,7 +27,7 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        rows: 1,
+        rows: 3,
       },
     },
   ],
@@ -38,29 +38,42 @@ const Events = () => {
   
   const [data, setData] = useState([]);
  
+  // Fetch data from API
   useEffect(() => {
-    fetch("https://shooliniuniversity.com/media/eventAPI", {
-      method: "POST",
-      headers: new Headers({
-        "Content-Type": "application/x-www-form-urlencoded",
-      }),
-      body: "auth=shoolini@999",
-    })
-      .then((response) => response.json())
-      .then((res) => setData(res?.success))
-      .catch((error) => console.error(error));
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://shooliniuniversity.com/media/allEventAPI", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: "auth=shoolini@999",
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        setData(result?.success || []);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
+  // Format date to readable string
   const dateFormat = (date) => {
-    var options = { year: "numeric", month: "long", day: "numeric" };
-    var today = new Date(date);
-    return today.toLocaleDateString("en-US", options);
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return new Date(date).toLocaleDateString("en-US", options);
   };
 
   console.log(data);
   return (
     <Styles>
-      <section className="event-page-area event-page for-desktop">
+      <section className="event-page-area event-page">
         <Container> 
           <Row>
             <Col lg="12" md="12">
@@ -92,7 +105,8 @@ const Events = () => {
                           <div className="event-meta small-meta">
                             <span>
                               <i className="lnr lnr-calendar-full"></i>
-                              {dateFormat(data?.date)}
+                              {/* {dateFormat(data?.date)} */}
+                              {dateFormat(data.date)}
                             </span>
                           </div>
                           <div className="event-excerpt">

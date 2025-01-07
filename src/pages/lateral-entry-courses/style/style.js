@@ -133,7 +133,7 @@ ul.sci span {
 
 
 section {
-    font-family: CircularStd;
+    font-family: 'Poppins';
     background: #f5f5f7;
     padding:40px 0px;
 }

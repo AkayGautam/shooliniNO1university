@@ -201,10 +201,10 @@ Click Here {'>>'}
           <span className="iconsFile"> <FaRegCalendarAlt /> </span>
           <span className="icnName">Events</span> </a>
 
-          <a target="_blank" href="https://shooliniuniversity.com/chat-with-ambassador" className="Instagram bg-success xs-d-none">
+          {/* <a target="_blank" href="https://shooliniuniversity.com/chat-with-ambassador" className="Instagram bg-success xs-d-none">
           <span className="iconsFile"> <FaUserGraduate />
   </span>
-          <span className="icnName">Chat with Student Ambassador</span> </a>
+          <span className="icnName">Chat with Student Ambassador</span> </a> */}
 
 
         {/* <a target="_blank" href="https://shooliniuniversity.com/chat-with-ambassador" className="xd-none xs-design Instagram bg-info xs-d-none">
@@ -590,6 +590,7 @@ Click Here {'>>'}
                                             <ul className="subMenus">
                                               <li> <Link href="/bsc">		BSc (Hons)   </Link> </li> 
                                               <li> <Link className="hilightLink" href="/minor-specialisations">	Minor Specialisations   </Link> </li> 
+                                              <li> <Link className="hilightLink" href="/lateral-entry-courses">	Lateral Entry Programs   </Link> </li> 
                                             </ul>
                                        
                                           </div>

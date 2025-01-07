@@ -12,7 +12,7 @@ const index = () => {
 
     useEffect(() => {
 
-        var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s);
 
     }, [])
 
@@ -100,6 +100,36 @@ const index = () => {
     }
 
 
+    
+  const setting = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade:true,
+    slidesToShow:1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+
+    autoplaySpeed: 2500,
+
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1 ,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
     return (
         <>
 
@@ -128,19 +158,19 @@ const index = () => {
                         </Modal.Body>
 
                     </Modal>
-                     
+
 
                     <main className="innerBody">
 
 
 
-                    <section className="mobilebanner">
-                                    <div className="conatiner">
-                                    <div className="row">   
-                                <div class="mobileslideDesign">
-                        <a href="https://admissions.shooliniuniversity.com/">
-                         <img className="none-bannerm" src="assets/images/smc/Mobile size.jpg"/> </a></div>
-                         </div></div> </section>
+                        <section className="mobilebanner p-0">
+                           
+                                    <div class="mobileslideDesign">
+                                        <a href="https://admissions.shooliniuniversity.com/">
+                                            <img className="none-bannerm" src="assets/images/smc/Mobile size.jpg" /> </a></div>
+                              
+                                 </section>
 
 
 
@@ -150,20 +180,20 @@ const index = () => {
                             <div className="container">
                                 <div className="row">
 
-                                
 
-                                
-<div className="col-md-6 d-flex align-items-center mt-5">
-    <div className="leftCatrd mt-5">
-    <p className="h2 pt- mb-0"> <strong> CREATE. COMMUNICATE. INSPIRE </strong></p>
-    <h1 className="noretypeS"> INDIA’S TOP <span class="text-red"> MEDIA & COMMUNICATIONS</span>
-     <br></br> SCHOOL</h1>
-<div className="anbtn btn-grad-red"> <a target="_blank" href="https://admissions.shooliniuniversity.com/">Apply Now</a></div></div></div>
-</div>
+
+
+                                    <div className="col-md-6 d-flex align-items-center mt-5">
+                                        <div className="leftCatrd mt-5">
+                                            <p className="h2 pt- mb-0"> <strong> CREATE. COMMUNICATE. INSPIRE </strong></p>
+                                            <h1 className="noretypeS"> INDIA’S TOP <span class="text-red"> MEDIA & COMMUNICATIONS</span>
+                                                <br></br> SCHOOL</h1>
+                                            <div className="anbtn btn-grad-red"> <a target="_blank" href="https://admissions.shooliniuniversity.com/">Apply Now</a></div></div></div>
+                                </div>
                             </div>
                         </section>
 
-                 
+
 
 
 
@@ -245,7 +275,7 @@ const index = () => {
                                                                             <div className="row my-2">
                                                                                 <div className="col-3">
                                                                                     <div className="sb_logo">
-                                                                                    <a href="https://shooliniuniversity.com/newsletter" >  <Image
+                                                                                        <a href="https://shooliniuniversity.com/newsletter" >  <Image
                                                                                             src="/assets/images/smc/newsletterr.png"
                                                                                             width={70}
                                                                                             className="img-responsive"
@@ -255,7 +285,7 @@ const index = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                    <a href="https://shooliniuniversity.com/newsletter" >   <h4> Shoolini Newsletter</h4> </a>
+                                                                                        <a href="https://shooliniuniversity.com/newsletter" >   <h4> Shoolini Newsletter</h4> </a>
                                                                                         <p> (English)
                                                                                         </p>
                                                                                     </div>
@@ -271,7 +301,7 @@ const index = () => {
                                                                                             className="img-responsive"
                                                                                             height={50}
 
-                                                                        
+
                                                                                         />
                                                                                     </div>
                                                                                 </div>
@@ -297,9 +327,9 @@ const index = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                    <a href="https://youtube.com/@shoolinitv8154?feature=shared" >      <h4> Shoolini TV</h4> </a>
+                                                                                        <a href="https://youtube.com/@shoolinitv8154?feature=shared" >      <h4> Shoolini TV</h4> </a>
                                                                                         <p>
-                                                                                    (English) 
+                                                                                            (English)
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -320,7 +350,7 @@ const index = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                    <a href="https://youtube.com/@shoolinitv8154?feature=shared">    <h4> Shoolini Samvaad  </h4> </a>
+                                                                                        <a href="https://youtube.com/@shoolinitv8154?feature=shared">    <h4> Shoolini Samvaad  </h4> </a>
                                                                                         <p> (Hindi)
                                                                                         </p>
                                                                                     </div>
@@ -344,7 +374,7 @@ const index = () => {
                                                                                 </div>
                                                                                 <div className="col-9">
                                                                                     <div className="sb_text">
-                                                                                    <a href="https://open.spotify.com/show/2K8gy8K3BhhrDYtmnZNjcs?si=83efcd5facc84926">    <h4> Radio Shoolini </h4> </a>
+                                                                                        <a href="https://open.spotify.com/show/2K8gy8K3BhhrDYtmnZNjcs?si=83efcd5facc84926">    <h4> Radio Shoolini </h4> </a>
                                                                                         <p> (Bilingual)
                                                                                         </p>
                                                                                     </div>
@@ -361,12 +391,12 @@ const index = () => {
                                                                         <div className="card-box">
                                                                             <h3 className="title-red"> Start Your Application </h3>
                                                                             <p className="lightTexty">
-                                                                               Please fill in the registration form below:  <br />
+                                                                                Please fill in the registration form below:  <br />
                                                                                 <small>  (fields with * are mandatory)</small></p>
 
 
-                                                                                <div class="npf_wgts" data-height="400px" data-w="b7a96773936817725d0a4442d6310f28"></div>
-                                               
+                                                                            <div class="npf_wgts" data-height="425px" data-w="b7a96773936817725d0a4442d6310f28"></div>
+
 
 
                                                                         </div>
@@ -536,183 +566,273 @@ const index = () => {
 
                         <section id="globalmember">
                             <div className="container">
-                            <div className="row">
-                                <div className="pagetitle text-center mb-3"><h2>Meet our Global Advisory Board </h2></div>
-                             </div>
+                                <div className="row">
+                                    <div className="pagetitle text-center mb-3"><h2>Meet our Advisory Board </h2></div>
+                                </div>
 
-                               <div className="boximageglobal">
-                             <div className="row ">
-                                    <div className="col-md-4">
-                                        <div className=" globalcard text-center">
-                                            <img className="imgcardimg" src="/assets/images/smc/Nishtha Anand.jpg" width={300} height={300} />
-                                            <h3>Nishtha Shukla Anand</h3>
-                                            <span><strong className='hightlightprofile'>Ex-Reuters,</strong> India Today, Founder: TechThirsty.com & Pen Pundit Media, Trustee and Director, Shoolini University</span>
+                                <div className="boximageglobal">
+                                    <div className="row ">
+                                        <div className="col-md-4">
+                                            <div className=" globalcard text-center">
+                                                <div className="card_image"> <img className="imgcardimg" src="/assets/images/smc/Nishtha Anand.jpg"   /> </div> 
+                                                <div className="card_text">
+                                                     <h3>Nishtha Shukla Anand </h3>
+                                                <p><strong className='hightlightprofile'>Ex-Reuters,</strong> India Today, Founder: TechThirsty.com & Pen Pundit Media, Trustee and Director, Shoolini University</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
 
 
-                                    <div className="col-md-4">
-                                        <div className=" globalcard text-center">
-                                            <img className="imgcardimg" src="/assets/images/smc/kunal_nandwani.jpg" width={300} height={300} />
-                                            <h3>Kunal Nandwani</h3>
-                                            <span> Co-founder & CEO of<strong className='hightlightprofile'> uTrade </strong> & Founder - Chandigarh Angels Network</span>
+                                        <div className="col-md-4">
+                                            <div className=" globalcard text-center">
+                                            <div className="card_image"> <img className="imgcardimg" src="/assets/images/smc/kunal_nandwani.jpg"  /> </div> 
+                                            <div className="card_text">
+                                                <h3>Kunal Nandwani</h3>
+                                                <p> Co-founder & CEO of<strong className='hightlightprofile'> uTrade </strong> & Founder - Chandigarh Angels Network</p>
+                                            </div>
+                                            </div> 
                                         </div>
-                                    </div>
 
-                                    <div className="col-md-4">
-                                        <div class="globalcard text-center">
-                                            <img className="imgcardimg" src="/assets/images/smc/Gurpreet Tuthgur.jpg" width={300} height={300} />
-                                            <h3> Gurpreet Tathgur</h3>
-                                            <span> AVP Non-Fiction<strong className='hightlightprofile'> (Viacom 18)</strong></span>
+                                        <div className="col-md-4">
+                                            <div class="globalcard text-center">
+                                            <div className="card_image"> <img className="imgcardimg" src="/assets/images/smc/Gurpreet Tuthgur.jpg"   /> </div>
+                                            <div className="card_text">
+                                                <h3> Gurpreet Tathgur</h3>
+                                                <p> AVP Non-Fiction<strong className='hightlightprofile'> (Viacom 18)</strong></p>
+                                            </div>
+                                            </div>
                                         </div>
-                                    </div>
-
-                              
 
 
 
-                                 
 
-                                    <div className="col-md-4">
-                                        <div className="globalcard text-center mt-2">
-                                            <img className="imgcardimg" src="/assets/images/smc/Namit Sharma.jpg" width={300} height={300} />
-                                            <h3>Namit Sharma</h3>
-                                            <span> Creator, Producer, Catalyst. CEO -<strong className='hightlightprofile'> Dreamers & Doers Co.</strong> </span>
+
+
+
+                                        <div className="col-md-4">
+                                            <div className="globalcard text-center mt-2">
+                                            <div className="card_image"> <img className="imgcardimg" src="/assets/images/smc/Namit Sharma.jpg"  /> </div> 
+                                            <div className="card_text">
+                                                <h3>Namit Sharma</h3>
+                                                <p> Creator, Producer, Catalyst. CEO -<strong className='hightlightprofile'> Dreamers & Doers Co.</strong> </p>
+                                            </div>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div className="col-md-4">
-                                        <div className="globalcard text-center mt-2">
-                                            <img className="imgcardimg" src="/assets/images/smc/Tanvi Gandhi.jpg" width={300} height={300} />
-                                            <h3>Tanvi Gandhi</h3>
-                                            <span> Independent Producer, <strong className='hightlightprofile'>ex-YRF & Phantom Films</strong> </span>
+                                        <div className="col-md-4">
+                                            <div className="globalcard text-center mt-2">
+                                            <div className="card_image">
+                                                <img className="imgcardimg" src="/assets/images/smc/Tanvi Gandhi.jpg"   /> </div>
+                                                <div className="card_text"> 
+                                                <h3>Tanvi Gandhi</h3>
+                                                <p> Independent Producer, <strong className='hightlightprofile'>ex-YRF & Phantom Films</strong> </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
 
                             </div>
                         </section>
 
+ 
 
+                        <section className="newTestimonials">
+                    <div className="container">
+                                        <div className="row">
+                                        <Slider {...setting}>
+                                          <div className="col-md-12">
+                                              <div className="row">
 
-
-
-
-
-                        <section id="Stories" className="student-voices">
-                            <div className="container">
-                                <div className="row">
-                                <div class="pagetitle text-center mb-3"><h2> Shoolini Media Students Making an Impact </h2></div></div>
-
-                                <div className="row">
-                                    <Slider {...stories}>
-
-                                        <div className="col-md-4">
-
-                                            <div className="cardImage">
-                                                <img className="img-responsive" src="/assets/images/smc/Vishakha Thakur.jpeg" />
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="/assets/images/smc/Vishakha Thakur.jpeg"
+                                              />
                                             </div>
-                                            <div className="card-box">
-                                                <h3 className="title-default"> Vishakha Thakur</h3>
+                                          
+                                          </div>
 
-                                                <p className="text-18"> 3.0 TV
-                                                    The experienced faculty guided and supported me every step of the way, bringing out the best in me. I applied my newfound skills during my paid internship and got rave reviews. Thanks to the networking and professional development at Shoolini, I got placed at 3.0 TV in Mumbai.
-                                                </p>
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                              <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                              Vishakha Thakur
+                                              </h3>
+
+                                              <div className="all-discription"> 
+                                              <p className="text-white text-18">
+                                                {" "}
+                                                3.0 TV
+                                                    The experienced faculty guided and supported me every step of the way, bringing out the best in me. I applied my newfound skills during my paid internship and got rave reviews. Thanks to the networking and professional development at Shoolini, I got placed at 3.0 TV in Mumbai.{" "}
+                                              </p>
+ 
+                                              </div>
+                                              </div>
+
                                             </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
 
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="/assets/images/smc/Gautam.jpeg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                              Gautam Sukhija (BAJMC)
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}   I always wanted to pursue journalism, but I was not that confident. With continuous support, I have grown from a shy student to leading the Literature and Anchoring Clubs. Shoolini has given me the confidence to embrace the spotlight and I invite others to join this enchanting journey.
+                                              </p>
+ 
+                                            </div>
+                                            </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="/assets/images/smc/Arushi mishra.png"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                              Aarushi Mishra (BAJMC)
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}  I take pride in telling the world that I am a student of Shoolini and have been mentored by veteran journalist Vipin Pubby. I am grateful to him for making a confident journalist out of me. Thanks to the practical training, I was placed at WebBila as Senior Marketing Executive.
+                                              </p>
+  
+                                            </div>
+                                            </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="/assets/images/smc/mannoface.png"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                              Manan Monga, JMC
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "} The comprehensive curriculum, experienced faculty with industry experience, and practical learning opportunities have shaped my career and helped my personal growth. The university's state-of-the-art facilities, industry visits, and international collaborations provided a well-rounded education. Thank you, Shoolini University for an exceptional education.
+                                              </p>
+ 
+                                            </div>
+                                          </div>
+                                          </div>
+                                         
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="/assets/images/smc/Saket.jpeg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                              Saket Saurabh
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}  Photographing a landscape, person & event is something that has always stuck with me! And I am thankful for all the practical experiences I gained from Shoolini during my program & internship.
+                                              </p>
+ 
+                                            </div>
+                                          </div>
+                                         </div>
+                                              </div>
+                                          </div>
+
+                                          <div className="col-md-12">
+                                              <div className="row">
+
+                                              <div className="col-md-6 pr-md-0">
+                                            <div className="voices-image">
+                                              <img
+                                                className="img-responsive"
+                                                src="/assets/images/smc/Nihit.jpeg"
+                                              />
+                                            </div>
+                                          
+                                          </div>
+
+                                              <div className="col-md-6 pl-md-0">
+                                            <div className="voices-text centers card-box card-box-dark pt-5">
+                                            <div class="all-center"> 
+                                              <h3 className="title-default text-white">
+                                              Nihit (BAJMC)
+                                              </h3>
+                                              <p className="text-white text-18">
+                                                {" "}  Studying journalism at Shoolini has been an incredible experience. I am humbled to have the chance to shape the narrative and leave my mark on the world, one frame and one post at a time. I feel prepared and confident about my skills in photography & filmmaking.
+                                              </p>
+
+                                              
+                                            </div>
+                                          </div> </div>
+                                         
+                                              </div>
+                                          </div>
+                                          
+
+                                          
+                                         </Slider>
+                                         
                                         </div>
-
-                                        <div className="col-md-4">
-
-                                            <div className="cardImage">
-                                                <img className="img-responsive" src="/assets/images/smc/Gautam.jpeg" />
-                                            </div>
-                                            <div className="card-box">
-                                                <h3 className="title-default"> Gautam Sukhija (BAJMC)</h3>
-
-                                                <p className="text-18">
-                                                    I always wanted to pursue journalism, but I was not that confident. With continuous support, I have grown from a shy student to leading the Literature and Anchoring Clubs. Shoolini has given me the confidence to embrace the spotlight and I invite others to join this enchanting journey. I applied my newfound skills during my paid internship and got rave reviews. Thanks to the networking and professional development at Shoolini, I got placed at 3.0 TV in Mumbai.
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-
-                                        <div className="col-md-4">
-
-                                            <div className="cardImage">
-                                                <img className="img-responsive" src="/assets/images/smc/Arushi mishra.png" />
-                                            </div>
-                                            <div className="card-box">
-                                                <h3 className="title-default"> Aarushi Mishra (BAJMC)</h3>
-
-                                                <p className="text-18">
-                                                    I take pride in telling the world that I am a student of Shoolini and have been mentored by veteran journalist Vipin Pubby. I am grateful to him for making a confident journalist out of me. Thanks to the practical training, I was placed at WebBila as Senior Marketing Executive.
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-
-
-                                        <div className="col-md-4">
-
-                                            <div className="cardImage">
-                                                <img className="img-responsive" src="/assets/images/smc/mannoface.png" />
-                                            </div>
-                                            <div className="card-box">
-                                                <h3 className="title-default">
-                                                    Manan Monga, JMC ​</h3>
-
-                                                <p className="text-18">
-                                                    The comprehensive curriculum, experienced faculty with industry experience, and practical learning opportunities have shaped my career and helped my personal growth. The university's state-of-the-art facilities, industry visits, and international collaborations provided a well-rounded education. Thank you, Shoolini University for an exceptional education.
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-
-                                        <div className="col-md-4">
-
-                                            <div className="cardImage">
-                                                <img className="img-responsive" src="/assets/images/smc/Saket.jpeg" />
-                                            </div>
-                                            <div className="card-box">
-                                                <h3 className="title-default">
-                                                    Saket Saurabh​</h3>
-
-                                                <p className="text-18">
-                                                    Photographing a landscape, person & event is something that has always stuck with me! And I am thankful for all the practical experiences I gained from Shoolini during my program & internship.
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-
-
-                                        <div className="col-md-4">
-
-                                            <div className="cardImage">
-                                                <img className="img-responsive" src="/assets/images/smc/Nihit.jpeg" />
-                                            </div>
-                                            <div className="card-box">
-                                                <h3 className="title-default">
-                                                    Nihit (BAJMC)​</h3>
-
-                                                <p className="text-18">
-                                                    Studying journalism at Shoolini has been an incredible experience. I am humbled to have the chance to shape the narrative and leave my mark on the world, one frame and one post at a time. I feel prepared and confident about my skills in photography & filmmaking.
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </Slider>
-                                </div>
-
-                            </div>
-                        </section>
-
-
+                                      </div>
+                    </section>
 
 
                         <section id="faqs" className="student-voices">
@@ -724,7 +844,7 @@ const index = () => {
                                     <div className="col-md-12">
 
                                         <div className="card-box">
-                                          
+
                                             <p> <strong> Internships And Placements:</strong> <br />
                                                 Create Your Own Success Story </p>
 
@@ -742,7 +862,7 @@ const index = () => {
                                                     </div>
                                                 </div>
 
-                                              
+
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
@@ -764,7 +884,7 @@ const index = () => {
                                                     </div>
                                                 </div>
 
-                                              
+
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
@@ -772,7 +892,7 @@ const index = () => {
                                                     </div>
                                                 </div>
 
-                                              
+
 
 
                                                 <div className="col-md-3 col-3">
@@ -809,7 +929,7 @@ const index = () => {
                                                     <div className="logo-file">
                                                         <Image src="/assets/images/smc/Adfactors.png" width={200} className="img-responsive" height={100} />
                                                     </div>
-                                                    
+
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
@@ -829,27 +949,27 @@ const index = () => {
                                                     </div>
                                                 </div>
 
-                                              
+
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
                                                         <Image src="/assets/images/smc/newsX.png" width={200} className="img-responsive" height={100} />
                                                     </div>
-                                                    
+
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/TT.png" width={200} className="img-responsive" height={100} />
+                                                       <a target="_blank" href="https://www.techthirsty.com/"> <Image src="/assets/images/smc/TT.png" width={200} className="img-responsive" height={100} /> </a> 
                                                     </div>
-                                                    
+
                                                 </div>
 
                                                 <div className="col-md-3 col-3">
                                                     <div className="logo-file">
-                                                        <Image src="/assets/images/smc/penpundit.png" width={200} className="img-responsive" height={100} />
+                                                    <a target="_blank" href="https://penpundit.com/"> <Image src="/assets/images/smc/penpundit.png" width={200} className="img-responsive" height={100} /> </a>
                                                     </div>
-                                                    
+
                                                 </div>
 
 
@@ -857,7 +977,7 @@ const index = () => {
 
                                             </div>
 
-                                    
+
                                         </div>
 
 
@@ -866,7 +986,6 @@ const index = () => {
                                 </div>
                             </div>
                         </section>
-
 
 
 

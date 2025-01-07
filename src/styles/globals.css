@@ -211,7 +211,7 @@ button.closeBtn {
 .testimonialsSection .slick-prev:before {
   background-size: 70%;
   transform: rotate(180deg);
-  opacity: 0.2 !important;
+  opacity: 0.5 !important;
   top: -5px !important;
   background-color: #fff;
   background-position: center;
@@ -475,7 +475,7 @@ a.detailView h3 {
   left: 9px;
   background-size: 100%;
   transform: rotate(180deg);
-  opacity: 0.2 !important;
+  opacity: 0.5 !important;
   top: 10px !important;
 }
 .impactSU .slick-next:before,
@@ -2462,7 +2462,7 @@ a.hilightLink {
   padding: 6px 0;
   border-radius: 5px;
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
   max-width: 170px;
-  font-size: 13px !important;
+  font-size: 11px !important;
 }

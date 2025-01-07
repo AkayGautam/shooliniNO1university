@@ -188,6 +188,7 @@ const StickyMenu = ({ links }) => {
                                             <ul className="subMenus">
                                               <li> <Link href="/bsc">		BSc (Hons)   </Link> </li> 
                                               <li> <Link className="hilightLink" href="/minor-specialisations">	Minor Specialisations   </Link> </li>
+                                              <li> <Link className="hilightLink" href="/lateral-entry-courses">	Lateral Entry Programs   </Link> </li> 
                                             </ul>
                                        
                                           </div>

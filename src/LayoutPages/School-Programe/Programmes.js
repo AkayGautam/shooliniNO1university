@@ -13,7 +13,7 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 300,
-  rows:2, 
+  rows: 2,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
@@ -22,7 +22,7 @@ const settings = {
   responsive: [
     {
       breakpoint: 767,
-      rows:2,
+      rows: 2,
     },
     {
       breakpoint: 10000,
@@ -106,50 +106,63 @@ const Programmes = ({ programs }) => {
                               </div> */}
                               <div className="programme_detail">
                                 <div className="coursetitles">
-                                  {data.title ==
-                                  "Computer Science Engineering" ? (
-                                    <Link
-                                      state={{ school: true }}
-                                      href="/engineering-courses"
-                                      className="nav-link"
-                                    >
-                                      {data?.title}
-                                    </Link>
-                                  ) : (
-                                    <>
-                                      {data.title == "Core Engineering" ? (
-                                        <Link
-                                          state={{ school: true }}
-                                          href="/engineering-courses"
-                                          className="coreEngg nav-link"
-                                        >
-                                          {data?.title}
-                                        </Link>
-                                      ) : (
-                                        <>
-                                          {data.title == "Biotechnology" ? (
-                                            <Link
-                                              state={{ school: true }}
-                                              href="/biotechnology-courses"
-                                              className="nav-link"
-                                            >
-                                              {data?.title}
-                                            </Link>
-                                          ) : (
-                                            <Link
-                                              state={{ school: true }}
-                                              href={`courses/${data?.link_url}`}
-                                              className="nav-link"
-                                              data-toggle="dropdown"
-                                            >
-                                              {data?.title}
-                                            </Link>
-                                          )}
-                                        </>
-                                      )}
-                                    </>
-                                  )}
+                                  {(() => {
+                                    switch (data.title) {
+                                      case "Computer Science Engineering":
+                                        return (
+                                          <Link
+                                            state={{ school: true }}
+                                            href="/engineering-courses"
+                                            className="nav-link"
+                                          >
+                                            {data?.title}
+                                          </Link>
+                                        );
+                                      case "Core Engineering":
+                                        return (
+                                          <Link
+                                            state={{ school: true }}
+                                            href="/engineering-courses"
+                                            className="coreEngg nav-link"
+                                          >
+                                            {data?.title}
+                                          </Link>
+                                        );
+                                      case "Biotechnology":
+                                        return (
+                                          <Link
+                                            state={{ school: true }}
+                                            href="/biotechnology-courses"
+                                            className="nav-link"
+                                          >
+                                            {data?.title}
+                                          </Link>
+                                        );
+                                      case "Media & Communications": // New condition
+                                        return (
+                                          <Link
+                                            state={{ school: true }}
+                                            href="/school-of-media-and-communication"
+                                            className="nav-link"
+                                          >
+                                            {data?.title}
+                                          </Link>
+                                        );
+                                      default:
+                                        return (
+                                          <Link
+                                            state={{ school: true }}
+                                            href={`courses/${data?.link_url}`}
+                                            className="nav-link"
+                                            data-toggle="dropdown"
+                                          >
+                                            {data?.title}
+                                          </Link>
+                                        );
+                                    }
+                                  })()}
                                 </div>
+
 
                                 <ul className="programme_list">
                                   {data.courses &&
@@ -157,7 +170,7 @@ const Programmes = ({ programs }) => {
                                       return (
                                         <li key={idx}>
                                           {data.title ==
-                                          "Computer Science Engineering" ? (
+                                            "Computer Science Engineering" ? (
                                             <Link
                                               state={{ school: true }}
                                               href="/engineering-courses"
@@ -168,7 +181,7 @@ const Programmes = ({ programs }) => {
                                           ) : (
                                             <>
                                               {data.title ==
-                                              "Core Engineering" ? (
+                                                "Core Engineering" ? (
                                                 <Link
                                                   state={{ school: true }}
                                                   href="/engineering-courses"
@@ -179,7 +192,7 @@ const Programmes = ({ programs }) => {
                                               ) : (
                                                 <>
                                                   {data.title ==
-                                                  "Biotechnology" ? (
+                                                    "Biotechnology" ? (
                                                     <Link
                                                       state={{ school: true }}
                                                       href="/biotechnology-courses"
@@ -196,7 +209,9 @@ const Programmes = ({ programs }) => {
                                                     >
                                                       {i.title}
                                                     </Link>
-                                                  )}
+                                                  )
+
+                                                  }
                                                 </>
                                               )}
                                             </>
@@ -204,6 +219,8 @@ const Programmes = ({ programs }) => {
                                         </li>
                                       );
                                     })}
+
+
                                 </ul>
                                 {/* <div className="featured_img">
                                   {data.title ==

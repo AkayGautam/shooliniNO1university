@@ -19,8 +19,7 @@ section {
 }
 section#shooliniMBA{
     background: url(../../assets/images/smc/schoolslider1.jpeg);
-    background-size: 100%;
-    height: 80vh;
+    background-size: 100%; 
     margin-top: 0px;
     padding-top: 20px !important;
     background-position: top;
@@ -555,15 +554,22 @@ h3.title-red {
     .globalcard {
     height: 100%;
 }
-    .globalcard h3 {
-    font-size: 23px;
-    padding: 5px;
-}
-    strong.hightlightprofile {
-    color: red;
+.globalcard h3 {
     font-size: 20px;
 }
-.globalcard.globalcard.text-center {
+
+.card_text span {
+    font-size: 15px;
+    font-weight: 400 !important;
+}
+
+strong.hightlightprofile {
+    color: red;
+    display: block;
+    font-style: italic;
+}
+
+.globalcard {
     border: 1px solid #e1e1e1;
     border-radius: 10px;
     padding: 10px 10px;
@@ -1215,7 +1221,37 @@ section#shooliniMBA {
 /* #Media
 ================================================== */
 
+@media (min-width: 768px) { 
+
+    .leftCatrd {
+        padding: 70px 0;
+    }
+
+.globalcard {
+    display: flex;
+    width: 100%;
+}
+.card_image {
+    width: 30%;
+    flex-basis: 30%;
+}
+img.imgcardimg {
+    width: 100%;
+}
+.card_text {
+    width: 70%;
+    text-align: left;
+    padding-left: 20px;
+}
+}
+
+
+
 @media (max-width: 767px) { 
+
+    #Stories .slick-next {
+        right: 0;
+    }
 
     .tablistItems {
         display: none !important;
@@ -1234,10 +1270,9 @@ section#shooliniMBA {
     padding: 0px;
     margin: 0px;
 }
-img.none-bannerm {
-        height: 80vh;
+img.none-bannerm { 
         width: 100%;
-    }
+}
 	.dropdown-toggle::after {
 		position: absolute;
 		display: block;
@@ -1718,6 +1753,46 @@ a.journlismatag {
 }
 .sb_text a:hover {
     color: red !important;
+}
+
+
+.voices-image {
+    border-radius: 30px 0px 0px 30px;
+    position: relative;
+    overflow: hidden;
+}
+.voices-image img {
+    width: 100%;
+}
+.slick-slide img {
+    display: block;
+}
+.centers {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.voices-text {
+    border-radius: 30px 0px 30px 0px;
+}
+.card-box-dark {
+    background: rgb(29, 29, 31);
+}
+.card-box { 
+    padding: 30px;
+    border-radius: 0px 40px 30px 0px;
+    height: 100%;
+}
+.card-box h3 {
+    margin: 0px 0px 10px;
+    font-family: CircularStd;
+    font-weight: 900;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+.text-18 {
+    font-family: CircularStd;
+    font-size: 18px;
 }
 
 
